@@ -1,0 +1,54 @@
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\bin\Debug\SyncScopeProvision.dll
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\bin\Debug\SyncScopeProvision.pdb
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\obj\Debug\SyncScopeProvision.SynchronizerForm.resources
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\obj\Debug\SyncScopeProvision.csproj.GenerateResource.Cache
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\obj\Debug\SyncScopeProvision.dll
+C:\Users\Moses Kehengu\Documents\Visual Studio 2008\Projects\LGMD3\LGMD2\SyncScopeProvision\obj\Debug\SyncScopeProvision.pdb
+E:\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.SynchronizerForm.resources
+E:\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csproj.GenerateResource.Cache
+E:\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.pdb
+E:\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.dll
+E:\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.pdb
+E:\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.dll
+E:\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.frmReadTheText.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.dll
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.pdb
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csprojResolveAssemblyReference.cache
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.frmReadTheText.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.SynchronizerForm.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csproj.GenerateResource.Cache
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.dll
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.pdb
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.pdb
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.Data.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.Data.Server.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.Data.SqlServer.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.xml
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.Data.xml
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.Data.Server.xml
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\Microsoft.Synchronization.Data.SqlServer.xml
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.frmReadTheText.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.SynchronizerForm.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csproj.GenerateResource.Cache
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.pdb
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csprojResolveAssemblyReference.cache
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.frmReadTheText.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.SynchronizerForm.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csproj.GenerateResource.Cache
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.frmReadTheText.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.SynchronizerForm.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csproj.GenerateResource.Cache
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\bin\Debug\SyncScopeProvision.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csprojResolveAssemblyReference.cache
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\SyncScopeProvision\obj\Debug\SyncScopeProvision.csprojResolveAssemblyReference.cache

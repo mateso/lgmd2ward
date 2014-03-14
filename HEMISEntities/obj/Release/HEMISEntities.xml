@@ -1,0 +1,291 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HEMISEntities
+</name>
+</assembly>
+<members>
+<member name="T:HEMISEntities.HEMISDataSet.tblAcademicYearsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAppColumnsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAssetUtilizationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblBusinessObjectDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFundingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblEnrollmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGradDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGroupRightsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGradDataDetailedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblInstitutionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblEnrollmentDetailedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblRightsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStaffsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStaffsDetailedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStudentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblUserGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAppVersionControlDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblSponsorShipDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFormDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFormDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAcademicYearsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAppColumnsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAssetUtilizationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblBusinessObjectRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFundingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblEnrollmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGradDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGroupRightsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGradDataDetailedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblInstitutionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblEnrollmentDetailedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblRightsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStaffsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStaffsDetailedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStudentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblUserGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAppVersionControlRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblSponsorShipRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFormRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFormDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAcademicYearsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAppColumnsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAssetUtilizationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblBusinessObjectRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFundingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblEnrollmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGradDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGroupRightsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGradDataDetailedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblInstitutionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblEnrollmentDetailedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblRightsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStaffsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStaffsDetailedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblStudentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblUserGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblAppVersionControlRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblSponsorShipRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFormRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet.tblFormDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HEMISEntities.HEMISDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

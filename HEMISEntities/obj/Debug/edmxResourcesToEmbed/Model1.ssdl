@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LGMD2iModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="LGMD2iModelStoreContainer">
+    <EntitySet Name="LivestockList" EntityType="LGMD2iModel.Store.LivestockList" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="LivestockService01" EntityType="LGMD2iModel.Store.LivestockService01" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <AssociationSet Name="FK_LivestockService01_LivestockList" Association="LGMD2iModel.Store.FK_LivestockService01_LivestockList">
+      <End Role="LivestockList" EntitySet="LivestockList" />
+      <End Role="LivestockService01" EntitySet="LivestockService01" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="LivestockList">
+    <Key>
+      <PropertyRef Name="LivestockListID" />
+    </Key>
+    <Property Name="LivestockListID" Type="int" Nullable="false" />
+    <Property Name="LivestockName" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="LivestockService01">
+    <Key>
+      <PropertyRef Name="LivestockServiceID" />
+    </Key>
+    <Property Name="LivestockServiceID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LivestockID" Type="int" />
+    <Property Name="CuttingHoof" Type="int" />
+    <Property Name="Castration" Type="int" />
+    <Property Name="AI" Type="int" />
+    <Property Name="CuttingHorn" Type="int" />
+    <Property Name="Branding" Type="int" />
+    <Property Name="CuttingTail" Type="int" />
+    <Property Name="CuttingTeeth" Type="int" />
+    <Property Name="CuttingBillBeak" Type="int" />
+    <Property Name="MonthlyRecordID" Type="uniqueidentifier" />
+  </EntityType>
+  <Association Name="FK_LivestockService01_LivestockList">
+    <End Role="LivestockList" Type="LGMD2iModel.Store.LivestockList" Multiplicity="0..1" />
+    <End Role="LivestockService01" Type="LGMD2iModel.Store.LivestockService01" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LivestockList">
+        <PropertyRef Name="LivestockListID" />
+      </Principal>
+      <Dependent Role="LivestockService01">
+        <PropertyRef Name="LivestockID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

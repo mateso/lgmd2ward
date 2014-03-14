@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LGMD2iModelStoreContainer" CdmEntityContainer="LGMD2iEntities">
+    <EntitySetMapping Name="LivestockList">
+      <EntityTypeMapping TypeName="IsTypeOf(LGMD2iModel.LivestockList)">
+        <MappingFragment StoreEntitySet="LivestockList">
+          <ScalarProperty Name="LivestockListID" ColumnName="LivestockListID" />
+          <ScalarProperty Name="LivestockName" ColumnName="LivestockName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LivestockService01">
+      <EntityTypeMapping TypeName="IsTypeOf(LGMD2iModel.LivestockService01)">
+        <MappingFragment StoreEntitySet="LivestockService01">
+          <ScalarProperty Name="LivestockServiceID" ColumnName="LivestockServiceID" />
+          <ScalarProperty Name="CuttingHoof" ColumnName="CuttingHoof" />
+          <ScalarProperty Name="Castration" ColumnName="Castration" />
+          <ScalarProperty Name="AI" ColumnName="AI" />
+          <ScalarProperty Name="CuttingHorn" ColumnName="CuttingHorn" />
+          <ScalarProperty Name="Branding" ColumnName="Branding" />
+          <ScalarProperty Name="CuttingTail" ColumnName="CuttingTail" />
+          <ScalarProperty Name="CuttingTeeth" ColumnName="CuttingTeeth" />
+          <ScalarProperty Name="CuttingBillBeak" ColumnName="CuttingBillBeak" />
+          <ScalarProperty Name="MonthlyRecordID" ColumnName="MonthlyRecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_LivestockService01_LivestockList" TypeName="LGMD2iModel.FK_LivestockService01_LivestockList" StoreEntitySet="LivestockService01">
+      <EndProperty Name="LivestockList">
+        <ScalarProperty Name="LivestockListID" ColumnName="LivestockID" />
+      </EndProperty>
+      <EndProperty Name="LivestockService01">
+        <ScalarProperty Name="LivestockServiceID" ColumnName="LivestockServiceID" />
+      </EndProperty>
+      <Condition ColumnName="LivestockID" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,448 @@
+/****** Object:  UserDefinedFunction [dbo].[cnTargetLatestTime]    Script Date: 09/05/2013 19:38:32 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[cnTargetLatestTime]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+BEGIN
+execute dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE FUNCTION [dbo].[cnTargetLatestTime] 
+(	
+@FormSerialNumber varchar(50),
+@startDate varchar(20),
+@endDate varchar(20)
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+/* Add the SELECT statement with parameter references here*/
+SELECT     
+CropGroupList.CropGroupListID, 
+MAX(RecordInfo.PeriodFrom) AS MaxPeriodFrom
+FROM         
+CropGroupList 
+INNER JOIN
+CropGroup ON CropGroupList.GroupID = CropGroup.GroupID 
+INNER JOIN
+TargetImplementationAndCropPrices01 ON CropGroupList.CropGroupListID = TargetImplementationAndCropPrices01.CropID 
+INNER JOIN
+RecordInfo ON TargetImplementationAndCropPrices01.MonthlyRecordID = RecordInfo.RecordID
+WHERE     
+--(RecordInfo.PeriodFrom BETWEEN ''20100701'' AND ''20110331'')
+(RecordInfo.PeriodFrom BETWEEN @startDate AND @endDate)  
+AND 
+(
+(isnull(TargetImplementationAndCropPrices01.ProdDone,0)<>0)
+)
+AND
+RecordInfo.AreaID like substring(@FormSerialNumber,1,len(@FormSerialNumber)-12)
+GROUP BY 
+CropGroupList.CropGroupListID
+)
+' 
+END
+GO
+/****** Object:  UserDefinedFunction [dbo].[cnTargetLatestFigs]    Script Date: 09/05/2013 19:38:32 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[cnTargetLatestFigs]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+BEGIN
+execute dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE FUNCTION [dbo].[cnTargetLatestFigs]
+(	
+	-- Add the parameters for the function here
+	--<@param1, sysname, @p1> <Data_Type_For_Param1, , int>, 
+	--<@param2, sysname, @p2> <Data_Type_For_Param2, , char>
+@FormSerialNumber varchar(50),
+@startDate varchar(20),
+@endDate varchar(20)
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+	-- Add the SELECT statement with parameter references here
+SELECT     
+CropGroupList.CropGroupListID, 
+RecordInfo.PeriodFrom, 
+SUM(TargetImplementationAndCropPrices01.ProdDone) AS ProdDone, 
+SUM(TargetImplementationAndCropPrices01.AreaDone) AS AreaDone, 
+AVG(TargetImplementationAndCropPrices01.Price) AS Price
+FROM         
+CropGroupList 
+INNER JOIN
+TargetImplementationAndCropPrices01 ON CropGroupList.CropGroupListID = TargetImplementationAndCropPrices01.CropID 
+INNER JOIN
+RecordInfo ON TargetImplementationAndCropPrices01.MonthlyRecordID = RecordInfo.RecordID 
+INNER JOIN
+dbo.cnTargetLatestTime(@FormSerialNumber,@startDate,@endDate) AS cnTargetLatestTime_1 ON CropGroupList.CropGroupListID = cnTargetLatestTime_1.CropGroupListID 
+AND 
+RecordInfo.PeriodFrom = cnTargetLatestTime_1.MaxPeriodFrom
+WHERE     
+(--(RecordInfo.PeriodFrom BETWEEN ''20100701'' AND ''20110331'')
+(RecordInfo.PeriodFrom BETWEEN @startDate AND @endDate)  
+AND 
+--(TargetImplementationAndCropPrices01.ProdDone IS NOT NULL)
+RecordInfo.AreaID like substring(@FormSerialNumber,1,len(@FormSerialNumber)-12)
+)
+GROUP BY 
+CropGroupList.CropGroupListID, 
+RecordInfo.PeriodFrom
+)
+' 
+END
+GO
+/****** Object:  StoredProcedure [dbo].[rptUspQuarterlyTargett]    Script Date: 09/05/2013 19:38:31 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[rptUspQuarterlyTargett]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[rptUspQuarterlyTargett]
+	-- Add the parameters for the stored procedure here
+	--<@Param1, sysname, @p1> <Datatype_For_Param1, , int> = <Default_Value_For_Param1, , 0>, 
+	--<@Param2, sysname, @p2> <Datatype_For_Param2, , int> = <Default_Value_For_Param2, , 0>
+	@FormSerialNumber varchar(50)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	
+declare @startDate as date
+declare @endDate as date
+declare @yearReplacer as integer
+set @startDate = cast(''01''+substring(@FormSerialNumber,len(@FormSerialNumber)-11,5) as datetime)
+set @endDate = cast(''30''+substring(@FormSerialNumber,len(@FormSerialNumber)-5,5) as datetime)
+if (datepart(m,@startDate)>6)
+begin
+set @startDate=@startDate
+set @FormSerialNumber=STUFF(STUFF(@FormSerialNumber,len(@FormSerialNumber)-11,3,''Jul''),len(@FormSerialNumber)-5,3,''Sep'')
+end
+else
+begin
+set @startDate=dateadd(yyyy,-1,@startDate)
+set @yearReplacer=right(datepart(yyyy,@startDate),2)
+set @FormSerialNumber=STUFF(STUFF(@FormSerialNumber,len(@FormSerialNumber)-11,5,''Jul''+convert(varchar(5),@yearReplacer)),len(@FormSerialNumber)-5,5,''Sep''+convert(varchar(5),@yearReplacer))
+end
+
+SELECT     
+--TargetImplementationAndCropPrices06.CropID, 
+CropGroupList.CropGroupListID, 
+CropGroupList.GroupID, 
+CropGroupList.CropName,
+SUM(TargetImplementationAndCropPrices06.ExpectedArea) AS ExpectedArea, 
+SUM(TargetImplementationAndCropPrices06.ExpectedProd) AS ExpectedProd,
+cnTargetLatFigs_1.ProdDone, 
+cnTargetLatFigs_1.AreaDone
+FROM         
+TargetImplementationAndCropPrices06 
+INNER JOIN
+RecordInfo ON TargetImplementationAndCropPrices06.AnnualRecordID = RecordInfo.RecordID 
+INNER JOIN
+CropGroupList ON TargetImplementationAndCropPrices06.CropID = CropGroupList.CropGroupListID 
+LEFT OUTER JOIN
+dbo.cnTargetLatestFigs(@FormSerialNumber,@startDate,@endDate) AS cnTargetLatFigs_1 ON CropGroupList.CropGroupListID = cnTargetLatFigs_1.CropGroupListID
+WHERE     
+(RecordInfo.FormSerialNumberIQ LIKE @FormSerialNumber)
+GROUP BY 
+--TargetImplementationAndCropPrices06.CropID, 
+CropGroupList.CropGroupListID, 
+CropGroupList.GroupID, 
+CropGroupList.CropName,
+cnTargetLatFigs_1.ProdDone, 
+cnTargetLatFigs_1.AreaDone
+END
+' 
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[rptUspQuarterlyProdSkin]    Script Date: 09/05/2013 19:42:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[rptUspQuarterlyProdSkin]
+	-- Add the parameters for the stored procedure here
+	
+--@ParamYear nvarchar(9),
+--@ParamQuarter nvarchar(1)
+@FormSerialNumber nvarchar(50)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	--SELECT <@Param1, sysname, @p1>, <@Param2, sysname, @p2>
+	
+	--declare @myParamYear nvarchar(9)
+	--declare @myParamQuarter nvarchar(1)
+
+ --   if @ParamQuarter<3 
+ --   begin
+	--	select @myParamQuarter = @ParamQuarter+2
+	--	select @myParamYear = LEFT(@ParamYear,4)
+	--end	
+	--	else
+	--begin
+	--	select @myParamQuarter = @ParamQuarter-2
+	--	select @myParamYear = RIGHT(@ParamYear,4)
+	--end
+	
+declare @startDate as date
+declare @endDate as date
+set @startDate = cast('01'+substring(@FormSerialNumber,len(@FormSerialNumber)-11,5) as datetime)
+set @endDate = cast('30'+substring(@FormSerialNumber,len(@FormSerialNumber)-5,5) as datetime)
+
+if (datepart(m,@startDate)>6)
+begin
+set @startDate=@startDate
+end
+else
+begin
+set @startDate=dateadd(yyyy,-1,@startDate)
+end
+
+SELECT     
+ProdSkinList.ProdSkinID, 
+ProdSkinList.ProdName, 
+SUM(ProdSkin01.DrySuspended) AS DrySuspended, 
+SUM(ProdSkin01.DrySalted) AS DrySalted, 
+SUM(ProdSkin01.WetBlue) AS WetBlue, 
+cnProdSkin_1.cnDrySuspended, 
+cnProdSkin_1.cnDrySalted, 
+cnProdSkin_1.cnWetBlue
+FROM         
+RecordInfo 
+INNER JOIN
+ProdSkin01 ON RecordInfo.RecordID = ProdSkin01.MonthlyRecordID 
+INNER JOIN
+ProdSkinList ON ProdSkin01.TypeOfProdID = ProdSkinList.ProdSkinID 
+INNER JOIN
+dbo.cnProdSkin(@FormSerialNumber,@startDate,@endDate) AS cnProdSkin_1 ON ProdSkinList.ProdSkinID = cnProdSkin_1.ProdSkinID
+WHERE     
+(RecordInfo.FormSerialNumberIQ LIKE @FormSerialNumber)
+GROUP BY 
+ProdSkinList.ProdSkinID, 
+ProdSkinList.ProdName,
+cnProdSkin_1.cnDrySuspended, 
+cnProdSkin_1.cnDrySalted, 
+cnProdSkin_1.cnWetBlue
+ORDER BY 
+ProdSkinList.ProdSkinID
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[rptUspQuarterlyLivestockSlaughtered]    Script Date: 09/05/2013 19:44:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[rptUspQuarterlyLivestockSlaughtered]
+	-- Add the parameters for the stored procedure here
+	--<@Param1, sysname, @p1> <Datatype_For_Param1, , int> = <Default_Value_For_Param1, , 0>, 
+	--<@Param2, sysname, @p2> <Datatype_For_Param2, , int> = <Default_Value_For_Param2, , 0>
+	
+   @FormSerialNumber nvarchar(50)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    --Insert statements for procedure here
+	--SELECT <@Param1, sysname, @p1>, <@Param2, sysname, @p2>
+
+--SELECT     
+--LivestockSlaughList.LivestockListID,
+--LivestockSlaughList.LivestockName, 
+--SUM(ISNULL(LivestockSlaughtered01.TotalNumberSlaughteredThisMonth,0)) AS TotalNumberSlaughteredThisMonth, 
+--AVG(ISNULL(LivestockSlaughtered01.AverageRetailPriceKg,0)) AS AverageRetailPriceKg
+--FROM         
+--LivestockSlaughList 
+--INNER JOIN
+--LivestockSlaughtered01 ON LivestockSlaughList.LivestockListID = LivestockSlaughtered01.LivestockID 
+--INNER JOIN
+--RecordInfo ON LivestockSlaughtered01.MonthlyRecordID = RecordInfo.RecordID
+--WHERE 
+--RecordInfo.FormSerialNumberIQ like @FormSerialNumber
+--GROUP BY 
+--LivestockSlaughList.LivestockListID,
+--LivestockSlaughList.LivestockName
+--ORDER BY LivestockSlaughList.LivestockListID
+
+declare @startMonth as date
+declare @endMonth as date
+set @startMonth = cast('01'+substring(@FormSerialNumber,len(@FormSerialNumber)-11,5) as datetime)
+set @endMonth = cast('30'+substring(@FormSerialNumber,len(@FormSerialNumber)-5,5) as datetime)
+
+if (datepart(m,@startMonth)>6)
+begin
+set @startMonth=@startMonth
+end
+else
+begin
+set @startMonth=dateadd(yyyy,-1,@startMonth)
+end
+
+--print @startMonth
+--print @endmonth
+
+SELECT     
+LivestockSlaughList.LivestockListID, 
+LivestockSlaughList.LivestockName, 
+SUM(LivestockSlaughtered01.TotalNumberSlaughteredThisMonth) AS TotalNumberSlaughteredThisMonth, 
+CN_1.CN
+FROM         
+LivestockSlaughList 
+INNER JOIN
+LivestockSlaughtered01 ON LivestockSlaughList.LivestockListID = LivestockSlaughtered01.LivestockID 
+INNER JOIN
+RecordInfo ON LivestockSlaughtered01.MonthlyRecordID = RecordInfo.RecordID 
+INNER JOIN
+dbo.cnLivestockSlaughtered(@FormSerialNumber,@startMonth,@endmonth) AS CN_1 ON LivestockSlaughList.LivestockListID = CN_1.LivestockListID
+WHERE     
+RecordInfo.FormSerialNumberIQ LIKE @FormSerialNumber
+GROUP BY 
+LivestockSlaughList.LivestockListID, 
+LivestockSlaughList.LivestockName,
+CN_1.CN
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[rptUspQuarterlyProdMilk]    Script Date: 09/05/2013 19:47:33 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[rptUspQuarterlyProdMilk]
+	-- Add the parameters for the stored procedure here
+	--<@Param1, sysname, @p1> <Datatype_For_Param1, , int> = <Default_Value_For_Param1, , 0>, 
+	--<@Param2, sysname, @p2> <Datatype_For_Param2, , int> = <Default_Value_For_Param2, , 0>
+
+  @FormSerialNumber nvarchar(50)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	--SELECT <@Param1, sysname, @p1>, <@Param2, sysname, @p2>
+
+declare @startDate as date
+declare @endDate as date
+set @startDate = cast('01'+substring(@FormSerialNumber,len(@FormSerialNumber)-11,5) as datetime)
+set @endDate = cast('30'+substring(@FormSerialNumber,len(@FormSerialNumber)-5,5) as datetime)
+
+if (datepart(m,@startDate)>6)
+begin
+set @startDate=@startDate
+end
+else
+begin
+set @startDate=dateadd(yyyy,-1,@startDate)
+end
+	
+SELECT     
+ProdMilkList.ProdMilkListID, 
+ProdMilkList.ProdName, 
+SUM(ProdMilk01.AmountThisMonth) AS AmountThisMonth, 
+cnProdMilk_1.cnAmountThisMonth
+FROM         
+ProdMilkList 
+INNER JOIN
+ProdMilk01 ON ProdMilkList.ProdMilkListID = ProdMilk01.ProdTypeID 
+INNER JOIN
+RecordInfo ON ProdMilk01.MonthlyRecordID = RecordInfo.RecordID 
+INNER JOIN
+dbo.cnProdMilk(@FormSerialNumber, @startDate, @endDate) AS cnProdMilk_1 ON ProdMilkList.ProdMilkListID = cnProdMilk_1.ProdMilkListID
+WHERE     
+(RecordInfo.FormSerialNumberIQ LIKE @FormSerialNumber)
+GROUP BY 
+ProdMilkList.ProdMilkListID, 
+ProdMilkList.ProdName, 
+cnProdMilk_1.cnAmountThisMonth
+ORDER BY ProdMilkList.ProdMilkListID
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[appUspLookupUnits1]    Script Date: 09/09/2013 15:26:13 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[appUspLookupUnits1]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Author,,Name>
+-- ALTER date: <ALTER Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[appUspLookupUnits1] 
+	-- Add the parameters for the stored procedure here
+	--<@Param1, sysname, @p1> <Datatype_For_Param1, , int> = <Default_Value_For_Param1, , 0>, 
+	--<@Param2, sysname, @p2> <Datatype_For_Param2, , int> = <Default_Value_For_Param2, , 0>
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	--SELECT <@Param1, sysname, @p1>, <@Param2, sysname, @p2>
+SELECT 0 AS ''UnitID'',NULL AS ''UnitName''
+UNION
+SELECT 1 AS ''UnitID'',''KG'' AS ''UnitName''
+UNION
+SELECT 2 AS ''UnitID'',''Litre'' AS ''UnitName''
+UNION
+SELECT 3 AS ''UnitID'',''Piece'' AS ''UnitName''
+UNION
+SELECT 4 AS ''UnitID'',''Ton'' AS ''UnitName''
+UNION
+SELECT 5 AS ''UnitID'',''Number'' AS ''UnitName''
+UNION
+SELECT 6 AS ''UnitID'',''Other'' AS ''UnitName''
+END
+' 
+END
+GO

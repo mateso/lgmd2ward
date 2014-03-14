@@ -1,0 +1,22 @@
+update areas set name='Masasi Vijijini' where gid='773DB86D-7C3E-4213-8074-F814591E3805'
+update areas set name='Masasi Mjini' where gid='99A4BCDE-2FB7-49E6-BED7-6390E6AEE2C3'
+
+update tbllist set description='Masasi Vijijini' where id='773DB86D-7C3E-4213-8074-F814591E3805'
+update tbllist set description='Masasi Mjini' where id='99A4BCDE-2FB7-49E6-BED7-6390E6AEE2C3'
+
+update tbllist set description='Musoma Vijijini' where id='112FEE7A-F43D-4153-BA5C-A3BC900A4A15'
+update tbllist set description='Musoma Mjini' where id='890349B6-8AC7-4ECF-A2CF-CC1A302A5209'
+
+update tbllist set description='Babati Vijijini' where id='5B9763C0-C748-4142-A1C0-E0C2E3DCD057'
+update tbllist set description='Babati Mjini' where id='9DD1485D-69BA-45C2-9D8B-55B35C86705B'
+
+update tbllist set description='Kasulu Vijijini' where id='7112E907-4EC8-42D2-89D7-9477D90FD27C'
+update tbllist set description='Kasulu Mjini' where id='6DD49742-D475-455B-8E1B-8A7FC4A4AC1B'
+
+update tbllist set description='Kibaha Vijijini' where id='D6EC1565-AA23-49D6-BDDD-98C7C93B2EF6'
+update tbllist set description='Kibaha Mjini' where id='D8C7F14A-B9E1-4410-894D-C11D1A492D12'
+
+update tbllist set description='Babati Vijijini' where id='5B9763C0-C748-4142-A1C0-E0C2E3DCD057'
+update tbllist set description='Babati Mjini' where id='9DD1485D-69BA-45C2-9D8B-55B35C86705B'
+
+update tbllist set description='Hanang' where id='D0B717C7-8033-4BFC-83FB-047B5856CB46'

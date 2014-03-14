@@ -1,0 +1,10 @@
+D:\Projects\VS2008\LGMD2\HEMISEntities\bin\x64\Release\HEMISEntities.dll.config
+D:\Projects\VS2008\LGMD2\HEMISEntities\bin\x64\Release\HEMISEntities.dll
+D:\Projects\VS2008\LGMD2\HEMISEntities\bin\x64\Release\HEMISEntities.pdb
+D:\Projects\VS2008\LGMD2\HEMISEntities\bin\x64\Release\HEMISEntities.xml
+D:\Projects\VS2008\LGMD2\HEMISEntities\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Projects\VS2008\LGMD2\HEMISEntities\obj\x64\Release\HEMISEntities.Resources.resources
+D:\Projects\VS2008\LGMD2\HEMISEntities\obj\x64\Release\HEMISEntities.vbproj.GenerateResource.Cache
+D:\Projects\VS2008\LGMD2\HEMISEntities\obj\x64\Release\HEMISEntities.dll
+D:\Projects\VS2008\LGMD2\HEMISEntities\obj\x64\Release\HEMISEntities.xml
+D:\Projects\VS2008\LGMD2\HEMISEntities\obj\x64\Release\HEMISEntities.pdb

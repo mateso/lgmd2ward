@@ -1,0 +1,16 @@
+F:\Procurement\RdlViewer\obj\Release\ResolveAssemblyReference.cache
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.ConnectionDialog.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.ctrlReports.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.Form1.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.MainForm.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.ParameterDialog.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.Properties.Resources.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.PropertyDialog.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.csproj.GenerateResource.Cache
+F:\Procurement\RdlViewer\bin\Release\RdlViewer.exe.config
+F:\Procurement\RdlViewer\bin\Release\RdlViewer.exe
+F:\Procurement\RdlViewer\bin\Release\RdlViewer.pdb
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.exe
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.pdb
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.ctrlReports1.resources
+F:\Procurement\RdlViewer\obj\Release\RdlViewer.UserControl1.resources

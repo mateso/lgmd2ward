@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LGMD2iModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="LGMD2iModelStoreContainer">
+          <EntitySet Name="LivestockList" EntityType="LGMD2iModel.Store.LivestockList" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="LivestockService01" EntityType="LGMD2iModel.Store.LivestockService01" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK_LivestockService01_LivestockList" Association="LGMD2iModel.Store.FK_LivestockService01_LivestockList">
+            <End Role="LivestockList" EntitySet="LivestockList" />
+            <End Role="LivestockService01" EntitySet="LivestockService01" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="LivestockList">
+          <Key>
+            <PropertyRef Name="LivestockListID" />
+          </Key>
+          <Property Name="LivestockListID" Type="int" Nullable="false" />
+          <Property Name="LivestockName" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="LivestockService01">
+          <Key>
+            <PropertyRef Name="LivestockServiceID" />
+          </Key>
+          <Property Name="LivestockServiceID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LivestockID" Type="int" />
+          <Property Name="CuttingHoof" Type="int" />
+          <Property Name="Castration" Type="int" />
+          <Property Name="AI" Type="int" />
+          <Property Name="CuttingHorn" Type="int" />
+          <Property Name="Branding" Type="int" />
+          <Property Name="CuttingTail" Type="int" />
+          <Property Name="CuttingTeeth" Type="int" />
+          <Property Name="CuttingBillBeak" Type="int" />
+          <Property Name="MonthlyRecordID" Type="uniqueidentifier" />
+        </EntityType>
+        <Association Name="FK_LivestockService01_LivestockList">
+          <End Role="LivestockList" Type="LGMD2iModel.Store.LivestockList" Multiplicity="0..1" />
+          <End Role="LivestockService01" Type="LGMD2iModel.Store.LivestockService01" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LivestockList">
+              <PropertyRef Name="LivestockListID" />
+            </Principal>
+            <Dependent Role="LivestockService01">
+              <PropertyRef Name="LivestockID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LGMD2iModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="LGMD2iEntities">
+          <EntitySet Name="LivestockList" EntityType="LGMD2iModel.LivestockList" />
+          <EntitySet Name="LivestockService01" EntityType="LGMD2iModel.LivestockService01" />
+          <AssociationSet Name="FK_LivestockService01_LivestockList" Association="LGMD2iModel.FK_LivestockService01_LivestockList">
+            <End EntitySet="LivestockList" Role="LivestockList" />
+            <End EntitySet="LivestockService01" Role="LivestockService01" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="LivestockList">
+          <Key>
+            <PropertyRef Name="LivestockListID" />
+          </Key>
+          <Property Name="LivestockListID" Type="Int32" Nullable="false" />
+          <Property MaxLength="20" Unicode="true" FixedLength="false" Name="LivestockName" Type="String" />
+          <NavigationProperty Name="LivestockService01" Relationship="LGMD2iModel.FK_LivestockService01_LivestockList" FromRole="LivestockList" ToRole="LivestockService01" />
+        </EntityType>
+        <EntityType Name="LivestockService01">
+          <Key>
+            <PropertyRef Name="LivestockServiceID" />
+          </Key>
+          <Property Name="LivestockServiceID" Type="Guid" Nullable="false" />
+          <Property Name="CuttingHoof" Type="Int32" />
+          <Property Name="Castration" Type="Int32" />
+          <Property Name="AI" Type="Int32" />
+          <Property Name="CuttingHorn" Type="Int32" />
+          <Property Name="Branding" Type="Int32" />
+          <Property Name="CuttingTail" Type="Int32" />
+          <Property Name="CuttingTeeth" Type="Int32" />
+          <Property Name="CuttingBillBeak" Type="Int32" />
+          <Property Name="MonthlyRecordID" Type="Guid" />
+          <NavigationProperty Name="LivestockList" Relationship="LGMD2iModel.FK_LivestockService01_LivestockList" FromRole="LivestockService01" ToRole="LivestockList" />
+        </EntityType>
+        <Association Name="FK_LivestockService01_LivestockList">
+          <End Type="LGMD2iModel.LivestockList" Multiplicity="0..1" Role="LivestockList" />
+          <End Type="LGMD2iModel.LivestockService01" Multiplicity="*" Role="LivestockService01" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LGMD2iModelStoreContainer" CdmEntityContainer="LGMD2iEntities">
+          <EntitySetMapping Name="LivestockList">
+            <EntityTypeMapping TypeName="IsTypeOf(LGMD2iModel.LivestockList)">
+              <MappingFragment StoreEntitySet="LivestockList">
+                <ScalarProperty Name="LivestockListID" ColumnName="LivestockListID" />
+                <ScalarProperty Name="LivestockName" ColumnName="LivestockName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LivestockService01">
+            <EntityTypeMapping TypeName="IsTypeOf(LGMD2iModel.LivestockService01)">
+              <MappingFragment StoreEntitySet="LivestockService01">
+                <ScalarProperty Name="LivestockServiceID" ColumnName="LivestockServiceID" />
+                <ScalarProperty Name="CuttingHoof" ColumnName="CuttingHoof" />
+                <ScalarProperty Name="Castration" ColumnName="Castration" />
+                <ScalarProperty Name="AI" ColumnName="AI" />
+                <ScalarProperty Name="CuttingHorn" ColumnName="CuttingHorn" />
+                <ScalarProperty Name="Branding" ColumnName="Branding" />
+                <ScalarProperty Name="CuttingTail" ColumnName="CuttingTail" />
+                <ScalarProperty Name="CuttingTeeth" ColumnName="CuttingTeeth" />
+                <ScalarProperty Name="CuttingBillBeak" ColumnName="CuttingBillBeak" />
+                <ScalarProperty Name="MonthlyRecordID" ColumnName="MonthlyRecordID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_LivestockService01_LivestockList" TypeName="LGMD2iModel.FK_LivestockService01_LivestockList" StoreEntitySet="LivestockService01">
+            <EndProperty Name="LivestockList">
+              <ScalarProperty Name="LivestockListID" ColumnName="LivestockID" />
+            </EndProperty>
+            <EndProperty Name="LivestockService01">
+              <ScalarProperty Name="LivestockServiceID" ColumnName="LivestockServiceID" />
+            </EndProperty>
+            <Condition ColumnName="LivestockID" IsNull="false" />
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="Model1" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <EntityTypeShape EntityType="LGMD2iModel.LivestockList" PointX="0.75" PointY="1.75" Width="1.5" Height="1.5956835937500002" IsExpanded="true" />
+        <EntityTypeShape EntityType="LGMD2iModel.LivestockService01" PointX="3" PointY="1" Width="1.5" Height="3.1340950520833331" IsExpanded="true" />
+        <AssociationConnector ManuallyRouted="false" Association="LGMD2iModel.FK_LivestockService01_LivestockList">
+          <ConnectorPoint PointX="2.25" PointY="2.5478417968750002" />
+          <ConnectorPoint PointX="3" PointY="2.5478417968750002" /></AssociationConnector></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

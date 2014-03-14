@@ -1,0 +1,4755 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LGMD
+</name>
+</assembly>
+<members>
+<member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsOthersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsAlizetiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMaharageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMahindiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMpungaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMtamaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsNganoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMaharageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMaizeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMpungaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMtamaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraNganoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraAlizetiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMazaoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraOthersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMasokoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMengineyoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSUfugajiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSUvuviDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideFangasiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideMaguguDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideNdegeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcidePanyaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideWaduduDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImplementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.HandOperatedImplements03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.ImplementsListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.Pestcide03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.PestcideListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsOthersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsAlizetiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMaharageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMahindiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMpungaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMtamaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsNganoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMaharageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMaizeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMpungaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMtamaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraNganoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraAlizetiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMazaoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraOthersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMasokoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMengineyoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSUfugajiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSUvuviRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideFangasiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideMaguguRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideNdegeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcidePanyaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideWaduduRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImplementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.HandOperatedImplements03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.ImplementsListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.Pestcide03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.PestcideListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsOthersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsAlizetiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMaharageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMahindiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMpungaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsMtamaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImprovedSeedsNganoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMaharageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMaizeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMpungaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraMtamaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraNganoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraAlizetiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMazaoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualLookupAinaYaMbeguBoraOthersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMasokoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSMengineyoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSUfugajiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillFFSUvuviRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideFangasiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideMaguguRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideNdegeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcidePanyaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillPestcideWaduduRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.appUspAnnualFillImplementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.HandOperatedImplements03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.ImplementsListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.Pestcide03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet.PestcideListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsOthersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsAlizetiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsMaharageTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsMahindiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsMpungaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsMtamaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImprovedSeedsNganoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraMaharageTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraMaizeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraMpungaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraMtamaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraNganoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraAlizetiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillFFSMazaoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualLookupAinaYaMbeguBoraOthersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillFFSMasokoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillFFSMengineyoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillFFSUfugajiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillFFSUvuviTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillPestcideFangasiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillPestcideMaguguTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillPestcideNdegeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillPestcidePanyaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillPestcideWaduduTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.appUspAnnualFillImplementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.HandOperatedImplements03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.ImplementsListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.Pestcide03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.PestcideListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.AnnuallyDataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.AnnuallyDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.AnnuallyDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.AnnuallyDataDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.AnnuallyDataDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.Carcass04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.LivestockSlaughListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.appUspDistrictQuarterFillCarcassWeightDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.Carcass04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.LivestockSlaughListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.appUspDistrictQuarterFillCarcassWeightRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.Carcass04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.LivestockSlaughListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet.appUspDistrictQuarterFillCarcassWeightRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSetTableAdapters.Carcass04TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSetTableAdapters.LivestockSlaughListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSetTableAdapters.appUspDistrictQuarterFillCarcassWeightTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.DistrictQuarterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.DistrictQuarterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.DistrictQuarterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.DistrictQuarterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:LGMD.ctrlOtherReportsLocal.#ctor">
+	<summary>
+ Required designer variable.
+ </summary>
+Private components As System.ComponentModel.IContainer = Nothing 'todo
+
+</member><member name="M:LGMD.ctrlOtherReportsLocal.LoadTreeViewItems(System.Windows.Forms.TreeNode)">
+	<summary>
+ Loads the collection items. This has to be deferred else starting is 
+ too expensive.
+ </summary>
+	<param name="node"></param>
+</member><member name="T:LGMD.ctrlOtherReportsLocal">
+	<summary>
+ Summary description for form.
+ </summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.MonthlyLookupTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.appUspMonthlyLookupTypeOfLivestockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.appUspMonthlyFillLivestockServicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.MonthlyLookupTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.appUspMonthlyLookupTypeOfLivestockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.appUspMonthlyFillLivestockServicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.MonthlyLookupTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.appUspMonthlyLookupTypeOfLivestockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet.appUspMonthlyFillLivestockServicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSetTableAdapters.MonthlyLookupTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSetTableAdapters.appUspMonthlyLookupTypeOfLivestockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSetTableAdapters.appUspMonthlyFillLivestockServicesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.MonthlyDataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.MonthlyDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.MonthlyDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.MonthlyDataDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.MonthlyDataDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreaLevelsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasDistrictsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasMtaaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasRegionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasVillagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasWardsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TargetiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ContractFarming03iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool02iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkin01iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilk01iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdLand02iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.IrrigationScheme03iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Livestock03iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool03iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughtered01iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.GrazingLand03iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroup02iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Implements03iDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnnualRecordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MonthlyRecordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.QuarterlyRecordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ActivityListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AiredPrograms03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsGrazedListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.BasicInformation03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ChemicalControl01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ContractFarming03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroup02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroupListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopSaccos02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropResidue03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DippingSprayingVaccination01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DistrictInfo05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ExtensionOfficers05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodCondition02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodSituation05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodStatusListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.GrazingLand03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImprovedSeeds03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.IrrigationScheme03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Livestock03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockMovement04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockPopulation05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryProcessListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MeatInspection01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MediaGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Medication01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PeopleWhoVisitTheVillage01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdLand02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilk01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilkListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkin01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkinListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.RecordInfoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SoilErosion02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SoilErosionListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Telecommunication03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ThreeDGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TVAndRadioStation03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WeatherCondition01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FFSGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FFSListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImprovedPasture03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeedGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeedListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SchemeGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SchemeListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeasonListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Group2DDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.OtherFarmersGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_configDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_data_forms_submittedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_area_levelsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_areasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_form_typesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_sectorsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblAppVersionControlDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblGroupRightsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblInstitutionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblRightsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_area_levels_configureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_area_levels_data_entryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_geo_listDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_geo_list_configureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_sector_listDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillEducationLevelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMovementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMarketingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillProductsMovementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersCropDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersLivestockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersOthersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillOxenizingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillWorkingEquipmentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillWorkingFacilitiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillAcaricidesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillAnimalFeedsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillReproductionInputDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet._appUspDistrictQuarterFillTreatment_Drugs_DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillVaccinesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillRadioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTVDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTVAndRadioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTelecomDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillLivestockInfrastructureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillFertilizerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillProcessingMachinesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillMachinesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillAnimalDrawnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillMachineryDrawnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ExtensionServiceProviders05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Oxenizing05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PlantHealth02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblUserGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_forms_submittedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspFillUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureFirstPartDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureFourthPartDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureThirdPartDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CommentsOfVillageOfficer01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropGroupListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughtered01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TargetImplementationAndCropPrices01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockService01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DrawnListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FertilizerListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImplementsListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MediaListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProcessingMachinesListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TelecomCompaListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.HandOperatedImplements03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalDrawn03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryDrawn03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Machines03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProcessingMachines03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Fertilizer03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.InfraListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockInfrastructure03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProductsMovement04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TwoDListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ThreeDListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedCropDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedOthersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillPlanningCommiteeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingAnimalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingHideDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingMeatDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingMilkDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockInfrastructure05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PlanningCommitee05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillFoodSituationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockMarketing04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsFeeds04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ReproductionInputs04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.EducationLevel05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingFacilities05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingFacilities051DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingEquipments05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProductsProcessing05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureSecondPartDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Irrigation02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreaLevelsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasDistrictsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasMtaaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasRegionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasVillagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasWardsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TargetiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ContractFarming03iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool02iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkin01iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilk01iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdLand02iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.IrrigationScheme03iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Livestock03iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool03iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughtered01iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.GrazingLand03iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroup02iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Implements03iRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnnualRecordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MonthlyRecordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.QuarterlyRecordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ActivityListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AiredPrograms03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsGrazedListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.BasicInformation03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ChemicalControl01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ContractFarming03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroup02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroupListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopSaccos02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropResidue03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DippingSprayingVaccination01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DistrictInfo05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ExtensionOfficers05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodCondition02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodSituation05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodStatusListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.GrazingLand03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImprovedSeeds03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.IrrigationScheme03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Livestock03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockMovement04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockPopulation05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryProcessListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MeatInspection01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MediaGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Medication01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PeopleWhoVisitTheVillage01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdLand02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilk01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilkListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkin01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkinListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.RecordInfoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SoilErosion02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SoilErosionListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Telecommunication03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ThreeDGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TVAndRadioStation03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WeatherCondition01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FFSGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FFSListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImprovedPasture03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeedGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeedListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SchemeGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SchemeListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeasonListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Group2DRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.OtherFarmersGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_configRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_data_forms_submittedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_area_levelsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_areasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_form_typesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_sectorsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblAppVersionControlRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblGroupRightsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblInstitutionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblRightsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_area_levels_configureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_area_levels_data_entryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_geo_listRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_geo_list_configureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_sector_listRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillEducationLevelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMovementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMarketingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillProductsMovementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersCropRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersLivestockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersOthersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillOxenizingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillWorkingEquipmentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillWorkingFacilitiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillAcaricidesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillAnimalFeedsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillReproductionInputRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet._appUspDistrictQuarterFillTreatment_Drugs_Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillVaccinesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillRadioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTVRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTVAndRadioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTelecomRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillLivestockInfrastructureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillFertilizerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillProcessingMachinesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillMachinesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillAnimalDrawnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillMachineryDrawnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ExtensionServiceProviders05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Oxenizing05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PlantHealth02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblUserGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_forms_submittedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspFillUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureFirstPartRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureFourthPartRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureThirdPartRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CommentsOfVillageOfficer01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropGroupListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughtered01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TargetImplementationAndCropPrices01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockService01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DrawnListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FertilizerListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImplementsListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MediaListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProcessingMachinesListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TelecomCompaListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.HandOperatedImplements03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalDrawn03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryDrawn03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Machines03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProcessingMachines03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Fertilizer03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.InfraListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockInfrastructure03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProductsMovement04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TwoDListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ThreeDListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedCropRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedOthersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillPlanningCommiteeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingAnimalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingHideRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingMeatRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingMilkRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockInfrastructure05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PlanningCommitee05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillFoodSituationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockMarketing04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsFeeds04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ReproductionInputs04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.EducationLevel05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingFacilities05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingFacilities051Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingEquipments05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProductsProcessing05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureSecondPartRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Irrigation02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreaLevelsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasDistrictsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasMtaaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasRegionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasVillagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AreasWardsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TargetiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ContractFarming03iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool02iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkin01iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilk01iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdLand02iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.IrrigationScheme03iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Livestock03iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool03iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughtered01iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.GrazingLand03iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroup02iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Implements03iRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnnualRecordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MonthlyRecordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.QuarterlyRecordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ActivityListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AiredPrograms03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsGrazedListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.BasicInformation03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ChemicalControl01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ContractFarming03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroup02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroupListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopSaccos02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropResidue03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DippingSprayingVaccination01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DistrictInfo05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ExtensionOfficers05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FarmersFieldSchool03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodCondition02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodSituation05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FoodStatusListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.GrazingLand03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImprovedSeeds03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.IrrigationScheme03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Livestock03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockMovement04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockPopulation05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryProcessListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MeatInspection01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MediaGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Medication01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PeopleWhoVisitTheVillage01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdLand02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilk01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdMilkListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkin01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProdSkinListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.RecordInfoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SoilErosion02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SoilErosionListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Telecommunication03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ThreeDGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TVAndRadioStation03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WeatherCondition01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CoopGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FFSGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FFSListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImprovedPasture03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeedGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeedListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SchemeGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SchemeListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.SeasonListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Group2DRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.OtherFarmersGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_configRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_data_forms_submittedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_area_levelsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_areasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_form_typesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tbl_setup_sectorsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblAppVersionControlRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblGroupRightsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblInstitutionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblRightsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_area_levels_configureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_area_levels_data_entryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_geo_listRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_geo_list_configureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_sector_listRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillEducationLevelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMovementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMarketingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillProductsMovementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersCropRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersLivestockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersOthersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillOxenizingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillWorkingEquipmentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillWorkingFacilitiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillAcaricidesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillAnimalFeedsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillReproductionInputRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet._appUspDistrictQuarterFillTreatment_Drugs_RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictQuarterFillVaccinesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillRadioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTVRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTVAndRadioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillTelecomRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillLivestockInfrastructureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillFertilizerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillProcessingMachinesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillMachinesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillAnimalDrawnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspAnnualFillMachineryDrawnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ExtensionServiceProviders05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Oxenizing05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PlantHealth02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblUserGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.tblUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.udp_forms_submittedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspFillUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureFirstPartRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureFourthPartRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureThirdPartRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CommentsOfVillageOfficer01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.CropGroupListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughtered01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TargetImplementationAndCropPrices01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockSlaughListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockService01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.DrawnListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.FertilizerListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ImplementsListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MediaListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProcessingMachinesListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TelecomCompaListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.HandOperatedImplements03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalDrawn03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.MachineryDrawn03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Machines03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProcessingMachines03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Fertilizer03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.InfraListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockInfrastructure03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProductsMovement04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.TwoDListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ThreeDListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedCropRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedOthersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillPlanningCommiteeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingAnimalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingHideRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingMeatRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillProductsProcessingMilkRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockInfrastructure05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.PlanningCommitee05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillFoodSituationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.LivestockMarketing04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.AnimalsFeeds04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ReproductionInputs04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.EducationLevel05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingFacilities05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingFacilities051RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.WorkingEquipments05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.ProductsProcessing05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.appUspDistrictAnnualFillLivestockInfrastructureSecondPartRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet.Irrigation02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreaLevelsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreasDistrictsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreasMtaaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreasRegionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreasVillagesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AreasWardsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TargetiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ContractFarming03iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FarmersFieldSchool02iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdSkin01iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdMilk01iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdLand02iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.IrrigationScheme03iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Livestock03iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FarmersFieldSchool03iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockSlaughtered01iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.GrazingLand03iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CoopGroup02iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Implements03iTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AnnualRecordTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MonthlyRecordTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.QuarterlyRecordTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ActivityListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AiredPrograms03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AnimalsGrazedListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AnimalsGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AnimalsListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.BasicInformation03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ChemicalControl01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ContractFarming03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CoopGroup02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CoopGroupListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CoopSaccos02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CropResidue03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CropGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.DippingSprayingVaccination01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.DistrictInfo05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ExtensionOfficers05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FarmersFieldSchool02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FarmersFieldSchool03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FoodCondition02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FoodSituation05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FoodStatusListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.GrazingLand03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ImprovedSeeds03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.IrrigationScheme03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Livestock03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockMovement04TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockPopulation05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MachineryProcessListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MeatInspection01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MediaGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Medication01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.PeopleWhoVisitTheVillage01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdLand02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdMilk01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdMilkListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdSkin01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProdSkinListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.RecordInfoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SoilErosion02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SoilErosionListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Telecommunication03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ThreeDGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TVAndRadioStation03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.WeatherCondition01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CoopGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FFSGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FFSListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ImprovedPasture03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SeedGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SeedListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SchemeGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SchemeListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.SeasonListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Group2DTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.OtherFarmersGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tbl_configTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tbl_data_forms_submittedTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tbl_setup_area_levelsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tbl_setup_areasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tbl_setup_form_typesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tbl_setup_sectorsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblAppVersionControlTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblGroupRightsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblInstitutionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblRightsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.udp_area_levels_configureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.udp_area_levels_data_entryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.udp_geo_listTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.udp_geo_list_configureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.udp_sector_listTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillEducationLevelTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillLivestockMovementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillLivestockMarketingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillProductsMovementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersCropTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersLivestockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersOthersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillLivestockInfrastructureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillOxenizingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillWorkingEquipmentsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillWorkingFacilitiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillAcaricidesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillAnimalFeedsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillReproductionInputTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillTreatment_Drugs_TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictQuarterFillVaccinesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillRadioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTVTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTVAndRadioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTelecomTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillLivestockInfrastructureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillFertilizerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillProcessingMachinesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillMachinesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillAnimalDrawnTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillMachineryDrawnTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ExtensionServiceProviders05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Oxenizing05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.PlantHealth02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblUserGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.tblUsersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.udp_forms_submittedTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspFillUsersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillLivestockInfrastructureFirstPartTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillLivestockInfrastructureFourthPartTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillLivestockInfrastructureThirdPartTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CommentsOfVillageOfficer01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.CropGroupListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockSlaughtered01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TargetImplementationAndCropPrices01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockSlaughListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockService01TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.DrawnListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.FertilizerListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ImplementsListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MachineryListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MediaListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProcessingMachinesListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TelecomCompaListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.HandOperatedImplements03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AnimalDrawn03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.MachineryDrawn03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Machines03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProcessingMachines03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Fertilizer03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.InfraListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockInfrastructure03TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProductsMovement04TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TwoDListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ThreeDListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedCropTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedOthersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillPlanningCommiteeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillProductsProcessingAnimalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillProductsProcessingHideTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillProductsProcessingMeatTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillProductsProcessingMilkTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockInfrastructure05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.PlanningCommitee05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillFoodSituationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.LivestockMarketing04TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.AnimalsFeeds04TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ReproductionInputs04TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.EducationLevel05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.WorkingFacilities05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.WorkingFacilities051TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.WorkingEquipments05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.ProductsProcessing05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.appUspDistrictAnnualFillLivestockInfrastructureSecondPartTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.Irrigation02TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.QueriesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.LGMDdataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.LGMDdataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.LGMDdataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.LGMDdataDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:LGMD.DependenciesForm.AddChildren(System.Windows.Forms.TreeNode,Microsoft.SqlServer.Management.Smo.DependencyTreeNode)">
+	<summary>
+ Adds the dependency tree to the treenode (recursive)
+ </summary>
+	<param name="parent"></param>
+	<param name="d"></param>
+</member><member name="M:LGMD.DependenciesForm.WhereUsedToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Event handler for where used menu item.
+ Adds a "USED BY" node and performs a dependency discovery after which
+ all dependents are added to the "USED BY" node.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="T:LGMD.DistrictAnnualDataSet.ExtensionOfficersTrained05DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.FFSGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedCropDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedOthersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.ExtensionOfficersTrained05Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.FFSGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedCropRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedOthersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.ExtensionOfficersTrained05RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.FFSGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedCropRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet.appUspDistrictAnnualFillExtensionOfficersTrainedOthersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.ExtensionOfficersTrained05TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.FFSGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedCropTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedFisheryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedIrrigationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedLivestockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedMarketingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.appUspDistrictAnnualFillExtensionOfficersTrainedOthersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.DistrictAnnualDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.DistrictAnnualDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.DistrictAnnualDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.DistrictAnnualDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.DistrictAnnualDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet.QuarterlyLookupTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet.appUspQuarterlyLookupNameOfPestsDiseaseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet.QuarterlyLookupTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet.appUspQuarterlyLookupNameOfPestsDiseaseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet.QuarterlyLookupTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet.appUspQuarterlyLookupNameOfPestsDiseaseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSetTableAdapters.QuarterlyLookupTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSetTableAdapters.appUspQuarterlyLookupNameOfPestsDiseaseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.QuarterlyDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.QuarterlyDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.QuarterlyDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.QuarterlyDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.QuarterlyDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:LGMD.ctrlReportsLocal.strReportName">
+	<summary>
+ Required designer variable.
+ </summary>
+Private components As System.ComponentModel.IContainer = Nothing 'todo
+
+</member><member name="M:LGMD.ctrlReportsLocal.LoadTreeViewItems(System.Windows.Forms.TreeNode)">
+	<summary>
+ Loads the collection items. This has to be deferred else starting is
+ too expensive.
+ </summary>
+	<param name="node"></param>
+</member><member name="T:LGMD.ctrlReportsLocal">
+	<summary>
+ Summary description for form.
+ </summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookupErosionControlMeasuresDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupDipSprayDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupVaccineDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupTypeOfLivestockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupTypeOfAnimalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSeverityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupLivestockSlaughDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupCondemnationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnitsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSeasonIrrigatedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSourceOfBudgetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupTypeOfOwnershipDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupStatusOfSchemeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupNameOfPestsDiseaseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnits1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupCropsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnits2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookupErosionControlMeasuresRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupDipSprayRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupVaccineRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupTypeOfLivestockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupTypeOfAnimalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSeverityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupLivestockSlaughRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupCondemnationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnitsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSeasonIrrigatedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSourceOfBudgetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupTypeOfOwnershipRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupStatusOfSchemeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupNameOfPestsDiseaseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnits1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupCropsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnits2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookupErosionControlMeasuresRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupDipSprayRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupVaccineRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupTypeOfLivestockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupTypeOfAnimalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSeverityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupLivestockSlaughRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupCondemnationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnitsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSeasonIrrigatedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupSourceOfBudgetRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupTypeOfOwnershipRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupStatusOfSchemeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspMonthlyLookupNameOfPestsDiseaseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnits1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupCropsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspLookupUnits2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspQuarterLookUpTypeOfErosionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspQuarterLookupErosionControlMeasuresTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupDipSprayTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupVaccineTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupTypeOfLivestockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupTypeOfAnimalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupSeverityTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupLivestockSlaughTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupCondemnationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupUnitsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupSeasonIrrigatedTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupSourceOfBudgetTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupTypeOfOwnershipTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupStatusOfSchemeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspMonthlyLookupNameOfPestsDiseaseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupUnits1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupCropsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspLookupUnits2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.LookupTableDataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.LookupTableDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.LookupTableDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.LookupTableDataDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.CropGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.RecordInfoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.TargetImplementationAndCropPrices06DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillCerealDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillKundeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMafutaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMatundaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMauaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMbogambogaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMengineyoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMiziziDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillViungoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillViwandaniDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.CropGroupListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.CropGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.RecordInfoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.TargetImplementationAndCropPrices06Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillCerealRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillKundeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMafutaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMatundaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMauaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMbogambogaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMengineyoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMiziziRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillViungoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillViwandaniRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.CropGroupListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.CropGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.RecordInfoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.TargetImplementationAndCropPrices06RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillCerealRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillKundeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMafutaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMatundaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMauaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMbogambogaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMengineyoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillMiziziRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillViungoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.appUspAnnualTargetFillViwandaniRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet.CropGroupListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.CropGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.RecordInfoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.TargetImplementationAndCropPrices06TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillCerealTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillKundeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillMafutaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillMatundaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillMauaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillMbogambogaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillMengineyoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillMiziziTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillViungoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.appUspAnnualTargetFillViwandaniTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.CropGroupListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(LGMD.AnnualTargetDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(LGMD.AnnualTargetDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(LGMD.AnnualTargetDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.UpdateAll(LGMD.AnnualTargetDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:LGMD.AnnualTargetDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:LGMD.ctrlDatabaseTasks.RestoreButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Restore the complete database to disk
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:LGMD.ctrlDatabaseTasks.ShowDatabases(System.Boolean)">
+	<summary>
+ Show the current databases on the server
+ </summary>
+	<param name="selectDefault"></param>
+	<remarks></remarks>
+</member><member name="P:LGMD.ctrlTreeView.DataTextField">
+	<summary>
+ The name of the column holding the Text Value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LGMD.ctrlTreeView.DataTagField">
+	<summary>
+ The name of the column holding the Text Value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LGMD.ctrlTreeView.DataFieldID">
+	<summary>
+ The name of the Column holding the ID value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LGMD.ctrlTreeView.DataFieldParentID">
+	<summary>
+ The name of the Column holding the ParentID value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:LGMD.ctrlTreeView.TableName">
+	<summary>
+ The name of the Column holding the ParentID value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LGMD.ctrlTreeView.LoadTreeView(System.Data.DataSet)">
+	<summary>
+ Populate Tree View
+ </summary>
+	<param name="oDS">Data Set</param>
+	<remarks></remarks>
+</member><member name="M:LGMD.ctrlTreeView.RecursivelyLoadTree(System.Data.DataRow,System.Windows.Forms.TreeNode@)">
+	<summary>
+ Recursively Load ChildNodes for each Node using the Dataset relation
+ </summary>
+	<param name="oDataRow">Data Row</param>
+	<param name="oNode">Parent Node</param>
+	<remarks></remarks>
+</member><member name="M:LGMD.ctrlDatabaseDetails.#ctor">
+	<summary>
+ Required designer variable.
+ </summary>
+Private components As System.ComponentModel.IContainer = Nothing 'todo
+
+</member><member name="M:LGMD.ctrlDatabaseDetails.LoadTreeViewItems(System.Windows.Forms.TreeNode)">
+	<summary>
+ Loads the collection items. This has to be deferred else starting is 
+ too expensive.
+ </summary>
+	<param name="node"></param>
+</member><member name="T:LGMD.ctrlDatabaseDetails">
+	<summary>
+ Summary description for form.
+ </summary>
+</member><member name="P:LGMD.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.AppTitle">
+	<summary>
+  Looks up a localized string similar to AppTitle.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.BackingUp">
+	<summary>
+  Looks up a localized string similar to BackingUp.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.BackupComplete">
+	<summary>
+  Looks up a localized string similar to BackupComplete.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.black">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.black1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.blue">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.blue1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Columns">
+	<summary>
+  Looks up a localized string similar to Columns.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.CompletedPercent">
+	<summary>
+  Looks up a localized string similar to CompletedPercent.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.DatabaseDeleted">
+	<summary>
+  Looks up a localized string similar to DatabaseDeleted.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Databases">
+	<summary>
+  Looks up a localized string similar to Databases.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.DataType">
+	<summary>
+  Looks up a localized string similar to DataType.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.DateCreated">
+	<summary>
+  Looks up a localized string similar to DateCreated.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.DummyNode">
+	<summary>
+  Looks up a localized string similar to DummyNode.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.DuplicateDatabaseName">
+	<summary>
+  Looks up a localized string similar to DuplicateDatabaseName.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.GeneratedScript">
+	<summary>
+  Looks up a localized string similar to GeneratedScript.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.green">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.green1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.internetconnection">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.library">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.NoDatabaseName">
+	<summary>
+  Looks up a localized string similar to NoDatabaseName.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.NoSqlServers">
+	<summary>
+  Looks up a localized string similar to NoSqlServers.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ObjectName">
+	<summary>
+  Looks up a localized string similar to ObjectName.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.oEdit21">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ProgressCharacter">
+	<summary>
+  Looks up a localized string similar to ProgressCharacter.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.PropertyName">
+	<summary>
+  Looks up a localized string similar to PropertyName.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ReallyDrop">
+	<summary>
+  Looks up a localized string similar to Are you really want to drop ?.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ReallyRestore">
+	<summary>
+  Looks up a localized string similar to Are you really want to restore?.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Reports">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.RestoreComplete">
+	<summary>
+  Looks up a localized string similar to RestoreComplete.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Restoring">
+	<summary>
+  Looks up a localized string similar to Restoring.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Server">
+	<summary>
+  Looks up a localized string similar to Server.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ServerMessage">
+	<summary>
+  Looks up a localized string similar to ServerMessage.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ShortcutIcon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.SqlError">
+	<summary>
+  Looks up a localized string similar to SqlError.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.SqlInfoMessage">
+	<summary>
+  Looks up a localized string similar to SqlInfoMessage.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.SqlStatementExecuted">
+	<summary>
+  Looks up a localized string similar to SqlStatementExecuted.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.StateChanged">
+	<summary>
+  Looks up a localized string similar to StateChanged.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Status_Open">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Thumbs">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.ToolWorkOffline">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.TurnOffButton">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.TZLogo_small1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.UnrecognizedType">
+	<summary>
+  Looks up a localized string similar to UnrecognizedType.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Urn">
+	<summary>
+  Looks up a localized string similar to Urn.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.UsedBy">
+	<summary>
+  Looks up a localized string similar to UsedBy.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.user">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.users">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.Value">
+	<summary>
+  Looks up a localized string similar to Value.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.yellow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:LGMD.My.Resources.Resources.yellow1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:LGMD.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

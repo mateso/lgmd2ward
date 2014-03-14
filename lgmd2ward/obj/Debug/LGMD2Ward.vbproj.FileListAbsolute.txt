@@ -1,0 +1,284 @@
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.exe.config
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\bin\Debug\LGMD.vshost.exe
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\LGMD2iDataModel.mdf
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1700.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1701.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1702.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1703.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1704.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1705.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1706.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1707.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1708.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1709.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1710.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1711.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1712.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1713.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1714.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1715.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1716.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1717.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1720.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1722.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1723.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1724.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1725.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1726.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1727.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1728.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1729.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1730.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1731.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1732.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1733.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1734.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1735.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1736.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1737.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1738.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1739.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1740.txt
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\AnnuallyWardReport.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\MonthlyWardReport.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\QuarterlyWardReport.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\PrintoutOfAnnuallyASPD.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\PrintoutOfMonthlyASPD.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\PrintoutOfQuarterlyASPD.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\WardAnnuallyReportSubmissionStatus.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\WardMonthlyReportSubmissionStatus.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\WardQuarterlyReportSubmissionStatus.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\DistrictAnnuallyReportSubmissionStatus.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\DistrictQuarterlyReportSubmissionStatus.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\ReportAnnual.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\ReportMonthly.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\ReportQuarter.rdl
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.exe.manifest
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.application
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.exe
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.xml
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\HEMISEntities.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\RdlViewer.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\SyncScopeProvision.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.FileSystem.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\HEMISEntities.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\HEMISEntities.xml
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\RdlViewer.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\SyncScopeProvision.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.xml
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.FileSystem.xml
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD2Ward.vbprojResolveAssemblyReference.cache
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddForm.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddLookupItem.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddUser5.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAggregateData.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict02Page01.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict02Page02.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict02Page03.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page01.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page02.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page03.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page04.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page05.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page06.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlEditForm.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlFigureAnalysis.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlGeographicalRegions.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlOtherReportsLocal.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlReportsLocal.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddUser.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlChangePassword.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDatabaseDetails.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDatabaseTasks.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDatabaseUtilities.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlSynchronizationStatus.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page01.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page02.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page03.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page04.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page05.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page06.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page07.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page08.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page01.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page02.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page03.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page04.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page05.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page01.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page02.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page03.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page04.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page05.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page06.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page07.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page08.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page09.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page10.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page01.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page02.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page03.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page04.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmConfig.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmDatabaseUtilities.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmLogin.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.MainControl.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlManageDatabases.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.DependenciesForm.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmMain.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.Resources.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD2Ward.vbproj.GenerateResource.Cache
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.TrustInfo.xml
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.exe.manifest
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.application
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.exe
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.xml
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlPriorEstimate.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.exe.config
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.exe
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.xml
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD2Ward.vbprojResolveAssemblyReference.cache
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddForm.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddLookupItem.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddUser5.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAggregateData.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict02Page01.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict02Page02.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict02Page03.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page01.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page02.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page03.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page04.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page05.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDistrict03Page06.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlEditForm.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlFigureAnalysis.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlGeographicalRegions.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlOtherReportsLocal.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlPriorEstimate.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlReportsLocal.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlAddUser.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlChangePassword.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDatabaseDetails.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDatabaseTasks.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlDatabaseUtilities.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlSynchronizationStatus.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page01.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page02.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page03.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page04.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page05.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page06.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page07.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard01Page08.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page01.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page02.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page03.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page04.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard02Page05.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page01.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page02.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page03.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page04.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page05.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page06.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page07.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page08.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page09.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard03Page10.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page01.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page02.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page03.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlWard06Page04.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmConfig.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmDatabaseUtilities.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmLogin.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.MainControl.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlManageDatabases.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.DependenciesForm.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.frmMain.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.Resources.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD2Ward.vbproj.GenerateResource.Cache
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\bin\Debug\LGMD.vshost.exe
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\LGMD2iDataModel.mdf
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1700.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1701.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1702.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1703.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1704.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1705.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1706.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1707.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1708.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1709.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1710.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1711.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1712.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1713.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1714.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1715.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1716.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1717.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1720.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1722.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1723.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1724.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1725.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1726.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1727.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1728.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1729.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1730.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1731.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1732.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1733.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1734.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1735.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1736.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1737.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1738.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1739.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Data\Script1740.txt
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\AnnuallyWardReport.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\MonthlyWardReport.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\QuarterlyWardReport.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\PrintoutOfAnnuallyASPD.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\PrintoutOfMonthlyASPD.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\PrintoutOfQuarterlyASPD.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\WardAnnuallyReportSubmissionStatus.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\WardMonthlyReportSubmissionStatus.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\WardQuarterlyReportSubmissionStatus.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\DistrictAnnuallyReportSubmissionStatus.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\DistrictQuarterlyReportSubmissionStatus.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\ReportAnnual.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\ReportMonthly.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Reports\ReportQuarter.rdl
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.exe.manifest
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.application
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.exe
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\LGMD.xml
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\HEMISEntities.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\RdlViewer.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\SyncScopeProvision.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.FileSystem.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\HEMISEntities.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\HEMISEntities.xml
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\RdlViewer.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\SyncScopeProvision.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.xml
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\bin\Debug\System.IO.Compression.FileSystem.xml
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.TrustInfo.xml
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.exe.manifest
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.application

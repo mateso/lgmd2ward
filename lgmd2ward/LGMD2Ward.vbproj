@@ -1,0 +1,1407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B958109-A3F7-4991-8EC4-9B1D281B4528}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LGMD.My.MyApplication</StartupObject>
+    <RootNamespace>LGMD</RootNamespace>
+    <AssemblyName>LGMD</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>C772223F66D256D5C0F1BE0F92F67215C877C5D0</ManifestCertificateThumbprint>
+    <ManifestKeyFile>LGMD2Ward_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\mateso\Documents\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>LGMD2i</ProductName>
+    <PublisherName>LGMD2i</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.7.4.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LGMD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LGMD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\LGMD2i.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.IO.Compression.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnnuallyDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnuallyDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnnuallyDataDataSet.vb">
+      <DependentUpon>AnnuallyDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnnualTargetDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnualTargetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ApplicationGlobal.vb" />
+    <Compile Include="CalenderColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctrlAddForm.designer.vb">
+      <DependentUpon>ctrlAddForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlAddForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlAddLookupItem.Designer.vb">
+      <DependentUpon>ctrlAddLookupItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlAddLookupItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlAddUser5.Designer.vb">
+      <DependentUpon>ctrlAddUser5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlAddUser5.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlAggregateData.Designer.vb">
+      <DependentUpon>ctrlAggregateData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlAggregateData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict02Page01.designer.vb">
+      <DependentUpon>ctrlDistrict02Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict02Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict02Page02.designer.vb">
+      <DependentUpon>ctrlDistrict02Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict02Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict02Page03.designer.vb">
+      <DependentUpon>ctrlDistrict02Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict02Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page01.designer.vb">
+      <DependentUpon>ctrlDistrict03Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page02.Designer.vb">
+      <DependentUpon>ctrlDistrict03Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page03.Designer.vb">
+      <DependentUpon>ctrlDistrict03Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page04.designer.vb">
+      <DependentUpon>ctrlDistrict03Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page05.designer.vb">
+      <DependentUpon>ctrlDistrict03Page05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page05.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page06.designer.vb">
+      <DependentUpon>ctrlDistrict03Page06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict03Page06.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlEditForm.designer.vb">
+      <DependentUpon>ctrlEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlEditForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlFigureAnalysis.Designer.vb">
+      <DependentUpon>ctrlFigureAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlFigureAnalysis.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlGeographicalRegions.Designer.vb">
+      <DependentUpon>ctrlGeographicalRegions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlGeographicalRegions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlOtherReportsLocal.designer.vb">
+      <DependentUpon>ctrlOtherReportsLocal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlOtherReportsLocal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPriorEstimate.Designer.vb">
+      <DependentUpon>ctrlPriorEstimate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlPriorEstimate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlReportControl.vb" />
+    <Compile Include="ctrlReportsLocal.designer.vb">
+      <DependentUpon>ctrlReportsLocal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlReportsLocal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlAddUser.designer.vb">
+      <DependentUpon>ctrlAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlAddUser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlChangePassword.designer.vb">
+      <DependentUpon>ctrlChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlChangePassword.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDatabaseDetails.designer.vb">
+      <DependentUpon>ctrlDatabaseDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDatabaseDetails.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDatabaseTasks.designer.vb">
+      <DependentUpon>ctrlDatabaseTasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDatabaseTasks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDatabaseUtilities.designer.vb">
+      <DependentUpon>ctrlDatabaseUtilities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDatabaseUtilities.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlSynchronizationStatus.Designer.vb">
+      <DependentUpon>ctrlSynchronizationStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlSynchronizationStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page01.designer.vb">
+      <DependentUpon>ctrlWard01Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page02.designer.vb">
+      <DependentUpon>ctrlWard01Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page03.Designer.vb">
+      <DependentUpon>ctrlWard01Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page04.Designer.vb">
+      <DependentUpon>ctrlWard01Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page05.designer.vb">
+      <DependentUpon>ctrlWard01Page05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page05.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page06.designer.vb">
+      <DependentUpon>ctrlWard01Page06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page06.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page07.Designer.vb">
+      <DependentUpon>ctrlWard01Page07.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page07.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard01Page08.designer.vb">
+      <DependentUpon>ctrlWard01Page08.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard01Page08.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard02Page01.designer.vb">
+      <DependentUpon>ctrlWard02Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard02Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard02Page02.designer.vb">
+      <DependentUpon>ctrlWard02Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard02Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard02Page03.designer.vb">
+      <DependentUpon>ctrlWard02Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard02Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard02Page04.designer.vb">
+      <DependentUpon>ctrlWard02Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard02Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard02Page05.designer.vb">
+      <DependentUpon>ctrlWard02Page05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard02Page05.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page01.designer.vb">
+      <DependentUpon>ctrlWard03Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page02.designer.vb">
+      <DependentUpon>ctrlWard03Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page03.designer.vb">
+      <DependentUpon>ctrlWard03Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page04.designer.vb">
+      <DependentUpon>ctrlWard03Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page05.designer.vb">
+      <DependentUpon>ctrlWard03Page05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page05.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page06.designer.vb">
+      <DependentUpon>ctrlWard03Page06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page06.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page07.designer.vb">
+      <DependentUpon>ctrlWard03Page07.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page07.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page08.Designer.vb">
+      <DependentUpon>ctrlWard03Page08.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page08.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page09.designer.vb">
+      <DependentUpon>ctrlWard03Page09.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page09.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard03Page10.designer.vb">
+      <DependentUpon>ctrlWard03Page10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard03Page10.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard06Page01.designer.vb">
+      <DependentUpon>ctrlWard06Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard06Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard06Page02.Designer.vb">
+      <DependentUpon>ctrlWard06Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard06Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard06Page03.Designer.vb">
+      <DependentUpon>ctrlWard06Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard06Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlWard06Page04.Designer.vb">
+      <DependentUpon>ctrlWard06Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlWard06Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DistrictAggregatedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DistrictAggregatedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DistrictAggregatedDataSet.vb">
+      <DependentUpon>DistrictAggregatedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DistrictAnnualDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DistrictAnnualDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DistrictQuarterDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DistrictQuarterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DistrictQuarterDataSet.vb">
+      <DependentUpon>DistrictQuarterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionMessageBox.vb" />
+    <Compile Include="frmConfig.designer.vb">
+      <DependentUpon>frmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatabaseUtilities.Designer.vb">
+      <DependentUpon>frmDatabaseUtilities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabaseUtilities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoinView.vb" />
+    <Compile Include="LGMDdataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGMDdataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LGMDdataDataSet.vb">
+      <DependentUpon>LGMDdataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LookupTableDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LookupTableDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LookupTableDataDataSet.vb">
+      <DependentUpon>LookupTableDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainControl.designer.vb">
+      <DependentUpon>MainControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="modPages.vb" />
+    <Compile Include="ctrlManageDatabases.designer.vb">
+      <DependentUpon>ctrlManageDatabases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlManageDatabases.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlTreeView.designer.vb">
+      <DependentUpon>ctrlTreeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlTreeView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomIdentity.vb" />
+    <Compile Include="DependenciesForm.designer.vb">
+      <DependentUpon>DependenciesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DependenciesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginManager.vb" />
+    <Compile Include="modConfig.vb" />
+    <Compile Include="modGeneral.vb" />
+    <Compile Include="modGlobals.vb" />
+    <Compile Include="modSaveLoad.vb" />
+    <Compile Include="MonthlyDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonthlyDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuarterlyDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuarterlyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctrlAddForm.resx">
+      <DependentUpon>ctrlAddForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlAddLookupItem.resx">
+      <DependentUpon>ctrlAddLookupItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlAddUser5.resx">
+      <DependentUpon>ctrlAddUser5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlAggregateData.resx">
+      <DependentUpon>ctrlAggregateData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict02Page01.resx">
+      <DependentUpon>ctrlDistrict02Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict02Page02.resx">
+      <DependentUpon>ctrlDistrict02Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict02Page03.resx">
+      <DependentUpon>ctrlDistrict02Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict03Page01.resx">
+      <DependentUpon>ctrlDistrict03Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict03Page02.resx">
+      <DependentUpon>ctrlDistrict03Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict03Page03.resx">
+      <DependentUpon>ctrlDistrict03Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict03Page04.resx">
+      <DependentUpon>ctrlDistrict03Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict03Page05.resx">
+      <DependentUpon>ctrlDistrict03Page05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict03Page06.resx">
+      <DependentUpon>ctrlDistrict03Page06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlEditForm.resx">
+      <DependentUpon>ctrlEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlFigureAnalysis.resx">
+      <DependentUpon>ctrlFigureAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlGeographicalRegions.resx">
+      <DependentUpon>ctrlGeographicalRegions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlOtherReportsLocal.resx">
+      <DependentUpon>ctrlOtherReportsLocal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlPriorEstimate.resx">
+      <DependentUpon>ctrlPriorEstimate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlReportsLocal.resx">
+      <DependentUpon>ctrlReportsLocal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlAddUser.resx">
+      <DependentUpon>ctrlAddUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlChangePassword.resx">
+      <DependentUpon>ctrlChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDatabaseDetails.resx">
+      <DependentUpon>ctrlDatabaseDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDatabaseTasks.resx">
+      <DependentUpon>ctrlDatabaseTasks.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDatabaseUtilities.resx">
+      <DependentUpon>ctrlDatabaseUtilities.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlSynchronizationStatus.resx">
+      <DependentUpon>ctrlSynchronizationStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page01.resx">
+      <DependentUpon>ctrlWard01Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page02.resx">
+      <DependentUpon>ctrlWard01Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page03.resx">
+      <DependentUpon>ctrlWard01Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page04.resx">
+      <DependentUpon>ctrlWard01Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page05.resx">
+      <DependentUpon>ctrlWard01Page05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page06.resx">
+      <DependentUpon>ctrlWard01Page06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page07.resx">
+      <DependentUpon>ctrlWard01Page07.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard01Page08.resx">
+      <DependentUpon>ctrlWard01Page08.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard02Page01.resx">
+      <DependentUpon>ctrlWard02Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard02Page02.resx">
+      <DependentUpon>ctrlWard02Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard02Page03.resx">
+      <DependentUpon>ctrlWard02Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard02Page04.resx">
+      <DependentUpon>ctrlWard02Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard02Page05.resx">
+      <DependentUpon>ctrlWard02Page05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page01.resx">
+      <DependentUpon>ctrlWard03Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page02.resx">
+      <DependentUpon>ctrlWard03Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page03.resx">
+      <DependentUpon>ctrlWard03Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page04.resx">
+      <DependentUpon>ctrlWard03Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page05.resx">
+      <DependentUpon>ctrlWard03Page05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page06.resx">
+      <DependentUpon>ctrlWard03Page06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page07.resx">
+      <DependentUpon>ctrlWard03Page07.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page08.resx">
+      <DependentUpon>ctrlWard03Page08.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page09.resx">
+      <DependentUpon>ctrlWard03Page09.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard03Page10.resx">
+      <DependentUpon>ctrlWard03Page10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard06Page01.resx">
+      <DependentUpon>ctrlWard06Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard06Page02.resx">
+      <DependentUpon>ctrlWard06Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard06Page03.resx">
+      <DependentUpon>ctrlWard06Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlWard06Page04.resx">
+      <DependentUpon>ctrlWard06Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfig.resx">
+      <DependentUpon>frmConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatabaseUtilities.resx">
+      <DependentUpon>frmDatabaseUtilities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControl.resx">
+      <DependentUpon>MainControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlManageDatabases.resx">
+      <DependentUpon>ctrlManageDatabases.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DependenciesForm.resx">
+      <DependentUpon>DependenciesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\LGMD.vshost.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\LGMD2iDataModel.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1700.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1701.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1702.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1703.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1704.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1705.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1706.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1707.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1708.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1709.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1710.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1711.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1712.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1713.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1714.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1715.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1716.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1717.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1720.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1722.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1723.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1724.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1725.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1726.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1727.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1728.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1729.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1730.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1731.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1732.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1733.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1734.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1735.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1736.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1737.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1738.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1739.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Script1740.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\jicaLogo.jpg" />
+    <Content Include="Resources\jicaLogoo.jpg" />
+    <None Include="Resources\jicaLogoo1.jpg" />
+    <Content Include="Resources\LGMD2i.ico" />
+    <Content Include="Resources\logOffIcon.ico" />
+    <None Include="AnnuallyDataDataSet.xsc">
+      <DependentUpon>AnnuallyDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnnuallyDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnnuallyDataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnnuallyDataDataSet.xss">
+      <DependentUpon>AnnuallyDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnnualTargetDataSet.xsc">
+      <DependentUpon>AnnualTargetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnnualTargetDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnnualTargetDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnnualTargetDataSet.xss">
+      <DependentUpon>AnnualTargetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="DistrictAggregatedDataSet.xsc">
+      <DependentUpon>DistrictAggregatedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DistrictAggregatedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DistrictAggregatedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DistrictAggregatedDataSet.xss">
+      <DependentUpon>DistrictAggregatedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DistrictAnnualDataSet.xsc">
+      <DependentUpon>DistrictAnnualDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DistrictAnnualDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DistrictAnnualDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DistrictAnnualDataSet.xss">
+      <DependentUpon>DistrictAnnualDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DistrictQuarterDataSet.xsc">
+      <DependentUpon>DistrictQuarterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DistrictQuarterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DistrictQuarterDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DistrictQuarterDataSet.xss">
+      <DependentUpon>DistrictQuarterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LGMD2Ward_TemporaryKey.pfx" />
+    <None Include="MonthlyDataDataSet.xsc">
+      <DependentUpon>MonthlyDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MonthlyDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonthlyDataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MonthlyDataDataSet.xss">
+      <DependentUpon>MonthlyDataDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="Reports\AnnuallyWardReport.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\MonthlyWardReport.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\QuarterlyWardReport.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\app.manifest" />
+    <None Include="QuarterlyDataSet.xsc">
+      <DependentUpon>QuarterlyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuarterlyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuarterlyDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuarterlyDataSet.xss">
+      <DependentUpon>QuarterlyDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="Reports\PrintoutOfAnnuallyASPD.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\PrintoutOfMonthlyASPD.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\PrintoutOfQuarterlyASPD.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\WardAnnuallyReportSubmissionStatus.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\WardMonthlyReportSubmissionStatus.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\WardQuarterlyReportSubmissionStatus.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\DistrictAnnuallyReportSubmissionStatus.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\DistrictQuarterlyReportSubmissionStatus.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\TZLogo small1.png" />
+    <None Include="Resources\TZLogo small.png" />
+    <None Include="LookupTableDataDataSet.xsc">
+      <DependentUpon>LookupTableDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LookupTableDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LookupTableDataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LookupTableDataDataSet.xss">
+      <DependentUpon>LookupTableDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="LGMDdataDataSet.xsc">
+      <DependentUpon>LGMDdataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LGMDdataDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LGMDdataDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LGMDdataDataSet.xss">
+      <DependentUpon>LGMDdataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Reports\ReportAnnual.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\ReportMonthly.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\ReportQuarter.rdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.10.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 R2 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SyncFX21Core%28x86%29">
+      <Visible>False</Visible>
+      <ProductName>SyncFX21Core%28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SyncFX21DatabaseProviders%28x86%29">
+      <Visible>False</Visible>
+      <ProductName>SyncFX21DatabaseProviders%28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SyncFX21ProviderServices%28x86%29">
+      <Visible>False</Visible>
+      <ProductName>SyncFX21ProviderServices%28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SynchFX21Core_x64">
+      <Visible>False</Visible>
+      <ProductName>SynchFX21Core_x64</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SynchFX21DatabaseProviders%28x64%29">
+      <Visible>False</Visible>
+      <ProductName>SynchFX21DatabaseProviders%28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SynchFX21ProviderServices%28x64%29">
+      <Visible>False</Visible>
+      <ProductName>SynchFX21ProviderServices%28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="internetconnection.ico" />
+    <Content Include="library.ico" />
+    <None Include="Resources\yellow1.jpg" />
+    <None Include="Resources\yellow.jpg" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\user.ico" />
+    <None Include="Resources\TZLogo small.bmp" />
+    <None Include="Resources\TurnOffButton.bmp" />
+    <None Include="Resources\ToolWorkOffline.ico" />
+    <None Include="Resources\Status.Open.ico" />
+    <None Include="Resources\Reports.ico" />
+    <None Include="Resources\oEdit21.ico" />
+    <None Include="Resources\library.ico" />
+    <None Include="Resources\internetconnection.ico" />
+    <None Include="Resources\green1.jpg" />
+    <None Include="Resources\green.jpg" />
+    <None Include="Resources\blue1.jpg" />
+    <None Include="Resources\blue.jpg" />
+    <None Include="Resources\black1.jpg" />
+    <None Include="Resources\black.jpg" />
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HEMISEntities\HEMISEntities.vbproj">
+      <Project>{4D3FCAFF-B217-44C2-B43D-94113998F68C}</Project>
+      <Name>HEMISEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RdlViewer\RdlViewer.csproj">
+      <Project>{41F2BBE2-AD3F-40BD-8980-3DA63F31DE1D}</Project>
+      <Name>RdlViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SyncScopeProvision\SyncScopeProvision.csproj">
+      <Project>{ad485c7b-769f-4fd2-8d57-361508bb9fb6}</Project>
+      <Name>SyncScopeProvision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Data\LGMD2iDataModel.mdf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ConnectionInfo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Dmf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.Sdk.Sfc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SqlParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.RegSvrEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ServiceBrokerEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Smo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SmoExtended">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Synchronization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Synchronization.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Synchronization.Data.SqlServer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="Publish\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

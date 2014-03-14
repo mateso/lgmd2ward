@@ -1,0 +1,72 @@
+F:\Procurement\RdlViewer\bin\Debug\RdlViewer.pdb
+F:\Procurement\RdlViewer\obj\Debug\ResolveAssemblyReference.cache
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.ConnectionDialog.resources
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.ParameterDialog.resources
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.Properties.Resources.resources
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.PropertyDialog.resources
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.pdb
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.ctrlReportControl.resources
+F:\Procurement\RdlViewer\bin\Debug\RdlViewer.dll.config
+F:\Procurement\RdlViewer\bin\Debug\RdlViewer.dll
+F:\Procurement\RdlViewer\obj\Debug\GenerateResource.read.1.tlog
+F:\Procurement\RdlViewer\obj\Debug\GenerateResource.write.1.tlog
+F:\Procurement\RdlViewer\obj\Debug\RdlViewer.dll
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ConnectionDialog.resources
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ParameterDialog.resources
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.Properties.Resources.resources
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.PropertyDialog.resources
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ctrlReportControl.resources
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csproj.GenerateResource.Cache
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.pdb
+E:\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.pdb
+E:\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll.config
+E:\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.dll
+E:\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csprojResolveAssemblyReference.cache
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll.config
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.pdb
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csprojResolveAssemblyReference.cache
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ConnectionDialog.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ParameterDialog.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.Properties.Resources.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.PropertyDialog.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ctrlReportControl.resources
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csproj.GenerateResource.Cache
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.dll
+C:\Users\mateso\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.pdb
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll.config
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.pdb
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ConnectionDialog.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ParameterDialog.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.Properties.Resources.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.PropertyDialog.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ctrlReportControl.resources
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csproj.GenerateResource.Cache
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.dll
+C:\Users\ucc\Documents\Visual Studio 2010\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll.config
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ConnectionDialog.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ParameterDialog.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.Properties.Resources.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.PropertyDialog.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ctrlReportControl.resources
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csproj.GenerateResource.Cache
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.dll
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll.config
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\bin\Debug\RdlViewer.pdb
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csprojResolveAssemblyReference.cache
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ConnectionDialog.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ParameterDialog.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.Properties.Resources.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.PropertyDialog.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.ctrlReportControl.resources
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csproj.GenerateResource.Cache
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.dll
+C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csprojResolveAssemblyReference.cache

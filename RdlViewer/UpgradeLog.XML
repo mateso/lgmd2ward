@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RdlViewer">
+</Property><Property Name="Solution File" Value="F:\Procurement\RdlViewer\RdlViewer.sln">
+</Property><Property Name="User Options File" Value="F:\Procurement\RdlViewer\RdlViewer.suo">
+</Property><Property Name="Date" Value="Sunday, January 29, 2012">
+</Property><Property Name="Time" Value="21:49">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RdlViewer.sln" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\RdlViewer.sln">
+</Event><Event ErrorLevel="0" Project="" Source="RdlViewer.suo" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\RdlViewer.suo">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="RdlViewer.csproj" Description="Project file successfully backed up as F:\Procurement\RdlViewer\Backup\RdlViewer.csproj">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="RdlViewer.csproj.user" Description="Project user file successfully backed up as F:\Procurement\RdlViewer\Backup\RdlViewer.csproj.user">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ConnectionDialog.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ConnectionDialog.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ConnectionDialog.Designer.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ConnectionDialog.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="MainForm.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="MainForm.Designer.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ParameterDialog.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ParameterDialog.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ParameterDialog.designer.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ParameterDialog.designer.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="Program.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="PropertyDialog.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\PropertyDialog.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="PropertyDialog.Designer.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\PropertyDialog.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ReportInfo.cs" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ReportInfo.cs">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="Properties\Settings.settings" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ConnectionDialog.resx" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ConnectionDialog.resx">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="MainForm.resx" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="ParameterDialog.resx" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\ParameterDialog.resx">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="Properties\Resources.resx" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="PropertyDialog.resx" Description="File successfully backed up as F:\Procurement\RdlViewer\Backup\PropertyDialog.resx">
+</Event><Event ErrorLevel="1" Project="RdlViewer" Source="RdlViewer.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="RdlViewer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RdlViewer" Source="RdlViewer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RdlViewer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RdlViewer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RdlViewer" Source="RdlViewer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

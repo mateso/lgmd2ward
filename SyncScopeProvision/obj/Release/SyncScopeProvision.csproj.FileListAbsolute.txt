@@ -1,0 +1,11 @@
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\bin\Release\SyncScopeProvision.dll
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\bin\Release\SyncScopeProvision.pdb
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\obj\Release\SyncScopeProvision.SynchronizerForm.resources
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\obj\Release\SyncScopeProvision.csproj.GenerateResource.Cache
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\obj\Release\SyncScopeProvision.dll
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\obj\Release\SyncScopeProvision.pdb
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\bin\Release\Microsoft.Synchronization.Data.dll
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\bin\Release\Microsoft.Synchronization.Data.SqlServer.dll
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\bin\Release\Microsoft.Synchronization.Data.xml
+D:\Projects\VS2008\LGMD2\LGMD2\SyncScopeProvision\bin\Release\Microsoft.Synchronization.Data.SqlServer.xml
