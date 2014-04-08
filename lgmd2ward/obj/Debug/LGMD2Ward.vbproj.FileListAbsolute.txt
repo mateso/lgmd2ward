@@ -161,3 +161,4 @@ C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\De
 C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.exe
 C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.xml
 C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\LGMD2Ward\obj\Debug\LGMD.ctrlLookUpTable.resources

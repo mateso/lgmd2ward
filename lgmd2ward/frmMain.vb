@@ -704,4 +704,14 @@ Public Class frmMain
 
         Me.SplitContainer.Panel2.Controls.Add(ctrl)
     End Sub
+
+    Private Sub LookupTablesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LookupTablesToolStripMenuItem.Click
+        ctrl = New ctrlLookUpTable
+
+        If Me.SplitContainer.Panel2.Controls.Count > 0 Then
+            Me.SplitContainer.Panel2.Controls.RemoveAt(0)
+        End If
+
+        Me.SplitContainer.Panel2.Controls.Add(ctrl)
+    End Sub
 End Class

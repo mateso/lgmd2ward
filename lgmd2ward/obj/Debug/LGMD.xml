@@ -4340,6 +4340,30 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillAnnuallyLookUpTablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillMonthlyLookUpTablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillQuarterlyLookUpTablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpTablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpTablesTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpFormTypesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosionRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -4416,6 +4440,30 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillAnnuallyLookUpTablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillMonthlyLookUpTablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillQuarterlyLookUpTablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpTablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpTablesTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpFormTypesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosionRowChangeEvent">
 	<summary>
 Row event argument class
@@ -4489,6 +4537,30 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:LGMD.LookupTableDataDataSet.appUspQuarterlyLookupVillageFoodSituationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillAnnuallyLookUpTablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillMonthlyLookUpTablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillQuarterlyLookUpTablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpTablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpTablesTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSet.appUspFillLookUpFormTypesRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -4569,6 +4641,30 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspQuarterlyLookupVillageFoodSituationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspFillAnnuallyLookUpTablesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspFillMonthlyLookUpTablesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspFillQuarterlyLookUpTablesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspFillLookUpTablesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspFillLookUpTablesTypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:LGMD.LookupTableDataDataSetTableAdapters.appUspFillLookUpFormTypesTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

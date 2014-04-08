@@ -131,7 +131,7 @@ Partial Class frmMain
         Me.toolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator7, Me.ToolStripSeparator8, Me.tsbtnSynchronise, Me.tscmbSynchOptions, Me.tslblLanguage, Me.tscmbLanguage, Me.tslblServerIP, Me.tstxtHostIP})
         Me.toolStrip.Location = New System.Drawing.Point(3, 24)
         Me.toolStrip.Name = "toolStrip"
-        Me.toolStrip.Size = New System.Drawing.Size(605, 25)
+        Me.toolStrip.Size = New System.Drawing.Size(392, 25)
         Me.toolStrip.TabIndex = 0
         Me.toolStrip.Text = "ToolStrip1"
         '

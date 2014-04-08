@@ -403,6 +403,10 @@
     <Compile Include="ctrlGeographicalRegions.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ctrlLookUpTable.Designer.vb" />
+    <Compile Include="ctrlLookUpTable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ctrlOtherReportsLocal.designer.vb">
       <DependentUpon>ctrlOtherReportsLocal.vb</DependentUpon>
     </Compile>
@@ -860,6 +864,7 @@
     <EmbeddedResource Include="ctrlGeographicalRegions.resx">
       <DependentUpon>ctrlGeographicalRegions.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ctrlLookUpTable.resx" />
     <EmbeddedResource Include="ctrlOtherReportsLocal.resx">
       <DependentUpon>ctrlOtherReportsLocal.vb</DependentUpon>
     </EmbeddedResource>

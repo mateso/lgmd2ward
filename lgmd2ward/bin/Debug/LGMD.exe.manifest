@@ -80,14 +80,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LGMD.exe" size="9468928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LGMD.exe" size="9559040">
       <assemblyIdentity name="LGMD" version="1.7.4.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zxKypfeVwRT7NsaKUkztKhcLwcY=</dsig:DigestValue>
+        <dsig:DigestValue>s4loqYBI/zLqnCi3uhOQT50ap1s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
