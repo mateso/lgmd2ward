@@ -25,29 +25,17 @@ Partial Class ctrlEditForm
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Udp_forms_submittedDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RecordID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Area_Level_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Area_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PeriodFrom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PeriodTo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FormSerialNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FormTypeNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Area_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.OrganisationID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VerifiedByUserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ApprovedByUserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Udp_forms_submittedBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
-        Me.cmdEdit = New System.Windows.Forms.Button()
+        Me.btnEditForm = New System.Windows.Forms.Button()
         Me.btnVerifyData = New System.Windows.Forms.Button()
-        Me.BtnApproveData = New System.Windows.Forms.Button()
-        Me.cmdDelete = New System.Windows.Forms.Button()
+        Me.btnApproveData = New System.Windows.Forms.Button()
+        Me.btnDeleteForm = New System.Windows.Forms.Button()
         Me.txtComments = New System.Windows.Forms.TextBox()
         Me.lblComments = New System.Windows.Forms.Label()
         Me.btnSaveComment = New System.Windows.Forms.Button()
-        Me.btnExport = New System.Windows.Forms.Button()
-        Me.btnExportAlForms = New System.Windows.Forms.Button()
+        Me.btnExportSelectedForm = New System.Windows.Forms.Button()
+        Me.btnExportAllForms = New System.Windows.Forms.Button()
         Me.Udp_forms_submittedTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.udp_forms_submittedTableAdapter()
         Me.TableAdapterManager = New LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -73,6 +61,20 @@ Partial Class ctrlEditForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RecordID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Area_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Area_Level_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Area_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PeriodFrom = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PeriodTo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FormTypeNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OrganisationID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ApprovedByUserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Comments = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FormSerialNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FormSerialNumberIQ = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FormSerialNumberIA = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Udp_forms_submittedDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Udp_forms_submittedBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,7 +97,7 @@ Partial Class ctrlEditForm
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Udp_forms_submittedDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.Udp_forms_submittedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Udp_forms_submittedDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.RecordID, Me.Area_Level_Name, Me.Area_Name, Me.PeriodFrom, Me.PeriodTo, Me.FormSerialNumber, Me.FormTypeNumber, Me.Area_ID, Me.OrganisationID, Me.ApprovedByUserID, Me.VerifiedByUserID})
+        Me.Udp_forms_submittedDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.RecordID, Me.Area_ID, Me.Area_Level_Name, Me.Area_Name, Me.PeriodFrom, Me.PeriodTo, Me.FormTypeNumber, Me.OrganisationID, Me.ApprovedByUserID, Me.Comments, Me.FormSerialNumber, Me.FormSerialNumberIQ, Me.FormSerialNumberIA})
         Me.Udp_forms_submittedDataGridView.DataSource = Me.Udp_forms_submittedBindingSource
         Me.Udp_forms_submittedDataGridView.Location = New System.Drawing.Point(15, 137)
         Me.Udp_forms_submittedDataGridView.MultiSelect = False
@@ -104,103 +106,6 @@ Partial Class ctrlEditForm
         Me.Udp_forms_submittedDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Udp_forms_submittedDataGridView.Size = New System.Drawing.Size(687, 337)
         Me.Udp_forms_submittedDataGridView.TabIndex = 2
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "FormName"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Form Type"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 2
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Width = 200
-        '
-        'RecordID
-        '
-        Me.RecordID.DataPropertyName = "RecordID"
-        Me.RecordID.HeaderText = "RecordID"
-        Me.RecordID.Name = "RecordID"
-        Me.RecordID.ReadOnly = True
-        Me.RecordID.Visible = False
-        '
-        'Area_Level_Name
-        '
-        Me.Area_Level_Name.DataPropertyName = "Area_Level_Name"
-        Me.Area_Level_Name.HeaderText = "Area Level"
-        Me.Area_Level_Name.Name = "Area_Level_Name"
-        Me.Area_Level_Name.ReadOnly = True
-        '
-        'Area_Name
-        '
-        Me.Area_Name.DataPropertyName = "Area_Name"
-        Me.Area_Name.HeaderText = "Area"
-        Me.Area_Name.Name = "Area_Name"
-        Me.Area_Name.ReadOnly = True
-        '
-        'PeriodFrom
-        '
-        Me.PeriodFrom.DataPropertyName = "PeriodFrom"
-        Me.PeriodFrom.HeaderText = "Period From"
-        Me.PeriodFrom.Name = "PeriodFrom"
-        Me.PeriodFrom.ReadOnly = True
-        '
-        'PeriodTo
-        '
-        Me.PeriodTo.DataPropertyName = "PeriodTo"
-        Me.PeriodTo.HeaderText = "Period To"
-        Me.PeriodTo.Name = "PeriodTo"
-        Me.PeriodTo.ReadOnly = True
-        '
-        'FormSerialNumber
-        '
-        Me.FormSerialNumber.DataPropertyName = "FormSerialNumber"
-        Me.FormSerialNumber.HeaderText = "FormSerialNumber"
-        Me.FormSerialNumber.MinimumWidth = 2
-        Me.FormSerialNumber.Name = "FormSerialNumber"
-        Me.FormSerialNumber.ReadOnly = True
-        Me.FormSerialNumber.Width = 2
-        '
-        'FormTypeNumber
-        '
-        Me.FormTypeNumber.DataPropertyName = "FormTypeNumber"
-        Me.FormTypeNumber.HeaderText = "FormTypeNumber"
-        Me.FormTypeNumber.MinimumWidth = 2
-        Me.FormTypeNumber.Name = "FormTypeNumber"
-        Me.FormTypeNumber.ReadOnly = True
-        Me.FormTypeNumber.Width = 2
-        '
-        'Area_ID
-        '
-        Me.Area_ID.DataPropertyName = "AreaID"
-        Me.Area_ID.HeaderText = "Area_ID"
-        Me.Area_ID.MinimumWidth = 2
-        Me.Area_ID.Name = "Area_ID"
-        Me.Area_ID.ReadOnly = True
-        Me.Area_ID.Width = 2
-        '
-        'OrganisationID
-        '
-        Me.OrganisationID.DataPropertyName = "OrganisationID"
-        Me.OrganisationID.HeaderText = "OrganisationID"
-        Me.OrganisationID.MinimumWidth = 2
-        Me.OrganisationID.Name = "OrganisationID"
-        Me.OrganisationID.ReadOnly = True
-        Me.OrganisationID.Width = 2
-        '
-        'VerifiedByUserID
-        '
-        Me.VerifiedByUserID.DataPropertyName = "VerifiedByUserID"
-        Me.VerifiedByUserID.HeaderText = "VerifiedByUserID"
-        Me.VerifiedByUserID.Name = "VerifiedByUserID"
-        Me.VerifiedByUserID.ReadOnly = True
-        Me.VerifiedByUserID.Visible = False
-        '
-        'ApprovedByUserID
-        '
-        Me.ApprovedByUserID.DataPropertyName = "ApprovedByUserID"
-        Me.ApprovedByUserID.HeaderText = "ApprovedByUserID"
-        Me.ApprovedByUserID.Name = "ApprovedByUserID"
-        Me.ApprovedByUserID.ReadOnly = True
-        Me.ApprovedByUserID.Visible = False
         '
         'Udp_forms_submittedBindingSource
         '
@@ -212,14 +117,14 @@ Partial Class ctrlEditForm
         Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
         Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'cmdEdit
+        'btnEditForm
         '
-        Me.cmdEdit.Location = New System.Drawing.Point(13, 480)
-        Me.cmdEdit.Name = "cmdEdit"
-        Me.cmdEdit.Size = New System.Drawing.Size(106, 37)
-        Me.cmdEdit.TabIndex = 3
-        Me.cmdEdit.Text = "Edit form"
-        Me.cmdEdit.UseVisualStyleBackColor = True
+        Me.btnEditForm.Location = New System.Drawing.Point(13, 480)
+        Me.btnEditForm.Name = "btnEditForm"
+        Me.btnEditForm.Size = New System.Drawing.Size(106, 37)
+        Me.btnEditForm.TabIndex = 3
+        Me.btnEditForm.Text = "Edit form"
+        Me.btnEditForm.UseVisualStyleBackColor = True
         '
         'btnVerifyData
         '
@@ -231,25 +136,25 @@ Partial Class ctrlEditForm
         Me.btnVerifyData.Text = "Verify Data"
         Me.btnVerifyData.UseVisualStyleBackColor = True
         '
-        'BtnApproveData
+        'btnApproveData
         '
-        Me.BtnApproveData.Enabled = False
-        Me.BtnApproveData.Location = New System.Drawing.Point(243, 480)
-        Me.BtnApproveData.Name = "BtnApproveData"
-        Me.BtnApproveData.Size = New System.Drawing.Size(106, 37)
-        Me.BtnApproveData.TabIndex = 5
-        Me.BtnApproveData.Text = "Approve Data"
-        Me.BtnApproveData.UseVisualStyleBackColor = True
+        Me.btnApproveData.Enabled = False
+        Me.btnApproveData.Location = New System.Drawing.Point(243, 480)
+        Me.btnApproveData.Name = "btnApproveData"
+        Me.btnApproveData.Size = New System.Drawing.Size(106, 37)
+        Me.btnApproveData.TabIndex = 5
+        Me.btnApproveData.Text = "Approve Data"
+        Me.btnApproveData.UseVisualStyleBackColor = True
         '
-        'cmdDelete
+        'btnDeleteForm
         '
-        Me.cmdDelete.Enabled = False
-        Me.cmdDelete.Location = New System.Drawing.Point(597, 480)
-        Me.cmdDelete.Name = "cmdDelete"
-        Me.cmdDelete.Size = New System.Drawing.Size(106, 37)
-        Me.cmdDelete.TabIndex = 6
-        Me.cmdDelete.Text = "Delete form"
-        Me.cmdDelete.UseVisualStyleBackColor = True
+        Me.btnDeleteForm.Enabled = False
+        Me.btnDeleteForm.Location = New System.Drawing.Point(597, 480)
+        Me.btnDeleteForm.Name = "btnDeleteForm"
+        Me.btnDeleteForm.Size = New System.Drawing.Size(106, 37)
+        Me.btnDeleteForm.TabIndex = 6
+        Me.btnDeleteForm.Text = "Delete form"
+        Me.btnDeleteForm.UseVisualStyleBackColor = True
         '
         'txtComments
         '
@@ -282,25 +187,25 @@ Partial Class ctrlEditForm
         Me.btnSaveComment.Text = "Save Comment"
         Me.btnSaveComment.UseVisualStyleBackColor = True
         '
-        'btnExport
+        'btnExportSelectedForm
         '
-        Me.btnExport.Enabled = False
-        Me.btnExport.Location = New System.Drawing.Point(478, 480)
-        Me.btnExport.Name = "btnExport"
-        Me.btnExport.Size = New System.Drawing.Size(106, 37)
-        Me.btnExport.TabIndex = 10
-        Me.btnExport.Text = "Create Export Zip File (Selected form)"
-        Me.btnExport.UseVisualStyleBackColor = True
+        Me.btnExportSelectedForm.Enabled = False
+        Me.btnExportSelectedForm.Location = New System.Drawing.Point(478, 480)
+        Me.btnExportSelectedForm.Name = "btnExportSelectedForm"
+        Me.btnExportSelectedForm.Size = New System.Drawing.Size(106, 37)
+        Me.btnExportSelectedForm.TabIndex = 10
+        Me.btnExportSelectedForm.Text = "Create Export Zip File (Selected form)"
+        Me.btnExportSelectedForm.UseVisualStyleBackColor = True
         '
-        'btnExportAlForms
+        'btnExportAllForms
         '
-        Me.btnExportAlForms.Enabled = False
-        Me.btnExportAlForms.Location = New System.Drawing.Point(360, 480)
-        Me.btnExportAlForms.Name = "btnExportAlForms"
-        Me.btnExportAlForms.Size = New System.Drawing.Size(106, 37)
-        Me.btnExportAlForms.TabIndex = 11
-        Me.btnExportAlForms.Text = "Create Export Zip File (All Forms)"
-        Me.btnExportAlForms.UseVisualStyleBackColor = True
+        Me.btnExportAllForms.Enabled = False
+        Me.btnExportAllForms.Location = New System.Drawing.Point(360, 480)
+        Me.btnExportAllForms.Name = "btnExportAllForms"
+        Me.btnExportAllForms.Size = New System.Drawing.Size(106, 37)
+        Me.btnExportAllForms.TabIndex = 11
+        Me.btnExportAllForms.Text = "Create Export Zip File (All Forms)"
+        Me.btnExportAllForms.UseVisualStyleBackColor = True
         '
         'Udp_forms_submittedTableAdapter
         '
@@ -398,7 +303,6 @@ Partial Class ctrlEditForm
         Me.TableAdapterManager.LivestockMovement04TableAdapter = Nothing
         Me.TableAdapterManager.LivestockPopulation05TableAdapter = Nothing
         Me.TableAdapterManager.LivestockService01TableAdapter = Nothing
-
         Me.TableAdapterManager.LivestockSlaughtered01TableAdapter = Nothing
         Me.TableAdapterManager.MachineryDrawn03TableAdapter = Nothing
         Me.TableAdapterManager.MachineryListTableAdapter = Nothing
@@ -420,6 +324,7 @@ Partial Class ctrlEditForm
         Me.TableAdapterManager.ProdLand02TableAdapter = Nothing
         Me.TableAdapterManager.ProdMilk01TableAdapter = Nothing
         Me.TableAdapterManager.ProdMilkListTableAdapter = Nothing
+        Me.TableAdapterManager.ProdSkin01TableAdapter = Nothing
         Me.TableAdapterManager.ProdSkinListTableAdapter = Nothing
         Me.TableAdapterManager.ProductsMovement04TableAdapter = Nothing
         Me.TableAdapterManager.ProductsProcessing05TableAdapter = Nothing
@@ -689,21 +594,138 @@ Partial Class ctrlEditForm
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "By Form Type"
         '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "FormName"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Form Type"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 2
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Width = 200
+        '
+        'RecordID
+        '
+        Me.RecordID.DataPropertyName = "RecordID"
+        Me.RecordID.HeaderText = "RecordID"
+        Me.RecordID.Name = "RecordID"
+        Me.RecordID.ReadOnly = True
+        Me.RecordID.Visible = False
+        '
+        'Area_ID
+        '
+        Me.Area_ID.DataPropertyName = "AreaID"
+        Me.Area_ID.HeaderText = "Area_ID"
+        Me.Area_ID.MinimumWidth = 2
+        Me.Area_ID.Name = "Area_ID"
+        Me.Area_ID.ReadOnly = True
+        Me.Area_ID.Visible = False
+        Me.Area_ID.Width = 2
+        '
+        'Area_Level_Name
+        '
+        Me.Area_Level_Name.DataPropertyName = "Area_Level_Name"
+        Me.Area_Level_Name.HeaderText = "Area Level"
+        Me.Area_Level_Name.Name = "Area_Level_Name"
+        Me.Area_Level_Name.ReadOnly = True
+        '
+        'Area_Name
+        '
+        Me.Area_Name.DataPropertyName = "Area_Name"
+        Me.Area_Name.HeaderText = "Area Name"
+        Me.Area_Name.Name = "Area_Name"
+        Me.Area_Name.ReadOnly = True
+        '
+        'PeriodFrom
+        '
+        Me.PeriodFrom.DataPropertyName = "PeriodFrom"
+        Me.PeriodFrom.HeaderText = "Period From"
+        Me.PeriodFrom.Name = "PeriodFrom"
+        Me.PeriodFrom.ReadOnly = True
+        '
+        'PeriodTo
+        '
+        Me.PeriodTo.DataPropertyName = "PeriodTo"
+        Me.PeriodTo.HeaderText = "Period To"
+        Me.PeriodTo.Name = "PeriodTo"
+        Me.PeriodTo.ReadOnly = True
+        '
+        'FormTypeNumber
+        '
+        Me.FormTypeNumber.DataPropertyName = "FormTypeNumber"
+        Me.FormTypeNumber.HeaderText = "FormTypeNumber"
+        Me.FormTypeNumber.MinimumWidth = 2
+        Me.FormTypeNumber.Name = "FormTypeNumber"
+        Me.FormTypeNumber.ReadOnly = True
+        Me.FormTypeNumber.Visible = False
+        Me.FormTypeNumber.Width = 2
+        '
+        'OrganisationID
+        '
+        Me.OrganisationID.DataPropertyName = "OrganisationID"
+        Me.OrganisationID.HeaderText = "OrganisationID"
+        Me.OrganisationID.MinimumWidth = 2
+        Me.OrganisationID.Name = "OrganisationID"
+        Me.OrganisationID.ReadOnly = True
+        Me.OrganisationID.Visible = False
+        Me.OrganisationID.Width = 2
+        '
+        'ApprovedByUserID
+        '
+        Me.ApprovedByUserID.DataPropertyName = "ApprovedByUserID"
+        Me.ApprovedByUserID.HeaderText = "ApprovedByUserID"
+        Me.ApprovedByUserID.Name = "ApprovedByUserID"
+        Me.ApprovedByUserID.ReadOnly = True
+        Me.ApprovedByUserID.Visible = False
+        '
+        'Comments
+        '
+        Me.Comments.DataPropertyName = "Comments"
+        Me.Comments.HeaderText = "Comments"
+        Me.Comments.Name = "Comments"
+        Me.Comments.ReadOnly = True
+        Me.Comments.Visible = False
+        '
+        'FormSerialNumber
+        '
+        Me.FormSerialNumber.DataPropertyName = "FormSerialNumber"
+        Me.FormSerialNumber.HeaderText = "FormSerialNumber"
+        Me.FormSerialNumber.MinimumWidth = 2
+        Me.FormSerialNumber.Name = "FormSerialNumber"
+        Me.FormSerialNumber.ReadOnly = True
+        Me.FormSerialNumber.Visible = False
+        Me.FormSerialNumber.Width = 2
+        '
+        'FormSerialNumberIQ
+        '
+        Me.FormSerialNumberIQ.DataPropertyName = "FormSerialNumberIQ"
+        Me.FormSerialNumberIQ.HeaderText = "FormSerialNumberIQ"
+        Me.FormSerialNumberIQ.Name = "FormSerialNumberIQ"
+        Me.FormSerialNumberIQ.ReadOnly = True
+        Me.FormSerialNumberIQ.Visible = False
+        '
+        'FormSerialNumberIA
+        '
+        Me.FormSerialNumberIA.DataPropertyName = "FormSerialNumberIA"
+        Me.FormSerialNumberIA.HeaderText = "FormSerialNumberIA"
+        Me.FormSerialNumberIA.Name = "FormSerialNumberIA"
+        Me.FormSerialNumberIA.ReadOnly = True
+        Me.FormSerialNumberIA.Visible = False
+        '
         'ctrlEditForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.Controls.Add(Me.groupBoxFilterBox)
-        Me.Controls.Add(Me.btnExportAlForms)
-        Me.Controls.Add(Me.btnExport)
+        Me.Controls.Add(Me.btnExportAllForms)
+        Me.Controls.Add(Me.btnExportSelectedForm)
         Me.Controls.Add(Me.btnSaveComment)
         Me.Controls.Add(Me.lblComments)
         Me.Controls.Add(Me.txtComments)
-        Me.Controls.Add(Me.cmdDelete)
-        Me.Controls.Add(Me.BtnApproveData)
+        Me.Controls.Add(Me.btnDeleteForm)
+        Me.Controls.Add(Me.btnApproveData)
         Me.Controls.Add(Me.btnVerifyData)
-        Me.Controls.Add(Me.cmdEdit)
+        Me.Controls.Add(Me.btnEditForm)
         Me.Controls.Add(Me.Udp_forms_submittedDataGridView)
         Me.Name = "ctrlEditForm"
         Me.Size = New System.Drawing.Size(721, 657)
@@ -723,15 +745,15 @@ Partial Class ctrlEditForm
     Friend WithEvents Udp_forms_submittedTableAdapter As LGMD.LGMDdataDataSetTableAdapters.udp_forms_submittedTableAdapter
     Friend WithEvents TableAdapterManager As LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager
     Friend WithEvents Udp_forms_submittedDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents cmdEdit As System.Windows.Forms.Button
+    Friend WithEvents btnEditForm As System.Windows.Forms.Button
     Friend WithEvents btnVerifyData As System.Windows.Forms.Button
-    Friend WithEvents BtnApproveData As System.Windows.Forms.Button
-    Friend WithEvents cmdDelete As System.Windows.Forms.Button
+    Friend WithEvents btnApproveData As System.Windows.Forms.Button
+    Friend WithEvents btnDeleteForm As System.Windows.Forms.Button
     Friend WithEvents txtComments As System.Windows.Forms.TextBox
     Friend WithEvents lblComments As System.Windows.Forms.Label
     Friend WithEvents btnSaveComment As System.Windows.Forms.Button
-    Friend WithEvents btnExport As System.Windows.Forms.Button
-    Friend WithEvents btnExportAlForms As System.Windows.Forms.Button
+    Friend WithEvents btnExportSelectedForm As System.Windows.Forms.Button
+    Friend WithEvents btnExportAllForms As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -744,18 +766,6 @@ Partial Class ctrlEditForm
     Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents groupBoxFilterBox As System.Windows.Forms.GroupBox
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RecordID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Area_Level_Name As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Area_Name As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PeriodFrom As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PeriodTo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FormSerialNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FormTypeNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Area_ID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents OrganisationID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents VerifiedByUserID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ApprovedByUserID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents cmbArea As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents btnFilterForm As System.Windows.Forms.Button
@@ -767,5 +777,19 @@ Partial Class ctrlEditForm
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RecordID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Area_ID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Area_Level_Name As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Area_Name As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PeriodFrom As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PeriodTo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FormTypeNumber As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OrganisationID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ApprovedByUserID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Comments As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FormSerialNumber As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FormSerialNumberIQ As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FormSerialNumberIA As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class

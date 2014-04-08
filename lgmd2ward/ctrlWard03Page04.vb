@@ -8,11 +8,14 @@
 
         Me.FFSListDA.Fill(Me.LGMDDS.FFSGroup)
         Me.FFSDA.Fill(Me.LGMDDS.FarmersFieldSchool03)
-        Me.AppUspAnnualFillFFSMazaoTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSMazao, g_RecordID)
-        Me.AppUspAnnualFillFFSUfugajiTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSUfugaji, g_RecordID)
-        Me.AppUspAnnualFillFFSUvuviTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSUvuvi, g_RecordID)
-        Me.AppUspAnnualFillFFSMasokoTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSMasoko, g_RecordID)
-        Me.AppUspAnnualFillFFSMengineyoTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSMengineyo, g_RecordID)
+        Try
+            Me.AppUspAnnualFillFFSMazaoTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSMazao, g_RecordID)
+            Me.AppUspAnnualFillFFSUfugajiTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSUfugaji, g_RecordID)
+            Me.AppUspAnnualFillFFSUvuviTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSUvuvi, g_RecordID)
+            Me.AppUspAnnualFillFFSMasokoTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSMasoko, g_RecordID)
+            Me.AppUspAnnualFillFFSMengineyoTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillFFSMengineyo, g_RecordID)
+        Catch ex As Exception
+        End Try
 
         If Me.AnnuallyDataDataSet.appUspAnnualFillFFSMazao.Rows.Count = 0 Then
 

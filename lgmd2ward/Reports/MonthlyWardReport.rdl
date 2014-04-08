@@ -4,7 +4,7 @@
     <DataSource Name="LGMD2iDataSource">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2i_KorogweMjiniRevision</ConnectString>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2iData</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:DataSourceID>acc32cb6-b5ef-4811-9686-86fa281a51f9</rd:DataSourceID>
@@ -250,8 +250,12 @@
           <DataField>AI</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="LivestockName">
-          <DataField>LivestockName</DataField>
+        <Field Name="ListItemSw">
+          <DataField>ListItemSw</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ListItemEn">
+          <DataField>ListItemEn</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CuttingHoof">
@@ -301,12 +305,12 @@
     </DataSet>
     <DataSet Name="LivestockSlaughtered">
       <Fields>
-        <Field Name="AI">
-          <DataField>AI</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="ListID">
+          <DataField>ListID</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
-        <Field Name="LivestockName">
-          <DataField>LivestockName</DataField>
+        <Field Name="ListItemSw">
+          <DataField>ListItemSw</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="TotalNumberSlaughteredThisMonth">
@@ -332,12 +336,12 @@
     </DataSet>
     <DataSet Name="ProdMilk">
       <Fields>
-        <Field Name="ProdMilkListID">
-          <DataField>ProdMilkListID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="ListID">
+          <DataField>ListID</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
-        <Field Name="ProdName">
-          <DataField>ProdName</DataField>
+        <Field Name="ListItemEn">
+          <DataField>ListItemEn</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="AmountThisMonth">
@@ -359,12 +363,12 @@
     </DataSet>
     <DataSet Name="ProdSkin">
       <Fields>
-        <Field Name="ProdSkinID">
-          <DataField>ProdSkinID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="ListID">
+          <DataField>ListID</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
-        <Field Name="ProdName">
-          <DataField>ProdName</DataField>
+        <Field Name="ListItemEn">
+          <DataField>ListItemEn</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DrySuspended">
@@ -2012,27 +2016,22 @@
                   </TablixMembers>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="LivestockName1">
+                  <Group Name="ListID">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!LivestockName.Value</GroupExpression>
+                      <GroupExpression>=Fields!ListID.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!AI.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
                   <TablixHeader>
                     <Size>1.45299in</Size>
                     <CellContents>
-                      <Textbox Name="LivestockName1">
+                      <Textbox Name="ListItemSw">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!LivestockName.Value</Value>
+                                <Value>=Fields!ListItemSw.Value</Value>
                                 <Style>
                                   <FontSize>9pt</FontSize>
                                 </Style>
@@ -2043,7 +2042,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>LivestockName1</rd:DefaultName>
+                        <rd:DefaultName>ListItemSw</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -3068,25 +3067,20 @@
                 <TablixMember>
                   <Group Name="ProdName">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!ProdName.Value</GroupExpression>
+                      <GroupExpression>=Fields!ListItemEn.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!ProdMilkListID.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
                   <TablixHeader>
                     <Size>2.84064in</Size>
                     <CellContents>
-                      <Textbox Name="ProdName">
+                      <Textbox Name="ListItemEn">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!ProdName.Value</Value>
+                                <Value>=Fields!ListItemEn.Value</Value>
                                 <Style>
                                   <FontSize>9pt</FontSize>
                                 </Style>
@@ -3097,7 +3091,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>ProdName</rd:DefaultName>
+                        <rd:DefaultName>ListItemEn</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -3465,14 +3459,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ProdName1">
+                        <Textbox Name="ListItemEn1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ProdName.Value</Value>
+                                  <Value>=Fields!ListItemEn.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -3483,7 +3477,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ProdName1</rd:DefaultName>
+                          <rd:DefaultName>ListItemEn1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -6999,8 +6993,8 @@
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7040,8 +7034,8 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7081,8 +7075,8 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7122,9 +7116,9 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Nguruwe", "Gray", 
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Nguruwe", "Gray", 
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7164,8 +7158,8 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7205,11 +7199,11 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Ng'ombe", "Gray", 
-Fields!LivestockName.Value = "Mbuzi", "Gray", 
-Fields!LivestockName.Value = "Nguruwe", "Gray", 
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Ng'ombe", "Gray", 
+Fields!ListItemSw.Value = "Mbuzi", "Gray", 
+Fields!ListItemSw.Value = "Nguruwe", "Gray", 
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7249,11 +7243,11 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Ng'ombe", "Gray", 
-Fields!LivestockName.Value = "Mbuzi", "Gray", 
-Fields!LivestockName.Value = "Kondoo", "Gray", 
-Fields!LivestockName.Value = "Kuku", "Gray", 
-Fields!LivestockName.Value = "Bata", "Gray"
+Fields!ListItemSw.Value = "Ng'ombe", "Gray", 
+Fields!ListItemSw.Value = "Mbuzi", "Gray", 
+Fields!ListItemSw.Value = "Kondoo", "Gray", 
+Fields!ListItemSw.Value = "Kuku", "Gray", 
+Fields!ListItemSw.Value = "Bata", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7293,10 +7287,10 @@ Fields!LivestockName.Value = "Bata", "Gray"
                             <BackgroundColor>=
 Switch
 (
-Fields!LivestockName.Value = "Ng'ombe", "Gray", 
-Fields!LivestockName.Value = "Mbuzi", "Gray", 
-Fields!LivestockName.Value = "Kondoo", "Gray", 
-Fields!LivestockName.Value = "Nguruwe", "Gray"
+Fields!ListItemSw.Value = "Ng'ombe", "Gray", 
+Fields!ListItemSw.Value = "Mbuzi", "Gray", 
+Fields!ListItemSw.Value = "Kondoo", "Gray", 
+Fields!ListItemSw.Value = "Nguruwe", "Gray"
 )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7371,22 +7365,22 @@ Fields!LivestockName.Value = "Nguruwe", "Gray"
                 <TablixMember>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="LivestockName">
+                      <Group Name="ListItemSw">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!LivestockName.Value</GroupExpression>
+                          <GroupExpression>=Fields!ListItemSw.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <TablixHeader>
                         <Size>1.08575in</Size>
                         <CellContents>
-                          <Textbox Name="LivestockName">
+                          <Textbox Name="ListItemSw1">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!LivestockName.Value</Value>
+                                    <Value>=Fields!ListItemSw.Value</Value>
                                     <Style>
                                       <FontSize>9pt</FontSize>
                                     </Style>
@@ -7397,7 +7391,7 @@ Fields!LivestockName.Value = "Nguruwe", "Gray"
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>LivestockName</rd:DefaultName>
+                            <rd:DefaultName>ListItemSw1</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>Solid</Style>
@@ -18973,7 +18967,7 @@ Fields!LivestockName.Value = "Nguruwe", "Gray"
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>001%AFRTZA001004002%Mar11%Mar11%</Value>
+          <Value>001%AFRTZA001004002%Aug10%Aug10%</Value>
         </Values>
       </DefaultValue>
       <Prompt>Form Serial Number</Prompt>
@@ -18982,7 +18976,7 @@ Fields!LivestockName.Value = "Nguruwe", "Gray"
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>Korogwe Mjini</Value>
+          <Value>Korogwe Vijijini</Value>
         </Values>
       </DefaultValue>
       <Prompt>ReportParameter1</Prompt>

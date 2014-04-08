@@ -23,11 +23,11 @@ Partial Class ctrlWard03Page10
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblPeriod = New System.Windows.Forms.Label()
         Me.lblArea = New System.Windows.Forms.Label()
@@ -39,6 +39,12 @@ Partial Class ctrlWard03Page10
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.AiredProgramsIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NameOfProgramDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TypeOfInformationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AiredPrograms03BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -57,26 +63,16 @@ Partial Class ctrlWard03Page10
         Me.txtAmountOfHayBales = New System.Windows.Forms.TextBox()
         Me.txtRemarks = New System.Windows.Forms.TextBox()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
-        Me.CropResidue03BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.cmbGoTo = New System.Windows.Forms.ComboBox()
-        Me.gotoLbl = New System.Windows.Forms.Label()
-        Me.AppUspAnnualFillTVDataGridView = New System.Windows.Forms.DataGridView()
-        Me.AppUspAnnualFillTVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.AppUspAnnualFillRadioDataGridView = New System.Windows.Forms.DataGridView()
-        Me.AppUspAnnualFillRadioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TableAdapterManager = New LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager()
-        Me.AiredPrograms03TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.AiredPrograms03TableAdapter()
-        Me.CropResidue03TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.CropResidue03TableAdapter()
-        Me.ImprovedPasture03TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.ImprovedPasture03TableAdapter()
-        Me.AppUspAnnualFillTVTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTVTableAdapter()
-        Me.AppUspAnnualFillRadioTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillRadioTableAdapter()
-        Me.AppUspAnnualFillTelecomTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTelecomTableAdapter()
         Me.CropResidueIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TypeOfCropDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AmountOfHayBalesDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RemarksDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CropResidue03BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.cmbGoTo = New System.Windows.Forms.ComboBox()
+        Me.gotoLbl = New System.Windows.Forms.Label()
+        Me.AppUspAnnualFillTVDataGridView = New System.Windows.Forms.DataGridView()
         Me.MediaGroupID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MediaDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -88,6 +84,8 @@ Partial Class ctrlWard03Page10
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FormSerialID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AppUspAnnualFillTVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AppUspAnnualFillRadioDataGridView = New System.Windows.Forms.DataGridView()
         Me.MediaGroupIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MediaDescriptionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MediaListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -99,15 +97,18 @@ Partial Class ctrlWard03Page10
         Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FormSerialIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AiredProgramsIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NameOfProgramDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TypeOfInformationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TelecomCompaListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MediaNameDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AppUspAnnualFillRadioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TableAdapterManager = New LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager()
+        Me.AiredPrograms03TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.AiredPrograms03TableAdapter()
+        Me.CropResidue03TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.CropResidue03TableAdapter()
+        Me.ImprovedPasture03TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.ImprovedPasture03TableAdapter()
+        Me.AppUspAnnualFillTVTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTVTableAdapter()
+        Me.AppUspAnnualFillRadioTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillRadioTableAdapter()
+        Me.AppUspAnnualFillTelecomTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillTelecomTableAdapter()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemEn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TelecommunicationIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TelecomCompIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -225,6 +226,54 @@ Partial Class ctrlWard03Page10
         Me.DataGridView3.Size = New System.Drawing.Size(893, 192)
         Me.DataGridView3.TabIndex = 4
         '
+        'AiredProgramsIDDataGridViewTextBoxColumn
+        '
+        Me.AiredProgramsIDDataGridViewTextBoxColumn.DataPropertyName = "AiredProgramsID"
+        Me.AiredProgramsIDDataGridViewTextBoxColumn.HeaderText = "AiredProgramsID"
+        Me.AiredProgramsIDDataGridViewTextBoxColumn.Name = "AiredProgramsIDDataGridViewTextBoxColumn"
+        Me.AiredProgramsIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "NameOfStation"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Jina la chombo cha habari"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn4.Width = 200
+        '
+        'NameOfProgramDataGridViewTextBoxColumn
+        '
+        Me.NameOfProgramDataGridViewTextBoxColumn.DataPropertyName = "NameOfProgram"
+        Me.NameOfProgramDataGridViewTextBoxColumn.HeaderText = "Jina la kipindi" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.NameOfProgramDataGridViewTextBoxColumn.Name = "NameOfProgramDataGridViewTextBoxColumn"
+        Me.NameOfProgramDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.NameOfProgramDataGridViewTextBoxColumn.Width = 200
+        '
+        'FrequencyTimeInAWeekDataGridViewTextBoxColumn
+        '
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.DataPropertyName = "FrequencyTimeInAWeek"
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.HeaderText = "Mara ngapi kwa wiki" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.Name = "FrequencyTimeInAWeekDataGridViewTextBoxColumn"
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.Width = 150
+        '
+        'TypeOfInformationDataGridViewTextBoxColumn
+        '
+        Me.TypeOfInformationDataGridViewTextBoxColumn.DataPropertyName = "TypeOfInformation"
+        Me.TypeOfInformationDataGridViewTextBoxColumn.HeaderText = "Aina ya taarifa" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TypeOfInformationDataGridViewTextBoxColumn.Name = "TypeOfInformationDataGridViewTextBoxColumn"
+        Me.TypeOfInformationDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.TypeOfInformationDataGridViewTextBoxColumn.Width = 300
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Visible = False
+        '
         'AiredPrograms03BindingSource
         '
         Me.AiredPrograms03BindingSource.DataMember = "AiredPrograms03"
@@ -250,7 +299,7 @@ Partial Class ctrlWard03Page10
         Me.AppUspAnnualFillTelecomDataGridView.AllowUserToResizeRows = False
         Me.AppUspAnnualFillTelecomDataGridView.AutoGenerateColumns = False
         Me.AppUspAnnualFillTelecomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.AppUspAnnualFillTelecomDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TelecomCompaListIDDataGridViewTextBoxColumn, Me.MediaNameDataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.TelecommunicationIDDataGridViewTextBoxColumn, Me.TelecomCompIDDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn17, Me.FormSerialIDDataGridViewTextBoxColumn1})
+        Me.AppUspAnnualFillTelecomDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.ListItemSw, Me.ListItemEn, Me.ListItemStatus, Me.TelecommunicationIDDataGridViewTextBoxColumn, Me.TelecomCompIDDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn17, Me.FormSerialIDDataGridViewTextBoxColumn1})
         Me.AppUspAnnualFillTelecomDataGridView.DataSource = Me.AppUspAnnualFillTelecomBindingSource
         Me.AppUspAnnualFillTelecomDataGridView.Location = New System.Drawing.Point(32, 981)
         Me.AppUspAnnualFillTelecomDataGridView.Name = "AppUspAnnualFillTelecomDataGridView"
@@ -270,7 +319,7 @@ Partial Class ctrlWard03Page10
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 392.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 393.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label8, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label9, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label10, 2, 0)
@@ -304,7 +353,7 @@ Partial Class ctrlWard03Page10
         '
         Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(142, 10)
+        Me.Label9.Location = New System.Drawing.Point(141, 10)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 13)
         Me.Label9.TabIndex = 1
@@ -315,7 +364,7 @@ Partial Class ctrlWard03Page10
         '
         Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(246, 10)
+        Me.Label10.Location = New System.Drawing.Point(245, 10)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(124, 13)
         Me.Label10.TabIndex = 2
@@ -326,7 +375,7 @@ Partial Class ctrlWard03Page10
         '
         Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(394, 3)
+        Me.Label11.Location = New System.Drawing.Point(393, 3)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(143, 26)
         Me.Label11.TabIndex = 3
@@ -337,7 +386,7 @@ Partial Class ctrlWard03Page10
         '
         Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(719, 10)
+        Me.Label12.Location = New System.Drawing.Point(718, 10)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(50, 13)
         Me.Label12.TabIndex = 4
@@ -352,7 +401,7 @@ Partial Class ctrlWard03Page10
         Me.txtNumberOfFarms.Location = New System.Drawing.Point(1, 33)
         Me.txtNumberOfFarms.Margin = New System.Windows.Forms.Padding(0)
         Me.txtNumberOfFarms.Name = "txtNumberOfFarms"
-        Me.txtNumberOfFarms.Size = New System.Drawing.Size(107, 20)
+        Me.txtNumberOfFarms.Size = New System.Drawing.Size(106, 20)
         Me.txtNumberOfFarms.TabIndex = 5
         Me.txtNumberOfFarms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -366,7 +415,7 @@ Partial Class ctrlWard03Page10
         Me.txtArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtArea.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ImprovedPasture03BindingSource, "Area", True))
         Me.txtArea.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtArea.Location = New System.Drawing.Point(109, 33)
+        Me.txtArea.Location = New System.Drawing.Point(108, 33)
         Me.txtArea.Margin = New System.Windows.Forms.Padding(0)
         Me.txtArea.Name = "txtArea"
         Me.txtArea.Size = New System.Drawing.Size(123, 20)
@@ -378,7 +427,7 @@ Partial Class ctrlWard03Page10
         Me.txtSeedProduction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSeedProduction.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ImprovedPasture03BindingSource, "SeedProduction", True))
         Me.txtSeedProduction.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtSeedProduction.Location = New System.Drawing.Point(233, 33)
+        Me.txtSeedProduction.Location = New System.Drawing.Point(232, 33)
         Me.txtSeedProduction.Margin = New System.Windows.Forms.Padding(0)
         Me.txtSeedProduction.Name = "txtSeedProduction"
         Me.txtSeedProduction.Size = New System.Drawing.Size(150, 20)
@@ -390,7 +439,7 @@ Partial Class ctrlWard03Page10
         Me.txtAmountOfHayBales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAmountOfHayBales.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ImprovedPasture03BindingSource, "AmountOfHayBales", True))
         Me.txtAmountOfHayBales.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtAmountOfHayBales.Location = New System.Drawing.Point(384, 33)
+        Me.txtAmountOfHayBales.Location = New System.Drawing.Point(383, 33)
         Me.txtAmountOfHayBales.Margin = New System.Windows.Forms.Padding(0)
         Me.txtAmountOfHayBales.Name = "txtAmountOfHayBales"
         Me.txtAmountOfHayBales.Size = New System.Drawing.Size(163, 20)
@@ -402,10 +451,10 @@ Partial Class ctrlWard03Page10
         Me.txtRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRemarks.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ImprovedPasture03BindingSource, "Remarks", True))
         Me.txtRemarks.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtRemarks.Location = New System.Drawing.Point(548, 33)
+        Me.txtRemarks.Location = New System.Drawing.Point(547, 33)
         Me.txtRemarks.Margin = New System.Windows.Forms.Padding(0)
         Me.txtRemarks.Name = "txtRemarks"
-        Me.txtRemarks.Size = New System.Drawing.Size(392, 20)
+        Me.txtRemarks.Size = New System.Drawing.Size(393, 20)
         Me.txtRemarks.TabIndex = 9
         '
         'DataGridView4
@@ -418,6 +467,57 @@ Partial Class ctrlWard03Page10
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.Size = New System.Drawing.Size(943, 199)
         Me.DataGridView4.TabIndex = 1
+        '
+        'CropResidueIDDataGridViewTextBoxColumn
+        '
+        Me.CropResidueIDDataGridViewTextBoxColumn.DataPropertyName = "CropResidueID"
+        Me.CropResidueIDDataGridViewTextBoxColumn.HeaderText = "CropResidueID"
+        Me.CropResidueIDDataGridViewTextBoxColumn.Name = "CropResidueIDDataGridViewTextBoxColumn"
+        Me.CropResidueIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.CropResidueIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'TypeOfCropDataGridViewTextBoxColumn
+        '
+        Me.TypeOfCropDataGridViewTextBoxColumn.DataPropertyName = "TypeOfCrop"
+        Me.TypeOfCropDataGridViewTextBoxColumn.HeaderText = "Aina ya zao"
+        Me.TypeOfCropDataGridViewTextBoxColumn.Name = "TypeOfCropDataGridViewTextBoxColumn"
+        Me.TypeOfCropDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'AmountOfHayBalesDataGridViewTextBoxColumn
+        '
+        Me.AmountOfHayBalesDataGridViewTextBoxColumn.DataPropertyName = "AmountOfHayBales"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.AmountOfHayBalesDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
+        Me.AmountOfHayBalesDataGridViewTextBoxColumn.HeaderText = "Idadi ya marobota/ bandali (bundle) yaliyozalishwa (Hei*)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.AmountOfHayBalesDataGridViewTextBoxColumn.Name = "AmountOfHayBalesDataGridViewTextBoxColumn"
+        Me.AmountOfHayBalesDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.AmountOfHayBalesDataGridViewTextBoxColumn.Width = 200
+        '
+        'AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn
+        '
+        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.DataPropertyName = "AreaOfFarmsPlotsGazedinSitu"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
+        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.HeaderText = "Eneo la mashamba yaliyotumika kwa malisho (grazed in situ) (ha) " & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.Name = "AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn"
+        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.Width = 200
+        '
+        'RemarksDataGridViewTextBoxColumn
+        '
+        Me.RemarksDataGridViewTextBoxColumn.DataPropertyName = "Remarks"
+        Me.RemarksDataGridViewTextBoxColumn.HeaderText = "Maelezo" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.RemarksDataGridViewTextBoxColumn.Name = "RemarksDataGridViewTextBoxColumn"
+        Me.RemarksDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.RemarksDataGridViewTextBoxColumn.Width = 400
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn10.Visible = False
         '
         'CropResidue03BindingSource
         '
@@ -455,6 +555,88 @@ Partial Class ctrlWard03Page10
         Me.AppUspAnnualFillTVDataGridView.Size = New System.Drawing.Size(423, 171)
         Me.AppUspAnnualFillTVDataGridView.TabIndex = 76
         '
+        'MediaGroupID
+        '
+        Me.MediaGroupID.DataPropertyName = "MediaGroupID"
+        Me.MediaGroupID.HeaderText = "MediaGroupID"
+        Me.MediaGroupID.Name = "MediaGroupID"
+        Me.MediaGroupID.Visible = False
+        '
+        'MediaDescription
+        '
+        Me.MediaDescription.DataPropertyName = "MediaDescription"
+        Me.MediaDescription.HeaderText = "MediaDescription"
+        Me.MediaDescription.Name = "MediaDescription"
+        Me.MediaDescription.Visible = False
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "MediaListID"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "MediaListID"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Visible = False
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "MediaID"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "MediaID"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Visible = False
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "MediaName"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Kituo cha TV kinachopatikana"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn8.Width = 180
+        '
+        'MediaStatus
+        '
+        Me.MediaStatus.DataPropertyName = "MediaStatus"
+        Me.MediaStatus.HeaderText = "MediaStatus"
+        Me.MediaStatus.Name = "MediaStatus"
+        Me.MediaStatus.Visible = False
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "TVAndRadioStationID"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "TVAndRadioStationID"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.Visible = False
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "StationID"
+        Me.DataGridViewTextBoxColumn12.HeaderText = "StationID"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.Visible = False
+        '
+        'DataGridViewTextBoxColumn13
+        '
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "NumberOfVillagesCovered"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn13.DefaultCellStyle = DataGridViewCellStyle5
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Idadi ya vijiji vinavyofikiwa na huduma" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn13.Width = 200
+        '
+        'DataGridViewTextBoxColumn14
+        '
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn14.HeaderText = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        Me.DataGridViewTextBoxColumn14.Visible = False
+        '
+        'FormSerialID
+        '
+        Me.FormSerialID.DataPropertyName = "FormSerialID"
+        Me.FormSerialID.HeaderText = "FormSerialID"
+        Me.FormSerialID.Name = "FormSerialID"
+        Me.FormSerialID.Visible = False
+        '
         'AppUspAnnualFillTVBindingSource
         '
         Me.AppUspAnnualFillTVBindingSource.DataMember = "appUspAnnualFillTV"
@@ -472,6 +654,88 @@ Partial Class ctrlWard03Page10
         Me.AppUspAnnualFillRadioDataGridView.Name = "AppUspAnnualFillRadioDataGridView"
         Me.AppUspAnnualFillRadioDataGridView.Size = New System.Drawing.Size(443, 171)
         Me.AppUspAnnualFillRadioDataGridView.TabIndex = 77
+        '
+        'MediaGroupIDDataGridViewTextBoxColumn
+        '
+        Me.MediaGroupIDDataGridViewTextBoxColumn.DataPropertyName = "MediaGroupID"
+        Me.MediaGroupIDDataGridViewTextBoxColumn.HeaderText = "MediaGroupID"
+        Me.MediaGroupIDDataGridViewTextBoxColumn.Name = "MediaGroupIDDataGridViewTextBoxColumn"
+        Me.MediaGroupIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'MediaDescriptionDataGridViewTextBoxColumn
+        '
+        Me.MediaDescriptionDataGridViewTextBoxColumn.DataPropertyName = "MediaDescription"
+        Me.MediaDescriptionDataGridViewTextBoxColumn.HeaderText = "MediaDescription"
+        Me.MediaDescriptionDataGridViewTextBoxColumn.Name = "MediaDescriptionDataGridViewTextBoxColumn"
+        Me.MediaDescriptionDataGridViewTextBoxColumn.Visible = False
+        '
+        'MediaListIDDataGridViewTextBoxColumn
+        '
+        Me.MediaListIDDataGridViewTextBoxColumn.DataPropertyName = "MediaListID"
+        Me.MediaListIDDataGridViewTextBoxColumn.HeaderText = "MediaListID"
+        Me.MediaListIDDataGridViewTextBoxColumn.Name = "MediaListIDDataGridViewTextBoxColumn"
+        Me.MediaListIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MediaListIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'MediaIDDataGridViewTextBoxColumn
+        '
+        Me.MediaIDDataGridViewTextBoxColumn.DataPropertyName = "MediaID"
+        Me.MediaIDDataGridViewTextBoxColumn.HeaderText = "MediaID"
+        Me.MediaIDDataGridViewTextBoxColumn.Name = "MediaIDDataGridViewTextBoxColumn"
+        Me.MediaIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'MediaNameDataGridViewTextBoxColumn
+        '
+        Me.MediaNameDataGridViewTextBoxColumn.DataPropertyName = "MediaName"
+        Me.MediaNameDataGridViewTextBoxColumn.HeaderText = "Kituo cha Radio kinachopatikana"
+        Me.MediaNameDataGridViewTextBoxColumn.Name = "MediaNameDataGridViewTextBoxColumn"
+        Me.MediaNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.MediaNameDataGridViewTextBoxColumn.Width = 200
+        '
+        'MediaStatusDataGridViewTextBoxColumn
+        '
+        Me.MediaStatusDataGridViewTextBoxColumn.DataPropertyName = "MediaStatus"
+        Me.MediaStatusDataGridViewTextBoxColumn.HeaderText = "MediaStatus"
+        Me.MediaStatusDataGridViewTextBoxColumn.Name = "MediaStatusDataGridViewTextBoxColumn"
+        Me.MediaStatusDataGridViewTextBoxColumn.Visible = False
+        '
+        'TVAndRadioStationIDDataGridViewTextBoxColumn
+        '
+        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.DataPropertyName = "TVAndRadioStationID"
+        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.HeaderText = "TVAndRadioStationID"
+        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.Name = "TVAndRadioStationIDDataGridViewTextBoxColumn"
+        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'StationIDDataGridViewTextBoxColumn
+        '
+        Me.StationIDDataGridViewTextBoxColumn.DataPropertyName = "StationID"
+        Me.StationIDDataGridViewTextBoxColumn.HeaderText = "StationID"
+        Me.StationIDDataGridViewTextBoxColumn.Name = "StationIDDataGridViewTextBoxColumn"
+        Me.StationIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "NumberOfVillagesCovered"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle6
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Idadi ya vijiji vinavyofikiwa na huduma"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn15.Width = 200
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "AnnualRecordID"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.Visible = False
+        '
+        'FormSerialIDDataGridViewTextBoxColumn
+        '
+        Me.FormSerialIDDataGridViewTextBoxColumn.DataPropertyName = "FormSerialID"
+        Me.FormSerialIDDataGridViewTextBoxColumn.HeaderText = "FormSerialID"
+        Me.FormSerialIDDataGridViewTextBoxColumn.Name = "FormSerialIDDataGridViewTextBoxColumn"
+        Me.FormSerialIDDataGridViewTextBoxColumn.Visible = False
         '
         'AppUspAnnualFillRadioBindingSource
         '
@@ -570,7 +834,6 @@ Partial Class ctrlWard03Page10
         Me.TableAdapterManager.LivestockMovement04TableAdapter = Nothing
         Me.TableAdapterManager.LivestockPopulation05TableAdapter = Nothing
         Me.TableAdapterManager.LivestockService01TableAdapter = Nothing
-
         Me.TableAdapterManager.LivestockSlaughtered01TableAdapter = Nothing
         Me.TableAdapterManager.MachineryDrawn03TableAdapter = Nothing
         Me.TableAdapterManager.MachineryListTableAdapter = Nothing
@@ -657,290 +920,33 @@ Partial Class ctrlWard03Page10
         '
         Me.AppUspAnnualFillTelecomTableAdapter.ClearBeforeFill = True
         '
-        'CropResidueIDDataGridViewTextBoxColumn
+        'Column1
         '
-        Me.CropResidueIDDataGridViewTextBoxColumn.DataPropertyName = "CropResidueID"
-        Me.CropResidueIDDataGridViewTextBoxColumn.HeaderText = "CropResidueID"
-        Me.CropResidueIDDataGridViewTextBoxColumn.Name = "CropResidueIDDataGridViewTextBoxColumn"
-        Me.CropResidueIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.CropResidueIDDataGridViewTextBoxColumn.Visible = False
+        Me.Column1.DataPropertyName = "ListID"
+        Me.Column1.HeaderText = "ListID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Visible = False
         '
-        'TypeOfCropDataGridViewTextBoxColumn
+        'ListItemSw
         '
-        Me.TypeOfCropDataGridViewTextBoxColumn.DataPropertyName = "TypeOfCrop"
-        Me.TypeOfCropDataGridViewTextBoxColumn.HeaderText = "Aina ya zao"
-        Me.TypeOfCropDataGridViewTextBoxColumn.Name = "TypeOfCropDataGridViewTextBoxColumn"
-        Me.TypeOfCropDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "ListItemSw"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 150
         '
-        'AmountOfHayBalesDataGridViewTextBoxColumn
+        'ListItemEn
         '
-        Me.AmountOfHayBalesDataGridViewTextBoxColumn.DataPropertyName = "AmountOfHayBales"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.AmountOfHayBalesDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
-        Me.AmountOfHayBalesDataGridViewTextBoxColumn.HeaderText = "Idadi ya marobota/ bandali (bundle) yaliyozalishwa (Hei*)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.AmountOfHayBalesDataGridViewTextBoxColumn.Name = "AmountOfHayBalesDataGridViewTextBoxColumn"
-        Me.AmountOfHayBalesDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AmountOfHayBalesDataGridViewTextBoxColumn.Width = 200
+        Me.ListItemEn.DataPropertyName = "ListItemEn"
+        Me.ListItemEn.HeaderText = "ListItemEn"
+        Me.ListItemEn.Name = "ListItemEn"
+        Me.ListItemEn.Visible = False
         '
-        'AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn
+        'ListItemStatus
         '
-        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.DataPropertyName = "AreaOfFarmsPlotsGazedinSitu"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
-        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.HeaderText = "Eneo la mashamba yaliyotumika kwa malisho (grazed in situ) (ha) " & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.Name = "AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn"
-        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AreaOfFarmsPlotsGazedinSituDataGridViewTextBoxColumn.Width = 200
-        '
-        'RemarksDataGridViewTextBoxColumn
-        '
-        Me.RemarksDataGridViewTextBoxColumn.DataPropertyName = "Remarks"
-        Me.RemarksDataGridViewTextBoxColumn.HeaderText = "Maelezo" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.RemarksDataGridViewTextBoxColumn.Name = "RemarksDataGridViewTextBoxColumn"
-        Me.RemarksDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.RemarksDataGridViewTextBoxColumn.Width = 400
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn10.Visible = False
-        '
-        'MediaGroupID
-        '
-        Me.MediaGroupID.DataPropertyName = "MediaGroupID"
-        Me.MediaGroupID.HeaderText = "MediaGroupID"
-        Me.MediaGroupID.Name = "MediaGroupID"
-        Me.MediaGroupID.Visible = False
-        '
-        'MediaDescription
-        '
-        Me.MediaDescription.DataPropertyName = "MediaDescription"
-        Me.MediaDescription.HeaderText = "MediaDescription"
-        Me.MediaDescription.Name = "MediaDescription"
-        Me.MediaDescription.Visible = False
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "MediaListID"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "MediaListID"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Visible = False
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "MediaID"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "MediaID"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Visible = False
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "MediaName"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Kituo cha TV kinachopatikana"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn8.Width = 180
-        '
-        'MediaStatus
-        '
-        Me.MediaStatus.DataPropertyName = "MediaStatus"
-        Me.MediaStatus.HeaderText = "MediaStatus"
-        Me.MediaStatus.Name = "MediaStatus"
-        Me.MediaStatus.Visible = False
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "TVAndRadioStationID"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "TVAndRadioStationID"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.Visible = False
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.DataPropertyName = "StationID"
-        Me.DataGridViewTextBoxColumn12.HeaderText = "StationID"
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.Visible = False
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "NumberOfVillagesCovered"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.DataGridViewTextBoxColumn13.DefaultCellStyle = DataGridViewCellStyle5
-        Me.DataGridViewTextBoxColumn13.HeaderText = "Idadi ya vijiji vinavyofikiwa na huduma" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn13.Width = 200
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.DataPropertyName = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn14.HeaderText = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        Me.DataGridViewTextBoxColumn14.Visible = False
-        '
-        'FormSerialID
-        '
-        Me.FormSerialID.DataPropertyName = "FormSerialID"
-        Me.FormSerialID.HeaderText = "FormSerialID"
-        Me.FormSerialID.Name = "FormSerialID"
-        Me.FormSerialID.Visible = False
-        '
-        'MediaGroupIDDataGridViewTextBoxColumn
-        '
-        Me.MediaGroupIDDataGridViewTextBoxColumn.DataPropertyName = "MediaGroupID"
-        Me.MediaGroupIDDataGridViewTextBoxColumn.HeaderText = "MediaGroupID"
-        Me.MediaGroupIDDataGridViewTextBoxColumn.Name = "MediaGroupIDDataGridViewTextBoxColumn"
-        Me.MediaGroupIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MediaDescriptionDataGridViewTextBoxColumn
-        '
-        Me.MediaDescriptionDataGridViewTextBoxColumn.DataPropertyName = "MediaDescription"
-        Me.MediaDescriptionDataGridViewTextBoxColumn.HeaderText = "MediaDescription"
-        Me.MediaDescriptionDataGridViewTextBoxColumn.Name = "MediaDescriptionDataGridViewTextBoxColumn"
-        Me.MediaDescriptionDataGridViewTextBoxColumn.Visible = False
-        '
-        'MediaListIDDataGridViewTextBoxColumn
-        '
-        Me.MediaListIDDataGridViewTextBoxColumn.DataPropertyName = "MediaListID"
-        Me.MediaListIDDataGridViewTextBoxColumn.HeaderText = "MediaListID"
-        Me.MediaListIDDataGridViewTextBoxColumn.Name = "MediaListIDDataGridViewTextBoxColumn"
-        Me.MediaListIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MediaListIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MediaIDDataGridViewTextBoxColumn
-        '
-        Me.MediaIDDataGridViewTextBoxColumn.DataPropertyName = "MediaID"
-        Me.MediaIDDataGridViewTextBoxColumn.HeaderText = "MediaID"
-        Me.MediaIDDataGridViewTextBoxColumn.Name = "MediaIDDataGridViewTextBoxColumn"
-        Me.MediaIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MediaNameDataGridViewTextBoxColumn
-        '
-        Me.MediaNameDataGridViewTextBoxColumn.DataPropertyName = "MediaName"
-        Me.MediaNameDataGridViewTextBoxColumn.HeaderText = "Kituo cha Radio kinachopatikana"
-        Me.MediaNameDataGridViewTextBoxColumn.Name = "MediaNameDataGridViewTextBoxColumn"
-        Me.MediaNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.MediaNameDataGridViewTextBoxColumn.Width = 200
-        '
-        'MediaStatusDataGridViewTextBoxColumn
-        '
-        Me.MediaStatusDataGridViewTextBoxColumn.DataPropertyName = "MediaStatus"
-        Me.MediaStatusDataGridViewTextBoxColumn.HeaderText = "MediaStatus"
-        Me.MediaStatusDataGridViewTextBoxColumn.Name = "MediaStatusDataGridViewTextBoxColumn"
-        Me.MediaStatusDataGridViewTextBoxColumn.Visible = False
-        '
-        'TVAndRadioStationIDDataGridViewTextBoxColumn
-        '
-        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.DataPropertyName = "TVAndRadioStationID"
-        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.HeaderText = "TVAndRadioStationID"
-        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.Name = "TVAndRadioStationIDDataGridViewTextBoxColumn"
-        Me.TVAndRadioStationIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'StationIDDataGridViewTextBoxColumn
-        '
-        Me.StationIDDataGridViewTextBoxColumn.DataPropertyName = "StationID"
-        Me.StationIDDataGridViewTextBoxColumn.HeaderText = "StationID"
-        Me.StationIDDataGridViewTextBoxColumn.Name = "StationIDDataGridViewTextBoxColumn"
-        Me.StationIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "NumberOfVillagesCovered"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle6
-        Me.DataGridViewTextBoxColumn15.HeaderText = "Idadi ya vijiji vinavyofikiwa na huduma"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        Me.DataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn15.Width = 200
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        Me.DataGridViewTextBoxColumn16.Visible = False
-        '
-        'FormSerialIDDataGridViewTextBoxColumn
-        '
-        Me.FormSerialIDDataGridViewTextBoxColumn.DataPropertyName = "FormSerialID"
-        Me.FormSerialIDDataGridViewTextBoxColumn.HeaderText = "FormSerialID"
-        Me.FormSerialIDDataGridViewTextBoxColumn.Name = "FormSerialIDDataGridViewTextBoxColumn"
-        Me.FormSerialIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'AiredProgramsIDDataGridViewTextBoxColumn
-        '
-        Me.AiredProgramsIDDataGridViewTextBoxColumn.DataPropertyName = "AiredProgramsID"
-        Me.AiredProgramsIDDataGridViewTextBoxColumn.HeaderText = "AiredProgramsID"
-        Me.AiredProgramsIDDataGridViewTextBoxColumn.Name = "AiredProgramsIDDataGridViewTextBoxColumn"
-        Me.AiredProgramsIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "NameOfStation"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Jina la chombo cha habari"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn4.Width = 200
-        '
-        'NameOfProgramDataGridViewTextBoxColumn
-        '
-        Me.NameOfProgramDataGridViewTextBoxColumn.DataPropertyName = "NameOfProgram"
-        Me.NameOfProgramDataGridViewTextBoxColumn.HeaderText = "Jina la kipindi" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.NameOfProgramDataGridViewTextBoxColumn.Name = "NameOfProgramDataGridViewTextBoxColumn"
-        Me.NameOfProgramDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.NameOfProgramDataGridViewTextBoxColumn.Width = 200
-        '
-        'FrequencyTimeInAWeekDataGridViewTextBoxColumn
-        '
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.DataPropertyName = "FrequencyTimeInAWeek"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.HeaderText = "Mara ngapi kwa wiki" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.Name = "FrequencyTimeInAWeekDataGridViewTextBoxColumn"
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.FrequencyTimeInAWeekDataGridViewTextBoxColumn.Width = 150
-        '
-        'TypeOfInformationDataGridViewTextBoxColumn
-        '
-        Me.TypeOfInformationDataGridViewTextBoxColumn.DataPropertyName = "TypeOfInformation"
-        Me.TypeOfInformationDataGridViewTextBoxColumn.HeaderText = "Aina ya taarifa" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.TypeOfInformationDataGridViewTextBoxColumn.Name = "TypeOfInformationDataGridViewTextBoxColumn"
-        Me.TypeOfInformationDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.TypeOfInformationDataGridViewTextBoxColumn.Width = 300
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "AnnualRecordID"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Visible = False
-        '
-        'TelecomCompaListIDDataGridViewTextBoxColumn
-        '
-        Me.TelecomCompaListIDDataGridViewTextBoxColumn.DataPropertyName = "TelecomCompaListID"
-        Me.TelecomCompaListIDDataGridViewTextBoxColumn.HeaderText = "TelecomCompaListID"
-        Me.TelecomCompaListIDDataGridViewTextBoxColumn.Name = "TelecomCompaListIDDataGridViewTextBoxColumn"
-        Me.TelecomCompaListIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MediaNameDataGridViewTextBoxColumn1
-        '
-        Me.MediaNameDataGridViewTextBoxColumn1.DataPropertyName = "MediaName"
-        Me.MediaNameDataGridViewTextBoxColumn1.HeaderText = "Jina la kampuni ya simu"
-        Me.MediaNameDataGridViewTextBoxColumn1.Name = "MediaNameDataGridViewTextBoxColumn1"
-        Me.MediaNameDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.MediaNameDataGridViewTextBoxColumn1.Width = 150
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "MediaStatus"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "MediaStatus"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Visible = False
+        Me.ListItemStatus.DataPropertyName = "ListItemStatus"
+        Me.ListItemStatus.HeaderText = "ListItemStatus"
+        Me.ListItemStatus.Name = "ListItemStatus"
+        Me.ListItemStatus.Visible = False
         '
         'TelecommunicationIDDataGridViewTextBoxColumn
         '
@@ -1079,12 +1085,6 @@ Partial Class ctrlWard03Page10
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TelecomCompaListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MediaNameDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TelecommunicationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TelecomCompIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FormSerialIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CropResidueIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TypeOfCropDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AmountOfHayBalesDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1113,5 +1113,14 @@ Partial Class ctrlWard03Page10
     Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FormSerialIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemEn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemStatus As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TelecommunicationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TelecomCompIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FormSerialIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class

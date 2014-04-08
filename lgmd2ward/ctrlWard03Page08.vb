@@ -1,14 +1,14 @@
 ﻿Public Class ctrlWard03Page08
 
-    Dim AnimalsListDA As New LGMDdataDataSetTableAdapters.AnimalsListTableAdapter
-    Dim Livestock03DA As New LGMDdataDataSetTableAdapters.Livestock03TableAdapter
+    Private ThreeDListDA As New LGMDdataDataSetTableAdapters.ThreeDListTableAdapter
+    Private Livestock03DA As New LGMDdataDataSetTableAdapters.Livestock03TableAdapter
     Private firstNo As Integer?
     Private secondNo As Integer?
     Private thirdNo As Integer?
 
     Private Sub ctrlWard03Page08_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.AnimalsListDA.Fill(Me.LGMDdataDataSet.AnimalsList)
+        Me.ThreeDListDA.Fill(Me.LGMDdataDataSet.ThreeDList)
         Me.Livestock03DA.Fill(Me.LGMDdataDataSet.Livestock03)
         Me.Livestock03iTableAdapter.Fill(Me.LGMDdataDataSet.Livestock03i, g_RecordID)
         Me.Livestock03iTableAdapter.FillNgombe(Me.LgmDdataDataSet1.Livestock03i, g_RecordID)
@@ -18,8 +18,8 @@
         Me.Livestock03iTableAdapter.FillNdege(Me.LgmDdataDataSet5.Livestock03i, g_RecordID)
 
         If Me.LGMDdataDataSet.Livestock03i.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.AnimalsList.Rows
-                Me.Livestock03DA.Insert(Guid.NewGuid, row.Item(0).ToString, g_RecordID, g_FormSerialNumber)
+            For Each row As DataRow In Me.LGMDdataDataSet.ThreeDList.Select("ListItemType='Livestock03'")
+                Me.Livestock03DA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.Livestock03iTableAdapter.Fill(Me.LGMDdataDataSet.Livestock03i, g_RecordID)
             Me.Livestock03iTableAdapter.FillNgombe(Me.LgmDdataDataSet1.Livestock03i, g_RecordID)

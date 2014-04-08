@@ -43,6 +43,31 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.SqlServer.Types" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HEMISEntities.dll" size="366592">
       <assemblyIdentity name="HEMISEntities" version="1.1.0.0" publicKeyToken="9A0DF101AC32CBEB" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -55,26 +80,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LGMD.exe" size="8544768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LGMD.exe" size="9468928">
       <assemblyIdentity name="LGMD" version="1.7.4.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>qHyuV6msVAQmQZxUDMMijPZ3vnk=</dsig:DigestValue>
+        <dsig:DigestValue>zxKypfeVwRT7NsaKUkztKhcLwcY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Common.dll" size="6391672">
-      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Common.dll" size="8740464">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>GY/g6cLtCVE3WLFgpbddyNbODnc=</dsig:DigestValue>
+        <dsig:DigestValue>13wGrRZ0oM/oIrFfxr7Tl+mMMsA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,14 +128,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="548224">
-      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="564848">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7Hs2M3g1bPBka5Ru0eits2QAWOo=</dsig:DigestValue>
+        <dsig:DigestValue>oduqXcWZo5xG7NvxydMg3FHncs0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -302,19 +327,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2W/j83XeqlQd9jmeSFzZPLgpX8k=</dsig:DigestValue>
+        <dsig:DigestValue>qHg80MOe4D19LOGRXkZEBb8B4qQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SyncScopeProvision.dll" size="28160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SyncScopeProvision.dll" size="28672">
       <assemblyIdentity name="SyncScopeProvision" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2ksMTJZVKWHuDQ6L7d0sJuRF+Uk=</dsig:DigestValue>
+        <dsig:DigestValue>wWirio5gsztVX/7E2HTpThn3fIU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -717,13 +742,13 @@
       <dsig:DigestValue>1Eavq7EsZHZ2L8sm1EQCz83T+tE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\AnnuallyWardReport.rdl" size="708072">
+  <file name="Reports\AnnuallyWardReport.rdl" size="705202">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Hambfqiq4puZmWvkaTdUgpLI5+Q=</dsig:DigestValue>
+      <dsig:DigestValue>syKMiFcUdgC6C7nULu61/t7Mk8E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reports\DistrictAnnuallyReportSubmissionStatus.rdl" size="28171">
@@ -744,58 +769,58 @@
       <dsig:DigestValue>OBGrv5kd145ZwAQKp8F6Dg2tFoc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\MonthlyWardReport.rdl" size="927137">
+  <file name="Reports\MonthlyWardReport.rdl" size="926724">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>FmtKBXydQVhfHsm7Dfc4pwPmr5w=</dsig:DigestValue>
+      <dsig:DigestValue>8wEFXST7bZ1ZlN0wsFab5CQlhQE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\PrintoutOfAnnuallyASPD.rdl" size="794624">
+  <file name="Reports\PrintoutOfAnnuallyASPD.rdl" size="791855">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>MTnItAH7ggOqiQMuyq+4/H5TF+0=</dsig:DigestValue>
+      <dsig:DigestValue>OrTaZ4HTPdLJcCFBdeZmfYpCRcg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\PrintoutOfMonthlyASPD.rdl" size="1064560">
+  <file name="Reports\PrintoutOfMonthlyASPD.rdl" size="1064184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>z5Ti23a2Jm49vEbLGXG+2eFdUkI=</dsig:DigestValue>
+      <dsig:DigestValue>XFs+K0Rqhk5/rAAsDcUxMcOxOqc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\PrintoutOfQuarterlyASPD.rdl" size="444913">
+  <file name="Reports\PrintoutOfQuarterlyASPD.rdl" size="444149">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fEO3jPjTi3zRyNVMCv67YZjf0J8=</dsig:DigestValue>
+      <dsig:DigestValue>o4rllhXO50+PIZxs8q6R8JXfzos=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\QuarterlyWardReport.rdl" size="392920">
+  <file name="Reports\QuarterlyWardReport.rdl" size="392826">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>loEH/24povSuRRGS4QbRYebeIHc=</dsig:DigestValue>
+      <dsig:DigestValue>y9CTSoGXw+FQbczbxpe0cVB/A5Q=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\ReportAnnual.rdl" size="1530340">
+  <file name="Reports\ReportAnnual.rdl" size="1522775">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>U8DYs7PHfiJJiUvqaAWJutTvKq0=</dsig:DigestValue>
+      <dsig:DigestValue>SlUGPnseP5sUHPTdsZIfEOK4G3U=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reports\ReportMonthly.rdl" size="51795">
@@ -807,13 +832,13 @@
       <dsig:DigestValue>fT+HdM9LfTDRk5zG0jIuZIoskiY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reports\ReportQuarter.rdl" size="917306">
+  <file name="Reports\ReportQuarter.rdl" size="916751">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>g3xmXvYegv/fHCWNCML1mimDs8o=</dsig:DigestValue>
+      <dsig:DigestValue>oFQLKeDe35C1w5/GwSbuRoFI9pI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reports\WardAnnuallyReportSubmissionStatus.rdl" size="71459">

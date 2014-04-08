@@ -84,22 +84,22 @@ namespace SyncScopeProvision
         //private string[] tableNames = { "tbl_data_forms_submitted","RecordInfo","MonthlyRecord","QuarterlyRecord","AnnualRecord" };
 
         private string[] tableNames = {
-                                    "RecordInfo","MonthlyRecord","QuarterlyRecord","AnnualRecord",                                 
+                                    "RecordInfo",                            
                               
-                                    "ChemicalControl01","CommentsOfVillageOfficer01","DippingSprayingVaccination01","LivestockService01",
-                                    "LivestockSlaughtered01","MeatInspection01","Medication01","PeopleWhoVisitTheVillage01",
-                                    "ProdMilk01","ProdSkin01","TargetImplementationAndCropPrices01","WeatherCondition01",
+                                    "DistrictChemicalControl01","DistrictCommentsOfVillageOfficer01","DistrictDippingSprayingVaccination01","DistrictLivestockService01",
+                                    "DistrictLivestockSlaughtered01","DistrictMeatInspection01","DistrictMedication01","DistrictPeopleWhoVisitTheVillage01",
+                                    "DistrictProdMilk01","DistrictProdSkin01","DistrictTargetImplementationAndCropPrices01","DistrictWeatherCondition01",
 
-                                    "CoopGroup02",//NumberOfTotalMembers has problems
-                                    "CoopSaccos02","FarmersFieldSchool02","FoodCondition02","Irrigation02",
-                                    "PlantHealth02","ProdLand02","SoilErosion02",
+                                    "DistrictCoopGroup02",//NumberOfTotalMembers has problems
+                                    "DistrictCoopSaccos02","DistrictFarmersFieldSchool02","DistrictFoodCondition02","DistrictIrrigation02",
+                                    "DistrictPlantHealth02","DistrictProdLand02","DistrictSoilErosion02",
                                     
-                                    "AiredPrograms03","AnimalDrawn03","BasicInformation03","ContractFarming03","CropResidue03","FarmersFieldSchool03","Fertilizer03",
-                                    "GrazingLand03","HandOperatedImplements03","ImprovedPasture03",
-                                    "ImprovedSeeds03",//CropNameOthers has problem
-                                    "IrrigationScheme03","Livestock03","LivestockInfrastructure03","MachineryDrawn03",
-                                    "Machines03",//
-                                    "ProcessingMachines03","Telecommunication03","TVAndRadioStation03","Pestcide03",
+                                    "DistrictAiredPrograms03","DistrictAnimalDrawn03","DistrictBasicInformation03","DistrictContractFarming03","DistrictCropResidue03","DistrictFarmersFieldSchool03","DistrictFertilizer03",
+                                    "DistrictGrazingLand03","DistrictHandOperatedImplements03","DistrictImprovedPasture03",
+                                    "DistrictImprovedSeeds03",//CropNameOthers has problem
+                                    "DistrictIrrigationScheme03","DistrictLivestock03","DistrictLivestockInfrastructure03","DistrictMachineryDrawn03",
+                                    "DistrictMachines03",//
+                                    "DistrictProcessingMachines03","DistrictTelecommunication03","DistrictTVAndRadioStation03","DistrictPestcide03",
 
                                     "AnimalsFeeds04","LivestockMarketing04","LivestockMovement04","ProductsMovement04",
                                     "ReproductionInputs04","Carcass04",
@@ -126,9 +126,9 @@ namespace SyncScopeProvision
 
         private Stopwatch stopwatch;
         private System.Timers.Timer timer;
-        private bool rebuild = false; //Change value to true during provisioning
-        private bool rebuildClient = false; //Change value to true during provisioning
-        private bool rebuildServer = false; //Change value to true during provisioning
+        private bool rebuild = true; //Change value to true during provisioning
+        private bool rebuildClient = true; //Change value to true during provisioning
+        private bool rebuildServer = true; //Change value to true during provisioning
         #endregion
 
         /// <summary>
@@ -150,8 +150,8 @@ namespace SyncScopeProvision
 
             this.localConnection = localConnection;
             this.remoteConnection = remoteConnection;
-            //this.rebuildClient = true; //Uncomment during provisioning
-            this.rebuildClient = repair; //Comment during provisioning
+            this.rebuildClient = true; //Uncomment during provisioning
+            //this.rebuildClient = repair; //Comment during provisioning
 
             this.rebuild = (this.rebuildClient || this.rebuildServer);
 

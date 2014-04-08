@@ -1,9 +1,9 @@
 ﻿Public Class ctrlWard03Page03
 
-    Dim ImplementsListDA As New AnnuallyDataDataSetTableAdapters.ImplementsListTableAdapter
-    Dim ImplementsDA As New AnnuallyDataDataSetTableAdapters.HandOperatedImplements03TableAdapter
-    Dim ProcessingMachineListDA As New LGMDdataDataSetTableAdapters.ProcessingMachinesListTableAdapter
-    Dim ProcessingMachineDA As New LGMDdataDataSetTableAdapters.ProcessingMachines03TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private ImplementsDA As New AnnuallyDataDataSetTableAdapters.HandOperatedImplements03TableAdapter
+    Private ProcessingMachineListDA As New LGMDdataDataSetTableAdapters.ProcessingMachinesListTableAdapter
+    Private ProcessingMachineDA As New LGMDdataDataSetTableAdapters.ProcessingMachines03TableAdapter
     Private numberOfImplements As Integer?
     Private numberWorkingIndividually As Integer?
     Private numberWorkingGroup As Integer?
@@ -12,13 +12,13 @@
 
     Private Sub ctrlWard03Page03_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.ImplementsListDA.Fill(Me.AnnuallyDataDataSet.ImplementsList)
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
         Me.ImplementsDA.Fill(Me.AnnuallyDataDataSet.HandOperatedImplements03)
         Me.AppUspAnnualFillImplementsTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillImplements, g_RecordID)
 
         Try
             If Me.AnnuallyDataDataSet.appUspAnnualFillImplements.Rows.Count = 0 Then
-                For Each row As DataRow In Me.AnnuallyDataDataSet.ImplementsList.Select("ImplementStatus = '0'")
+                For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType = 'HandOperatedImplements03' AND ListItemStatus=0")
                     Me.ImplementsDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
                 Me.AppUspAnnualFillImplementsTableAdapter.Fill(Me.AnnuallyDataDataSet.appUspAnnualFillImplements, g_RecordID)
@@ -26,12 +26,11 @@
         Catch ex As Exception
         End Try
 
-        Me.ProcessingMachineListDA.Fill(Me.LGMDdataDataSet.ProcessingMachinesList)
         Me.ProcessingMachineDA.Fill(Me.LGMDdataDataSet.ProcessingMachines03)
         Me.AppUspAnnualFillProcessingMachinesTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillProcessingMachines, g_RecordID)
 
         If Me.LGMDdataDataSet.appUspAnnualFillProcessingMachines.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.ProcessingMachinesList.Select("MachineStatus='0'")
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='ProcessingMachines03' AND ListItemStatus=0")
                 Me.ProcessingMachineDA.Insert(Guid.NewGuid(), row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.AppUspAnnualFillProcessingMachinesTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillProcessingMachines, g_RecordID)

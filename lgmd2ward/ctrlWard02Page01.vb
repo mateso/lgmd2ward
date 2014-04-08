@@ -3,9 +3,11 @@
 Public Class ctrlWard02Page01
 
     Dim FigureIDCriteria As String = "FigureID in (201,202) and BreakdownTypeID1 in ('MAI','PDD','SGH','BMT','FMT','WHE','BLY','CSV','SWP','IPT','YAM','CYM','SCT','TBC','CFF','TEA','PYR','COC','RUB','WAT','SUG', 'JUT','SIS','CSH','SFL','SMS','GRN','PLO','CCN','SYB','COS','JTR','CWP','PGP','GBG','GNP','CPL','BBN','BEN')"
-    Private LGMD2iDS As New DataSet
-    Private FoodConditionDA As New SqlDataAdapter
-    Private FoodConditionDT As New DataTable
+    Private QuarterlyLookupDA As New LookupTableDataDataSetTableAdapters.appUspQuarterlyLookupVillageFoodSituationTableAdapter
+    Private ds As DataSet
+    Private da As SqlDataAdapter
+    Private cmd As SqlCommand
+    Private dt As DataTable
     Private numberNoFood As Integer?
     Private numberLessFood As Integer?
     Private numberEnoughFood As Integer?
@@ -13,10 +15,10 @@ Public Class ctrlWard02Page01
 
     Private Sub ctrlWard02Page01_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        Me.QuarterlyLookupDA.Fill(Me.LookupTableDataDataSet.appUspQuarterlyLookupVillageFoodSituation)
+
         Me.RecordInfoTableAdapter.Fill(Me.LGMDdataDataSet.RecordInfo, g_RecordID)
 
-        Me.FoodStatusListTableAdapter.Fill(Me.LGMDdataDataSet.FoodStatusList)
-        'Me.FoodCondition02TableAdapter.Fill(Me.LGMDdataDataSet.FoodCondition02, g_RecordID)
         Call FillFoodCondition()
 
         Call LabelTranslation(Me)
@@ -162,34 +164,33 @@ Public Class ctrlWard02Page01
     End Sub
 
     Private Sub FillFoodCondition()
-        Dim conn As New SqlConnection
-        conn.ConnectionString = My.Settings.DataConnectionString
 
-        Dim cmdFillFoodCondition As New SqlCommand
+        ds = New DataSet
+        da = New SqlDataAdapter
+        cmd = New SqlCommand
+        dt = New DataTable
 
-        Dim prmRecordID As New SqlParameter("@RecordID", g_RecordID)
-
-        With cmdFillFoodCondition
+        With cmd
             .Connection = conn
             .CommandType = CommandType.StoredProcedure
             .CommandText = "appUspQuarterlyFillFoodCondition"
-            .Parameters.Add(prmRecordID)
+            .Parameters.AddWithValue("@RecordID", g_RecordID)
         End With
 
         'fill in insert, update, and delete commands
-        Dim cmdBldr As New SqlCommandBuilder(Me.FoodConditionDA)
+        'Dim cmdBldr As New SqlCommandBuilder(Me.FoodConditionDA)
 
-        Me.FoodConditionDA.SelectCommand = cmdFillFoodCondition
-        Me.FoodConditionDA.Fill(Me.LGMD2iDS, "FoodCondition02")
-        Me.FoodConditionDT = Me.LGMD2iDS.Tables("FoodCondition02")
+        Me.da.SelectCommand = cmd
+        Me.da.Fill(Me.ds, "FoodCondition02")
+        Me.dt = Me.ds.Tables("FoodCondition02")
 
-        If Me.FoodConditionDT.Rows.Count > 0 Then
-            Me.cmoFoodStatus.SelectedValue = Me.FoodConditionDT.Rows(0)("FoodStatustID").ToString
-            Me.txtRemarks.Text = Me.FoodConditionDT.Rows(0)("Remarks").ToString
-            Me.txtNoFood.Text = Me.FoodConditionDT.Rows(0)("FamilyNoFood").ToString
-            Me.txtLessFood.Text = Me.FoodConditionDT.Rows(0)("FamilyLessFood").ToString
-            Me.txtEnoughFood.Text = Me.FoodConditionDT.Rows(0)("FamilyEnoughFood").ToString
-            Me.txtExcessFood.Text = Me.FoodConditionDT.Rows(0)("FamilyExcessFood").ToString
+        If Me.dt.Rows.Count > 0 Then
+            Me.cmoFoodStatus.SelectedValue = Me.dt.Rows(0)("FoodStatusID").ToString
+            Me.txtRemarks.Text = Me.dt.Rows(0)("Remarks").ToString
+            Me.txtNoFood.Text = Me.dt.Rows(0)("FamilyNoFood").ToString
+            Me.txtLessFood.Text = Me.dt.Rows(0)("FamilyLessFood").ToString
+            Me.txtEnoughFood.Text = Me.dt.Rows(0)("FamilyEnoughFood").ToString
+            Me.txtExcessFood.Text = Me.dt.Rows(0)("FamilyExcessFood").ToString
         Else
         End If
 

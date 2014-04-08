@@ -27,9 +27,9 @@ Public Class ctrlEditForm
 
         Select Case g_language
             Case "English"
-                Me.cmdDelete.Text = "Delete form"
+                Me.btnDeleteForm.Text = "Delete form"
             Case Else
-                Me.cmdDelete.Text = "Futa fomu"
+                Me.btnDeleteForm.Text = "Futa fomu"
         End Select
 
         If strSelectedNode = "View unapproved data" Then
@@ -46,6 +46,8 @@ Public Class ctrlEditForm
             g_PeriodTo = CDate(Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("PeriodTo").Value.ToString)
             g_PeriodHeading = PeriodHeading(g_PeriodFrom, g_PeriodTo)
             g_FormSerialNumber = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumber").Value.ToString
+            g_FormSerialNumberIQ = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumberIQ").Value.ToString
+            g_FormSerialNumberIA = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumberIA").Value.ToString
             g_RecordID = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("RecordID").Value
         End If
 
@@ -58,28 +60,28 @@ Public Class ctrlEditForm
                 Case "English"
                     'If Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("Area_ID").Value.ToString = GetConfigArea() And g_bViewOnly = False And Udp_forms_submittedDataGridView.SelectedRows(0).Cells(10).Value.ToString.Length = 0 Then
                     If g_bViewOnly = False Then
-                        Me.cmdEdit.Text = "Edit form"
+                        Me.btnEditForm.Text = "Edit form"
                     Else
-                        Me.cmdEdit.Text = "View form"
+                        Me.btnEditForm.Text = "View form"
                     End If
                 Case Else
                     'If Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("Area_ID").Value.ToString = GetConfigArea() And g_bViewOnly = False And Udp_forms_submittedDataGridView.SelectedRows(0).Cells(10).Value.ToString.Length = 0 Then
                     If g_bViewOnly = False Then
-                        Me.cmdEdit.Text = "Hariri fomu"
+                        Me.btnEditForm.Text = "Hariri fomu"
                     Else
-                        Me.cmdEdit.Text = "Angalia fomu"
+                        Me.btnEditForm.Text = "Angalia fomu"
                     End If
             End Select
         Else
             'Me.cmdEdit.Enabled = False
             Select Case g_language
                 Case "English"
-                    Me.cmdEdit.Text = "View/edit form"
+                    Me.btnEditForm.Text = "View/edit form"
                 Case Else
-                    Me.cmdEdit.Text = "Angalia/hariri fomu"
+                    Me.btnEditForm.Text = "Angalia/hariri fomu"
             End Select
         End If
-        Me.txtComments.ReadOnly = Not (Me.BtnApproveData.Enabled Or Me.btnVerifyData.Enabled)
+        Me.txtComments.ReadOnly = Not (Me.btnApproveData.Enabled Or Me.btnVerifyData.Enabled)
         Me.btnSaveComment.Enabled = Not Me.txtComments.ReadOnly
 
     End Sub
@@ -99,166 +101,11 @@ Public Class ctrlEditForm
         g_PeriodTo = CDate(Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("PeriodTo").Value.ToString)
         g_PeriodHeading = PeriodHeading(g_PeriodFrom, g_PeriodTo)
         g_FormSerialNumber = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumber").Value.ToString
+        g_FormSerialNumberIQ = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumberIQ").Value.ToString
+        g_FormSerialNumberIA = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumberIA").Value.ToString
         g_RecordID = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("RecordID").Value
         GetFormDetails = True
     End Function
-
-    Private Sub cmdEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdEdit.Click
-        If GetFormDetails() = False Then
-            Exit Sub
-        End If
-
-        If g_bViewOnly = False Then
-            g_form_mode = "Edit"
-        Else
-            g_form_mode = "View"
-        End If
-        If g_bViewOnly = True Then
-            g_form_mode = "View"
-        End If
-
-        Dim ctrl As New System.Windows.Forms.UserControl
-        If LGMD.ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.Count > 0 Then
-        End If
-        LGMD.ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.RemoveAt(0)
-        Select Case g_FormTypeNumber
-            Case 1
-                ctrl = New ctrlWard01Page01
-            Case 2
-                ctrl = New ctrlWard02Page01
-            Case 3
-                ctrl = New ctrlWard03Page01
-            Case 4
-                ctrl = New ctrlDistrict02Page01
-            Case 5
-                ctrl = New ctrlDistrict03Page01
-            Case 6
-                ctrl = New ctrlWard06Page01
-        End Select
-        Try
-            LGMD.ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.Add(ctrl)
-        Catch ex As Exception
-        End Try
-        g_bSeleted = True
-
-    End Sub
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVerifyData.Click
-        Dim rowCount As Integer
-        Dim conn As New SqlClient.SqlConnection(My.Settings.DataConnectionString) ' My.Settings.LGMDdataConnectionStringMy.Settings.LGMDdataConnectionString)
-
-        Dim previousConnectionState As ConnectionState
-        previousConnectionState = conn.State
-
-        Try
-            conn.Open()
-            Dim cmd As New SqlCommand("update RecordInfo set DateVerified=convert(datetime,'" & Now.Date & "',103),VerifiedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(5).Value.ToString & "' ", conn)
-            rowCount = cmd.ExecuteNonQuery()
-            If GetConfigLevel() = 5 Then
-                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
-            Else
-                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
-            End If
-            MsgBox("Succesfully Verified")
-            Me.cmdEdit.Focus()
-            Me.btnVerifyData.Enabled = False
-        Finally
-            conn.Close()
-        End Try
-    End Sub
-
-    Private Sub BtnApproveData_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnApproveData.Click
-
-        Dim strCommand As String = ""
-        Dim strMessageToAsk As String = ""
-        Dim strFormSerialNumber = g_FormSerialNumber.Substring(3, 15) + "%" + g_FormSerialNumber.Substring(24)
-
-        If Me.BtnApproveData.Text = "Approve Data" Then
-            If g_FormTypeNumber = 4 Then
-                'strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
-                strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumberIQ LIKE '" & strFormSerialNumber & "'"
-            Else
-                'strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
-                strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumberIA LIKE '" & strFormSerialNumber & "'"
-            End If
-            strMessageToAsk = "Are you sure you want to Approve this Report?"
-        Else
-            'strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null, DateVerified=convert(datetime,'" & Now.Date & "',103),VerifiedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(5).Value.ToString & "'"
-            If g_FormTypeNumber = 4 Then
-                'strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
-                strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumberIQ LIKE '" & strFormSerialNumber & "'"
-            Else
-                'strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
-                strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumberIA LIKE '" & strFormSerialNumber & "'"
-            End If
-            strMessageToAsk = "Are you sure you want to Allow changes to this Report?"
-        End If
-
-        If MsgBox(strMessageToAsk, MsgBoxStyle.Question + MsgBoxStyle.YesNo + vbDefaultButton2) = MsgBoxResult.No Then
-            Exit Sub
-        End If
-
-        Dim rowCount As Integer
-        Dim conn As New SqlClient.SqlConnection(My.Settings.DataConnectionString) 'My.Settings.LGMDdataConnectionStringMy.Settings.LGMDdataConnectionString)
-
-        Dim previousConnectionState As ConnectionState
-        previousConnectionState = conn.State
-
-        Try
-            conn.Open()
-            Dim cmd As New SqlCommand(strCommand, conn)
-            rowCount = cmd.ExecuteNonQuery()
-            Try
-                If GetConfigLevel() = 5 Then
-                    Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
-                Else
-                    Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
-                End If
-            Catch ex As Exception
-            End Try
-
-            If Me.BtnApproveData.Text = "Approve Data" Then
-                MsgBox("Succesfully Approved")
-            Else
-                MsgBox("Succesfully Allowed Changes")
-            End If
-
-            Me.cmdEdit.Focus()
-            'Me.BtnApproveData.Enabled = False
-        Finally
-            conn.Close()
-        End Try
-
-    End Sub
-
-    Private Sub cmdDelete_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmdDelete.Click
-        Dim recordID As Guid
-        Dim formSerialNumber As Int32
-        If GetFormDetails() = False Then
-            Exit Sub
-        End If
-        Try
-            If MsgBoxBilingual("Are you sure you want to delete this form and all the data on it?", "Una uhakika unataka kufuta fomu hii na takwimu zake zote?", 36) = vbYes Then
-                Me.Cursor = Cursors.WaitCursor
-                For Each row As DataGridViewRow In Me.Udp_forms_submittedDataGridView.SelectedRows
-                    recordID = row.Cells(1).Value
-                    formSerialNumber = row.Cells(7).Value
-                Next
-                Call DeleteForm(recordID, formSerialNumber)
-                MessageBox.Show("Form successfully deleted", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            End If
-            If GetConfigLevel() = 5 Then
-                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
-            Else
-                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
-            End If
-        Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString)
-        Finally
-            Me.Cursor = Cursors.Arrow
-        End Try
-
-    End Sub
 
     Private Sub Udp_forms_submittedDataGridView_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Udp_forms_submittedDataGridView.SelectionChanged
 
@@ -272,29 +119,29 @@ Public Class ctrlEditForm
 
             'Removed from the if statement below "Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("VerifiedByUserID").Value.ToString <> "" And"
             If GetConfigLevel() = 4 Then
-                Me.cmdEdit.Enabled = False
+                Me.btnEditForm.Enabled = False
                 Me.txtComments.Enabled = True
-                Me.BtnApproveData.Enabled = True
+                Me.btnApproveData.Enabled = True
                 Me.btnSaveComment.Enabled = True
-                Me.cmdDelete.Enabled = False
-                Me.btnExport.Enabled = False
-                Me.btnExportAlForms.Enabled = False
+                Me.btnDeleteForm.Enabled = False
+                Me.btnExportSelectedForm.Enabled = False
+                Me.btnExportAllForms.Enabled = False
             ElseIf GetConfigLevel() = 2 Then
-                Me.cmdEdit.Enabled = False
-                Me.cmdDelete.Enabled = False
-                Me.btnExport.Enabled = False
-                Me.btnExportAlForms.Enabled = False
+                Me.btnEditForm.Enabled = False
+                Me.btnDeleteForm.Enabled = False
+                Me.btnExportSelectedForm.Enabled = False
+                Me.btnExportAllForms.Enabled = False
             Else
-                Me.cmdEdit.Enabled = True
-                Me.cmdDelete.Enabled = False
-                Me.btnExport.Enabled = False
-                Me.btnExportAlForms.Enabled = False
+                Me.btnEditForm.Enabled = True
+                Me.btnDeleteForm.Enabled = False
+                Me.btnExportSelectedForm.Enabled = False
+                Me.btnExportAllForms.Enabled = False
             End If
 
             If Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("ApprovedByUserID").Value.ToString <> "" Then
-                Me.BtnApproveData.Text = "Allow Changes"
+                Me.btnApproveData.Text = "Allow Changes"
             Else
-                Me.BtnApproveData.Text = "Approve Data"
+                Me.btnApproveData.Text = "Approve Data"
             End If
 
             'If Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("Area_ID").Value.ToString.Equals(GetConfigArea()) Then
@@ -307,11 +154,11 @@ Public Class ctrlEditForm
             '    Me.btnExportAlForms.Enabled = False
             'End If
         Else
-            Me.BtnApproveData.Enabled = False
+            Me.btnApproveData.Enabled = False
             Me.btnVerifyData.Enabled = False
-            Me.cmdDelete.Enabled = True
-            Me.btnExport.Enabled = True
-            Me.btnExportAlForms.Enabled = True
+            Me.btnDeleteForm.Enabled = True
+            Me.btnExportSelectedForm.Enabled = True
+            Me.btnExportAllForms.Enabled = True
         End If
         Call RefreshEditButtonCaption()
         Try
@@ -320,54 +167,19 @@ Public Class ctrlEditForm
                     g_FormTypeNumber = CLng(Me.Udp_forms_submittedDataGridView.Rows(0).Cells("FormTypeNumber").Value.ToString)
                     g_PeriodHeading = PeriodHeading(g_PeriodFrom, g_PeriodTo)
                     g_FormSerialNumber = Me.Udp_forms_submittedDataGridView.Rows(0).Cells("FormSerialNumber").Value.ToString
+                    g_FormSerialNumberIQ = Me.Udp_forms_submittedDataGridView.Rows(0).Cells("FormSerialNumberIQ").Value.ToString
+                    g_FormSerialNumberIA = Me.Udp_forms_submittedDataGridView.Rows(0).Cells("FormSerialNumberIA").Value.ToString
                 End If
             Else
                 g_FormTypeNumber = CLng(Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormTypeNumber").Value.ToString)
                 g_PeriodHeading = PeriodHeading(g_PeriodFrom, g_PeriodTo)
                 g_FormSerialNumber = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumber").Value.ToString
+                g_FormSerialNumberIQ = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumberIQ").Value.ToString
+                g_FormSerialNumberIA = Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells("FormSerialNumberIA").Value.ToString
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-    End Sub
-
-    Private Sub btnSaveComment_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSaveComment.Click
-
-        If GetFormDetails() = False Then
-            Exit Sub
-        End If
-        Dim rowCount As Integer
-        Dim conn As New SqlClient.SqlConnection(My.Settings.DataConnectionString) ' My.Settings.LGMDdataConnectionStringMy.Settings.LGMDdataConnectionString)
-
-        Dim previousConnectionState As ConnectionState
-        previousConnectionState = conn.State
-
-        Try
-            conn.Open()
-            Dim cmd As New SqlCommand("update RecordInfo set Comments='" & Me.txtComments.Text & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "' ", conn)
-            rowCount = cmd.ExecuteNonQuery()
-            If rowCount > 0 Then
-                MsgBox("Comment Successfully Saved")
-            End If
-            If GetConfigLevel() = 5 Then
-                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
-            Else
-                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
-            End If
-            Me.cmdEdit.Focus()
-            Me.btnVerifyData.Enabled = False
-        Finally
-            conn.Close()
-        End Try
-
-    End Sub
-
-    Private Sub btnExport_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExport.Click
-        fnExportFile(False)
-    End Sub
-
-    Private Sub btnExportAlForms_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExportAlForms.Click
-        fnExportFile(True)
     End Sub
 
     Private Sub fnExportFile(Optional ByVal bAllForms As Boolean = True)
@@ -498,9 +310,203 @@ Public Class ctrlEditForm
         End Try
     End Sub
 
-    Public Sub New()
-        ' This call is required by the Windows Form Designer.
-        InitializeComponent()
-        ' Add any initialization after the InitializeComponent() call.
+    Private Sub btnEditForm_Click(sender As Object, e As EventArgs) Handles btnEditForm.Click
+        If GetFormDetails() = False Then
+            Exit Sub
+        End If
+
+        If g_bViewOnly = False Then
+            g_form_mode = "Edit"
+        Else
+            g_form_mode = "View"
+        End If
+        If g_bViewOnly = True Then
+            g_form_mode = "View"
+        End If
+
+        Dim ctrl As New System.Windows.Forms.UserControl
+        If LGMD.ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.Count > 0 Then
+        End If
+        LGMD.ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.RemoveAt(0)
+        Select Case g_FormTypeNumber
+            Case 1
+                ctrl = New ctrlWard01Page01
+            Case 2
+                ctrl = New ctrlWard02Page01
+            Case 3
+                ctrl = New ctrlWard03Page01
+            Case 4
+                ctrl = New ctrlDistrict02Page01
+            Case 5
+                ctrl = New ctrlDistrict03Page01
+            Case 6
+                ctrl = New ctrlWard06Page01
+            Case 7
+                ctrl = New ctrlDistrict07Page01
+            Case 8
+                ctrl = New ctrlDistrict08Page01
+            Case 9
+                ctrl = New ctrlDistrict09Page01
+        End Select
+        Try
+            LGMD.ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.Add(ctrl)
+        Catch ex As Exception
+        End Try
+        g_bSeleted = True
     End Sub
+
+    Private Sub btnVerifyData_Click(sender As Object, e As EventArgs) Handles btnVerifyData.Click
+        Dim rowCount As Integer
+        Dim conn As New SqlClient.SqlConnection(My.Settings.DataConnectionString) ' My.Settings.LGMDdataConnectionStringMy.Settings.LGMDdataConnectionString)
+
+        Dim previousConnectionState As ConnectionState
+        previousConnectionState = conn.State
+
+        Try
+            conn.Open()
+            Dim cmd As New SqlCommand("update RecordInfo set DateVerified=convert(datetime,'" & Now.Date & "',103),VerifiedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(5).Value.ToString & "' ", conn)
+            rowCount = cmd.ExecuteNonQuery()
+            If GetConfigLevel() = 5 Then
+                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
+            Else
+                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
+            End If
+            MsgBox("Succesfully Verified")
+            Me.btnEditForm.Focus()
+            Me.btnVerifyData.Enabled = False
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+    Private Sub btnApproveData_Click(sender As Object, e As EventArgs) Handles btnApproveData.Click
+
+        Dim strCommand As String = ""
+        Dim strMessageToAsk As String = ""
+        Dim strFormSerialNumber = g_FormSerialNumber.Substring(3, 15) + "%" + g_FormSerialNumber.Substring(24)
+
+        If Me.btnApproveData.Text = "Approve Data" Then
+            If g_FormTypeNumber = 4 Then
+                'strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
+                strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumberIQ LIKE '" & strFormSerialNumber & "'"
+            Else
+                'strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
+                strCommand = "update RecordInfo set DateApproved=convert(datetime,'" & Now.Date & "',103),ApprovedByUserID='" & g_user_id & "' WHERE FormSerialNumberIA LIKE '" & strFormSerialNumber & "'"
+            End If
+            strMessageToAsk = "Are you sure you want to Approve this Report?"
+        Else
+            'strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null, DateVerified=convert(datetime,'" & Now.Date & "',103),VerifiedByUserID='" & g_user_id & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(5).Value.ToString & "'"
+            If g_FormTypeNumber = 4 Then
+                'strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
+                strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumberIQ LIKE '" & strFormSerialNumber & "'"
+            Else
+                'strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "'"
+                strCommand = "update RecordInfo set DateApproved=null, ApprovedByUserID=null WHERE FormSerialNumberIA LIKE '" & strFormSerialNumber & "'"
+            End If
+            strMessageToAsk = "Are you sure you want to Allow changes to this Report?"
+        End If
+
+        If MsgBox(strMessageToAsk, MsgBoxStyle.Question + MsgBoxStyle.YesNo + vbDefaultButton2) = MsgBoxResult.No Then
+            Exit Sub
+        End If
+
+        Dim rowCount As Integer
+        Dim conn As New SqlClient.SqlConnection(My.Settings.DataConnectionString) 'My.Settings.LGMDdataConnectionStringMy.Settings.LGMDdataConnectionString)
+
+        Dim previousConnectionState As ConnectionState
+        previousConnectionState = conn.State
+
+        Try
+            conn.Open()
+            Dim cmd As New SqlCommand(strCommand, conn)
+            rowCount = cmd.ExecuteNonQuery()
+            Try
+                If GetConfigLevel() = 5 Then
+                    Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
+                Else
+                    Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
+                End If
+            Catch ex As Exception
+            End Try
+
+            If Me.btnApproveData.Text = "Approve Data" Then
+                MsgBox("Succesfully Approved")
+            Else
+                MsgBox("Succesfully Allowed Changes")
+            End If
+
+            Me.btnEditForm.Focus()
+            'Me.BtnApproveData.Enabled = False
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+    Private Sub btnExportAllForms_Click(sender As Object, e As EventArgs) Handles btnExportAllForms.Click
+        fnExportFile(True)
+    End Sub
+
+    Private Sub btnExportSelectedForm_Click(sender As Object, e As EventArgs) Handles btnExportSelectedForm.Click
+        fnExportFile(False)
+    End Sub
+
+    Private Sub btnDeleteForm_Click(sender As Object, e As EventArgs) Handles btnDeleteForm.Click
+        Dim recordID As Guid
+        Dim formSerialNumber As Int32
+        If GetFormDetails() = False Then
+            Exit Sub
+        End If
+        Try
+            If MsgBoxBilingual("Are you sure you want to delete this form and all the data on it?", "Una uhakika unataka kufuta fomu hii na takwimu zake zote?", 36) = vbYes Then
+                Me.Cursor = Cursors.WaitCursor
+                For Each row As DataGridViewRow In Me.Udp_forms_submittedDataGridView.SelectedRows
+                    recordID = row.Cells(1).Value
+                    formSerialNumber = row.Cells(7).Value
+                Next
+                Call DeleteForm(recordID, formSerialNumber)
+                MessageBox.Show("Form successfully deleted", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+            If GetConfigLevel() = 5 Then
+                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
+            Else
+                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString)
+        Finally
+            Me.Cursor = Cursors.Arrow
+        End Try
+    End Sub
+
+    Private Sub btnSaveComment_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSaveComment.Click
+
+        If GetFormDetails() = False Then
+            Exit Sub
+        End If
+        Dim rowCount As Integer
+        Dim conn As New SqlClient.SqlConnection(My.Settings.DataConnectionString) ' My.Settings.LGMDdataConnectionStringMy.Settings.LGMDdataConnectionString)
+
+        Dim previousConnectionState As ConnectionState
+        previousConnectionState = conn.State
+
+        Try
+            conn.Open()
+            Dim cmd As New SqlCommand("update RecordInfo set Comments='" & Me.txtComments.Text & "' WHERE FormSerialNumber='" & Me.Udp_forms_submittedDataGridView.SelectedRows(0).Cells(6).Value.ToString & "' ", conn)
+            rowCount = cmd.ExecuteNonQuery()
+            If rowCount > 0 Then
+                MsgBox("Comment Successfully Saved")
+            End If
+            If GetConfigLevel() = 5 Then
+                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, Nothing, Nothing)
+            Else
+                Me.Udp_forms_submittedTableAdapter.Fill(Me.LGMDdataDataSet.udp_forms_submitted, g_language, 4, 5)
+            End If
+            Me.btnEditForm.Focus()
+            Me.btnVerifyData.Enabled = False
+        Finally
+            conn.Close()
+        End Try
+
+    End Sub
+
 End Class

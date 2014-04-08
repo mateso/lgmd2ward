@@ -24,21 +24,21 @@ Partial Class ctrlWard03Page09
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlWard03Page09))
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlWard03Page09))
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblPeriod = New System.Windows.Forms.Label()
         Me.lblArea = New System.Windows.Forms.Label()
         Me.cmbGoTo = New System.Windows.Forms.ComboBox()
@@ -46,6 +46,14 @@ Partial Class ctrlWard03Page09
         Me.cmdSave = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.appUspAnnualFillLivestockInfrastructureDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GrazingLand03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
         Me.InfraListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.InfraNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.InfraStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -59,26 +67,8 @@ Partial Class ctrlWard03Page09
         Me.AnnualRecordIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FormSerialIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AppUspAnnualFillLivestockInfrastructureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.AnimalsListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalNameDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GrazingLandIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LivestockIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UtilizedLandDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GrazingLand03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GrazingLand03iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.GrazingLand03iTableAdapter()
         Me.AppUspAnnualFillLivestockInfrastructureTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillLivestockInfrastructureTableAdapter()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -98,11 +88,22 @@ Partial Class ctrlWard03Page09
         Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AI = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GrazingLandIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LivestockIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UtilizedLandDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.appUspAnnualFillLivestockInfrastructureDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AppUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GrazingLand03iBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AppUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPeriod
@@ -181,6 +182,79 @@ Partial Class ctrlWard03Page09
         Me.appUspAnnualFillLivestockInfrastructureDataGridView.Name = "appUspAnnualFillLivestockInfrastructureDataGridView"
         Me.appUspAnnualFillLivestockInfrastructureDataGridView.Size = New System.Drawing.Size(893, 476)
         Me.appUspAnnualFillLivestockInfrastructureDataGridView.TabIndex = 5
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(26, 644)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(161, 13)
+        Me.Label5.TabIndex = 72
+        Me.Label5.Text = "9. Eneo la malisho (Grazing land)"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(26, 819)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(289, 65)
+        Me.Label6.TabIndex = 73
+        Me.Label6.Text = resources.GetString("Label6.Text")
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.AllowUserToAddRows = False
+        Me.DataGridView3.AllowUserToDeleteRows = False
+        Me.DataGridView3.AutoGenerateColumns = False
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.ListItemSw, Me.AI, Me.GrazingLandIDDataGridViewTextBoxColumn, Me.LivestockIDDataGridViewTextBoxColumn, Me.NumberOfAnimalsDataGridViewTextBoxColumn, Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn, Me.UtilizedLandDataGridViewTextBoxColumn, Me.TotalDemarcatedLandDataGridViewTextBoxColumn, Me.TotalAreaLeasedDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn1})
+        Me.DataGridView3.DataSource = Me.GrazingLand03iBindingSource
+        Me.DataGridView3.Location = New System.Drawing.Point(29, 669)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.Size = New System.Drawing.Size(893, 137)
+        Me.DataGridView3.TabIndex = 6
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "InfraID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "InfraID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Visible = False
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "InfraName"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Aina ya miundombinu" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.DataGridViewTextBoxColumn2.Width = 280
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "LivestockInfrastructureID"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "LivestockInfrastructureID"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Visible = False
+        '
+        'GrazingLand03iBindingSource
+        '
+        Me.GrazingLand03iBindingSource.DataMember = "GrazingLand03i"
+        Me.GrazingLand03iBindingSource.DataSource = Me.LGMDdataDataSet
+        '
+        'LGMDdataDataSet
+        '
+        Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
+        Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'InfraListIDDataGridViewTextBoxColumn
         '
@@ -284,143 +358,6 @@ Partial Class ctrlWard03Page09
         Me.AppUspAnnualFillLivestockInfrastructureBindingSource.DataMember = "appUspAnnualFillLivestockInfrastructure"
         Me.AppUspAnnualFillLivestockInfrastructureBindingSource.DataSource = Me.LGMDdataDataSet
         '
-        'LGMDdataDataSet
-        '
-        Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
-        Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(26, 644)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(161, 13)
-        Me.Label5.TabIndex = 72
-        Me.Label5.Text = "9. Eneo la malisho (Grazing land)"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 819)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(289, 65)
-        Me.Label6.TabIndex = 73
-        Me.Label6.Text = resources.GetString("Label6.Text")
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.AllowUserToAddRows = False
-        Me.DataGridView3.AllowUserToDeleteRows = False
-        Me.DataGridView3.AutoGenerateColumns = False
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AnimalsListIDDataGridViewTextBoxColumn, Me.AnimalNameDataGridViewTextBoxColumn5, Me.GrazingLandIDDataGridViewTextBoxColumn, Me.LivestockIDDataGridViewTextBoxColumn, Me.NumberOfAnimalsDataGridViewTextBoxColumn, Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn, Me.UtilizedLandDataGridViewTextBoxColumn, Me.TotalDemarcatedLandDataGridViewTextBoxColumn, Me.TotalAreaLeasedDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn1})
-        Me.DataGridView3.DataSource = Me.GrazingLand03iBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(29, 669)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(893, 137)
-        Me.DataGridView3.TabIndex = 6
-        '
-        'AnimalsListIDDataGridViewTextBoxColumn
-        '
-        Me.AnimalsListIDDataGridViewTextBoxColumn.DataPropertyName = "AnimalsListID"
-        Me.AnimalsListIDDataGridViewTextBoxColumn.HeaderText = "AnimalsListID"
-        Me.AnimalsListIDDataGridViewTextBoxColumn.Name = "AnimalsListIDDataGridViewTextBoxColumn"
-        Me.AnimalsListIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'AnimalNameDataGridViewTextBoxColumn5
-        '
-        Me.AnimalNameDataGridViewTextBoxColumn5.DataPropertyName = "AnimalName"
-        Me.AnimalNameDataGridViewTextBoxColumn5.HeaderText = "Aina ya mfugo (i)"
-        Me.AnimalNameDataGridViewTextBoxColumn5.Name = "AnimalNameDataGridViewTextBoxColumn5"
-        Me.AnimalNameDataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnimalNameDataGridViewTextBoxColumn5.Width = 110
-        '
-        'GrazingLandIDDataGridViewTextBoxColumn
-        '
-        Me.GrazingLandIDDataGridViewTextBoxColumn.DataPropertyName = "GrazingLandID"
-        Me.GrazingLandIDDataGridViewTextBoxColumn.HeaderText = "GrazingLandID"
-        Me.GrazingLandIDDataGridViewTextBoxColumn.Name = "GrazingLandIDDataGridViewTextBoxColumn"
-        Me.GrazingLandIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'LivestockIDDataGridViewTextBoxColumn
-        '
-        Me.LivestockIDDataGridViewTextBoxColumn.DataPropertyName = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn.HeaderText = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn.Name = "LivestockIDDataGridViewTextBoxColumn"
-        Me.LivestockIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'NumberOfAnimalsDataGridViewTextBoxColumn
-        '
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn.DataPropertyName = "NumberOfAnimals"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn.HeaderText = "Idadi ya wanyama (ii)"
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn.Name = "NumberOfAnimalsDataGridViewTextBoxColumn"
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.NumberOfAnimalsDataGridViewTextBoxColumn.Width = 120
-        '
-        'TotalGrazingLandInTheVillageDataGridViewTextBoxColumn
-        '
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.DataPropertyName = "TotalGrazingLandInTheVillage"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.HeaderText = "Ukubwa wa eneo la kulishia wanyama kijijini/ kata (ha) (iii)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.Name = "TotalGrazingLandInTheVillageDataGridViewTextBoxColumn"
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.Width = 170
-        '
-        'UtilizedLandDataGridViewTextBoxColumn
-        '
-        Me.UtilizedLandDataGridViewTextBoxColumn.DataPropertyName = "UtilizedLand"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.UtilizedLandDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
-        Me.UtilizedLandDataGridViewTextBoxColumn.HeaderText = "Eneo linalotumika (ha) (iv)"
-        Me.UtilizedLandDataGridViewTextBoxColumn.Name = "UtilizedLandDataGridViewTextBoxColumn"
-        Me.UtilizedLandDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.UtilizedLandDataGridViewTextBoxColumn.Width = 80
-        '
-        'TotalDemarcatedLandDataGridViewTextBoxColumn
-        '
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.DataPropertyName = "TotalDemarcatedLand"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle10
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.HeaderText = "Ukubwa wa eneo lililopimwa" & Global.Microsoft.VisualBasic.ChrW(10) & " kwa ajili ya malisho " & Global.Microsoft.VisualBasic.ChrW(10) & "(Total Demarcated Area) (ha) (v" & _
-    ")" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.Name = "TotalDemarcatedLandDataGridViewTextBoxColumn"
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.Width = 190
-        '
-        'TotalAreaLeasedDataGridViewTextBoxColumn
-        '
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn.DataPropertyName = "TotalAreaLeased"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle11
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn.HeaderText = "Ukubwa wa  eneo linalomilikiwa kisheria (Total Area Leased) (ha) (vi)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn.Name = "TotalAreaLeasedDataGridViewTextBoxColumn"
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.TotalAreaLeasedDataGridViewTextBoxColumn.Width = 180
-        '
-        'AnnualRecordIDDataGridViewTextBoxColumn1
-        '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Name = "AnnualRecordIDDataGridViewTextBoxColumn1"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'GrazingLand03iBindingSource
-        '
-        Me.GrazingLand03iBindingSource.DataMember = "GrazingLand03i"
-        Me.GrazingLand03iBindingSource.DataSource = Me.LGMDdataDataSet
-        '
         'GrazingLand03iTableAdapter
         '
         Me.GrazingLand03iTableAdapter.ClearBeforeFill = True
@@ -428,29 +365,6 @@ Partial Class ctrlWard03Page09
         'AppUspAnnualFillLivestockInfrastructureTableAdapter
         '
         Me.AppUspAnnualFillLivestockInfrastructureTableAdapter.ClearBeforeFill = True
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "InfraID"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "InfraID"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Visible = False
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "InfraName"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Aina ya miundombinu" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn2.Width = 280
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "LivestockInfrastructureID"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "LivestockInfrastructureID"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Visible = False
         '
         'DataGridViewTextBoxColumn4
         '
@@ -615,6 +529,102 @@ Partial Class ctrlWard03Page09
         Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
         Me.DataGridViewTextBoxColumn22.Visible = False
         '
+        'ListID
+        '
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
+        '
+        'ListItemSw
+        '
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "Aina ya Mifugo(i)"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ListItemSw.Width = 110
+        '
+        'AI
+        '
+        Me.AI.DataPropertyName = "AI"
+        Me.AI.HeaderText = "AI"
+        Me.AI.Name = "AI"
+        Me.AI.ReadOnly = True
+        Me.AI.Visible = False
+        '
+        'GrazingLandIDDataGridViewTextBoxColumn
+        '
+        Me.GrazingLandIDDataGridViewTextBoxColumn.DataPropertyName = "GrazingLandID"
+        Me.GrazingLandIDDataGridViewTextBoxColumn.HeaderText = "GrazingLandID"
+        Me.GrazingLandIDDataGridViewTextBoxColumn.Name = "GrazingLandIDDataGridViewTextBoxColumn"
+        Me.GrazingLandIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'LivestockIDDataGridViewTextBoxColumn
+        '
+        Me.LivestockIDDataGridViewTextBoxColumn.DataPropertyName = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn.HeaderText = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn.Name = "LivestockIDDataGridViewTextBoxColumn"
+        Me.LivestockIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'NumberOfAnimalsDataGridViewTextBoxColumn
+        '
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn.DataPropertyName = "NumberOfAnimals"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn.HeaderText = "Idadi ya wanyama (ii)"
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn.Name = "NumberOfAnimalsDataGridViewTextBoxColumn"
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.NumberOfAnimalsDataGridViewTextBoxColumn.Width = 120
+        '
+        'TotalGrazingLandInTheVillageDataGridViewTextBoxColumn
+        '
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.DataPropertyName = "TotalGrazingLandInTheVillage"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.HeaderText = "Ukubwa wa eneo la kulishia wanyama kijijini/ kata (ha) (iii)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.Name = "TotalGrazingLandInTheVillageDataGridViewTextBoxColumn"
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.TotalGrazingLandInTheVillageDataGridViewTextBoxColumn.Width = 170
+        '
+        'UtilizedLandDataGridViewTextBoxColumn
+        '
+        Me.UtilizedLandDataGridViewTextBoxColumn.DataPropertyName = "UtilizedLand"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.UtilizedLandDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
+        Me.UtilizedLandDataGridViewTextBoxColumn.HeaderText = "Eneo linalotumika (ha) (iv)"
+        Me.UtilizedLandDataGridViewTextBoxColumn.Name = "UtilizedLandDataGridViewTextBoxColumn"
+        Me.UtilizedLandDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.UtilizedLandDataGridViewTextBoxColumn.Width = 80
+        '
+        'TotalDemarcatedLandDataGridViewTextBoxColumn
+        '
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.DataPropertyName = "TotalDemarcatedLand"
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle10
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.HeaderText = "Ukubwa wa eneo lililopimwa" & Global.Microsoft.VisualBasic.ChrW(10) & " kwa ajili ya malisho " & Global.Microsoft.VisualBasic.ChrW(10) & "(Total Demarcated Area) (ha) (v" & _
+    ")" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.Name = "TotalDemarcatedLandDataGridViewTextBoxColumn"
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.TotalDemarcatedLandDataGridViewTextBoxColumn.Width = 190
+        '
+        'TotalAreaLeasedDataGridViewTextBoxColumn
+        '
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn.DataPropertyName = "TotalAreaLeased"
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle11
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn.HeaderText = "Ukubwa wa  eneo linalomilikiwa kisheria (Total Area Leased) (ha) (vi)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn.Name = "TotalAreaLeasedDataGridViewTextBoxColumn"
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.TotalAreaLeasedDataGridViewTextBoxColumn.Width = 180
+        '
+        'AnnualRecordIDDataGridViewTextBoxColumn1
+        '
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.DataPropertyName = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.HeaderText = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Name = "AnnualRecordIDDataGridViewTextBoxColumn1"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Visible = False
+        '
         'ctrlWard03Page09
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -632,10 +642,10 @@ Partial Class ctrlWard03Page09
         Me.Name = "ctrlWard03Page09"
         Me.Size = New System.Drawing.Size(945, 950)
         CType(Me.appUspAnnualFillLivestockInfrastructureDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AppUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GrazingLand03iBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AppUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -696,6 +706,9 @@ Partial Class ctrlWard03Page09
     Friend WithEvents FormSerialIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnimalsListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnimalNameDataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AI As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GrazingLandIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LivestockIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfAnimalsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn

@@ -64,20 +64,45 @@ Module modPages
                 ComboBoxControl.Items.Add(PageDesc & "3 Table 1 Part III")
                 ComboBoxControl.Items.Add(PageDesc & "4 Table 1 Part IV")
 
+            Case 7
+                ComboBoxControl.Items.Add(PageDesc & "1 Table 1 Part I")
+                ComboBoxControl.Items.Add(PageDesc & "2 Table 1 Part II")
+                ComboBoxControl.Items.Add(PageDesc & "3 Table 1 Part III")
+                ComboBoxControl.Items.Add(PageDesc & "4 Table 1 Part IV")
+
+            Case 8
+                ComboBoxControl.Items.Add(PageDesc & "1 Table 1 Part I")
+                ComboBoxControl.Items.Add(PageDesc & "2 Table 1 Part II")
+                ComboBoxControl.Items.Add(PageDesc & "3 Table 1 Part III")
+                ComboBoxControl.Items.Add(PageDesc & "4 Table 1 Part IV")
+                ComboBoxControl.Items.Add(PageDesc & "5 Table 2, 3a, 3b")
+                ComboBoxControl.Items.Add(PageDesc & "6 Table 4, 5")
+                ComboBoxControl.Items.Add(PageDesc & "7 Table 6a, 6b, 6c")
+                ComboBoxControl.Items.Add(PageDesc & "8 Table 7a")
+                ComboBoxControl.Items.Add(PageDesc & "9 Table 7b")
+
+            Case 9
+                ComboBoxControl.Items.Add(PageDesc & "1 Table 1, 2a, 2b")
+                ComboBoxControl.Items.Add(PageDesc & "2 Table 3a, 3b, 3c")
+                ComboBoxControl.Items.Add(PageDesc & "3 Table 3d, 3e")
+                ComboBoxControl.Items.Add(PageDesc & "4 Table 3f, 3g")
+                ComboBoxControl.Items.Add(PageDesc & "5 Table 4a, 4b, 4c")
+                ComboBoxControl.Items.Add(PageDesc & "6 Table 5a, 5b")
+                ComboBoxControl.Items.Add(PageDesc & "7 Table 5c, 5d, 5e")
+                ComboBoxControl.Items.Add(PageDesc & "8 Table 5f, 5g, 5h")
+                ComboBoxControl.Items.Add(PageDesc & "9 Table 6a, 6b, 7, 8")
+                ComboBoxControl.Items.Add(PageDesc & "10 Table 9, 10")
+                ComboBoxControl.Items.Add(PageDesc & "11 Table 11, 12")
+                ComboBoxControl.Items.Add(PageDesc & "12 Table 13, 14a, 14b")
+                ComboBoxControl.Items.Add(PageDesc & "13 Table 15a, 15b, 16")
+
         End Select
 
         ComboBoxControl.Items.Add(ExitDesc)
 
         If ComboBoxControl.Items.Count <> Val(Right(ComboBoxControl.Parent.Name, 1)) + 1 Then
             'Comparing the numnber of controls and the filled selection. It is therefor important to name the controls in the right order
-            ' If IsNumeric(Right(ComboBoxControl.Parent.Name, 1)) Then
             ComboBoxControl.Text = getPageLabels(FormNumber, PageDesc & Val(Right(ComboBoxControl.Parent.Name, 1)) + 1)
-            'Else
-            'ComboBoxControl.Text = getPageLabels(FormNumber, PageDesc & Val(Right(ComboBoxControl.Parent.Name, 1)) )
-
-
-            '  End If
-
         Else
             'For closing Control
             ComboBoxControl.Text = ExitDesc
@@ -108,7 +133,6 @@ Module modPages
                         ctrl = New ctrlWard01Page07
                     Case "Kurasa ya 8", "Page 8 Table 8 - 9"
                         ctrl = New ctrlWard01Page08
-
                 End Select
 
             Case 2
@@ -147,7 +171,6 @@ Module modPages
                         ctrl = New ctrlWard03Page09
                     Case "Kurasa ya 10", "Page 10 Table 10 - 11.2"
                         ctrl = New ctrlWard03Page10
-
                 End Select
 
             Case 4
@@ -187,11 +210,74 @@ Module modPages
                     Case "Kurasa ya 4", "Page 4 Table 1 Part IV"
                         ctrl = New ctrlWard06Page04
                 End Select
+
+            Case 7
+                Select Case SelectedOption
+                    Case "Kurasa ya 1", "Page 1 Table 1 Part I"
+                        ctrl = New ctrlWard06Page01
+                    Case "Kurasa ya 2", "Page 2 Table 1 Part II"
+                        ctrl = New ctrlWard06Page02
+                    Case "Kurasa ya 3", "Page 3 Table 1 Part III"
+                        ctrl = New ctrlWard06Page03
+                    Case "Kurasa ya 4", "Page 4 Table 1 Part IV"
+                        ctrl = New ctrlWard06Page04
+                End Select
+
+            Case 8
+                Select Case SelectedOption
+                    Case "Kurasa ya 1", "Page 1 Table 1 Part I"
+                        ctrl = New ctrlDistrict08Page01
+                    Case "Kurasa ya 2", "Page 2 Table 1 Part II"
+                        ctrl = New ctrlDistrict08Page02
+                    Case "Kurasa ya 3", "Page 3 Table 1 Part III"
+                        ctrl = New ctrlDistrict08Page03
+                    Case "Kurasa ya 4", "Page 4 Table 1 Part IV"
+                        ctrl = New ctrlDistrict08Page04
+                    Case "Kurasa ya 5", "Page 5 Table 2, 3a, 3b"
+                        ctrl = New ctrlDistrict08Page05
+                    Case "Kurasa ya 6", "Page 6 Table 4, 5"
+                        ctrl = New ctrlDistrict08Page06
+                    Case "Kurasa ya 7", "Page 7 Table 6a, 6b, 6c"
+                        ctrl = New ctrlDistrict08Page07
+                    Case "Kurasa ya 8", "Page 8 Table 7a"
+                        ctrl = New ctrlDistrict08Page08
+                    Case "Kurasa ya 9", "Page 9 Table 7b"
+                        ctrl = New ctrlDistrict08Page09
+                End Select
+
+            Case 9
+                Select Case SelectedOption
+                    Case "Kurasa ya 1", "Page 1 Table 1, 2a, 2b"
+                        ctrl = New ctrlDistrict09Page01
+                    Case "Kurasa ya 2", "Page 2 Table 3a, 3b, 3c"
+                        ctrl = New ctrlDistrict09Page02
+                    Case "Kurasa ya 3", "Page 3 Table 3d, 3e"
+                        ctrl = New ctrlDistrict09Page03
+                    Case "Kurasa ya 4", "Page 4 Table 3f, 3g"
+                        ctrl = New ctrlDistrict09Page04
+                    Case "Kurasa ya 5", "Page 5 4a, 4b, 4c"
+                        ctrl = New ctrlDistrict09Page05
+                    Case "Kurasa ya 6", "Page 6 Table 5a, 5b"
+                        ctrl = New ctrlDistrict09Page06
+                    Case "Kurasa ya 7", "Page 7 Table 5c, 5d, 5e"
+                        ctrl = New ctrlDistrict09Page07
+                    Case "Kurasa ya 8", "Page 8 Table 5f, 5g, 5h"
+                        ctrl = New ctrlDistrict09Page08
+                    Case "Kurasa ya 9", "Page 9 Table 6a, 6b, 7, 8"
+                        ctrl = New ctrlDistrict09Page09
+                    Case "Kurasa ya 10", "Page 10 Table 9, 10"
+                        ctrl = New ctrlDistrict09Page10
+                    Case "Kurasa ya 11", "Page 11 Table 11, 12"
+                        ctrl = New ctrlDistrict09Page11
+                    Case "Kurasa ya 12", "Page 12 Table 13, 14a, 14b"
+                        ctrl = New ctrlDistrict09Page12
+                    Case "Kurasa ya 13", "Page 13 Table 15a, 15b, 16"
+                        ctrl = New ctrlDistrict09Page13
+                End Select
         End Select
         ApplicationGlobal.objFrmMain.SplitContainer.Panel2.Controls.Add(ctrl)
 
     End Sub
-
 
     Private Function getPageLabels(ByVal FormNumber As Int16, ByVal SelectedOption As String) As String
         Dim strLabel As String = ""
@@ -254,7 +340,6 @@ Module modPages
                         strLabel = "Page 9 Table 8 - 9"
                     Case "Kurasa ya 10", "Page 10"
                         strLabel = "Page 10 Table 10 - 11.2"
-
                 End Select
 
             Case 4
@@ -294,6 +379,73 @@ Module modPages
                         strLabel = "Page 3 Table 1 Part III"
                     Case "Kurasa ya 4", "Page 4"
                         strLabel = "Page 4 Table 1 Part IV"
+                End Select
+
+            Case 7
+
+                Select Case SelectedOption
+                    Case "Kurasa ya 1", "Page 1"
+                        strLabel = "Page 1 Table 1 Part I"
+                    Case "Kurasa ya 2", "Page 2"
+                        strLabel = "Page 2 Table 1 Part II"
+                    Case "Kurasa ya 3", "Page 3"
+                        strLabel = "Page 3 Table 1 Part III"
+                    Case "Kurasa ya 4", "Page 4"
+                        strLabel = "Page 4 Table 1 Part IV"
+                End Select
+
+            Case 8
+
+                Select Case SelectedOption
+                    Case "Kurasa ya 1", "Page 1"
+                        strLabel = "Page 1 Table 1 Part I"
+                    Case "Kurasa ya 2", "Page 2"
+                        strLabel = "Page 2 Table 1 Part II"
+                    Case "Kurasa ya 3", "Page 3"
+                        strLabel = "Page 3 Table 1 Part III"
+                    Case "Kurasa ya 4", "Page 4"
+                        strLabel = "Page 4 Table 1 Part IV"
+                    Case "Kurasa ya 5", "Page 5"
+                        strLabel = "Page 5 Table 2, 3a, 3b"
+                    Case "Kurasa ya 6", "Page 6"
+                        strLabel = "Page 6 Table 4, 5"
+                    Case "Kurasa ya 7", "Page 7"
+                        strLabel = "Page 7 Table 6a, 6b, 6c"
+                    Case "Kurasa ya 8", "Page 8"
+                        strLabel = "Page 8 Table 7a"
+                    Case "Kurasa ya 9", "Page 9"
+                        strLabel = "Page 9 Table 7b"
+                End Select
+
+            Case 9
+
+                Select Case SelectedOption
+                    Case "Kurasa ya 1", "Page 1"
+                        strLabel = "Page 1 Table 1, 2a, 2b"
+                    Case "Kurasa ya 2", "Page 2"
+                        strLabel = "Page 2 Table 3a, 3b, 3c"
+                    Case "Kurasa ya 3", "Page 3"
+                        strLabel = "Page 3 Table 3d, 3e"
+                    Case "Kurasa ya 4", "Page 4"
+                        strLabel = "Page 4 Table 3f, 3g"
+                    Case "Kurasa ya 5", "Page 5"
+                        strLabel = "Page 5 4a, 4b, 4c"
+                    Case "Kurasa ya 6", "Page 6"
+                        strLabel = "Page 6 Table 5a, 5b"
+                    Case "Kurasa ya 7", "Page 7"
+                        strLabel = "Page 7 Table 5c, 5d, 5e"
+                    Case "Kurasa ya 8", "Page 8"
+                        strLabel = "Page 8 Table 5f, 5g, 5h"
+                    Case "Kurasa ya 9", "Page 9"
+                        strLabel = "Page 9 Table 6a, 6b, 7, 8"
+                    Case "Kurasa ya 10", "Page 10"
+                        strLabel = "Page 10 Table 9, 10"
+                    Case "Kurasa ya 11", "Page 11"
+                        strLabel = "Page 11 Table 11, 12"
+                    Case "Kurasa ya 12", "Page 12"
+                        strLabel = "Page 12 Table 13, 14a, 14b"
+                    Case "Kurasa ya 13", "Page 13"
+                        strLabel = "Page 13 Table 15a, 15b, 16"
                 End Select
 
         End Select

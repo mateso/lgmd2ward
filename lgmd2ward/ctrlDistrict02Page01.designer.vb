@@ -41,12 +41,12 @@ Partial Class ctrlDistrict02Page01
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemEn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LivestockID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -101,7 +101,6 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -151,6 +150,11 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.AppUspDistrictQuarterFillCarcassWeightDataGridView = New System.Windows.Forms.DataGridView()
+        Me.LivestockNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LivestockName1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CarcassID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalNumberSlaughteredThisMonthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalCarcassWeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AppUspDistrictQuarterFillCarcassWeightBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DistrictQuarterDataSet = New LGMD.DistrictQuarterDataSet()
         Me.TableLayoutPanel18 = New System.Windows.Forms.TableLayoutPanel()
@@ -165,11 +169,7 @@ Partial Class ctrlDistrict02Page01
         Me.Label44 = New System.Windows.Forms.Label()
         Me.AppUspDistrictQuarterFillCarcassWeightTableAdapter = New LGMD.DistrictQuarterDataSetTableAdapters.appUspDistrictQuarterFillCarcassWeightTableAdapter()
         Me.TableAdapterManager1 = New LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager()
-        Me.LivestockNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LivestockName1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CarcassID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalNumberSlaughteredThisMonthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalCarcassWeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.AppUspDistrictQuarterFillLivestockMovementDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AppUspDistrictQuarterFillLivestockMovementBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -210,42 +210,39 @@ Partial Class ctrlDistrict02Page01
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.AutoGenerateColumns = False
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.ColumnHeadersVisible = False
-        Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15})
+        Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.ListItemSw, Me.ListItemEn, Me.ListItemStatus, Me.DataGridViewTextBoxColumn5, Me.LivestockID, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15})
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.DataSource = Me.AppUspDistrictQuarterFillLivestockMovementBindingSource
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.Location = New System.Drawing.Point(17, 395)
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.Name = "AppUspDistrictQuarterFillLivestockMovementDataGridView"
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.Size = New System.Drawing.Size(943, 220)
         Me.AppUspDistrictQuarterFillLivestockMovementDataGridView.TabIndex = 1
         '
-        'DataGridViewTextBoxColumn1
+        'ListID
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "LivestockListID"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "LivestockListID"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Visible = False
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
         '
-        'DataGridViewTextBoxColumn2
+        'ListItemSw
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "LivestockName"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "LivestockName"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "ListItemSw"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Visible = False
         '
-        'DataGridViewTextBoxColumn3
+        'ListItemEn
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "LivestockNameEnglish"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "LivestockNameEnglish"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.DataGridViewTextBoxColumn3.Visible = False
+        Me.ListItemEn.DataPropertyName = "ListItemEn"
+        Me.ListItemEn.HeaderText = "ListItemEn"
+        Me.ListItemEn.Name = "ListItemEn"
         '
-        'DataGridViewTextBoxColumn4
+        'ListItemStatus
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "LivestockStatus"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "LivestockStatus"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Visible = False
+        Me.ListItemStatus.DataPropertyName = "ListItemStatus"
+        Me.ListItemStatus.HeaderText = "ListItemStatus"
+        Me.ListItemStatus.Name = "ListItemStatus"
+        Me.ListItemStatus.Visible = False
         '
         'DataGridViewTextBoxColumn5
         '
@@ -254,12 +251,12 @@ Partial Class ctrlDistrict02Page01
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.Visible = False
         '
-        'DataGridViewTextBoxColumn6
+        'LivestockID
         '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "LivestockID"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "LivestockID"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Visible = False
+        Me.LivestockID.DataPropertyName = "LivestockID"
+        Me.LivestockID.HeaderText = "LivestockID"
+        Me.LivestockID.Name = "LivestockID"
+        Me.LivestockID.Visible = False
         '
         'DataGridViewTextBoxColumn7
         '
@@ -622,7 +619,6 @@ Partial Class ctrlDistrict02Page01
         Me.TableAdapterManager.LivestockMovement04TableAdapter = Nothing
         Me.TableAdapterManager.LivestockPopulation05TableAdapter = Nothing
         Me.TableAdapterManager.LivestockService01TableAdapter = Nothing
-
         Me.TableAdapterManager.LivestockSlaughtered01TableAdapter = Nothing
         Me.TableAdapterManager.MachineryDrawn03TableAdapter = Nothing
         Me.TableAdapterManager.MachineryListTableAdapter = Nothing
@@ -644,6 +640,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableAdapterManager.ProdLand02TableAdapter = Nothing
         Me.TableAdapterManager.ProdMilk01TableAdapter = Nothing
         Me.TableAdapterManager.ProdMilkListTableAdapter = Nothing
+        Me.TableAdapterManager.ProdSkin01TableAdapter = Nothing
         Me.TableAdapterManager.ProdSkinListTableAdapter = Nothing
         Me.TableAdapterManager.ProductsMovement04TableAdapter = Nothing
         Me.TableAdapterManager.ProductsProcessing05TableAdapter = Nothing
@@ -817,7 +814,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label8, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label9, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label10, 2, 0)
@@ -849,17 +846,6 @@ Partial Class ctrlDistrict02Page01
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Products sold to other districts(iii)"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label10
-        '
-        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(216, 4)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(83, 39)
-        Me.Label10.TabIndex = 2
-        Me.Label10.Text = "Products sold to other countries (exported)"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label11
         '
@@ -937,11 +923,11 @@ Partial Class ctrlDistrict02Page01
         '
         'Label15
         '
+        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label15.AutoSize = True
-        Me.Label15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label15.Location = New System.Drawing.Point(4, 1)
+        Me.Label15.Location = New System.Drawing.Point(23, 30)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(134, 110)
+        Me.Label15.Size = New System.Drawing.Size(95, 52)
         Me.Label15.TabIndex = 0
         Me.Label15.Text = "Type of Livestock " & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(i)" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -952,7 +938,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel5.ColumnCount = 2
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label19, 0, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Label20, 1, 0)
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(259, 339)
@@ -977,7 +963,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(108, 8)
+        Me.Label20.Location = New System.Drawing.Point(109, 8)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(103, 39)
         Me.Label20.TabIndex = 1
@@ -1015,7 +1001,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel7.ColumnCount = 2
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label24, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.Label25, 1, 0)
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(559, 339)
@@ -1040,7 +1026,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label25.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(113, 8)
+        Me.Label25.Location = New System.Drawing.Point(114, 8)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(93, 39)
         Me.Label25.TabIndex = 1
@@ -1052,7 +1038,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel8.ColumnCount = 1
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.Label21, 0, 0)
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(460, 316)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
@@ -1065,7 +1051,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(32, 19)
+        Me.Label21.Location = New System.Drawing.Point(33, 19)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(54, 39)
         Me.Label21.TabIndex = 0
@@ -1078,7 +1064,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel9.ColumnCount = 2
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120.0!))
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.Label26, 0, 0)
         Me.TableLayoutPanel9.Controls.Add(Me.Label28, 1, 0)
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(760, 316)
@@ -1103,7 +1089,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label28.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(141, 19)
+        Me.Label28.Location = New System.Drawing.Point(143, 19)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(35, 39)
         Me.Label28.TabIndex = 1
@@ -1140,7 +1126,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel11.ColumnCount = 1
-        Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
+        Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221.0!))
         Me.TableLayoutPanel11.Controls.Add(Me.Label23, 0, 0)
         Me.TableLayoutPanel11.Location = New System.Drawing.Point(559, 316)
         Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
@@ -1153,7 +1139,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(92, 4)
+        Me.Label23.Location = New System.Drawing.Point(94, 4)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(35, 13)
         Me.Label23.TabIndex = 0
@@ -1167,7 +1153,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel12.ColumnCount = 3
         Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298.0!))
         Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 299.0!))
-        Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 219.0!))
+        Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 222.0!))
         Me.TableLayoutPanel12.Controls.Add(Me.Label16, 0, 0)
         Me.TableLayoutPanel12.Controls.Add(Me.Label22, 1, 0)
         Me.TableLayoutPanel12.Controls.Add(Me.Label27, 2, 0)
@@ -1204,7 +1190,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label27.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(617, 10)
+        Me.Label27.Location = New System.Drawing.Point(618, 10)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(185, 13)
         Me.Label27.TabIndex = 2
@@ -1215,7 +1201,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.TableLayoutPanel13.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel13.ColumnCount = 1
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209.0!))
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212.0!))
         Me.TableLayoutPanel13.Controls.Add(Me.Label29, 0, 0)
         Me.TableLayoutPanel13.Location = New System.Drawing.Point(17, 1038)
         Me.TableLayoutPanel13.Name = "TableLayoutPanel13"
@@ -1228,7 +1214,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label29.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(64, 18)
+        Me.Label29.Location = New System.Drawing.Point(65, 18)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(83, 52)
         Me.Label29.TabIndex = 0
@@ -1241,7 +1227,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel14.ColumnCount = 3
         Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
         Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118.0!))
+        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121.0!))
         Me.TableLayoutPanel14.Controls.Add(Me.Label34, 0, 0)
         Me.TableLayoutPanel14.Controls.Add(Me.Label35, 1, 0)
         Me.TableLayoutPanel14.Controls.Add(Me.Label36, 2, 0)
@@ -1278,7 +1264,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label36.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(226, 4)
+        Me.Label36.Location = New System.Drawing.Point(228, 4)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(65, 26)
         Me.Label36.TabIndex = 2
@@ -1289,7 +1275,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.TableLayoutPanel15.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel15.ColumnCount = 1
-        Me.TableLayoutPanel15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 319.0!))
+        Me.TableLayoutPanel15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 322.0!))
         Me.TableLayoutPanel15.Controls.Add(Me.Label37, 0, 0)
         Me.TableLayoutPanel15.Location = New System.Drawing.Point(509, 1038)
         Me.TableLayoutPanel15.Name = "TableLayoutPanel15"
@@ -1302,7 +1288,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label37.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(132, 18)
+        Me.Label37.Location = New System.Drawing.Point(134, 18)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(56, 52)
         Me.Label37.TabIndex = 0
@@ -1315,7 +1301,7 @@ Partial Class ctrlDistrict02Page01
         Me.TableLayoutPanel16.ColumnCount = 3
         Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
         Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118.0!))
+        Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121.0!))
         Me.TableLayoutPanel16.Controls.Add(Me.Label31, 0, 0)
         Me.TableLayoutPanel16.Controls.Add(Me.Label32, 1, 0)
         Me.TableLayoutPanel16.Controls.Add(Me.Label33, 2, 0)
@@ -1352,7 +1338,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label33.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(239, 11)
+        Me.Label33.Location = New System.Drawing.Point(241, 11)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(39, 13)
         Me.Label33.TabIndex = 2
@@ -1363,7 +1349,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.TableLayoutPanel17.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel17.ColumnCount = 1
-        Me.TableLayoutPanel17.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 317.0!))
+        Me.TableLayoutPanel17.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 320.0!))
         Me.TableLayoutPanel17.Controls.Add(Me.Label30, 0, 0)
         Me.TableLayoutPanel17.Location = New System.Drawing.Point(209, 1038)
         Me.TableLayoutPanel17.Name = "TableLayoutPanel17"
@@ -1376,7 +1362,7 @@ Partial Class ctrlDistrict02Page01
         '
         Me.Label30.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(117, 2)
+        Me.Label30.Location = New System.Drawing.Point(118, 2)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(85, 13)
         Me.Label30.TabIndex = 0
@@ -1445,147 +1431,6 @@ Partial Class ctrlDistrict02Page01
         Me.AppUspDistrictQuarterFillCarcassWeightDataGridView.Size = New System.Drawing.Size(373, 171)
         Me.AppUspDistrictQuarterFillCarcassWeightDataGridView.TabIndex = 87
         '
-        'AppUspDistrictQuarterFillCarcassWeightBindingSource
-        '
-        Me.AppUspDistrictQuarterFillCarcassWeightBindingSource.DataMember = "appUspDistrictQuarterFillCarcassWeight"
-        Me.AppUspDistrictQuarterFillCarcassWeightBindingSource.DataSource = Me.DistrictQuarterDataSet
-        '
-        'DistrictQuarterDataSet
-        '
-        Me.DistrictQuarterDataSet.DataSetName = "DistrictQuarterDataSet"
-        Me.DistrictQuarterDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TableLayoutPanel18
-        '
-        Me.TableLayoutPanel18.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
-        Me.TableLayoutPanel18.ColumnCount = 2
-        Me.TableLayoutPanel18.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
-        Me.TableLayoutPanel18.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
-        Me.TableLayoutPanel18.Controls.Add(Me.Label38, 0, 0)
-        Me.TableLayoutPanel18.Controls.Add(Me.Label42, 1, 0)
-        Me.TableLayoutPanel18.Location = New System.Drawing.Point(760, 712)
-        Me.TableLayoutPanel18.Name = "TableLayoutPanel18"
-        Me.TableLayoutPanel18.RowCount = 1
-        Me.TableLayoutPanel18.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel18.Size = New System.Drawing.Size(200, 42)
-        Me.TableLayoutPanel18.TabIndex = 90
-        '
-        'Label38
-        '
-        Me.Label38.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(13, 8)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(72, 26)
-        Me.Label38.TabIndex = 0
-        Me.Label38.Text = "Total  number slaughtered"
-        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label42
-        '
-        Me.Label42.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(118, 8)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(71, 26)
-        Me.Label42.TabIndex = 1
-        Me.Label42.Text = "Total carcass weight (kg)"
-        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel19
-        '
-        Me.TableLayoutPanel19.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
-        Me.TableLayoutPanel19.ColumnCount = 1
-        Me.TableLayoutPanel19.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179.0!))
-        Me.TableLayoutPanel19.Controls.Add(Me.Label39, 0, 0)
-        Me.TableLayoutPanel19.Location = New System.Drawing.Point(587, 712)
-        Me.TableLayoutPanel19.Name = "TableLayoutPanel19"
-        Me.TableLayoutPanel19.RowCount = 1
-        Me.TableLayoutPanel19.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel19.Size = New System.Drawing.Size(172, 91)
-        Me.TableLayoutPanel19.TabIndex = 89
-        '
-        'Label39
-        '
-        Me.Label39.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(44, 32)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(92, 26)
-        Me.Label39.TabIndex = 0
-        Me.Label39.Text = "Type of Livestock" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(i)"
-        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel20
-        '
-        Me.TableLayoutPanel20.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TableLayoutPanel20.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
-        Me.TableLayoutPanel20.ColumnCount = 2
-        Me.TableLayoutPanel20.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
-        Me.TableLayoutPanel20.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
-        Me.TableLayoutPanel20.Controls.Add(Me.Label40, 0, 0)
-        Me.TableLayoutPanel20.Controls.Add(Me.Label41, 1, 0)
-        Me.TableLayoutPanel20.Location = New System.Drawing.Point(760, 755)
-        Me.TableLayoutPanel20.Name = "TableLayoutPanel20"
-        Me.TableLayoutPanel20.RowCount = 1
-        Me.TableLayoutPanel20.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel20.Size = New System.Drawing.Size(200, 48)
-        Me.TableLayoutPanel20.TabIndex = 88
-        '
-        'Label40
-        '
-        Me.Label40.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(13, 17)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(73, 13)
-        Me.Label40.TabIndex = 0
-        Me.Label40.Text = "This quarter(ii)"
-        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label41
-        '
-        Me.Label41.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(115, 17)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(77, 13)
-        Me.Label41.TabIndex = 1
-        Me.Label41.Text = "This quarter(iv)"
-        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(587, 981)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(403, 39)
-        Me.Label43.TabIndex = 91
-        Me.Label43.Text = "Note: Information on chicken can be collected at the markets and slaughter houses" & _
-    "." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Domestic consumption is not included." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Note: * Please write the amount cumula" & _
-    "tive from the 1st quarter."
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(584, 688)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(125, 13)
-        Me.Label44.TabIndex = 92
-        Me.Label44.Text = "4. Livestock Slaughtered"
-        '
-        'AppUspDistrictQuarterFillCarcassWeightTableAdapter
-        '
-        Me.AppUspDistrictQuarterFillCarcassWeightTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager1
-        '
-        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager1.Carcass04TableAdapter = Nothing
-        Me.TableAdapterManager1.Connection = Nothing
-        Me.TableAdapterManager1.LivestockSlaughListTableAdapter = Nothing
-        Me.TableAdapterManager1.UpdateOrder = LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
         'LivestockNameDataGridViewTextBoxColumn
         '
         Me.LivestockNameDataGridViewTextBoxColumn.DataPropertyName = "LivestockName"
@@ -1625,6 +1470,158 @@ Partial Class ctrlDistrict02Page01
         Me.TotalCarcassWeightDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle16
         Me.TotalCarcassWeightDataGridViewTextBoxColumn.HeaderText = "TotalCarcassWeight"
         Me.TotalCarcassWeightDataGridViewTextBoxColumn.Name = "TotalCarcassWeightDataGridViewTextBoxColumn"
+        '
+        'AppUspDistrictQuarterFillCarcassWeightBindingSource
+        '
+        Me.AppUspDistrictQuarterFillCarcassWeightBindingSource.DataMember = "appUspDistrictQuarterFillCarcassWeight"
+        Me.AppUspDistrictQuarterFillCarcassWeightBindingSource.DataSource = Me.DistrictQuarterDataSet
+        '
+        'DistrictQuarterDataSet
+        '
+        Me.DistrictQuarterDataSet.DataSetName = "DistrictQuarterDataSet"
+        Me.DistrictQuarterDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TableLayoutPanel18
+        '
+        Me.TableLayoutPanel18.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.TableLayoutPanel18.ColumnCount = 2
+        Me.TableLayoutPanel18.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
+        Me.TableLayoutPanel18.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
+        Me.TableLayoutPanel18.Controls.Add(Me.Label38, 0, 0)
+        Me.TableLayoutPanel18.Controls.Add(Me.Label42, 1, 0)
+        Me.TableLayoutPanel18.Location = New System.Drawing.Point(760, 712)
+        Me.TableLayoutPanel18.Name = "TableLayoutPanel18"
+        Me.TableLayoutPanel18.RowCount = 1
+        Me.TableLayoutPanel18.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel18.Size = New System.Drawing.Size(200, 42)
+        Me.TableLayoutPanel18.TabIndex = 90
+        '
+        'Label38
+        '
+        Me.Label38.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label38.AutoSize = True
+        Me.Label38.Location = New System.Drawing.Point(13, 8)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(72, 26)
+        Me.Label38.TabIndex = 0
+        Me.Label38.Text = "Total  number slaughtered"
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label42
+        '
+        Me.Label42.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(102, 8)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(105, 26)
+        Me.Label42.TabIndex = 1
+        Me.Label42.Text = "Total carcass weight (kg)"
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel19
+        '
+        Me.TableLayoutPanel19.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.TableLayoutPanel19.ColumnCount = 1
+        Me.TableLayoutPanel19.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182.0!))
+        Me.TableLayoutPanel19.Controls.Add(Me.Label39, 0, 0)
+        Me.TableLayoutPanel19.Location = New System.Drawing.Point(587, 712)
+        Me.TableLayoutPanel19.Name = "TableLayoutPanel19"
+        Me.TableLayoutPanel19.RowCount = 1
+        Me.TableLayoutPanel19.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel19.Size = New System.Drawing.Size(172, 91)
+        Me.TableLayoutPanel19.TabIndex = 89
+        '
+        'Label39
+        '
+        Me.Label39.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(46, 32)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(92, 26)
+        Me.Label39.TabIndex = 0
+        Me.Label39.Text = "Type of Livestock" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(i)"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel20
+        '
+        Me.TableLayoutPanel20.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TableLayoutPanel20.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.TableLayoutPanel20.ColumnCount = 2
+        Me.TableLayoutPanel20.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
+        Me.TableLayoutPanel20.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
+        Me.TableLayoutPanel20.Controls.Add(Me.Label40, 0, 0)
+        Me.TableLayoutPanel20.Controls.Add(Me.Label41, 1, 0)
+        Me.TableLayoutPanel20.Location = New System.Drawing.Point(760, 755)
+        Me.TableLayoutPanel20.Name = "TableLayoutPanel20"
+        Me.TableLayoutPanel20.RowCount = 1
+        Me.TableLayoutPanel20.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel20.Size = New System.Drawing.Size(200, 48)
+        Me.TableLayoutPanel20.TabIndex = 88
+        '
+        'Label40
+        '
+        Me.Label40.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(13, 17)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(73, 13)
+        Me.Label40.TabIndex = 0
+        Me.Label40.Text = "This quarter(ii)"
+        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label41
+        '
+        Me.Label41.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(116, 17)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(77, 13)
+        Me.Label41.TabIndex = 1
+        Me.Label41.Text = "This quarter(iv)"
+        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(587, 981)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(403, 39)
+        Me.Label43.TabIndex = 91
+        Me.Label43.Text = "Note: Information on chicken can be collected at the markets and slaughter houses" & _
+    "." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Domestic consumption is not included." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Note: * Please write the amount cumula" & _
+    "tive from the 1st quarter."
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(584, 688)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(125, 13)
+        Me.Label44.TabIndex = 92
+        Me.Label44.Text = "4. Livestock Slaughtered"
+        '
+        'AppUspDistrictQuarterFillCarcassWeightTableAdapter
+        '
+        Me.AppUspDistrictQuarterFillCarcassWeightTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager1
+        '
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.Carcass04TableAdapter = Nothing
+        Me.TableAdapterManager1.Connection = Nothing
+        Me.TableAdapterManager1.LivestockSlaughListTableAdapter = Nothing
+        Me.TableAdapterManager1.UpdateOrder = LGMD.DistrictQuarterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Label10
+        '
+        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(208, 4)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(83, 39)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Products sold to other countries (exported)(iv)"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ctrlDistrict02Page01
         '
@@ -1769,7 +1766,6 @@ Partial Class ctrlDistrict02Page01
     Friend WithEvents TableLayoutPanel10 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents TableLayoutPanel11 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents TableLayoutPanel12 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
@@ -1801,17 +1797,6 @@ Partial Class ctrlDistrict02Page01
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ListItemSwDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ListItemEnDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1837,7 +1822,6 @@ Partial Class ctrlDistrict02Page01
     Friend WithEvents DataGridViewTextBoxColumn30 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -1862,5 +1846,22 @@ Partial Class ctrlDistrict02Page01
     Friend WithEvents CarcassID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalNumberSlaughteredThisMonthDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalCarcassWeightDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemEn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemStatus As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LivestockID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 
 End Class

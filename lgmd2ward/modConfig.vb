@@ -176,14 +176,13 @@
     End Function
 
     Public Function GetConfigArea(Optional ByVal ShowDescription As Boolean = False) As String
+
         Dim TheAreaID
 
         TheAreaID = Nz(DomainLookup("config_value", "tbl_config", "config_name = 'Area_ID'"), "0")
 
         If ShowDescription Then
-
             GetConfigArea = Nz(DomainLookup("area_name", "tbl_setup_areas", "area_id = '" & TheAreaID & "'"), "")
-
         Else
             GetConfigArea = TheAreaID
             ' returns "0" if not configured

@@ -8,6 +8,8 @@ Public Class ctrlAggregateData
     Private cmdBldr As SqlCommandBuilder
     Private dt As DataTable
     Private formSerialID As String = ""
+    Private formSerialNumberIQ As String = ""
+    Private formSerialNumberIA As String = ""
     Private formSerialIDForFilter As String = ""
     Private monthName As String = ""
     Private yearName As String = ""
@@ -142,12 +144,18 @@ Public Class ctrlAggregateData
             Else
                 If Me.cmbFormType.SelectedIndex = 1 Then
                     Me.formSerialID = Me.cmbFormType.SelectedIndex.ToString.PadLeft(3, "0") & GetConfigArea().PadRight(21, "_") & ReturnTimePeriod(Me.cmbFormType.SelectedIndex)
+                    Me.formSerialNumberIQ = GetConfigArea().PadRight(21, "_") & ReturnQuarterPeriod(Me.cmbFormType.SelectedIndex, Me.cmbMonthQuarter.Text)
+                    Me.formSerialNumberIA = GetConfigArea().PadRight(21, "_") & ReturnYearPeriod(Me.cmbFinancialYear.SelectedValue)
                 Else
                     Me.formSerialID = Me.cmbFormType.SelectedIndex.ToString.PadLeft(3, "0") & GetConfigArea().PadRight(21, "_") & ReturnTimePeriod(Me.cmbFormType.SelectedIndex)
+                    Me.formSerialNumberIQ = Me.formSerialID.Substring(3)
+                    Me.formSerialNumberIA = GetConfigArea().PadRight(21, "_") & ReturnYearPeriod(Me.cmbFinancialYear.SelectedValue)
                 End If
             End If
         Else
             Me.formSerialID = Me.cmbFormType.SelectedIndex.ToString.PadLeft(3, "0") & GetConfigArea().PadRight(21, "_") & ReturnTimePeriod(Me.cmbFormType.SelectedIndex)
+            Me.formSerialNumberIQ = GetConfigArea().PadRight(21, "_") & ReturnQuarterPeriod(Me.cmbFormType.SelectedIndex)
+            Me.formSerialNumberIA = Me.formSerialID.Substring(3)
         End If
 
         If MsgBox("Are you sure you want to aggregate?" & vbCrLf & "Note: This process may take some time.", 36, "System Message") = MsgBoxResult.Yes Then
@@ -220,6 +228,33 @@ Public Class ctrlAggregateData
         End If
     End Function
 
+    Private Function ReturnYearPeriod(ByVal financialYear As String) As String
+        Return "00001Jul" + financialYear.Substring(2, 2) + "30Jun" + financialYear.Substring(7, 2)
+    End Function
+
+    Private Function ReturnQuarterPeriod(ByVal formTypeNumber As Integer, Optional ByVal monthName As String = "") As String
+
+        If formTypeNumber = 1 Then
+            Select Case monthName.Substring(0, monthName.Length - 5)
+                Case "January", "February", "March"
+                    Return "00001Jan" & Microsoft.VisualBasic.Right(monthName, 2) & "31Mar" & Microsoft.VisualBasic.Right(monthName, 2)
+                Case "April", "May", "June"
+                    Return "00001Apr" & Microsoft.VisualBasic.Right(monthName, 2) & "30Jun" & Microsoft.VisualBasic.Right(monthName, 2)
+                Case "July", "August", "September"
+                    Return "00001Jul" & Microsoft.VisualBasic.Right(monthName, 2) & "30Sep" & Microsoft.VisualBasic.Right(monthName, 2)
+                Case "October", "November", "December"
+                    Return "00001Oct" & Microsoft.VisualBasic.Right(monthName, 2) & "31Dec" & Microsoft.VisualBasic.Right(monthName, 2)
+                Case Else
+                    Return ""
+            End Select
+        ElseIf formTypeNumber = 2 Then
+            Return ""
+        Else
+            Return "00001Jul" & Me.cmbFinancialYear.SelectedValue.Substring(2, 2) & "30Sep" & Me.cmbFinancialYear.SelectedValue.Substring(2, 2)
+        End If
+
+    End Function
+
     Private Function ReturnEndDateOfTheMonth(ByVal monthName As String, Optional ByVal yearName As Integer = 2010) As Integer
         Select Case monthName
             Case "Jan", "Mar", "May", "Jul", "Aug", "Oct", "Dec"
@@ -282,8 +317,8 @@ Public Class ctrlAggregateData
                 .Parameters.AddWithValue("@AreaID", GetConfigArea())
                 .Parameters.AddWithValue("@OfficerName", g_user_id)
                 .Parameters.AddWithValue("@SubmissionDate", Date.Now)
-                .Parameters.AddWithValue("@PeriodFrom", Date.Now)
-                .Parameters.AddWithValue("@PeriodTo", Date.Now)
+                .Parameters.AddWithValue("@PeriodFrom", CDate(formSerialID.Substring(27, 7)))
+                .Parameters.AddWithValue("@PeriodTo", CDate(formSerialID.Substring(34, 7)))
                 .Parameters.AddWithValue("@FormTypeNumber", Me.cmbFormType.SelectedIndex)
                 .Parameters.AddWithValue("@NewFormTypeNumber", Me.cmbFormType.SelectedIndex + 6)
                 .Parameters.AddWithValue("@DateCaptured", Date.Now)
@@ -291,8 +326,8 @@ Public Class ctrlAggregateData
                 .Parameters.AddWithValue("@OrganisationID", 0)
                 .Parameters.AddWithValue("@FormSerialID", formSerialID)
                 .Parameters.AddWithValue("@FormSerialNumber", formSerialID)
-                .Parameters.AddWithValue("@FormSerialNumberIQ", formSerialID)
-                .Parameters.AddWithValue("@FormSerialNumberIA", formSerialID)
+                .Parameters.AddWithValue("@FormSerialNumberIQ", formSerialNumberIQ)
+                .Parameters.AddWithValue("@FormSerialNumberIA", formSerialNumberIA)
                 .ExecuteNonQuery()
                 .Parameters.Clear()
             End With

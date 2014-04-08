@@ -23,20 +23,30 @@ Partial Class ctrlWard02Page04
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlWard02Page04))
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlWard02Page04))
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.IrrigationDataGridView = New System.Windows.Forms.DataGridView()
+        Me.IrrigationIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CropIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.AppUspLookupCropsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LookupTableDataDataSet = New LGMD.LookupTableDataDataSet()
+        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductionRainySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductionDrySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.YieldRainySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.YieldDrySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FormSerialIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Irrigation02BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -76,16 +86,6 @@ Partial Class ctrlWard02Page04
         Me.AppUspQuarterlyLookupNameOfPestsDiseaseTableAdapter = New LGMD.QuarterlyDataSetTableAdapters.appUspQuarterlyLookupNameOfPestsDiseaseTableAdapter()
         Me.PlantHealth02TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.PlantHealth02TableAdapter()
         Me.Irrigation02TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.Irrigation02TableAdapter()
-        Me.IrrigationIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CropIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProductionRainySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProductionDrySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.YieldRainySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.YieldDrySeasonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FormSerialIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.IrrigationDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AppUspLookupCropsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LookupTableDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,6 +122,25 @@ Partial Class ctrlWard02Page04
         Me.IrrigationDataGridView.Size = New System.Drawing.Size(743, 353)
         Me.IrrigationDataGridView.TabIndex = 1
         '
+        'IrrigationIDDataGridViewTextBoxColumn
+        '
+        Me.IrrigationIDDataGridViewTextBoxColumn.DataPropertyName = "IrrigationID"
+        Me.IrrigationIDDataGridViewTextBoxColumn.HeaderText = "IrrigationID"
+        Me.IrrigationIDDataGridViewTextBoxColumn.Name = "IrrigationIDDataGridViewTextBoxColumn"
+        Me.IrrigationIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.IrrigationIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'CropIDDataGridViewTextBoxColumn
+        '
+        Me.CropIDDataGridViewTextBoxColumn.DataPropertyName = "CropID"
+        Me.CropIDDataGridViewTextBoxColumn.DataSource = Me.AppUspLookupCropsBindingSource
+        Me.CropIDDataGridViewTextBoxColumn.DisplayMember = "CropName"
+        Me.CropIDDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CropIDDataGridViewTextBoxColumn.HeaderText = "CropID"
+        Me.CropIDDataGridViewTextBoxColumn.Name = "CropIDDataGridViewTextBoxColumn"
+        Me.CropIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.CropIDDataGridViewTextBoxColumn.ValueMember = "CropName"
+        '
         'AppUspLookupCropsBindingSource
         '
         Me.AppUspLookupCropsBindingSource.DataMember = "appUspLookupCrops"
@@ -131,6 +150,78 @@ Partial Class ctrlWard02Page04
         '
         Me.LookupTableDataDataSet.DataSetName = "LookupTableDataDataSet"
         Me.LookupTableDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PlantedAreaRainySeasonDataGridViewTextBoxColumn
+        '
+        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.DataPropertyName = "PlantedAreaRainySeason"
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
+        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.HeaderText = "PlantedAreaRainySeason"
+        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.Name = "PlantedAreaRainySeasonDataGridViewTextBoxColumn"
+        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'PlantedAreaDrySeasonDataGridViewTextBoxColumn
+        '
+        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.DataPropertyName = "PlantedAreaDrySeason"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
+        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.HeaderText = "PlantedAreaDrySeason"
+        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.Name = "PlantedAreaDrySeasonDataGridViewTextBoxColumn"
+        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'ProductionRainySeasonDataGridViewTextBoxColumn
+        '
+        Me.ProductionRainySeasonDataGridViewTextBoxColumn.DataPropertyName = "ProductionRainySeason"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.ProductionRainySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
+        Me.ProductionRainySeasonDataGridViewTextBoxColumn.HeaderText = "ProductionRainySeason"
+        Me.ProductionRainySeasonDataGridViewTextBoxColumn.Name = "ProductionRainySeasonDataGridViewTextBoxColumn"
+        Me.ProductionRainySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'ProductionDrySeasonDataGridViewTextBoxColumn
+        '
+        Me.ProductionDrySeasonDataGridViewTextBoxColumn.DataPropertyName = "ProductionDrySeason"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.ProductionDrySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
+        Me.ProductionDrySeasonDataGridViewTextBoxColumn.HeaderText = "ProductionDrySeason"
+        Me.ProductionDrySeasonDataGridViewTextBoxColumn.Name = "ProductionDrySeasonDataGridViewTextBoxColumn"
+        Me.ProductionDrySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'YieldRainySeasonDataGridViewTextBoxColumn
+        '
+        Me.YieldRainySeasonDataGridViewTextBoxColumn.DataPropertyName = "YieldRainySeason"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.YieldRainySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
+        Me.YieldRainySeasonDataGridViewTextBoxColumn.HeaderText = "YieldRainySeason"
+        Me.YieldRainySeasonDataGridViewTextBoxColumn.Name = "YieldRainySeasonDataGridViewTextBoxColumn"
+        Me.YieldRainySeasonDataGridViewTextBoxColumn.ReadOnly = True
+        Me.YieldRainySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'YieldDrySeasonDataGridViewTextBoxColumn
+        '
+        Me.YieldDrySeasonDataGridViewTextBoxColumn.DataPropertyName = "YieldDrySeason"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.YieldDrySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
+        Me.YieldDrySeasonDataGridViewTextBoxColumn.HeaderText = "YieldDrySeason"
+        Me.YieldDrySeasonDataGridViewTextBoxColumn.Name = "YieldDrySeasonDataGridViewTextBoxColumn"
+        Me.YieldDrySeasonDataGridViewTextBoxColumn.ReadOnly = True
+        Me.YieldDrySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'RecordIDDataGridViewTextBoxColumn1
+        '
+        Me.RecordIDDataGridViewTextBoxColumn1.DataPropertyName = "RecordID"
+        Me.RecordIDDataGridViewTextBoxColumn1.HeaderText = "RecordID"
+        Me.RecordIDDataGridViewTextBoxColumn1.Name = "RecordIDDataGridViewTextBoxColumn1"
+        Me.RecordIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.RecordIDDataGridViewTextBoxColumn1.Visible = False
+        '
+        'FormSerialIDDataGridViewTextBoxColumn1
+        '
+        Me.FormSerialIDDataGridViewTextBoxColumn1.DataPropertyName = "FormSerialID"
+        Me.FormSerialIDDataGridViewTextBoxColumn1.HeaderText = "FormSerialID"
+        Me.FormSerialIDDataGridViewTextBoxColumn1.Name = "FormSerialIDDataGridViewTextBoxColumn1"
+        Me.FormSerialIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.FormSerialIDDataGridViewTextBoxColumn1.Visible = False
         '
         'Irrigation02BindingSource
         '
@@ -155,7 +246,7 @@ Partial Class ctrlWard02Page04
         '
         Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label8, 0, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(21, 496)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -185,7 +276,7 @@ Partial Class ctrlWard02Page04
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label12, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label13, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label14, 2, 0)
@@ -443,7 +534,7 @@ Partial Class ctrlWard02Page04
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 219.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label3, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label6, 2, 0)
@@ -498,97 +589,6 @@ Partial Class ctrlWard02Page04
         'Irrigation02TableAdapter
         '
         Me.Irrigation02TableAdapter.ClearBeforeFill = True
-        '
-        'IrrigationIDDataGridViewTextBoxColumn
-        '
-        Me.IrrigationIDDataGridViewTextBoxColumn.DataPropertyName = "IrrigationID"
-        Me.IrrigationIDDataGridViewTextBoxColumn.HeaderText = "IrrigationID"
-        Me.IrrigationIDDataGridViewTextBoxColumn.Name = "IrrigationIDDataGridViewTextBoxColumn"
-        Me.IrrigationIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.IrrigationIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'CropIDDataGridViewTextBoxColumn
-        '
-        Me.CropIDDataGridViewTextBoxColumn.DataPropertyName = "CropID"
-        Me.CropIDDataGridViewTextBoxColumn.DataSource = Me.AppUspLookupCropsBindingSource
-        Me.CropIDDataGridViewTextBoxColumn.DisplayMember = "CropName"
-        Me.CropIDDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CropIDDataGridViewTextBoxColumn.HeaderText = "CropID"
-        Me.CropIDDataGridViewTextBoxColumn.Name = "CropIDDataGridViewTextBoxColumn"
-        Me.CropIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CropIDDataGridViewTextBoxColumn.ValueMember = "CropName"
-        '
-        'PlantedAreaRainySeasonDataGridViewTextBoxColumn
-        '
-        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.DataPropertyName = "PlantedAreaRainySeason"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
-        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.HeaderText = "PlantedAreaRainySeason"
-        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.Name = "PlantedAreaRainySeasonDataGridViewTextBoxColumn"
-        Me.PlantedAreaRainySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'PlantedAreaDrySeasonDataGridViewTextBoxColumn
-        '
-        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.DataPropertyName = "PlantedAreaDrySeason"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
-        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.HeaderText = "PlantedAreaDrySeason"
-        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.Name = "PlantedAreaDrySeasonDataGridViewTextBoxColumn"
-        Me.PlantedAreaDrySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'ProductionRainySeasonDataGridViewTextBoxColumn
-        '
-        Me.ProductionRainySeasonDataGridViewTextBoxColumn.DataPropertyName = "ProductionRainySeason"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.ProductionRainySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
-        Me.ProductionRainySeasonDataGridViewTextBoxColumn.HeaderText = "ProductionRainySeason"
-        Me.ProductionRainySeasonDataGridViewTextBoxColumn.Name = "ProductionRainySeasonDataGridViewTextBoxColumn"
-        Me.ProductionRainySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'ProductionDrySeasonDataGridViewTextBoxColumn
-        '
-        Me.ProductionDrySeasonDataGridViewTextBoxColumn.DataPropertyName = "ProductionDrySeason"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.ProductionDrySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
-        Me.ProductionDrySeasonDataGridViewTextBoxColumn.HeaderText = "ProductionDrySeason"
-        Me.ProductionDrySeasonDataGridViewTextBoxColumn.Name = "ProductionDrySeasonDataGridViewTextBoxColumn"
-        Me.ProductionDrySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'YieldRainySeasonDataGridViewTextBoxColumn
-        '
-        Me.YieldRainySeasonDataGridViewTextBoxColumn.DataPropertyName = "YieldRainySeason"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.YieldRainySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
-        Me.YieldRainySeasonDataGridViewTextBoxColumn.HeaderText = "YieldRainySeason"
-        Me.YieldRainySeasonDataGridViewTextBoxColumn.Name = "YieldRainySeasonDataGridViewTextBoxColumn"
-        Me.YieldRainySeasonDataGridViewTextBoxColumn.ReadOnly = True
-        Me.YieldRainySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'YieldDrySeasonDataGridViewTextBoxColumn
-        '
-        Me.YieldDrySeasonDataGridViewTextBoxColumn.DataPropertyName = "YieldDrySeason"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.YieldDrySeasonDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
-        Me.YieldDrySeasonDataGridViewTextBoxColumn.HeaderText = "YieldDrySeason"
-        Me.YieldDrySeasonDataGridViewTextBoxColumn.Name = "YieldDrySeasonDataGridViewTextBoxColumn"
-        Me.YieldDrySeasonDataGridViewTextBoxColumn.ReadOnly = True
-        Me.YieldDrySeasonDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'RecordIDDataGridViewTextBoxColumn1
-        '
-        Me.RecordIDDataGridViewTextBoxColumn1.DataPropertyName = "RecordID"
-        Me.RecordIDDataGridViewTextBoxColumn1.HeaderText = "RecordID"
-        Me.RecordIDDataGridViewTextBoxColumn1.Name = "RecordIDDataGridViewTextBoxColumn1"
-        Me.RecordIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.RecordIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'FormSerialIDDataGridViewTextBoxColumn1
-        '
-        Me.FormSerialIDDataGridViewTextBoxColumn1.DataPropertyName = "FormSerialID"
-        Me.FormSerialIDDataGridViewTextBoxColumn1.HeaderText = "FormSerialID"
-        Me.FormSerialIDDataGridViewTextBoxColumn1.Name = "FormSerialIDDataGridViewTextBoxColumn1"
-        Me.FormSerialIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.FormSerialIDDataGridViewTextBoxColumn1.Visible = False
         '
         'ctrlWard02Page04
         '

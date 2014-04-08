@@ -23,7 +23,7 @@ Partial Class frmMain
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SplitContainer As System.Windows.Forms.SplitContainer
-    Friend WithEvents treeView As System.Windows.Forms.TreeView
+    Friend WithEvents tvMain As System.Windows.Forms.TreeView
     Friend WithEvents statusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolTip As System.Windows.Forms.ToolTip
     Friend WithEvents ListViewLargeImageList As System.Windows.Forms.ImageList
@@ -63,7 +63,7 @@ Partial Class frmMain
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolStripContainer = New System.Windows.Forms.ToolStripContainer()
         Me.SplitContainer = New System.Windows.Forms.SplitContainer()
-        Me.treeView = New System.Windows.Forms.TreeView()
+        Me.tvMain = New System.Windows.Forms.TreeView()
         Me.ListViewLargeImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.ListViewSmallImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
@@ -131,7 +131,7 @@ Partial Class frmMain
         Me.toolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator7, Me.ToolStripSeparator8, Me.tsbtnSynchronise, Me.tscmbSynchOptions, Me.tslblLanguage, Me.tscmbLanguage, Me.tslblServerIP, Me.tstxtHostIP})
         Me.toolStrip.Location = New System.Drawing.Point(3, 24)
         Me.toolStrip.Name = "toolStrip"
-        Me.toolStrip.Size = New System.Drawing.Size(392, 25)
+        Me.toolStrip.Size = New System.Drawing.Size(605, 25)
         Me.toolStrip.TabIndex = 0
         Me.toolStrip.Text = "ToolStrip1"
         '
@@ -284,7 +284,7 @@ Partial Class frmMain
         '
         'SplitContainer.Panel1
         '
-        Me.SplitContainer.Panel1.Controls.Add(Me.treeView)
+        Me.SplitContainer.Panel1.Controls.Add(Me.tvMain)
         '
         'SplitContainer.Panel2
         '
@@ -294,17 +294,17 @@ Partial Class frmMain
         Me.SplitContainer.TabIndex = 0
         Me.SplitContainer.Text = "SplitContainer1"
         '
-        'treeView
+        'tvMain
         '
-        Me.treeView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.treeView.ImageIndex = 0
-        Me.treeView.ImageList = Me.TreeNodeImageList
-        Me.treeView.Location = New System.Drawing.Point(0, 0)
-        Me.treeView.Name = "treeView"
-        Me.treeView.SelectedImageIndex = 1
-        Me.treeView.ShowLines = False
-        Me.treeView.Size = New System.Drawing.Size(242, 382)
-        Me.treeView.TabIndex = 0
+        Me.tvMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tvMain.ImageIndex = 0
+        Me.tvMain.ImageList = Me.TreeNodeImageList
+        Me.tvMain.Location = New System.Drawing.Point(0, 0)
+        Me.tvMain.Name = "tvMain"
+        Me.tvMain.SelectedImageIndex = 1
+        Me.tvMain.ShowLines = False
+        Me.tvMain.Size = New System.Drawing.Size(242, 382)
+        Me.tvMain.TabIndex = 0
         '
         'ListViewLargeImageList
         '

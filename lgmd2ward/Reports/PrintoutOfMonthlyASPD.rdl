@@ -4,7 +4,7 @@
     <DataSource Name="LGMD2iDataSource">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2i_KorogweMjiniRevision</ConnectString>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2iData</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:DataSourceID>acc32cb6-b5ef-4811-9686-86fa281a51f9</rd:DataSourceID>
@@ -200,7 +200,7 @@
       <Fields>
         <Field Name="LivestockListID">
           <DataField>LivestockListID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
         <Field Name="LivestockName">
           <DataField>LivestockName</DataField>
@@ -259,7 +259,7 @@
         </Field>
         <Field Name="LivestockListID">
           <DataField>LivestockListID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
         <Field Name="TotalNumberSlaughteredThisMonth">
           <DataField>TotalNumberSlaughteredThisMonth</DataField>
@@ -284,13 +284,9 @@
     </DataSet>
     <DataSet Name="ProdMilk">
       <Fields>
-        <Field Name="ProdName">
-          <DataField>ProdName</DataField>
+        <Field Name="ListItemEn">
+          <DataField>ListItemEn</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ProdMilkListID">
-          <DataField>ProdMilkListID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="AmountThisMonth">
           <DataField>AmountThisMonth</DataField>
@@ -311,8 +307,8 @@
     </DataSet>
     <DataSet Name="ProdSkin">
       <Fields>
-        <Field Name="ProdName">
-          <DataField>ProdName</DataField>
+        <Field Name="ListItemSw">
+          <DataField>ListItemSw</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DrySuspended">
@@ -449,7 +445,7 @@
         </Field>
         <Field Name="CropGroupListID">
           <DataField>CropGroupListID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
         <Field Name="CropName">
           <DataField>CropName</DataField>
@@ -3756,25 +3752,20 @@
                 <TablixMember>
                   <Group Name="ProdName">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!ProdName.Value</GroupExpression>
+                      <GroupExpression>=Fields!ListItemEn.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!ProdMilkListID.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
                   <TablixHeader>
                     <Size>2.84064in</Size>
                     <CellContents>
-                      <Textbox Name="ProdName">
+                      <Textbox Name="ListItemEn">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!ProdName.Value</Value>
+                                <Value>=Fields!ListItemEn.Value</Value>
                                 <Style>
                                   <FontFamily>Tahoma</FontFamily>
                                   <FontSize>9pt</FontSize>
@@ -3786,7 +3777,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>ProdName</rd:DefaultName>
+                        <rd:DefaultName>ListItemEn</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -4239,14 +4230,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ProdName1">
+                        <Textbox Name="ListItemSw">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ProdName.Value</Value>
+                                  <Value>=Fields!ListItemSw.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -4257,7 +4248,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ProdName1</rd:DefaultName>
+                          <rd:DefaultName>ListItemSw</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>

@@ -1,10 +1,8 @@
 ﻿Public Class ctrlWard03Page09
 
-    Dim InfraListDA As New LGMDdataDataSetTableAdapters.InfraListTableAdapter
-    Dim LiveInfraDA As New LGMDdataDataSetTableAdapters.LivestockInfrastructure03TableAdapter
-    Dim LivestockListDA As New LGMDdataDataSetTableAdapters.LivestockListTableAdapter
-    Dim AnimalsGrazedListDA As New LGMDdataDataSetTableAdapters.AnimalsGrazedListTableAdapter
-    Dim GrazingLandDA As New LGMDdataDataSetTableAdapters.GrazingLand03TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private LiveInfraDA As New LGMDdataDataSetTableAdapters.LivestockInfrastructure03TableAdapter
+    Private GrazingLandDA As New LGMDdataDataSetTableAdapters.GrazingLand03TableAdapter
     Private working As Integer?
     Private notWorking As Integer?
     Private numberRequired As Integer?
@@ -12,24 +10,23 @@
 
     Private Sub ctrlWard03Page09_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.InfraListDA.Fill(Me.LGMDdataDataSet.InfraList)
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
         Me.LiveInfraDA.Fill(Me.LGMDdataDataSet.LivestockInfrastructure03)
         Me.AppUspAnnualFillLivestockInfrastructureTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillLivestockInfrastructure, g_RecordID)
 
         If Me.LGMDdataDataSet.appUspAnnualFillLivestockInfrastructure.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.InfraList.Select("InfraStatus='0'")
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='LivestockInfrastructure03' AND ListItemStatus=0")
                 Me.LiveInfraDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.AppUspAnnualFillLivestockInfrastructureTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillLivestockInfrastructure, g_RecordID)
         End If
 
-        Me.AnimalsGrazedListDA.Fill(Me.LGMDdataDataSet.AnimalsGrazedList)
         Me.GrazingLandDA.Fill(Me.LGMDdataDataSet.GrazingLand03)
         Me.GrazingLand03iTableAdapter.Fill(Me.LGMDdataDataSet.GrazingLand03i, g_RecordID)
 
         If Me.LGMDdataDataSet.GrazingLand03i.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.AnimalsGrazedList.Rows
-                Me.GrazingLandDA.Insert(Guid.NewGuid, row.Item(0).ToString, g_RecordID, g_FormSerialNumber)
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='GrazingLand03'")
+                Me.GrazingLandDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.GrazingLand03iTableAdapter.Fill(Me.LGMDdataDataSet.GrazingLand03i, g_RecordID)
         End If
@@ -140,8 +137,8 @@
     End Sub
 
     Private Sub DataGridView3_CellPainting(sender As System.Object, e As System.Windows.Forms.DataGridViewCellPaintingEventArgs) Handles DataGridView3.CellPainting
-        If (e.ColumnIndex = 5 AndAlso e.RowIndex <> -1) Or (e.ColumnIndex = 6 AndAlso e.RowIndex <> -1) _
-            Or (e.ColumnIndex = 7 AndAlso e.RowIndex <> -1) Or (e.ColumnIndex = 8 AndAlso e.RowIndex <> -1) Then
+        If (e.ColumnIndex = 6 AndAlso e.RowIndex <> -1) Or (e.ColumnIndex = 7 AndAlso e.RowIndex <> -1) _
+            Or (e.ColumnIndex = 8 AndAlso e.RowIndex <> -1) Or (e.ColumnIndex = 9 AndAlso e.RowIndex <> -1) Then
 
             Using gridBrush As Brush = New SolidBrush(Me.DataGridView3.GridColor),
                   backColorBrush As Brush = New SolidBrush(e.CellStyle.BackColor)
@@ -178,9 +175,6 @@
     End Sub
 
     Private Sub DataGridView3_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles DataGridView3.Paint
-        Me.DataGridView3.Rows(1).Cells(5).ReadOnly = True
-        Me.DataGridView3.Rows(2).Cells(5).ReadOnly = True
-        Me.DataGridView3.Rows(3).Cells(5).ReadOnly = True
         Me.DataGridView3.Rows(1).Cells(6).ReadOnly = True
         Me.DataGridView3.Rows(2).Cells(6).ReadOnly = True
         Me.DataGridView3.Rows(3).Cells(6).ReadOnly = True
@@ -190,5 +184,8 @@
         Me.DataGridView3.Rows(1).Cells(8).ReadOnly = True
         Me.DataGridView3.Rows(2).Cells(8).ReadOnly = True
         Me.DataGridView3.Rows(3).Cells(8).ReadOnly = True
+        Me.DataGridView3.Rows(1).Cells(9).ReadOnly = True
+        Me.DataGridView3.Rows(2).Cells(9).ReadOnly = True
+        Me.DataGridView3.Rows(3).Cells(9).ReadOnly = True
     End Sub
 End Class

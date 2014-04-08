@@ -4,7 +4,7 @@
     <DataSource Name="LGMD2iDataSource">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2i_KorogweMjiniRevision</ConnectString>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2iData</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:DataSourceID>acc32cb6-b5ef-4811-9686-86fa281a51f9</rd:DataSourceID>
@@ -18,8 +18,8 @@
           <DataField>FamilyNoFood</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="StatusDescription">
-          <DataField>StatusDescription</DataField>
+        <Field Name="LookupSw">
+          <DataField>LookupSw</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="FamilyLessFood">
@@ -106,16 +106,16 @@
     </DataSet>
     <DataSet Name="CoopGroups">
       <Fields>
-        <Field Name="GroupName">
-          <DataField>GroupName</DataField>
+        <Field Name="GroupDescription">
+          <DataField>GroupDescription</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="GroupID">
           <DataField>GroupID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="GroupDetails">
-          <DataField>GroupDetails</DataField>
+        <Field Name="ListItemSw">
+          <DataField>ListItemSw</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="NumberOfGroups">
@@ -238,12 +238,12 @@
     </DataSet>
     <DataSet Name="ProdLand">
       <Fields>
-        <Field Name="SeasonID">
-          <DataField>SeasonID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="ListID">
+          <DataField>ListID</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
-        <Field Name="ActivityDetails">
-          <DataField>ActivityDetails</DataField>
+        <Field Name="ListItemSw">
+          <DataField>ListItemSw</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Tractor">
@@ -2961,7 +2961,7 @@
                 <TablixMember>
                   <Group Name="GroupName">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!GroupName.Value</GroupExpression>
+                      <GroupExpression>=Fields!GroupDescription.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
@@ -2972,14 +2972,14 @@
                   <TablixHeader>
                     <Size>0.8095in</Size>
                     <CellContents>
-                      <Textbox Name="GroupName1">
+                      <Textbox Name="GroupDescription">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!GroupName.Value</Value>
+                                <Value>=Fields!GroupDescription.Value</Value>
                                 <Style>
                                   <FontSize>9pt</FontSize>
                                 </Style>
@@ -2990,7 +2990,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>GroupName1</rd:DefaultName>
+                        <rd:DefaultName>GroupDescription</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -3009,26 +3009,26 @@
                     <TablixMember>
                       <Group Name="GroupDetails">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!GroupDetails.Value</GroupExpression>
+                          <GroupExpression>=Fields!ListItemSw.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!GroupDetails.Value</Value>
+                          <Value>=Fields!ListItemSw.Value</Value>
                           <Direction>Descending</Direction>
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
                         <Size>0.74114in</Size>
                         <CellContents>
-                          <Textbox Name="GroupDetails1">
+                          <Textbox Name="ListItemSw">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!GroupDetails.Value</Value>
+                                    <Value>=Fields!ListItemSw.Value</Value>
                                     <Style>
                                       <FontSize>9pt</FontSize>
                                     </Style>
@@ -3039,7 +3039,7 @@
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>GroupDetails1</rd:DefaultName>
+                            <rd:DefaultName>ListItemSw</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>Solid</Style>
@@ -3057,9 +3057,6 @@
                       <TablixMembers>
                         <TablixMember />
                       </TablixMembers>
-                      <Visibility>
-                        <ToggleItem>GroupName1</ToggleItem>
-                      </Visibility>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
@@ -3166,14 +3163,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="StatusDescription">
+                        <Textbox Name="LookupSw">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!StatusDescription.Value</Value>
+                                  <Value>=Fields!LookupSw.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -3184,7 +3181,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>StatusDescription</rd:DefaultName>
+                          <rd:DefaultName>LookupSw</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -6878,14 +6875,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ActivityDetails">
+                        <Textbox Name="ListItemSw1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ActivityDetails.Value</Value>
+                                  <Value>=Fields!ListItemSw.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -6896,7 +6893,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ActivityDetails</rd:DefaultName>
+                          <rd:DefaultName>ListItemSw1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -7110,15 +7107,6 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>ProdLand</DataSetName>
-            <Filters>
-              <Filter>
-                <FilterExpression>=Fields!SeasonID.Value</FilterExpression>
-                <Operator>Equal</Operator>
-                <FilterValues>
-                  <FilterValue DataType="Integer">1</FilterValue>
-                </FilterValues>
-              </Filter>
-            </Filters>
             <Top>19.31463mm</Top>
             <Left>3.43958mm</Left>
             <Height>16.76248mm</Height>
@@ -7428,14 +7416,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ActivityDetails1">
+                        <Textbox Name="ListItemSw2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ActivityDetails.Value</Value>
+                                  <Value>=Fields!ListItemSw.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -7446,7 +7434,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ActivityDetails1</rd:DefaultName>
+                          <rd:DefaultName>ListItemSw2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -7660,15 +7648,6 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>ProdLand</DataSetName>
-            <Filters>
-              <Filter>
-                <FilterExpression>=Fields!SeasonID.Value</FilterExpression>
-                <Operator>Equal</Operator>
-                <FilterValues>
-                  <FilterValue DataType="Integer">2</FilterValue>
-                </FilterValues>
-              </Filter>
-            </Filters>
             <Top>56.88546mm</Top>
             <Left>2.91042mm</Left>
             <Height>15.96873mm</Height>
@@ -8861,6 +8840,11 @@
   <ReportParameters>
     <ReportParameter Name="FormSerialNumber">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>002%AFRTZA001004002191%00001Apr1130Jun11</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Form Serial Number</Prompt>
     </ReportParameter>
   </ReportParameters>

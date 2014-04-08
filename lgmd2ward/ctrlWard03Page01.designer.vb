@@ -90,6 +90,18 @@ Partial Class ctrlWard03Page01
         Me.RecordInfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label23 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AI = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContractFarmingIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ActivityIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContractMajorProductsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnnualRecordIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ContractFarming03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.IrrigationScheme03iBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
@@ -132,21 +144,9 @@ Partial Class ctrlWard03Page01
         Me.txtOfficerName = New System.Windows.Forms.TextBox()
         Me.AppUspLookupSeasonIrrigatedTableAdapter = New LGMD.LookupTableDataDataSetTableAdapters.appUspLookupSeasonIrrigatedTableAdapter()
         Me.AppUspLookupStatusOfSchemeTableAdapter = New LGMD.LookupTableDataDataSetTableAdapters.appUspLookupStatusOfSchemeTableAdapter()
-        Me.GroupIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContractFarmingIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ActivityIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContractMajorProductsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupNameDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SchemeIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SchemeNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NameOfWaterSourceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PotentialAreaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -157,11 +157,9 @@ Partial Class ctrlWard03Page01
         Me.NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupNameDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SchemeIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SchemeNameDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NameOfWaterSourceDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PotentialAreaDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -172,7 +170,6 @@ Partial Class ctrlWard03Page01
         Me.NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AppUspLookupSeasonIrrigatedBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LookupTableDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -373,7 +370,7 @@ Partial Class ctrlWard03Page01
         Me.DataGridView2.AutoGenerateColumns = False
         Me.DataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GroupIDDataGridViewTextBoxColumn1, Me.GroupNameDataGridViewTextBoxColumn1, Me.IrrigationSchemeIDDataGridViewTextBoxColumn, Me.SchemeIDDataGridViewTextBoxColumn, Me.SchemeNameDataGridViewTextBoxColumn, Me.NameOfWaterSourceDataGridViewTextBoxColumn, Me.PotentialAreaDataGridViewTextBoxColumn, Me.AreaUnderImprovedIrrigationDataGridViewTextBoxColumn, Me.SeasonirrigatedDataGridViewTextBoxColumn, Me.StatusOfSchemeDataGridViewTextBoxColumn, Me.NumberOfMembersInIrrigationSchemeMaleDataGridViewTextBoxColumn, Me.NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn, Me.NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn, Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn1})
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.IrrigationSchemeIDDataGridViewTextBoxColumn, Me.SchemeNameDataGridViewTextBoxColumn, Me.NameOfWaterSourceDataGridViewTextBoxColumn, Me.PotentialAreaDataGridViewTextBoxColumn, Me.AreaUnderImprovedIrrigationDataGridViewTextBoxColumn, Me.SeasonirrigatedDataGridViewTextBoxColumn, Me.StatusOfSchemeDataGridViewTextBoxColumn, Me.NumberOfMembersInIrrigationSchemeMaleDataGridViewTextBoxColumn, Me.NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn, Me.NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn, Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn})
         Me.DataGridView2.DataSource = Me.IrrigationScheme03iBindingSource1
         Me.DataGridView2.Location = New System.Drawing.Point(13, 855)
         Me.DataGridView2.Name = "DataGridView2"
@@ -422,7 +419,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 278.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.txtMaleHeadedHousehold, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.txtFemaleHeadedHousehold, 2, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.txtTotalNumberOfHousehold, 3, 1)
@@ -455,7 +452,7 @@ Partial Class ctrlWard03Page01
         '
         Me.txtMaleHeadedHousehold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMaleHeadedHousehold.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BasicInformation03BindingSource, "MaleHeadedHousehold", True))
-        Me.txtMaleHeadedHousehold.Location = New System.Drawing.Point(86, 37)
+        Me.txtMaleHeadedHousehold.Location = New System.Drawing.Point(82, 37)
         Me.txtMaleHeadedHousehold.Margin = New System.Windows.Forms.Padding(0)
         Me.txtMaleHeadedHousehold.Name = "txtMaleHeadedHousehold"
         Me.txtMaleHeadedHousehold.Size = New System.Drawing.Size(141, 20)
@@ -476,7 +473,7 @@ Partial Class ctrlWard03Page01
         '
         Me.txtFemaleHeadedHousehold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFemaleHeadedHousehold.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BasicInformation03BindingSource, "FemaleHeadedHousehold", True))
-        Me.txtFemaleHeadedHousehold.Location = New System.Drawing.Point(228, 37)
+        Me.txtFemaleHeadedHousehold.Location = New System.Drawing.Point(224, 37)
         Me.txtFemaleHeadedHousehold.Margin = New System.Windows.Forms.Padding(0)
         Me.txtFemaleHeadedHousehold.Name = "txtFemaleHeadedHousehold"
         Me.txtFemaleHeadedHousehold.Size = New System.Drawing.Size(145, 20)
@@ -486,7 +483,7 @@ Partial Class ctrlWard03Page01
         'txtTotalNumberOfHousehold
         '
         Me.txtTotalNumberOfHousehold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtTotalNumberOfHousehold.Location = New System.Drawing.Point(374, 37)
+        Me.txtTotalNumberOfHousehold.Location = New System.Drawing.Point(370, 37)
         Me.txtTotalNumberOfHousehold.Margin = New System.Windows.Forms.Padding(0)
         Me.txtTotalNumberOfHousehold.Name = "txtTotalNumberOfHousehold"
         Me.txtTotalNumberOfHousehold.ReadOnly = True
@@ -499,10 +496,10 @@ Partial Class ctrlWard03Page01
         Me.txtNumberOfHouseholdEngagingInAgriculture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtNumberOfHouseholdEngagingInAgriculture.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BasicInformation03BindingSource, "NumberOfHouseholdEngagingInAgriculture", True))
         Me.txtNumberOfHouseholdEngagingInAgriculture.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtNumberOfHouseholdEngagingInAgriculture.Location = New System.Drawing.Point(482, 37)
+        Me.txtNumberOfHouseholdEngagingInAgriculture.Location = New System.Drawing.Point(478, 37)
         Me.txtNumberOfHouseholdEngagingInAgriculture.Margin = New System.Windows.Forms.Padding(0)
         Me.txtNumberOfHouseholdEngagingInAgriculture.Name = "txtNumberOfHouseholdEngagingInAgriculture"
-        Me.txtNumberOfHouseholdEngagingInAgriculture.Size = New System.Drawing.Size(278, 20)
+        Me.txtNumberOfHouseholdEngagingInAgriculture.Size = New System.Drawing.Size(282, 20)
         Me.txtNumberOfHouseholdEngagingInAgriculture.TabIndex = 3
         Me.txtNumberOfHouseholdEngagingInAgriculture.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -510,7 +507,7 @@ Partial Class ctrlWard03Page01
         '
         Me.txtMalePopulation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMalePopulation.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BasicInformation03BindingSource, "PopulationMale", True))
-        Me.txtMalePopulation.Location = New System.Drawing.Point(86, 79)
+        Me.txtMalePopulation.Location = New System.Drawing.Point(82, 79)
         Me.txtMalePopulation.Margin = New System.Windows.Forms.Padding(0)
         Me.txtMalePopulation.Name = "txtMalePopulation"
         Me.txtMalePopulation.Size = New System.Drawing.Size(141, 20)
@@ -521,7 +518,7 @@ Partial Class ctrlWard03Page01
         '
         Me.txtFemalePopulation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFemalePopulation.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BasicInformation03BindingSource, "PopulationFemale", True))
-        Me.txtFemalePopulation.Location = New System.Drawing.Point(228, 79)
+        Me.txtFemalePopulation.Location = New System.Drawing.Point(224, 79)
         Me.txtFemalePopulation.Margin = New System.Windows.Forms.Padding(0)
         Me.txtFemalePopulation.Name = "txtFemalePopulation"
         Me.txtFemalePopulation.Size = New System.Drawing.Size(145, 20)
@@ -531,7 +528,7 @@ Partial Class ctrlWard03Page01
         'txtTotalPopulation
         '
         Me.txtTotalPopulation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtTotalPopulation.Location = New System.Drawing.Point(374, 79)
+        Me.txtTotalPopulation.Location = New System.Drawing.Point(370, 79)
         Me.txtTotalPopulation.Margin = New System.Windows.Forms.Padding(0)
         Me.txtTotalPopulation.Name = "txtTotalPopulation"
         Me.txtTotalPopulation.ReadOnly = True
@@ -544,10 +541,10 @@ Partial Class ctrlWard03Page01
         Me.txtPopulationEngagingInAgriculture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPopulationEngagingInAgriculture.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BasicInformation03BindingSource, "PopulationEngagingInAgriculture", True))
         Me.txtPopulationEngagingInAgriculture.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtPopulationEngagingInAgriculture.Location = New System.Drawing.Point(482, 79)
+        Me.txtPopulationEngagingInAgriculture.Location = New System.Drawing.Point(478, 79)
         Me.txtPopulationEngagingInAgriculture.Margin = New System.Windows.Forms.Padding(0)
         Me.txtPopulationEngagingInAgriculture.Name = "txtPopulationEngagingInAgriculture"
-        Me.txtPopulationEngagingInAgriculture.Size = New System.Drawing.Size(278, 20)
+        Me.txtPopulationEngagingInAgriculture.Size = New System.Drawing.Size(282, 20)
         Me.txtPopulationEngagingInAgriculture.TabIndex = 9
         Me.txtPopulationEngagingInAgriculture.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -555,7 +552,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(108, 5)
+        Me.Label13.Location = New System.Drawing.Point(104, 5)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(97, 26)
         Me.Label13.TabIndex = 10
@@ -566,7 +563,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(252, 5)
+        Me.Label14.Location = New System.Drawing.Point(248, 5)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(97, 26)
         Me.Label14.TabIndex = 11
@@ -577,7 +574,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(410, 12)
+        Me.Label15.Location = New System.Drawing.Point(406, 12)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(34, 13)
         Me.Label15.TabIndex = 12
@@ -588,7 +585,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(556, 12)
+        Me.Label16.Location = New System.Drawing.Point(554, 12)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(130, 13)
         Me.Label16.TabIndex = 13
@@ -599,7 +596,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(128, 61)
+        Me.Label17.Location = New System.Drawing.Point(124, 61)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(56, 13)
         Me.Label17.TabIndex = 14
@@ -610,7 +607,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(269, 61)
+        Me.Label18.Location = New System.Drawing.Point(265, 61)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(62, 13)
         Me.Label18.TabIndex = 15
@@ -621,7 +618,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(410, 61)
+        Me.Label19.Location = New System.Drawing.Point(406, 61)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(34, 13)
         Me.Label19.TabIndex = 16
@@ -632,7 +629,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(554, 61)
+        Me.Label20.Location = New System.Drawing.Point(552, 61)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(133, 13)
         Me.Label20.TabIndex = 17
@@ -643,7 +640,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(8, 40)
+        Me.Label21.Location = New System.Drawing.Point(6, 40)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(70, 13)
         Me.Label21.TabIndex = 18
@@ -654,7 +651,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label22.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(8, 82)
+        Me.Label22.Location = New System.Drawing.Point(6, 82)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(70, 13)
         Me.Label22.TabIndex = 19
@@ -692,12 +689,105 @@ Partial Class ctrlWard03Page01
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.ColumnHeadersVisible = False
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GroupIDDataGridViewTextBoxColumn, Me.GroupNameDataGridViewTextBoxColumn, Me.ContractFarmingIDDataGridViewTextBoxColumn, Me.ActivityIDDataGridViewTextBoxColumn, Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn, Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn, Me.ContractMajorProductsDataGridViewTextBoxColumn, Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn, Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn, Me.OutgrowersMajorProductsDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.ListItemSw, Me.AI, Me.ContractFarmingIDDataGridViewTextBoxColumn, Me.ActivityIDDataGridViewTextBoxColumn, Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn, Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn, Me.ContractMajorProductsDataGridViewTextBoxColumn, Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn, Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn, Me.OutgrowersMajorProductsDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.ContractFarming03iBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(6, 570)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(893, 69)
         Me.DataGridView1.TabIndex = 6
+        '
+        'ListID
+        '
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
+        '
+        'ListItemSw
+        '
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "ListItemSw"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 120
+        '
+        'AI
+        '
+        Me.AI.DataPropertyName = "AI"
+        Me.AI.HeaderText = "AI"
+        Me.AI.Name = "AI"
+        Me.AI.ReadOnly = True
+        Me.AI.Visible = False
+        '
+        'ContractFarmingIDDataGridViewTextBoxColumn
+        '
+        Me.ContractFarmingIDDataGridViewTextBoxColumn.DataPropertyName = "ContractFarmingID"
+        Me.ContractFarmingIDDataGridViewTextBoxColumn.HeaderText = "ContractFarmingID"
+        Me.ContractFarmingIDDataGridViewTextBoxColumn.Name = "ContractFarmingIDDataGridViewTextBoxColumn"
+        Me.ContractFarmingIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'ActivityIDDataGridViewTextBoxColumn
+        '
+        Me.ActivityIDDataGridViewTextBoxColumn.DataPropertyName = "ActivityID"
+        Me.ActivityIDDataGridViewTextBoxColumn.HeaderText = "ActivityID"
+        Me.ActivityIDDataGridViewTextBoxColumn.Name = "ActivityIDDataGridViewTextBoxColumn"
+        Me.ActivityIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn
+        '
+        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DataPropertyName = "ContractNumberOfHouseholdInvolved"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
+        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya kaya zinazoshiriki (iii)"
+        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Name = "ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn"
+        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Width = 110
+        '
+        'ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn
+        '
+        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DataPropertyName = "ContractNumberOfContractorsInvolved"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
+        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya makampuni yaliyohusika (iv)"
+        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Name = "ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn"
+        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Width = 110
+        '
+        'ContractMajorProductsDataGridViewTextBoxColumn
+        '
+        Me.ContractMajorProductsDataGridViewTextBoxColumn.DataPropertyName = "ContractMajorProducts"
+        Me.ContractMajorProductsDataGridViewTextBoxColumn.HeaderText = "Zao kuu/ bidhaa (v)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.ContractMajorProductsDataGridViewTextBoxColumn.Name = "ContractMajorProductsDataGridViewTextBoxColumn"
+        Me.ContractMajorProductsDataGridViewTextBoxColumn.Width = 130
+        '
+        'OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn
+        '
+        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DataPropertyName = "OutgrowersNumberOfHouseholdInvolved"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
+        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya kaya zinazoshiriki (vi)"
+        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Name = "OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn"
+        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Width = 120
+        '
+        'OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn
+        '
+        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DataPropertyName = "OutgrowersNumberOfContractorsInvolved"
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle10
+        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya makampuni yaliyohusika (vii)"
+        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Name = "OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn"
+        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Width = 120
+        '
+        'OutgrowersMajorProductsDataGridViewTextBoxColumn
+        '
+        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.DataPropertyName = "OutgrowersMajorProducts"
+        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.HeaderText = "Zao kuu/ bidhaa (viii)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.Name = "OutgrowersMajorProductsDataGridViewTextBoxColumn"
+        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.Width = 140
+        '
+        'AnnualRecordIDDataGridViewTextBoxColumn
+        '
+        Me.AnnualRecordIDDataGridViewTextBoxColumn.DataPropertyName = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn.HeaderText = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn.Name = "AnnualRecordIDDataGridViewTextBoxColumn"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn.Visible = False
         '
         'ContractFarming03iBindingSource
         '
@@ -713,7 +803,7 @@ Partial Class ctrlWard03Page01
         Me.DataGridView3.AutoGenerateColumns = False
         Me.DataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GroupIDDataGridViewTextBoxColumn2, Me.GroupNameDataGridViewTextBoxColumn2, Me.IrrigationSchemeIDDataGridViewTextBoxColumn1, Me.SchemeIDDataGridViewTextBoxColumn1, Me.SchemeNameDataGridViewTextBoxColumn1, Me.NameOfWaterSourceDataGridViewTextBoxColumn1, Me.PotentialAreaDataGridViewTextBoxColumn1, Me.AreaUnderImprovedIrrigationDataGridViewTextBoxColumn1, Me.SeasonirrigatedDataGridViewTextBoxColumn1, Me.StatusOfSchemeDataGridViewTextBoxColumn1, Me.NumberOfMembersInIrrigationSchemeMaleDataGridViewTextBoxColumn1, Me.NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn1, Me.NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn1, Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1, Me.AnnualRecordIDDataGridViewTextBoxColumn2})
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.IrrigationSchemeIDDataGridViewTextBoxColumn1, Me.SchemeNameDataGridViewTextBoxColumn1, Me.NameOfWaterSourceDataGridViewTextBoxColumn1, Me.PotentialAreaDataGridViewTextBoxColumn1, Me.AreaUnderImprovedIrrigationDataGridViewTextBoxColumn1, Me.SeasonirrigatedDataGridViewTextBoxColumn1, Me.StatusOfSchemeDataGridViewTextBoxColumn1, Me.NumberOfMembersInIrrigationSchemeMaleDataGridViewTextBoxColumn1, Me.NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn1, Me.NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn1, Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1})
         Me.DataGridView3.DataSource = Me.IrrigationScheme03iBindingSource2
         Me.DataGridView3.Location = New System.Drawing.Point(13, 967)
         Me.DataGridView3.Name = "DataGridView3"
@@ -743,7 +833,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label24, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label25, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label26, 2, 0)
@@ -817,9 +907,9 @@ Partial Class ctrlWard03Page01
         '
         Me.Label29.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(578, 4)
+        Me.Label29.Location = New System.Drawing.Point(577, 10)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(115, 65)
+        Me.Label29.Size = New System.Drawing.Size(120, 52)
         Me.Label29.TabIndex = 5
         Me.Label29.Text = """Hali ya skimu" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(1=nzuri, 2=inaridhisha, 3=inahitaji marekebisho, 4=haijulikani)""" & _
     "" & Global.Microsoft.VisualBasic.ChrW(9)
@@ -832,7 +922,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label31, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label32, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label34, 2, 0)
@@ -881,7 +971,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label35.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(217, 8)
+        Me.Label35.Location = New System.Drawing.Point(219, 8)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(62, 13)
         Me.Label35.TabIndex = 3
@@ -893,7 +983,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel4.ColumnCount = 2
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138.0!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.Label30, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Label33, 1, 0)
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(708, 781)
@@ -918,7 +1008,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label33.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(160, 2)
+        Me.Label33.Location = New System.Drawing.Point(162, 2)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(105, 39)
         Me.Label33.TabIndex = 1
@@ -949,7 +1039,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel5.ColumnCount = 1
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 167.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label36, 0, 0)
         Me.TableLayoutPanel5.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(6, 489)
@@ -963,7 +1053,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label36.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(42, 27)
+        Me.Label36.Location = New System.Drawing.Point(44, 27)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(84, 26)
         Me.Label36.TabIndex = 0
@@ -981,7 +1071,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.Label38, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Label39, 1, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Label40, 2, 0)
@@ -1055,7 +1145,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label44.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(605, 18)
+        Me.Label44.Location = New System.Drawing.Point(607, 18)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(108, 13)
         Me.Label44.TabIndex = 5
@@ -1069,7 +1159,7 @@ Partial Class ctrlWard03Page01
         Me.TableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel7.ColumnCount = 2
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 345.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 389.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label37, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.Label41, 1, 0)
         Me.TableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
@@ -1095,7 +1185,7 @@ Partial Class ctrlWard03Page01
         '
         Me.Label41.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(441, 8)
+        Me.Label41.Location = New System.Drawing.Point(443, 8)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(196, 13)
         Me.Label41.TabIndex = 1
@@ -1214,7 +1304,6 @@ Partial Class ctrlWard03Page01
         Me.TableAdapterManager.LivestockMovement04TableAdapter = Nothing
         Me.TableAdapterManager.LivestockPopulation05TableAdapter = Nothing
         Me.TableAdapterManager.LivestockService01TableAdapter = Nothing
-
         Me.TableAdapterManager.LivestockSlaughtered01TableAdapter = Nothing
         Me.TableAdapterManager.MachineryDrawn03TableAdapter = Nothing
         Me.TableAdapterManager.MachineryListTableAdapter = Nothing
@@ -1294,106 +1383,19 @@ Partial Class ctrlWard03Page01
         '
         Me.AppUspLookupStatusOfSchemeTableAdapter.ClearBeforeFill = True
         '
-        'GroupIDDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn1
         '
-        Me.GroupIDDataGridViewTextBoxColumn.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn.Name = "GroupIDDataGridViewTextBoxColumn"
-        Me.GroupIDDataGridViewTextBoxColumn.Visible = False
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Visible = False
         '
-        'GroupNameDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn2
         '
-        Me.GroupNameDataGridViewTextBoxColumn.DataPropertyName = "GroupName"
-        Me.GroupNameDataGridViewTextBoxColumn.HeaderText = "Aina ya shughuli"
-        Me.GroupNameDataGridViewTextBoxColumn.Name = "GroupNameDataGridViewTextBoxColumn"
-        Me.GroupNameDataGridViewTextBoxColumn.Width = 120
-        '
-        'ContractFarmingIDDataGridViewTextBoxColumn
-        '
-        Me.ContractFarmingIDDataGridViewTextBoxColumn.DataPropertyName = "ContractFarmingID"
-        Me.ContractFarmingIDDataGridViewTextBoxColumn.HeaderText = "ContractFarmingID"
-        Me.ContractFarmingIDDataGridViewTextBoxColumn.Name = "ContractFarmingIDDataGridViewTextBoxColumn"
-        Me.ContractFarmingIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'ActivityIDDataGridViewTextBoxColumn
-        '
-        Me.ActivityIDDataGridViewTextBoxColumn.DataPropertyName = "ActivityID"
-        Me.ActivityIDDataGridViewTextBoxColumn.HeaderText = "ActivityID"
-        Me.ActivityIDDataGridViewTextBoxColumn.Name = "ActivityIDDataGridViewTextBoxColumn"
-        Me.ActivityIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn
-        '
-        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DataPropertyName = "ContractNumberOfHouseholdInvolved"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
-        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya kaya zinazoshiriki (iii)"
-        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Name = "ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn"
-        Me.ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Width = 110
-        '
-        'ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn
-        '
-        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DataPropertyName = "ContractNumberOfContractorsInvolved"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
-        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya makampuni yaliyohusika (iv)"
-        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Name = "ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn"
-        Me.ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Width = 110
-        '
-        'ContractMajorProductsDataGridViewTextBoxColumn
-        '
-        Me.ContractMajorProductsDataGridViewTextBoxColumn.DataPropertyName = "ContractMajorProducts"
-        Me.ContractMajorProductsDataGridViewTextBoxColumn.HeaderText = "Zao kuu/ bidhaa (v)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.ContractMajorProductsDataGridViewTextBoxColumn.Name = "ContractMajorProductsDataGridViewTextBoxColumn"
-        Me.ContractMajorProductsDataGridViewTextBoxColumn.Width = 130
-        '
-        'OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn
-        '
-        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DataPropertyName = "OutgrowersNumberOfHouseholdInvolved"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
-        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya kaya zinazoshiriki (vi)"
-        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Name = "OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn"
-        Me.OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn.Width = 120
-        '
-        'OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn
-        '
-        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DataPropertyName = "OutgrowersNumberOfContractorsInvolved"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle10
-        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.HeaderText = "Idadi ya makampuni yaliyohusika (vii)"
-        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Name = "OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn"
-        Me.OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn.Width = 120
-        '
-        'OutgrowersMajorProductsDataGridViewTextBoxColumn
-        '
-        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.DataPropertyName = "OutgrowersMajorProducts"
-        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.HeaderText = "Zao kuu/ bidhaa (viii)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.Name = "OutgrowersMajorProductsDataGridViewTextBoxColumn"
-        Me.OutgrowersMajorProductsDataGridViewTextBoxColumn.Width = 140
-        '
-        'AnnualRecordIDDataGridViewTextBoxColumn
-        '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn.Name = "AnnualRecordIDDataGridViewTextBoxColumn"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'GroupIDDataGridViewTextBoxColumn1
-        '
-        Me.GroupIDDataGridViewTextBoxColumn1.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn1.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn1.Name = "GroupIDDataGridViewTextBoxColumn1"
-        Me.GroupIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GroupIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'GroupNameDataGridViewTextBoxColumn1
-        '
-        Me.GroupNameDataGridViewTextBoxColumn1.DataPropertyName = "GroupName"
-        Me.GroupNameDataGridViewTextBoxColumn1.HeaderText = "GroupName"
-        Me.GroupNameDataGridViewTextBoxColumn1.Name = "GroupNameDataGridViewTextBoxColumn1"
-        Me.GroupNameDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GroupNameDataGridViewTextBoxColumn1.Visible = False
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ListItemSw"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Visible = False
         '
         'IrrigationSchemeIDDataGridViewTextBoxColumn
         '
@@ -1402,14 +1404,6 @@ Partial Class ctrlWard03Page01
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn.Name = "IrrigationSchemeIDDataGridViewTextBoxColumn"
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'SchemeIDDataGridViewTextBoxColumn
-        '
-        Me.SchemeIDDataGridViewTextBoxColumn.DataPropertyName = "SchemeID"
-        Me.SchemeIDDataGridViewTextBoxColumn.HeaderText = "SchemeID"
-        Me.SchemeIDDataGridViewTextBoxColumn.Name = "SchemeIDDataGridViewTextBoxColumn"
-        Me.SchemeIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.SchemeIDDataGridViewTextBoxColumn.Visible = False
         '
         'SchemeNameDataGridViewTextBoxColumn
         '
@@ -1507,29 +1501,19 @@ Partial Class ctrlWard03Page01
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn.Width = 70
         '
-        'AnnualRecordIDDataGridViewTextBoxColumn1
+        'DataGridViewTextBoxColumn3
         '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Name = "AnnualRecordIDDataGridViewTextBoxColumn1"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Visible = False
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Visible = False
         '
-        'GroupIDDataGridViewTextBoxColumn2
+        'DataGridViewTextBoxColumn4
         '
-        Me.GroupIDDataGridViewTextBoxColumn2.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn2.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn2.Name = "GroupIDDataGridViewTextBoxColumn2"
-        Me.GroupIDDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GroupIDDataGridViewTextBoxColumn2.Visible = False
-        '
-        'GroupNameDataGridViewTextBoxColumn2
-        '
-        Me.GroupNameDataGridViewTextBoxColumn2.DataPropertyName = "GroupName"
-        Me.GroupNameDataGridViewTextBoxColumn2.HeaderText = "GroupName"
-        Me.GroupNameDataGridViewTextBoxColumn2.Name = "GroupNameDataGridViewTextBoxColumn2"
-        Me.GroupNameDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GroupNameDataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "ListItemSw"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Visible = False
         '
         'IrrigationSchemeIDDataGridViewTextBoxColumn1
         '
@@ -1538,14 +1522,6 @@ Partial Class ctrlWard03Page01
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn1.Name = "IrrigationSchemeIDDataGridViewTextBoxColumn1"
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.IrrigationSchemeIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'SchemeIDDataGridViewTextBoxColumn1
-        '
-        Me.SchemeIDDataGridViewTextBoxColumn1.DataPropertyName = "SchemeID"
-        Me.SchemeIDDataGridViewTextBoxColumn1.HeaderText = "SchemeID"
-        Me.SchemeIDDataGridViewTextBoxColumn1.Name = "SchemeIDDataGridViewTextBoxColumn1"
-        Me.SchemeIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.SchemeIDDataGridViewTextBoxColumn1.Visible = False
         '
         'SchemeNameDataGridViewTextBoxColumn1
         '
@@ -1642,14 +1618,6 @@ Partial Class ctrlWard03Page01
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1.Name = "NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1"
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1.Width = 70
-        '
-        'AnnualRecordIDDataGridViewTextBoxColumn2
-        '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.Name = "AnnualRecordIDDataGridViewTextBoxColumn2"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.Visible = False
         '
         'ctrlWard03Page01
         '
@@ -1822,8 +1790,29 @@ Partial Class ctrlWard03Page01
     Friend WithEvents AppUspLookupStatusOfSchemeTableAdapter As LGMD.LookupTableDataDataSetTableAdapters.appUspLookupStatusOfSchemeTableAdapter
     Friend WithEvents GroupIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupNameDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents IrrigationSchemeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SchemeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupNameDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SchemeIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AI As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContractFarmingIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ActivityIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContractMajorProductsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OutgrowersMajorProductsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IrrigationSchemeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SchemeNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NameOfWaterSourceDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PotentialAreaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1834,22 +1823,9 @@ Partial Class ctrlWard03Page01
     Friend WithEvents NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ContractFarmingIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ActivityIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ContractNumberOfHouseholdInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ContractNumberOfContractorsInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ContractMajorProductsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents OutgrowersNumberOfHouseholdInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents OutgrowersNumberOfContractorsInvolvedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents OutgrowersMajorProductsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupNameDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents IrrigationSchemeIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SchemeIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SchemeNameDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NameOfWaterSourceDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PotentialAreaDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1860,6 +1836,5 @@ Partial Class ctrlWard03Page01
     Friend WithEvents NumberOfMembersInIrrigationSchemeFemaleDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfFarmersUsingInfrastructureMaleDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfFarmersUsingInfrastructureFemaleDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class

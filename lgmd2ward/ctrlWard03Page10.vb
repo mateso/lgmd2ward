@@ -2,13 +2,16 @@
 
 Public Class ctrlWard03Page10
 
-    Dim LGMD2iDS As New DataSet
-    Dim ImprovedPastureDA As New SqlDataAdapter
-    Dim ImprovedPastureDT As New DataTable
-    Dim MediaListDA As New LGMDdataDataSetTableAdapters.MediaListTableAdapter
-    Dim TVRadioDA As New LGMDdataDataSetTableAdapters.TVAndRadioStation03TableAdapter
-    Dim TelecomCompListDA As New LGMDdataDataSetTableAdapters.TelecomCompaListTableAdapter
-    Dim TelecommunicationDA As New LGMDdataDataSetTableAdapters.Telecommunication03TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private ThreeDListDA As New LGMDdataDataSetTableAdapters.ThreeDListTableAdapter
+    Private ds As DataSet
+    Private da As SqlDataAdapter
+    Private cmd As SqlCommand
+    Private dt As New DataTable
+    Private MediaListDA As New LGMDdataDataSetTableAdapters.MediaListTableAdapter
+    Private TVRadioDA As New LGMDdataDataSetTableAdapters.TVAndRadioStation03TableAdapter
+    Private TelecomCompListDA As New LGMDdataDataSetTableAdapters.TelecomCompaListTableAdapter
+    Private TelecommunicationDA As New LGMDdataDataSetTableAdapters.Telecommunication03TableAdapter
     Private numberOfFarms As Integer?
     Private area As Double?
     Private seedProduction As Double?
@@ -20,22 +23,22 @@ Public Class ctrlWard03Page10
     Private frequencyPerWeek As Integer?
     Private numberOfVillagesCovered As Integer?
 
-
     Private Sub ctrlWard03Page10_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        'Me.ImprovedPasture03TableAdapter.Fill(Me.LGMDdataDataSet.ImprovedPasture03, g_RecordID)
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
+        Me.ThreeDListDA.Fill(Me.LGMDdataDataSet.ThreeDList)
+
         Call FillImprovedPasture()
 
         Me.CropResidue03TableAdapter.Fill(Me.LGMDdataDataSet.CropResidue03, g_RecordID)
 
-        Me.MediaListDA.Fill(Me.LGMDdataDataSet.MediaList)
         Me.TVRadioDA.Fill(Me.LGMDdataDataSet.TVAndRadioStation03)
         Me.AppUspAnnualFillTVTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillTV, g_RecordID)
         Me.AppUspAnnualFillRadioTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillRadio, g_RecordID)
 
         Try
             If Me.LGMDdataDataSet.appUspAnnualFillTV.Rows.Count = 0 Then
-                For Each row As DataRow In Me.LGMDdataDataSet.MediaList.Select("MediaStatus='0'")
+                For Each row As DataRow In Me.LGMDdataDataSet.ThreeDList.Select("ListItemType='TVAndRadioStation03' AND ListItemStatus='0'")
                     Me.TVRadioDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
                 Me.AppUspAnnualFillTVTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillTV, g_RecordID)
@@ -46,13 +49,12 @@ Public Class ctrlWard03Page10
 
         Me.AiredPrograms03TableAdapter.Fill(Me.LGMDdataDataSet.AiredPrograms03, g_RecordID)
 
-        Me.TelecomCompListDA.Fill(Me.LGMDdataDataSet.TelecomCompaList)
         Me.TelecommunicationDA.Fill(Me.LGMDdataDataSet.Telecommunication03)
         Me.AppUspAnnualFillTelecomTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillTelecom, g_RecordID)
 
         Try
             If Me.LGMDdataDataSet.appUspAnnualFillTelecom.Rows.Count = 0 Then
-                For Each row As DataRow In Me.LGMDdataDataSet.TelecomCompaList.Select("MediaStatus='0'")
+                For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='Telecommunication03' AND ListItemStatus=0")
                     TelecommunicationDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
                 Me.AppUspAnnualFillTelecomTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillTelecom, g_RecordID)
@@ -396,33 +398,32 @@ Public Class ctrlWard03Page10
     End Sub
 
     Private Sub FillImprovedPasture()
-        Dim conn As New SqlConnection
-        conn.ConnectionString = My.Settings.DataConnectionString
 
-        Dim cmdFillImprovedPasture As New SqlCommand
+        ds = New DataSet
+        da = New SqlDataAdapter
+        cmd = New SqlCommand
+        dt = New DataTable
 
-        Dim prmRecordID As New SqlParameter("@AnnualRecordID", g_RecordID)
-
-        With cmdFillImprovedPasture
+        With cmd
             .Connection = conn
             .CommandType = CommandType.StoredProcedure
             .CommandText = "appUspAnnuallyFillImprovedPasture"
-            .Parameters.Add(prmRecordID)
+            .Parameters.AddWithValue("@AnnualRecordID", g_RecordID)
         End With
 
         'fill in insert, update, and delete commands
-        Dim cmdBldr As New SqlCommandBuilder(ImprovedPastureDA)
+        'Dim cmdBldr As New SqlCommandBuilder(ImprovedPastureDA)
 
-        Me.ImprovedPastureDA.SelectCommand = cmdFillImprovedPasture
-        Me.ImprovedPastureDA.Fill(Me.LGMD2iDS, "ImprovedPasture03")
-        Me.ImprovedPastureDT = Me.LGMD2iDS.Tables("ImprovedPasture03")
+        Me.da.SelectCommand = cmd
+        Me.da.Fill(Me.ds, "ImprovedPasture03")
+        Me.dt = Me.ds.Tables("ImprovedPasture03")
 
-        If Me.ImprovedPastureDT.Rows.Count > 0 Then
-            Me.txtNumberOfFarms.Text = Me.ImprovedPastureDT.Rows(0)("NumberOfFarms").ToString
-            Me.txtArea.Text = Me.ImprovedPastureDT.Rows(0)("Area").ToString
-            Me.txtSeedProduction.Text = Me.ImprovedPastureDT.Rows(0)("SeedProduction").ToString
-            Me.txtAmountOfHayBales.Text = Me.ImprovedPastureDT.Rows(0)("AmountOfHayBales").ToString
-            Me.txtRemarks.Text = Me.ImprovedPastureDT.Rows(0)("Remarks").ToString
+        If Me.dt.Rows.Count > 0 Then
+            Me.txtNumberOfFarms.Text = Me.dt.Rows(0)("NumberOfFarms").ToString
+            Me.txtArea.Text = Me.dt.Rows(0)("Area").ToString
+            Me.txtSeedProduction.Text = Me.dt.Rows(0)("SeedProduction").ToString
+            Me.txtAmountOfHayBales.Text = Me.dt.Rows(0)("AmountOfHayBales").ToString
+            Me.txtRemarks.Text = Me.dt.Rows(0)("Remarks").ToString
         Else
         End If
     End Sub

@@ -48,7 +48,7 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
     ''' Required designer variable.
     ''' </summary>
     '''Private components As System.ComponentModel.IContainer = Nothing 'todo
-    Public strReportName As String = My.Application.Info.DirectoryPath & "\reports\"
+    Public strReportName As String = My.Application.Info.DirectoryPath & "\Reports\"
     Public strSelectedValue1 As String() = Nothing
     Public strSeletedPeriod As String = ""
     Public sqlCon As New SqlConnection
@@ -60,38 +60,111 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
     Public strFormCumSerialNumber1 As String = ""
     Public strFormCumNextYearSerialNumber As String = ""
     Public strFormCumNextYearSerialNumber1 As String = ""
+    Private ds As DataSet
+    Private da As SqlDataAdapter
 
     Public Sub New()
+
         InitializeComponent()
-
-        'Me.tblStudentsTableAdapter.Connection =
-        'dsData.Merge(localProxy.GetObject("tblStudents",My.Settings.HEMISConnectionString))
-
         Me.ReportViewer1.RefreshReport()
-
     End Sub
 
     Public Sub New(strMode As String)
-        InitializeComponent()
 
-        'Me.tblStudentsTableAdapter.Connection =
-        'dsData.Merge(localProxy.GetObject("tblStudents",My.Settings.HEMISConnectionString))
+        InitializeComponent()
         ReportMode = strMode
         Me.ReportViewer1.RefreshReport()
-
     End Sub
 
-    Private Sub SqlServerTreeView_AfterSelect(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles SqlServerTreeView.AfterSelect
+    'Double click on a listview item causes the tree to be synced.
+
+    <System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")> _
+    Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+
+        ds = New DataSet
+        conn = New SqlConnection(My.Settings.DataConnectionString)
+        da = New SqlDataAdapter
+
+        Me.ReportViewer1.Reset()
+        'Dim strLocalConnection As String
+        'strLocalConnection = My.Settings.DataConnectionString
+
+        'Dim oConn As New SqlClient.SqlConnection(strLocalConnection)
+        'oConn.Open()
+
+        If conn.State = ConnectionState.Closed Then
+            conn.Open()
+        End If
+
+        'Create Adapter and Fill Dataset
+        Dim strSource As String
+
+        If ReportMode = "District" Then
+            strSource = "select listCode,Replace(Description,' Ward ',' District ') as Description,Category,Parent from [uvwDistrictReportPeriods] group by listCode,Description,Category,Parent "
+        ElseIf ReportMode = "Ward" Then
+            strSource = "select listCode,Description,Category,Parent from [uvwWardReportPeriods] group by listCode,Description,Category,Parent "
+        ElseIf ReportMode = "Submission" Then
+            strSource = "select case when listCode='reports' then 'Ward' else listCode end as "
+            strSource = strSource & " listcode,case when Description='reports' then 'Ward' else Description end as Description,Category,case when Parent='reports' then 'Ward' else Parent end as Parent "
+            strSource = strSource & " from uvwWardReportPeriodsSubmission group by listCode,Description,Category,Parent having Category<>'ReportWaAndVil' "
+            strSource = strSource & " union all"
+            strSource = strSource & " select case when listCode='reports' then 'District' else 'D' + listCode end as "
+            strSource = "select case when listCode='reports' then 'District' else 'D' + listCode end as "
+            strSource = strSource & " listcode,case when Description='reports' then 'District' else  Replace(Description,' Ward ',' District ')  end as Description,Category,case when Parent='reports' then 'District' else 'D' + Parent end as Parent "
+            strSource = strSource & " from [uvwMainSubmissionReportPeriods] group by listCode,Description,Category,Parent  having listCode <> 'Mwpg1' and isnull(parent,'') <>'Mwpg1' "
+        Else
+            strSource = "select listCode,Replace(Description,'Report','Integrated Report') as Description,Category,Parent from [uvwMainReportPeriods] group by listCode,Description,Category,Parent "
+
+        End If
+
+        If GetConfigLevel() = 4 Then
+            strSource = strSource & " union all select listCode, Description, Category, "
+            strSource = strSource & " parent from (SELECT * FROM tblList where category='report' "
+            strSource = strSource & " and isnumeric(Listcode)=1 and parent in ("
+            strSource = strSource & " select Area_nid from tbl_setup_areas where area_id in "
+            strSource = strSource & " (select config_value from tbl_config where config_name='Area_id') "
+            strSource = strSource & " ) ) b"
+        End If
+
+        If GetConfigLevel() = 2 Then
+            strSource = strSource & " union all select listCode,Description,Category,parent from (SELECT * FROM tblList where"
+            strSource = strSource & " isnumeric(Listcode)=1 and parent='53217') b"
+            strSource = strSource & " union all "
+            strSource = strSource & " select listCode,Description,Category,parent from (SELECT * FROM tblList where"
+            strSource = strSource & " isnumeric(Listcode)=1 and parent in"
+            strSource = strSource & " (select listCode from (SELECT * FROM tblList where "
+            strSource = strSource & " isnumeric(Listcode)=1 and parent='53217')cc) ) bb"
+        End If
+
+        'Dim oAdapter As New SqlClient.SqlDataAdapter(strSource, oConn)
+
+        'Dim oDs As New DataSet
+        'oAdapter.Fill(oDs)
+        'oDs.Tables(0).TableName = "tblList"
+
+        da = New SqlDataAdapter(strSource, conn)
+        da.Fill(ds)
+        ds.Tables(0).TableName = "tblList"
+
+        tvAvailableReports.Nodes.Clear()
+        Dim jj As New ctrlTreeView(Me.tvAvailableReports, ds, "tblList", "ListCode", "Parent", "Description")
+
+        objUserctrl.Name = "ctrlCharts"
+        objUserctrl.Tag = "ctrlCharts"
+    End Sub
+
+    Private Sub SqlServerTreeView_AfterSelect(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles tvAvailableReports.AfterSelect
+
         Cursor = Cursors.WaitCursor
         Dim start As DateTime = DateTime.Now
-        ShowDetails(Me.SqlServerTreeView.SelectedNode)
+        ShowDetails(Me.tvAvailableReports.SelectedNode)
         Dim diff As TimeSpan = DateTime.Now - start
-        Me.speedToolStripStatusLabel.Text = String.Format(System.Globalization.CultureInfo.InvariantCulture, "{0:####}", diff.TotalMilliseconds)
+        'Me.speedToolStripStatusLabel.Text = String.Format(System.Globalization.CultureInfo.InvariantCulture, "{0:####}", diff.TotalMilliseconds)
         Cursor = Cursors.Default
 
     End Sub
 
-    Private Sub SqlServerTreeView_AfterExpand(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles SqlServerTreeView.AfterExpand
+    Private Sub SqlServerTreeView_AfterExpand(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles tvAvailableReports.AfterExpand
         Cursor = Cursors.WaitCursor
         LoadTreeViewItems(e.Node)
         Cursor = Cursors.Default
@@ -129,10 +202,10 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
 
             If ReportMode = "Submission" Then
                 strArray = node.FullPath.Split("\")
-                    If strArray(1).ToString.Contains("Annual") Then
-                        strPeriodFrom = "01Jul" + Microsoft.VisualBasic.Right(Microsoft.VisualBasic.Left(strArray(2), 4), 2)
-                        strPeriodTo = "30Jun" + Microsoft.VisualBasic.Right(Microsoft.VisualBasic.Right(strArray(2), 4), 2)
-                        strTimePeriod = strPeriodFrom + strPeriodTo
+                If strArray(1).ToString.Contains("Annual") Then
+                    strPeriodFrom = "01Jul" + Microsoft.VisualBasic.Right(Microsoft.VisualBasic.Left(strArray(2), 4), 2)
+                    strPeriodTo = "30Jun" + Microsoft.VisualBasic.Right(Microsoft.VisualBasic.Right(strArray(2), 4), 2)
+                    strTimePeriod = strPeriodFrom + strPeriodTo
                     strReportName = strReportName & "DistrictAnnuallyReportSubmissionStatus.rdl"
                     strFormSerialNumber = "005" + "%" + strTimePeriod
                 ElseIf strArray(1).ToString.Contains("Quarterly") Then
@@ -146,25 +219,25 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
                     strFormSerialNumber = "004" + "%" + strTimePeriod
                 Else
                 End If
-                    Me.cmbValues.Items.Add(strFormSerialNumber)
+                Me.cmbValues.Items.Add(strFormSerialNumber)
 
-                    Dim sParam As String() = Nothing
-                    Dim j As Int16 = 0
+                Dim sParam As String() = Nothing
+                Dim j As Int16 = 0
 
-                    ReDim Preserve sParam(j)
-                    sParam(j) = strFormSerialNumber
+                ReDim Preserve sParam(j)
+                sParam(j) = strFormSerialNumber
 
-                    j = j + 1
-                    ReDim Preserve sParam(j)
-                    sParam(j) = node.Text
+                j = j + 1
+                ReDim Preserve sParam(j)
+                sParam(j) = node.Text
 
-                    Dim controll As New RdlViewer.ctrlReportControl(My.Settings.DataConnectionString, strReportName, sParam)
+                Dim controll As New RdlViewer.ctrlReportControl(My.Settings.DataConnectionString, strReportName, sParam)
 
-                    controll.ShowDialogue = False
-                    controll.Dock = DockStyle.Fill
-                ApplicationGlobal.objFrmMain.getControl(controll)
-                    Exit Sub
-                End If
+                controll.ShowDialogue = False
+                controll.Dock = DockStyle.Fill
+                'ApplicationGlobal.gfrmMainForm.getControl(controll)
+                Exit Sub
+            End If
 
             'Establish the area Name and area level
             Dim strAreaName As String = ""
@@ -303,8 +376,8 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
             If node.Tag.ToString.Contains("Mwpg1") Then
                 If ReportMode = "Ward" Then
                     strReportName = strReportName & "PrintoutOfMonthlyASPD.rdl"
-                    'ElseIf ReportMode = "Submission" Then
-                    'strReportName = strReportName & "WardMonthlyReportSubmissionStatus.rdl"  ' In here, put the name of your submission report
+                ElseIf ReportMode = "Submission" Then  'This and line before should be commented
+                    strReportName = strReportName & "WardMonthlyReportSubmissionStatus.rdl"  ' In here, put the name of your submission report
                 Else
                     strReportName = strReportName & "MonthlyWardReport.rdl"
                 End If
@@ -312,8 +385,8 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
             ElseIf node.Tag.ToString.Contains("Qwpg1") Then
                 If ReportMode = "Ward" Then
                     strReportName = strReportName & "PrintoutOfQuarterlyASPD.rdl"
-                    'ElseIf ReportMode = "Submission" Then
-                    'strReportName = strReportName & "WardQuarterlyReportSubmissionStatus.rdl"  ' In here, put the name of your submission report
+                ElseIf ReportMode = "Submission" Then    'This and line before should be commented
+                    strReportName = strReportName & "WardQuarterlyReportSubmissionStatus.rdl"  ' In here, put the name of your submission report
                 Else
                     strReportName = strReportName & "QuarterlyWardReport.rdl"
                 End If
@@ -321,8 +394,8 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
             ElseIf node.Tag.ToString.Contains("Awpg1") Then
                 If ReportMode = "Ward" Then
                     strReportName = strReportName & "PrintoutOfAnnuallyASPD.rdl"
-                    'ElseIf ReportMode = "Submission" Then
-                    'strReportName = strReportName & "WardAnnuallyReportSubmissionStatus.rdl"  ' In here, put the name of your submission report
+                ElseIf ReportMode = "Submission" Then   'This and line before should be commented
+                    strReportName = strReportName & "WardAnnuallyReportSubmissionStatus.rdl"  ' In here, put the name of your submission report
                 Else
                     strReportName = strReportName & "AnnuallyWardReport.rdl"
                 End If
@@ -360,7 +433,7 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
 
             control.ShowDialogue = False
             control.Dock = DockStyle.Fill
-            ApplicationGlobal.objFrmMain.getControl(control)
+            'ApplicationGlobal.gfrmMainForm.getControl(control)
 
         Catch ex As Exception
             'MsgBox(ex.InnerException.ToString)
@@ -392,75 +465,11 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
         node.Nodes(0).Name = "DummyNode" 'My.Resources.DummyNode
     End Sub
 
-    'Double click on a listview item causes the tree to be synced.
-
-    <System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")> _
-    Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-
-        Me.ReportViewer1.Reset()
-        Dim strLocalConnection As String
-        strLocalConnection = My.Settings.DataConnectionString
-
-        Dim oConn As New SqlClient.SqlConnection(strLocalConnection)
-        oConn.Open()
-        'Create Adapter and Fill Dataset
-        Dim strSource As String
-
-        If ReportMode = "District" Then
-            strSource = "select listCode,Replace(Description,' Ward ',' District ') as Description,Category,Parent from [uvwDistrictReportPeriods] group by listCode,Description,Category,Parent "
-        ElseIf ReportMode = "Ward" Then
-            strSource = "select listCode,Description,Category,Parent from [uvwWardReportPeriods] group by listCode,Description,Category,Parent "
-        ElseIf ReportMode = "Submission" Then
-            'strSource = "select case when listCode='reports' then 'Ward' else listCode end as "
-            'strSource = strSource & " listcode,case when Description='reports' then 'Ward' else Description end as Description,Category,case when Parent='reports' then 'Ward' else Parent end as Parent "
-            'strSource = strSource & " from uvwWardReportPeriodsSubmission group by listCode,Description,Category,Parent having Category<>'ReportWaAndVil' "
-            'strSource = strSource & " union all"
-            'strSource = strSource & " select case when listCode='reports' then 'District' else 'D' + listCode end as "
-            strSource = "select case when listCode='reports' then 'District' else 'D' + listCode end as "
-            strSource = strSource & " listcode,case when Description='reports' then 'District' else  Replace(Description,' Ward ',' District ')  end as Description,Category,case when Parent='reports' then 'District' else 'D' + Parent end as Parent "
-            strSource = strSource & " from [uvwMainSubmissionReportPeriods] group by listCode,Description,Category,Parent  having listCode <> 'Mwpg1' and isnull(parent,'') <>'Mwpg1' "
-        Else
-            strSource = "select listCode,Replace(Description,'Report','Integrated Report') as Description,Category,Parent from [uvwMainReportPeriods] group by listCode,Description,Category,Parent "
-
-         End If
-
-        If GetConfigLevel() = 4 Then
-            strSource = strSource & " union all select listCode, Description, Category, "
-            strSource = strSource & " parent from (SELECT * FROM tblList where category='report' "
-            strSource = strSource & " and isnumeric(Listcode)=1 and parent in ("
-            strSource = strSource & " select Area_nid from tbl_setup_areas where area_id in "
-            strSource = strSource & " (select config_value from tbl_config where config_name='Area_id') "
-            strSource = strSource & " ) ) b"
-        End If
-
-        If GetConfigLevel() = 2 Then
-            strSource = strSource & " union all select listCode,Description,Category,parent from (SELECT * FROM tblList where"
-            strSource = strSource & " isnumeric(Listcode)=1 and parent='53217') b"
-            strSource = strSource & " union all "
-            strSource = strSource & " select listCode,Description,Category,parent from (SELECT * FROM tblList where"
-            strSource = strSource & " isnumeric(Listcode)=1 and parent in"
-            strSource = strSource & " (select listCode from (SELECT * FROM tblList where "
-            strSource = strSource & " isnumeric(Listcode)=1 and parent='53217')cc) ) bb"
-        End If
-
-        Dim oAdapter As New SqlClient.SqlDataAdapter(strSource, oConn)
-
-        Dim oDs As New DataSet
-        oAdapter.Fill(oDs)
-        oDs.Tables(0).TableName = "tblList"
-
-        SqlServerTreeView.Nodes.Clear()
-        Dim jj As New ctrlTreeView(Me.SqlServerTreeView, oDs, "tblList", "ListCode", "Parent", "Description")
-
-        objUserctrl.Name = "ctrlCharts"
-        objUserctrl.Tag = "ctrlCharts"
-    End Sub
-
     Private Sub ListView_ItemSelectionChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.ListViewItemSelectionChangedEventArgs)
         objSelected = "ListView"
     End Sub
 
-    Private Sub SqlServerTreeView_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles SqlServerTreeView.Click
+    Private Sub SqlServerTreeView_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles tvAvailableReports.Click
         objSelected = "SqlServerTreeView"
     End Sub
 
@@ -468,12 +477,12 @@ Partial Public Class ctrlReportsLocal 'The Partial modifier is only required on 
         objSelected = "ListView"
     End Sub
 
-    Private Sub SqlServerTreeView_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles SqlServerTreeView.MouseDown
+    Private Sub SqlServerTreeView_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles tvAvailableReports.MouseDown
         objSelected = "SqlServerTreeView"
     End Sub
 
     Public Sub fnTreeviewExpand()
-        Me.SqlServerTreeView.ExpandAll()
+        Me.tvAvailableReports.ExpandAll()
     End Sub
 
 End Class

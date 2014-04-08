@@ -27,14 +27,14 @@ Partial Class ctrlWard02Page05
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -66,17 +66,6 @@ Partial Class ctrlWard02Page05
         Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
         Me.AppUspQuarterLookupErosionControlMeasuresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProdLand02iDataGridView = New System.Windows.Forms.DataGridView()
-        Me.ActivityListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SeasonIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ActivityDetailsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProdLandIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ActivityIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TractorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HandDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NoFarmingDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RecordIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProdLand02iBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.LgmDdataDataSet1 = New LGMD.LGMDdataDataSet()
         Me.ProdLand02iDataGridView1 = New System.Windows.Forms.DataGridView()
@@ -111,9 +100,20 @@ Partial Class ctrlWard02Page05
         Me.DataGridViewTextBoxColumn42 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn43 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn44 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ActivityListIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SeasonIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ActivityDetailsDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProdLandIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ActivityIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TractorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnimalsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HandDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NoFarmingDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RecordIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn46 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn47 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProdLandIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ActivityIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TractorDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -378,103 +378,12 @@ Partial Class ctrlWard02Page05
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.ProdLand02iDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.ProdLand02iDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ProdLand02iDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ActivityListIDDataGridViewTextBoxColumn, Me.SeasonIDDataGridViewTextBoxColumn, Me.ActivityDetailsDataGridViewTextBoxColumn, Me.ProdLandIDDataGridViewTextBoxColumn, Me.ActivityIDDataGridViewTextBoxColumn, Me.TractorDataGridViewTextBoxColumn, Me.AnimalsDataGridViewTextBoxColumn, Me.HandDataGridViewTextBoxColumn, Me.NoFarmingDataGridViewTextBoxColumn, Me.TotalDataGridViewTextBoxColumn, Me.RecordIDDataGridViewTextBoxColumn})
+        Me.ProdLand02iDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.GroupID, Me.ListItemSw, Me.ProdLandIDDataGridViewTextBoxColumn, Me.ActivityIDDataGridViewTextBoxColumn, Me.TractorDataGridViewTextBoxColumn, Me.AnimalsDataGridViewTextBoxColumn, Me.HandDataGridViewTextBoxColumn, Me.NoFarmingDataGridViewTextBoxColumn, Me.TotalDataGridViewTextBoxColumn, Me.RecordIDDataGridViewTextBoxColumn})
         Me.ProdLand02iDataGridView.DataSource = Me.ProdLand02iBindingSource1
         Me.ProdLand02iDataGridView.Location = New System.Drawing.Point(15, 465)
         Me.ProdLand02iDataGridView.Name = "ProdLand02iDataGridView"
         Me.ProdLand02iDataGridView.Size = New System.Drawing.Size(933, 124)
         Me.ProdLand02iDataGridView.TabIndex = 71
-        '
-        'ActivityListIDDataGridViewTextBoxColumn
-        '
-        Me.ActivityListIDDataGridViewTextBoxColumn.DataPropertyName = "ActivityListID"
-        Me.ActivityListIDDataGridViewTextBoxColumn.HeaderText = "ActivityListID"
-        Me.ActivityListIDDataGridViewTextBoxColumn.Name = "ActivityListIDDataGridViewTextBoxColumn"
-        Me.ActivityListIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'SeasonIDDataGridViewTextBoxColumn
-        '
-        Me.SeasonIDDataGridViewTextBoxColumn.DataPropertyName = "SeasonID"
-        Me.SeasonIDDataGridViewTextBoxColumn.HeaderText = "SeasonID"
-        Me.SeasonIDDataGridViewTextBoxColumn.Name = "SeasonIDDataGridViewTextBoxColumn"
-        Me.SeasonIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'ActivityDetailsDataGridViewTextBoxColumn
-        '
-        Me.ActivityDetailsDataGridViewTextBoxColumn.DataPropertyName = "ActivityDetails"
-        Me.ActivityDetailsDataGridViewTextBoxColumn.HeaderText = "Eneo" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.ActivityDetailsDataGridViewTextBoxColumn.Name = "ActivityDetailsDataGridViewTextBoxColumn"
-        Me.ActivityDetailsDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ActivityDetailsDataGridViewTextBoxColumn.Width = 90
-        '
-        'ProdLandIDDataGridViewTextBoxColumn
-        '
-        Me.ProdLandIDDataGridViewTextBoxColumn.DataPropertyName = "ProdLandID"
-        Me.ProdLandIDDataGridViewTextBoxColumn.HeaderText = "ProdLandID"
-        Me.ProdLandIDDataGridViewTextBoxColumn.Name = "ProdLandIDDataGridViewTextBoxColumn"
-        Me.ProdLandIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'ActivityIDDataGridViewTextBoxColumn
-        '
-        Me.ActivityIDDataGridViewTextBoxColumn.DataPropertyName = "ActivityID"
-        Me.ActivityIDDataGridViewTextBoxColumn.HeaderText = "ActivityID"
-        Me.ActivityIDDataGridViewTextBoxColumn.Name = "ActivityIDDataGridViewTextBoxColumn"
-        Me.ActivityIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'TractorDataGridViewTextBoxColumn
-        '
-        Me.TractorDataGridViewTextBoxColumn.DataPropertyName = "Tractor"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TractorDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
-        Me.TractorDataGridViewTextBoxColumn.HeaderText = "Kwa trekta/ trekta la mkono (ha) " & Global.Microsoft.VisualBasic.ChrW(10) & " (i)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.TractorDataGridViewTextBoxColumn.Name = "TractorDataGridViewTextBoxColumn"
-        Me.TractorDataGridViewTextBoxColumn.Width = 190
-        '
-        'AnimalsDataGridViewTextBoxColumn
-        '
-        Me.AnimalsDataGridViewTextBoxColumn.DataPropertyName = "Animals"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.AnimalsDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
-        Me.AnimalsDataGridViewTextBoxColumn.HeaderText = "Kwa kutumia wanyamakazi (ha) (ii)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.AnimalsDataGridViewTextBoxColumn.Name = "AnimalsDataGridViewTextBoxColumn"
-        Me.AnimalsDataGridViewTextBoxColumn.Width = 130
-        '
-        'HandDataGridViewTextBoxColumn
-        '
-        Me.HandDataGridViewTextBoxColumn.DataPropertyName = "Hand"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.HandDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
-        Me.HandDataGridViewTextBoxColumn.HeaderText = "Kwa jembe la mkono/ mkono (ha)(iii)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.HandDataGridViewTextBoxColumn.Name = "HandDataGridViewTextBoxColumn"
-        Me.HandDataGridViewTextBoxColumn.Width = 200
-        '
-        'NoFarmingDataGridViewTextBoxColumn
-        '
-        Me.NoFarmingDataGridViewTextBoxColumn.DataPropertyName = "NoFarming"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NoFarmingDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
-        Me.NoFarmingDataGridViewTextBoxColumn.HeaderText = "Kupanda bila kulima (ha)" & Global.Microsoft.VisualBasic.ChrW(10) & "(iv)"
-        Me.NoFarmingDataGridViewTextBoxColumn.Name = "NoFarmingDataGridViewTextBoxColumn"
-        Me.NoFarmingDataGridViewTextBoxColumn.Width = 150
-        '
-        'TotalDataGridViewTextBoxColumn
-        '
-        Me.TotalDataGridViewTextBoxColumn.DataPropertyName = "Total"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle9.Format = "N1"
-        DataGridViewCellStyle9.NullValue = Nothing
-        Me.TotalDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
-        Me.TotalDataGridViewTextBoxColumn.HeaderText = "Jumla ya eneo (ha) " & Global.Microsoft.VisualBasic.ChrW(10) & " (v) = (i)+(ii)+(iii)+(iv)" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.TotalDataGridViewTextBoxColumn.Name = "TotalDataGridViewTextBoxColumn"
-        Me.TotalDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TotalDataGridViewTextBoxColumn.Width = 130
-        '
-        'RecordIDDataGridViewTextBoxColumn
-        '
-        Me.RecordIDDataGridViewTextBoxColumn.DataPropertyName = "RecordID"
-        Me.RecordIDDataGridViewTextBoxColumn.HeaderText = "RecordID"
-        Me.RecordIDDataGridViewTextBoxColumn.Name = "RecordIDDataGridViewTextBoxColumn"
-        Me.RecordIDDataGridViewTextBoxColumn.Visible = False
         '
         'ProdLand02iBindingSource1
         '
@@ -502,7 +411,7 @@ Partial Class ctrlWard02Page05
         DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.ProdLand02iDataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.ProdLand02iDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ProdLand02iDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ActivityListIDDataGridViewTextBoxColumn1, Me.SeasonIDDataGridViewTextBoxColumn1, Me.ActivityDetailsDataGridViewTextBoxColumn1, Me.ProdLandIDDataGridViewTextBoxColumn1, Me.ActivityIDDataGridViewTextBoxColumn1, Me.TractorDataGridViewTextBoxColumn1, Me.AnimalsDataGridViewTextBoxColumn1, Me.HandDataGridViewTextBoxColumn1, Me.NoFarmingDataGridViewTextBoxColumn1, Me.TotalDataGridViewTextBoxColumn1, Me.RecordIDDataGridViewTextBoxColumn1})
+        Me.ProdLand02iDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47, Me.ProdLandIDDataGridViewTextBoxColumn1, Me.ActivityIDDataGridViewTextBoxColumn1, Me.TractorDataGridViewTextBoxColumn1, Me.AnimalsDataGridViewTextBoxColumn1, Me.HandDataGridViewTextBoxColumn1, Me.NoFarmingDataGridViewTextBoxColumn1, Me.TotalDataGridViewTextBoxColumn1, Me.RecordIDDataGridViewTextBoxColumn1})
         Me.ProdLand02iDataGridView1.DataSource = Me.ProdLand02iBindingSource2
         Me.ProdLand02iDataGridView1.Location = New System.Drawing.Point(15, 661)
         Me.ProdLand02iDataGridView1.Name = "ProdLand02iDataGridView1"
@@ -619,7 +528,6 @@ Partial Class ctrlWard02Page05
         Me.TableAdapterManager.LivestockMovement04TableAdapter = Nothing
         Me.TableAdapterManager.LivestockPopulation05TableAdapter = Nothing
         Me.TableAdapterManager.LivestockService01TableAdapter = Nothing
-
         Me.TableAdapterManager.LivestockSlaughtered01TableAdapter = Nothing
         Me.TableAdapterManager.MachineryDrawn03TableAdapter = Nothing
         Me.TableAdapterManager.MachineryListTableAdapter = Nothing
@@ -641,6 +549,7 @@ Partial Class ctrlWard02Page05
         Me.TableAdapterManager.ProdLand02TableAdapter = Nothing
         Me.TableAdapterManager.ProdMilk01TableAdapter = Nothing
         Me.TableAdapterManager.ProdMilkListTableAdapter = Nothing
+        Me.TableAdapterManager.ProdSkin01TableAdapter = Nothing
         Me.TableAdapterManager.ProdSkinListTableAdapter = Nothing
         Me.TableAdapterManager.ProductsMovement04TableAdapter = Nothing
         Me.TableAdapterManager.ProductsProcessing05TableAdapter = Nothing
@@ -679,6 +588,7 @@ Partial Class ctrlWard02Page05
         Me.TableAdapterManager.UpdateOrder = LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.WeatherCondition01TableAdapter = Nothing
         Me.TableAdapterManager.WorkingEquipments05TableAdapter = Nothing
+        Me.TableAdapterManager.WorkingFacilities05TableAdapter = Nothing
         '
         'ProdLand02iTableAdapter
         '
@@ -861,27 +771,116 @@ Partial Class ctrlWard02Page05
         Me.DataGridViewTextBoxColumn44.Name = "DataGridViewTextBoxColumn44"
         Me.DataGridViewTextBoxColumn44.Visible = False
         '
-        'ActivityListIDDataGridViewTextBoxColumn1
+        'ListID
         '
-        Me.ActivityListIDDataGridViewTextBoxColumn1.DataPropertyName = "ActivityListID"
-        Me.ActivityListIDDataGridViewTextBoxColumn1.HeaderText = "ActivityListID"
-        Me.ActivityListIDDataGridViewTextBoxColumn1.Name = "ActivityListIDDataGridViewTextBoxColumn1"
-        Me.ActivityListIDDataGridViewTextBoxColumn1.Visible = False
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
         '
-        'SeasonIDDataGridViewTextBoxColumn1
+        'GroupID
         '
-        Me.SeasonIDDataGridViewTextBoxColumn1.DataPropertyName = "SeasonID"
-        Me.SeasonIDDataGridViewTextBoxColumn1.HeaderText = "SeasonID"
-        Me.SeasonIDDataGridViewTextBoxColumn1.Name = "SeasonIDDataGridViewTextBoxColumn1"
-        Me.SeasonIDDataGridViewTextBoxColumn1.Visible = False
+        Me.GroupID.DataPropertyName = "GroupID"
+        Me.GroupID.HeaderText = "GroupID"
+        Me.GroupID.Name = "GroupID"
+        Me.GroupID.Visible = False
         '
-        'ActivityDetailsDataGridViewTextBoxColumn1
+        'ListItemSw
         '
-        Me.ActivityDetailsDataGridViewTextBoxColumn1.DataPropertyName = "ActivityDetails"
-        Me.ActivityDetailsDataGridViewTextBoxColumn1.HeaderText = "Eneo" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me.ActivityDetailsDataGridViewTextBoxColumn1.Name = "ActivityDetailsDataGridViewTextBoxColumn1"
-        Me.ActivityDetailsDataGridViewTextBoxColumn1.ReadOnly = True
-        Me.ActivityDetailsDataGridViewTextBoxColumn1.Width = 90
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "Eneo"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 90
+        '
+        'ProdLandIDDataGridViewTextBoxColumn
+        '
+        Me.ProdLandIDDataGridViewTextBoxColumn.DataPropertyName = "ProdLandID"
+        Me.ProdLandIDDataGridViewTextBoxColumn.HeaderText = "ProdLandID"
+        Me.ProdLandIDDataGridViewTextBoxColumn.Name = "ProdLandIDDataGridViewTextBoxColumn"
+        Me.ProdLandIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'ActivityIDDataGridViewTextBoxColumn
+        '
+        Me.ActivityIDDataGridViewTextBoxColumn.DataPropertyName = "ActivityID"
+        Me.ActivityIDDataGridViewTextBoxColumn.HeaderText = "ActivityID"
+        Me.ActivityIDDataGridViewTextBoxColumn.Name = "ActivityIDDataGridViewTextBoxColumn"
+        Me.ActivityIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'TractorDataGridViewTextBoxColumn
+        '
+        Me.TractorDataGridViewTextBoxColumn.DataPropertyName = "Tractor"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TractorDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
+        Me.TractorDataGridViewTextBoxColumn.HeaderText = "Kwa trekta/ trekta la mkono (ha) " & Global.Microsoft.VisualBasic.ChrW(10) & " (i)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TractorDataGridViewTextBoxColumn.Name = "TractorDataGridViewTextBoxColumn"
+        Me.TractorDataGridViewTextBoxColumn.Width = 190
+        '
+        'AnimalsDataGridViewTextBoxColumn
+        '
+        Me.AnimalsDataGridViewTextBoxColumn.DataPropertyName = "Animals"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.AnimalsDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
+        Me.AnimalsDataGridViewTextBoxColumn.HeaderText = "Kwa kutumia wanyamakazi (ha) (ii)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.AnimalsDataGridViewTextBoxColumn.Name = "AnimalsDataGridViewTextBoxColumn"
+        Me.AnimalsDataGridViewTextBoxColumn.Width = 130
+        '
+        'HandDataGridViewTextBoxColumn
+        '
+        Me.HandDataGridViewTextBoxColumn.DataPropertyName = "Hand"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.HandDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
+        Me.HandDataGridViewTextBoxColumn.HeaderText = "Kwa jembe la mkono/ mkono (ha)(iii)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.HandDataGridViewTextBoxColumn.Name = "HandDataGridViewTextBoxColumn"
+        Me.HandDataGridViewTextBoxColumn.Width = 200
+        '
+        'NoFarmingDataGridViewTextBoxColumn
+        '
+        Me.NoFarmingDataGridViewTextBoxColumn.DataPropertyName = "NoFarming"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NoFarmingDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
+        Me.NoFarmingDataGridViewTextBoxColumn.HeaderText = "Kupanda bila kulima (ha)" & Global.Microsoft.VisualBasic.ChrW(10) & "(iv)"
+        Me.NoFarmingDataGridViewTextBoxColumn.Name = "NoFarmingDataGridViewTextBoxColumn"
+        Me.NoFarmingDataGridViewTextBoxColumn.Width = 150
+        '
+        'TotalDataGridViewTextBoxColumn
+        '
+        Me.TotalDataGridViewTextBoxColumn.DataPropertyName = "Total"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle9.Format = "N1"
+        DataGridViewCellStyle9.NullValue = Nothing
+        Me.TotalDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle9
+        Me.TotalDataGridViewTextBoxColumn.HeaderText = "Jumla ya eneo (ha) " & Global.Microsoft.VisualBasic.ChrW(10) & " (v) = (i)+(ii)+(iii)+(iv)" & Global.Microsoft.VisualBasic.ChrW(9)
+        Me.TotalDataGridViewTextBoxColumn.Name = "TotalDataGridViewTextBoxColumn"
+        Me.TotalDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TotalDataGridViewTextBoxColumn.Width = 130
+        '
+        'RecordIDDataGridViewTextBoxColumn
+        '
+        Me.RecordIDDataGridViewTextBoxColumn.DataPropertyName = "RecordID"
+        Me.RecordIDDataGridViewTextBoxColumn.HeaderText = "RecordID"
+        Me.RecordIDDataGridViewTextBoxColumn.Name = "RecordIDDataGridViewTextBoxColumn"
+        Me.RecordIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'DataGridViewTextBoxColumn45
+        '
+        Me.DataGridViewTextBoxColumn45.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn45.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
+        Me.DataGridViewTextBoxColumn45.Visible = False
+        '
+        'DataGridViewTextBoxColumn46
+        '
+        Me.DataGridViewTextBoxColumn46.DataPropertyName = "GroupID"
+        Me.DataGridViewTextBoxColumn46.HeaderText = "GroupID"
+        Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
+        Me.DataGridViewTextBoxColumn46.Visible = False
+        '
+        'DataGridViewTextBoxColumn47
+        '
+        Me.DataGridViewTextBoxColumn47.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn47.HeaderText = "Eneo"
+        Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
+        Me.DataGridViewTextBoxColumn47.Width = 90
         '
         'ProdLandIDDataGridViewTextBoxColumn1
         '
@@ -1067,6 +1066,12 @@ Partial Class ctrlWard02Page05
     Friend WithEvents ActivityListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SeasonIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ActivityDetailsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ActivityListIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SeasonIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ActivityDetailsDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ProdLandIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ActivityIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TractorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1075,9 +1080,9 @@ Partial Class ctrlWard02Page05
     Friend WithEvents NoFarmingDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RecordIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ActivityListIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SeasonIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ActivityDetailsDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn45 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn46 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn47 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ProdLandIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ActivityIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TractorDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn

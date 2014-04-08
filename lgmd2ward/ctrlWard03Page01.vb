@@ -1,9 +1,8 @@
 ﻿Public Class ctrlWard03Page01
 
-    Dim Group2DDA As New LGMDdataDataSetTableAdapters.Group2DTableAdapter
-    Dim ContractFarmingDA As New LGMDdataDataSetTableAdapters.ContractFarming03TableAdapter
-    Dim SchemeListDA As New LGMDdataDataSetTableAdapters.SchemeGroupTableAdapter
-    Dim IrrigationSchemeDA As New LGMDdataDataSetTableAdapters.IrrigationScheme03TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private ContractFarmingDA As New LGMDdataDataSetTableAdapters.ContractFarming03TableAdapter
+    Private IrrigationSchemeDA As New LGMDdataDataSetTableAdapters.IrrigationScheme03TableAdapter
     Private firstNo As Integer?
     Private secondNo As Integer?
 
@@ -14,43 +13,39 @@
             g_form_mode = "Edit"
         End If
 
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
+
         Me.BasicInformation03TableAdapter.Fill(Me.LGMDdataDataSet.BasicInformation03, g_RecordID)
         Me.RecordInfoTableAdapter.Fill(Me.LGMDdataDataSet.RecordInfo, g_RecordID)
 
-        Me.Group2DDA.Fill(Me.LGMDdataDataSet.Group2D)
         Me.ContractFarmingDA.Fill(Me.LGMDdataDataSet.ContractFarming03)
         Me.ContractFarming03iTableAdapter.Fill(Me.LGMDdataDataSet.ContractFarming03i, g_RecordID)
 
         If Me.LGMDdataDataSet.ContractFarming03i.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.Group2D.Rows
-                ContractFarmingDA.Insert(Guid.NewGuid, row.Item(0).ToString, g_RecordID, g_FormSerialNumber)
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='ContractFarming03'")
+                ContractFarmingDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
-            Me.Group2DDA.Fill(Me.LGMDdataDataSet.Group2D)
-            Me.ContractFarmingDA.Fill(Me.LGMDdataDataSet.ContractFarming03)
             Me.ContractFarming03iTableAdapter.Fill(Me.LGMDdataDataSet.ContractFarming03i, g_RecordID)
         End If
 
         Me.AppUspLookupSeasonIrrigatedTableAdapter.Fill(Me.LookupTableDataDataSet.appUspLookupSeasonIrrigated)
         Me.AppUspLookupStatusOfSchemeTableAdapter.Fill(Me.LookupTableDataDataSet.appUspLookupStatusOfScheme)
-        Me.SchemeListDA.Fill(Me.LGMDdataDataSet.SchemeGroup)
         Me.IrrigationSchemeDA.Fill(Me.LGMDdataDataSet.IrrigationScheme03)
-        Me.IrrigationScheme03iTableAdapter.Fill(Me.LGMDdataDataSet.IrrigationScheme03i, g_RecordID)
-        Me.IrrigationScheme03iTableAdapter.FillImproved(Me.LgmDdataDataSet1.IrrigationScheme03i, g_RecordID)
-        Me.IrrigationScheme03iTableAdapter.FillNatural(Me.LgmDdataDataSet2.IrrigationScheme03i, g_RecordID)
+        'Me.IrrigationScheme03iTableAdapter.Fill(Me.LGMDdataDataSet.IrrigationScheme03i, g_RecordID)
+        'Me.IrrigationScheme03iTableAdapter.FillImproved(Me.LgmDdataDataSet1.IrrigationScheme03i, g_RecordID)
+        'Me.IrrigationScheme03iTableAdapter.FillNatural(Me.LgmDdataDataSet2.IrrigationScheme03i, g_RecordID)
 
         If Me.LGMDdataDataSet.IrrigationScheme03i.Rows.Count = 0 Then
 
             For i = 1 To 4
-                For Each row As DataRow In Me.LGMDdataDataSet.SchemeGroup.Rows
-                    Me.IrrigationSchemeDA.Insert(Guid.NewGuid, row.Item(0).ToString, g_RecordID, g_FormSerialNumber)
+                For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType = 'IrrigationScheme03'")
+                    Me.IrrigationSchemeDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
             Next
 
-            Me.SchemeListDA.Fill(Me.LGMDdataDataSet.SchemeGroup)
-            Me.IrrigationSchemeDA.Fill(Me.LGMDdataDataSet.IrrigationScheme03)
-            Me.IrrigationScheme03iTableAdapter.Fill(Me.LGMDdataDataSet.IrrigationScheme03i, g_RecordID)
-            Me.IrrigationScheme03iTableAdapter.FillImproved(Me.LgmDdataDataSet1.IrrigationScheme03i, g_RecordID)
-            Me.IrrigationScheme03iTableAdapter.FillNatural(Me.LgmDdataDataSet2.IrrigationScheme03i, g_RecordID)
+            'Me.IrrigationScheme03iTableAdapter.Fill(Me.LGMDdataDataSet.IrrigationScheme03i, g_RecordID)
+            'Me.IrrigationScheme03iTableAdapter.FillImproved(Me.LgmDdataDataSet1.IrrigationScheme03i, g_RecordID)
+            'Me.IrrigationScheme03iTableAdapter.FillNatural(Me.LgmDdataDataSet2.IrrigationScheme03i, g_RecordID)
         End If
 
         Call LabelTranslation(Me)

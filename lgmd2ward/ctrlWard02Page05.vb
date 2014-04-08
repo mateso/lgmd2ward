@@ -3,8 +3,8 @@
     Dim FigureIDCriteria As String = "FigureID in (201,202) and BreakdownTypeID1 in ('MAI','PDD','SGH','BMT','FMT','WHE','BLY','CSV','SWP','IPT','YAM','CYM','SCT','TBC','CFF','TEA','PYR','COC','RUB','WAT','SUG', 'JUT','SIS','CSH','SFL','SMS','GRN','PLO','CCN','SYB','COS','JTR','CWP','PGP','GBG','GNP','CPL','BBN','BEN')"
     Dim QuarterlyLookupDS As New QuarterlyDataSet
     Dim QuarterlyLookupDA As New QuarterlyDataSetTableAdapters.QuarterlyLookupTableTableAdapter
-    Dim ActivityListDA As New LGMDdataDataSetTableAdapters.ActivityListTableAdapter
     Dim ProdLandDA As New LGMDdataDataSetTableAdapters.ProdLand02TableAdapter
+    Private ThreeDListDA As New LGMDdataDataSetTableAdapters.ThreeDListTableAdapter
     Private areaDestroyed As Double?
     Private areaControlled As Double?
     Private prodAreaTrekta As Double?
@@ -14,23 +14,22 @@
 
     Private Sub ctrlWard02Page05_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.QuarterlyLookupDA.Fill(Me.QuarterlyLookupDS.QuarterlyLookupTable)
+        'Me.QuarterlyLookupDA.Fill(Me.QuarterlyLookupDS.QuarterlyLookupTable)
 
         Me.AppUspQuarterLookUpTypeOfErosionTableAdapter.Fill(Me.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosion)
         'Me.AppUspQuarterLookupErosionControlMeasuresTableAdapter.Fill(Me.LookupTableDataDataSet.appUspQuarterLookupErosionControlMeasures)
         Me.SoilErosion02TableAdapter.Fill(Me.LGMDdataDataSet.SoilErosion02, g_RecordID)
 
-        Me.ActivityListDA.Fill(Me.LGMDdataDataSet.ActivityList)
+        Me.ThreeDListDA.Fill(Me.LGMDdataDataSet.ThreeDList)
         Me.ProdLandDA.Fill(Me.LGMDdataDataSet.ProdLand02)
         Me.ProdLand02iTableAdapter.Fill(Me.LGMDdataDataSet.ProdLand02i, g_RecordID)
         Me.ProdLand02iTableAdapter.FillVuli(Me.LgmDdataDataSet1.ProdLand02i, g_RecordID)
         Me.ProdLand02iTableAdapter.FillMasika(Me.LgmDdataDataSet2.ProdLand02i, g_RecordID)
 
         If Me.LGMDdataDataSet.ProdLand02i.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.ActivityList.Rows
-                Me.ProdLandDA.Insert(Guid.NewGuid, row.Item(0).ToString, g_RecordID, g_FormSerialNumber)
+            For Each row As DataRow In Me.LGMDdataDataSet.ThreeDList.Select("ListItemType='ProdLand02'")
+                Me.ProdLandDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
-            Me.ActivityListDA.Fill(Me.LGMDdataDataSet.ActivityList)
             Me.ProdLandDA.Fill(Me.LGMDdataDataSet.ProdLand02)
             Me.ProdLand02iTableAdapter.Fill(Me.LGMDdataDataSet.ProdLand02i, g_RecordID)
             Me.ProdLand02iTableAdapter.FillVuli(Me.LgmDdataDataSet1.ProdLand02i, g_RecordID)

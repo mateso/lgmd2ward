@@ -17,6 +17,8 @@ Module modGlobals
     Public g_LastRowVersion As Long
     Public g_LastAcknowledgedRV As Long
     Public g_FormSerialNumber As String
+    Public g_FormSerialNumberIQ As String
+    Public g_FormSerialNumberIA As String
     Public g_bSeleted As Boolean = False
     Public strSelectedNode As String
     Public gStrHost As String

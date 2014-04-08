@@ -44,6 +44,8 @@ Partial Class ctrlWard02Page01
         Me.Label16 = New System.Windows.Forms.Label()
         Me.cmoFoodStatus = New System.Windows.Forms.ComboBox()
         Me.FoodCondition02BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AppUspQuarterlyLookupVillageFoodSituationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LookupTableDataDataSet = New LGMD.LookupTableDataDataSet()
         Me.FoodStatusListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txtRemarks = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -70,12 +72,15 @@ Partial Class ctrlWard02Page01
         Me.RecordInfoTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.RecordInfoTableAdapter()
         Me.TableAdapterManager = New LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager()
         Me.txtOfficerName = New System.Windows.Forms.TextBox()
+        Me.AppUspQuarterlyLookupVillageFoodSituationTableAdapter = New LGMD.LookupTableDataDataSetTableAdapters.appUspQuarterlyLookupVillageFoodSituationTableAdapter()
         OfficerNameLabel = New System.Windows.Forms.Label()
         CType(Me.RecordInfoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.FoodCondition02BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AppUspQuarterlyLookupVillageFoodSituationBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LookupTableDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FoodStatusListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
@@ -213,7 +218,7 @@ Partial Class ctrlWard02Page01
         Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.44681!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 723.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 726.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label15, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label16, 1, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(29, 481)
@@ -227,7 +232,7 @@ Partial Class ctrlWard02Page01
         '
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(19, 5)
+        Me.Label15.Location = New System.Drawing.Point(18, 5)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(46, 26)
         Me.Label15.TabIndex = 2
@@ -236,7 +241,7 @@ Partial Class ctrlWard02Page01
         'Label16
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label16.Location = New System.Drawing.Point(422, 12)
+        Me.Label16.Location = New System.Drawing.Point(420, 12)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(49, 13)
         Me.Label16.TabIndex = 0
@@ -244,23 +249,33 @@ Partial Class ctrlWard02Page01
         '
         'cmoFoodStatus
         '
-        Me.cmoFoodStatus.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.FoodCondition02BindingSource, "FoodStatustID", True))
-        Me.cmoFoodStatus.DataSource = Me.FoodStatusListBindingSource
-        Me.cmoFoodStatus.DisplayMember = "StatusDescription"
+        Me.cmoFoodStatus.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.FoodCondition02BindingSource, "FoodStatusID", True))
+        Me.cmoFoodStatus.DataSource = Me.AppUspQuarterlyLookupVillageFoodSituationBindingSource
+        Me.cmoFoodStatus.DisplayMember = "LookupSw"
         Me.cmoFoodStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmoFoodStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmoFoodStatus.FormattingEnabled = True
         Me.cmoFoodStatus.Location = New System.Drawing.Point(29, 519)
         Me.cmoFoodStatus.Margin = New System.Windows.Forms.Padding(0)
         Me.cmoFoodStatus.Name = "cmoFoodStatus"
-        Me.cmoFoodStatus.Size = New System.Drawing.Size(86, 21)
+        Me.cmoFoodStatus.Size = New System.Drawing.Size(80, 21)
         Me.cmoFoodStatus.TabIndex = 7
-        Me.cmoFoodStatus.ValueMember = "FoodStatusListID"
+        Me.cmoFoodStatus.ValueMember = "LookupID"
         '
         'FoodCondition02BindingSource
         '
         Me.FoodCondition02BindingSource.DataMember = "FoodCondition02"
         Me.FoodCondition02BindingSource.DataSource = Me.LGMDdataDataSet
+        '
+        'AppUspQuarterlyLookupVillageFoodSituationBindingSource
+        '
+        Me.AppUspQuarterlyLookupVillageFoodSituationBindingSource.DataMember = "appUspQuarterlyLookupVillageFoodSituation"
+        Me.AppUspQuarterlyLookupVillageFoodSituationBindingSource.DataSource = Me.LookupTableDataDataSet
+        '
+        'LookupTableDataDataSet
+        '
+        Me.LookupTableDataDataSet.DataSetName = "LookupTableDataDataSet"
+        Me.LookupTableDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'FoodStatusListBindingSource
         '
@@ -271,10 +286,10 @@ Partial Class ctrlWard02Page01
         '
         Me.txtRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRemarks.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FoodCondition02BindingSource, "Remarks", True))
-        Me.txtRemarks.Location = New System.Drawing.Point(116, 519)
+        Me.txtRemarks.Location = New System.Drawing.Point(110, 519)
         Me.txtRemarks.Margin = New System.Windows.Forms.Padding(0)
         Me.txtRemarks.Name = "txtRemarks"
-        Me.txtRemarks.Size = New System.Drawing.Size(722, 20)
+        Me.txtRemarks.Size = New System.Drawing.Size(728, 20)
         Me.txtRemarks.TabIndex = 8
         '
         'TableLayoutPanel2
@@ -284,7 +299,7 @@ Partial Class ctrlWard02Page01
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label17, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label18, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label19, 2, 0)
@@ -330,7 +345,7 @@ Partial Class ctrlWard02Page01
         '
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(674, 11)
+        Me.Label20.Location = New System.Drawing.Point(676, 11)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(191, 13)
         Me.Label20.TabIndex = 7
@@ -646,6 +661,10 @@ Partial Class ctrlWard02Page01
         Me.txtOfficerName.Size = New System.Drawing.Size(209, 20)
         Me.txtOfficerName.TabIndex = 1
         '
+        'AppUspQuarterlyLookupVillageFoodSituationTableAdapter
+        '
+        Me.AppUspQuarterlyLookupVillageFoodSituationTableAdapter.ClearBeforeFill = True
+        '
         'ctrlWard02Page01
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -690,6 +709,8 @@ Partial Class ctrlWard02Page01
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         CType(Me.FoodCondition02BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AppUspQuarterlyLookupVillageFoodSituationBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LookupTableDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FoodStatusListBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
@@ -743,5 +764,8 @@ Partial Class ctrlWard02Page01
     Friend WithEvents RecordInfoTableAdapter As LGMD.LGMDdataDataSetTableAdapters.RecordInfoTableAdapter
     Friend WithEvents TableAdapterManager As LGMD.LGMDdataDataSetTableAdapters.TableAdapterManager
     Friend WithEvents txtOfficerName As System.Windows.Forms.TextBox
+    Friend WithEvents AppUspQuarterlyLookupVillageFoodSituationBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents LookupTableDataDataSet As LGMD.LookupTableDataDataSet
+    Friend WithEvents AppUspQuarterlyLookupVillageFoodSituationTableAdapter As LGMD.LookupTableDataDataSetTableAdapters.appUspQuarterlyLookupVillageFoodSituationTableAdapter
 
 End Class

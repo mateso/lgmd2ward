@@ -68,6 +68,7 @@ Module modGeneral
 
     Public Function DomainLookup(ByVal OutputField, ByVal Table, ByVal Criteria)
 
+        conn = New SqlConnection(My.Settings.DataConnectionString)
         cmd = New SqlCommand()
 
         Try

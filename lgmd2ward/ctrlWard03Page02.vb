@@ -1,10 +1,10 @@
 ﻿Public Class ctrlWard03Page02
 
-    Dim MachineryListDA As New LGMDdataDataSetTableAdapters.MachineryListTableAdapter
-    Dim MachinesDA As New LGMDdataDataSetTableAdapters.Machines03TableAdapter
-    Dim DrawnListDA As New LGMDdataDataSetTableAdapters.DrawnListTableAdapter
-    Dim MachineryDrawnDA As New LGMDdataDataSetTableAdapters.MachineryDrawn03TableAdapter
-    Dim AnimalDrawnDA As New LGMDdataDataSetTableAdapters.AnimalDrawn03TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private MachinesDA As New LGMDdataDataSetTableAdapters.Machines03TableAdapter
+    Private DrawnListDA As New LGMDdataDataSetTableAdapters.DrawnListTableAdapter
+    Private MachineryDrawnDA As New LGMDdataDataSetTableAdapters.MachineryDrawn03TableAdapter
+    Private AnimalDrawnDA As New LGMDdataDataSetTableAdapters.AnimalDrawn03TableAdapter
     Private machineWorkingIndividual As Integer?
     Private machineNotWorkingIndividual As Integer?
     Private machineWorkingGroup As Integer?
@@ -16,12 +16,12 @@
 
     Private Sub ctrlWard03Page02_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.MachineryListDA.Fill(Me.LGMDdataDataSet.MachineryList)
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
         Me.MachinesDA.Fill(Me.LGMDdataDataSet.Machines03)
         Me.AppUspAnnualFillMachinesTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillMachines, g_RecordID)
         Try
             If Me.LGMDdataDataSet.appUspAnnualFillMachines.Rows.Count = 0 Then
-                For Each row As DataRow In Me.LGMDdataDataSet.MachineryList.Select("MachineryStatus='0'")
+                For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='Machines03' AND ListItemStatus=0")
                     Me.MachinesDA.Insert(Guid.NewGuid(), row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
                 Me.AppUspAnnualFillMachinesTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillMachines, g_RecordID)
@@ -29,12 +29,11 @@
         Catch ex As Exception
         End Try
 
-        Me.DrawnListDA.Fill(Me.LGMDdataDataSet.DrawnList)
         Me.MachineryDrawnDA.Fill(Me.LGMDdataDataSet.MachineryDrawn03)
         Me.AppUspAnnualFillMachineryDrawnTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillMachineryDrawn, g_RecordID)
         Try
             If Me.LGMDdataDataSet.appUspAnnualFillMachineryDrawn.Rows.Count = 0 Then
-                For Each row As DataRow In Me.LGMDdataDataSet.DrawnList.Select("DrawnType LIKE '%Machine%' AND DrawnStatus=0")
+                For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType LIKE '%MachineryDrawn%' AND ListItemStatus=0")
                     Me.MachineryDrawnDA.Insert(Guid.NewGuid(), row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
                 Me.AppUspAnnualFillMachineryDrawnTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillMachineryDrawn, g_RecordID)
@@ -47,7 +46,7 @@
         Me.AppUspAnnualFillAnimalDrawnTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillAnimalDrawn, g_RecordID)
         Try
             If Me.LGMDdataDataSet.appUspAnnualFillAnimalDrawn.Rows.Count = 0 Then
-                For Each row As DataRow In Me.LGMDdataDataSet.DrawnList.Select("DrawnType LIKE '%Animal%' AND DrawnStatus=0")
+                For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType LIKE '%AnimalDrawn%' AND ListItemStatus=0")
                     Me.AnimalDrawnDA.Insert(Guid.NewGuid(), row.Item(0), g_RecordID, g_FormSerialNumber)
                 Next
                 Me.AppUspAnnualFillAnimalDrawnTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillAnimalDrawn, g_RecordID)

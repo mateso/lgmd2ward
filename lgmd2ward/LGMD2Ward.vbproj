@@ -87,7 +87,9 @@
     <Reference Include="Accessibility">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
       <Private>True</Private>
     </Reference>
@@ -151,6 +153,11 @@
     </Compile>
     <Compile Include="AnnuallyDataDataSet.vb">
       <DependentUpon>AnnuallyDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnnuallyIntegratedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnuallyIntegratedDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="AnnualTargetDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -238,6 +245,144 @@
       <DependentUpon>ctrlDistrict03Page06.vb</DependentUpon>
     </Compile>
     <Compile Include="ctrlDistrict03Page06.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict07Page01.Designer.vb">
+      <DependentUpon>ctrlDistrict07Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict07Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page01.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page02.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page03.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page04.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page05.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page05.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page06.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page06.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page07.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page07.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page07.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page08.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page08.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page08.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page09.Designer.vb">
+      <DependentUpon>ctrlDistrict08Page09.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict08Page09.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page01.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page02.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page03.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page04.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page05.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page05.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page06.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page06.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page07.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page07.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page07.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page08.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page08.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page08.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page09.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page09.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page09.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page10.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page10.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page11.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page11.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page12.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page12.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page13.Designer.vb">
+      <DependentUpon>ctrlDistrict09Page13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDistrict09Page13.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ctrlEditForm.designer.vb">
@@ -569,6 +714,11 @@
     <Compile Include="modGeneral.vb" />
     <Compile Include="modGlobals.vb" />
     <Compile Include="modSaveLoad.vb" />
+    <Compile Include="MonthlyAggregatedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonthlyAggregatedDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MonthlyDataDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -593,6 +743,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuarterlyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuarterlyIntegratedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuarterlyIntegratedDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Settings.vb" />
   </ItemGroup>
@@ -635,6 +790,66 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlDistrict03Page06.resx">
       <DependentUpon>ctrlDistrict03Page06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict07Page01.resx">
+      <DependentUpon>ctrlDistrict07Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page01.resx">
+      <DependentUpon>ctrlDistrict08Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page02.resx">
+      <DependentUpon>ctrlDistrict08Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page03.resx">
+      <DependentUpon>ctrlDistrict08Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page04.resx">
+      <DependentUpon>ctrlDistrict08Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page05.resx">
+      <DependentUpon>ctrlDistrict08Page05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page06.resx">
+      <DependentUpon>ctrlDistrict08Page06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page07.resx">
+      <DependentUpon>ctrlDistrict08Page07.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page08.resx">
+      <DependentUpon>ctrlDistrict08Page08.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict08Page09.resx">
+      <DependentUpon>ctrlDistrict08Page09.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page01.resx">
+      <DependentUpon>ctrlDistrict09Page01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page02.resx">
+      <DependentUpon>ctrlDistrict09Page02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page03.resx">
+      <DependentUpon>ctrlDistrict09Page03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page04.resx">
+      <DependentUpon>ctrlDistrict09Page04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page05.resx">
+      <DependentUpon>ctrlDistrict09Page05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page06.resx">
+      <DependentUpon>ctrlDistrict09Page06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page07.resx">
+      <DependentUpon>ctrlDistrict09Page07.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page08.resx">
+      <DependentUpon>ctrlDistrict09Page08.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page09.resx">
+      <DependentUpon>ctrlDistrict09Page09.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDistrict09Page10.resx">
+      <DependentUpon>ctrlDistrict09Page10.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlEditForm.resx">
       <DependentUpon>ctrlEditForm.vb</DependentUpon>
@@ -911,6 +1126,39 @@
     </Content>
     <Content Include="Resources\jicaLogo.jpg" />
     <Content Include="Resources\jicaLogoo.jpg" />
+    <None Include="AnnuallyIntegratedDataSet.xsc">
+      <DependentUpon>AnnuallyIntegratedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnnuallyIntegratedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnnuallyIntegratedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnnuallyIntegratedDataSet.xss">
+      <DependentUpon>AnnuallyIntegratedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MonthlyAggregatedDataSet.xsc">
+      <DependentUpon>MonthlyAggregatedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MonthlyAggregatedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonthlyAggregatedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MonthlyAggregatedDataSet.xss">
+      <DependentUpon>MonthlyAggregatedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuarterlyIntegratedDataSet.xsc">
+      <DependentUpon>QuarterlyIntegratedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuarterlyIntegratedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuarterlyIntegratedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuarterlyIntegratedDataSet.xss">
+      <DependentUpon>QuarterlyIntegratedDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\jicaLogoo1.jpg" />
     <Content Include="Resources\LGMD2i.ico" />
     <Content Include="Resources\logOffIcon.ico" />
@@ -1221,16 +1469,6 @@
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>Assembly</FileType>
-    </PublishFile>
-    <PublishFile Include="Microsoft.ReportViewer.WinForms">
       <Visible>False</Visible>
       <Group>
       </Group>

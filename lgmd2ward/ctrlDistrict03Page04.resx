@@ -124,22 +124,22 @@
     <value>True</value>
   </metadata>
   <metadata name="ExtensionServiceProviders05BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 102</value>
+    <value>17, 56</value>
   </metadata>
   <metadata name="LGMDdataDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 63</value>
+    <value>17, 17</value>
   </metadata>
   <metadata name="ExtensionServiceProviders05TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>308, 102</value>
+    <value>308, 56</value>
   </metadata>
   <metadata name="TableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 141</value>
+    <value>17, 95</value>
   </metadata>
   <metadata name="AppUspDistrictAnnualFillPlanningCommiteeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>190, 141</value>
+    <value>190, 95</value>
   </metadata>
   <metadata name="AppUspDistrictAnnualFillPlanningCommiteeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 180</value>
+    <value>17, 134</value>
   </metadata>
   <metadata name="FormSerialID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -152,16 +152,16 @@ usually have title of the land they own.
 </value>
   </data>
   <metadata name="LivestockPopulation05BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>381, 180</value>
+    <value>381, 134</value>
   </metadata>
   <metadata name="LivestockPopulation05TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 219</value>
+    <value>17, 173</value>
   </metadata>
   <metadata name="AppUspLookupTypeOfOwnershipBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 258</value>
+    <value>17, 212</value>
   </metadata>
   <metadata name="LookupTableDataDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>264, 219</value>
+    <value>264, 173</value>
   </metadata>
   <metadata name="TableLayoutPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -173,6 +173,6 @@ usually have title of the land they own.
     <value>True</value>
   </metadata>
   <metadata name="AppUspLookupTypeOfOwnershipTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>329, 258</value>
+    <value>329, 212</value>
   </metadata>
 </root>

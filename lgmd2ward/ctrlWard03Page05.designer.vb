@@ -39,9 +39,10 @@ Partial Class ctrlWard03Page05
         Me.LookupTableDataDataSet = New LGMD.LookupTableDataDataSet()
         Me.AppUspAnnualFillFertilizerTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillFertilizerTableAdapter()
         Me.AppUspLookupUnitsTableAdapter = New LGMD.LookupTableDataDataSetTableAdapters.appUspLookupUnitsTableAdapter()
-        Me.FertilizerListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FertilizerNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FertilizerStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemEn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fertilizer03IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FertilizerIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AnnualNeedsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -128,7 +129,7 @@ Partial Class ctrlWard03Page05
         Me.appUspAnnualFillFertilizerDataGridView.AllowUserToResizeRows = False
         Me.appUspAnnualFillFertilizerDataGridView.AutoGenerateColumns = False
         Me.appUspAnnualFillFertilizerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.appUspAnnualFillFertilizerDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FertilizerListIDDataGridViewTextBoxColumn, Me.FertilizerNameDataGridViewTextBoxColumn, Me.FertilizerStatusDataGridViewTextBoxColumn, Me.Fertilizer03IDDataGridViewTextBoxColumn, Me.FertilizerIDDataGridViewTextBoxColumn, Me.AnnualNeedsDataGridViewTextBoxColumn, Me.AnnualUsageDataGridViewTextBoxColumn, Me.ExplanationDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn, Me.FormSerialIDDataGridViewTextBoxColumn})
+        Me.appUspAnnualFillFertilizerDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.ListItemSw, Me.ListItemEn, Me.ListItemStatus, Me.Fertilizer03IDDataGridViewTextBoxColumn, Me.FertilizerIDDataGridViewTextBoxColumn, Me.AnnualNeedsDataGridViewTextBoxColumn, Me.AnnualUsageDataGridViewTextBoxColumn, Me.ExplanationDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn, Me.FormSerialIDDataGridViewTextBoxColumn})
         Me.appUspAnnualFillFertilizerDataGridView.DataSource = Me.AppUspAnnualFillFertilizerBindingSource
         Me.appUspAnnualFillFertilizerDataGridView.Location = New System.Drawing.Point(28, 116)
         Me.appUspAnnualFillFertilizerDataGridView.Name = "appUspAnnualFillFertilizerDataGridView"
@@ -163,28 +164,33 @@ Partial Class ctrlWard03Page05
         '
         Me.AppUspLookupUnitsTableAdapter.ClearBeforeFill = True
         '
-        'FertilizerListIDDataGridViewTextBoxColumn
+        'Column1
         '
-        Me.FertilizerListIDDataGridViewTextBoxColumn.DataPropertyName = "FertilizerListID"
-        Me.FertilizerListIDDataGridViewTextBoxColumn.HeaderText = "FertilizerListID"
-        Me.FertilizerListIDDataGridViewTextBoxColumn.Name = "FertilizerListIDDataGridViewTextBoxColumn"
-        Me.FertilizerListIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.FertilizerListIDDataGridViewTextBoxColumn.Visible = False
+        Me.Column1.DataPropertyName = "ListID"
+        Me.Column1.HeaderText = "ListID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Visible = False
         '
-        'FertilizerNameDataGridViewTextBoxColumn
+        'ListItemSw
         '
-        Me.FertilizerNameDataGridViewTextBoxColumn.DataPropertyName = "FertilizerName"
-        Me.FertilizerNameDataGridViewTextBoxColumn.HeaderText = "Aina ya mbolea"
-        Me.FertilizerNameDataGridViewTextBoxColumn.Name = "FertilizerNameDataGridViewTextBoxColumn"
-        Me.FertilizerNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.FertilizerNameDataGridViewTextBoxColumn.Width = 170
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "ListItemSw"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 170
         '
-        'FertilizerStatusDataGridViewTextBoxColumn
+        'ListItemEn
         '
-        Me.FertilizerStatusDataGridViewTextBoxColumn.DataPropertyName = "FertilizerStatus"
-        Me.FertilizerStatusDataGridViewTextBoxColumn.HeaderText = "FertilizerStatus"
-        Me.FertilizerStatusDataGridViewTextBoxColumn.Name = "FertilizerStatusDataGridViewTextBoxColumn"
-        Me.FertilizerStatusDataGridViewTextBoxColumn.Visible = False
+        Me.ListItemEn.DataPropertyName = "ListItemEn"
+        Me.ListItemEn.HeaderText = "ListItemEn"
+        Me.ListItemEn.Name = "ListItemEn"
+        Me.ListItemEn.Visible = False
+        '
+        'ListItemStatus
+        '
+        Me.ListItemStatus.DataPropertyName = "ListItemStatus"
+        Me.ListItemStatus.HeaderText = "ListItemStatus"
+        Me.ListItemStatus.Name = "ListItemStatus"
+        Me.ListItemStatus.Visible = False
         '
         'Fertilizer03IDDataGridViewTextBoxColumn
         '
@@ -291,6 +297,10 @@ Partial Class ctrlWard03Page05
     Friend WithEvents FertilizerListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FertilizerNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FertilizerStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemEn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemStatus As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Fertilizer03IDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FertilizerIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnnualNeedsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn

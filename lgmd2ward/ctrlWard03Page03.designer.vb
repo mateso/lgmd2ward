@@ -25,6 +25,15 @@ Partial Class ctrlWard03Page03
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlWard03Page03))
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -44,7 +53,7 @@ Partial Class ctrlWard03Page03
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
@@ -53,6 +62,14 @@ Partial Class ctrlWard03Page03
         Me.Label12 = New System.Windows.Forms.Label()
         Me.AppUspAnnualFillProcessingMachinesTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.appUspAnnualFillProcessingMachinesTableAdapter()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemEn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ImplementIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImplementsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AppUspAnnualFillImplementsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AnnuallyDataDataSet = New LGMD.AnnuallyDataDataSet()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -145,17 +162,10 @@ Partial Class ctrlWard03Page03
         Me.DataGridViewTextBoxColumn85 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn86 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn87 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImplementsListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImplementNameEnDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImplementNameSwDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImplementStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ImplementIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImplementsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProcessingMachineListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MachineNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MachineStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn88 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn89 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn90 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProcessingMachinesIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MachineIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WorkingIndividuallyOwnedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -229,7 +239,7 @@ Partial Class ctrlWard03Page03
         Me.appUspAnnualFillProcessingMachineDataGridView.AutoGenerateColumns = False
         Me.appUspAnnualFillProcessingMachineDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.appUspAnnualFillProcessingMachineDataGridView.ColumnHeadersVisible = False
-        Me.appUspAnnualFillProcessingMachineDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ProcessingMachineListIDDataGridViewTextBoxColumn, Me.MachineNameDataGridViewTextBoxColumn, Me.MachineStatusDataGridViewTextBoxColumn, Me.ProcessingMachinesIDDataGridViewTextBoxColumn, Me.MachineIDDataGridViewTextBoxColumn, Me.WorkingIndividuallyOwnedDataGridViewTextBoxColumn, Me.WorkingGroupownedDataGridViewTextBoxColumn, Me.NotWorkingIndividuallyOwnedDataGridViewTextBoxColumn, Me.NotWorkingGroupownedDataGridViewTextBoxColumn, Me.ReasonForNotWorkingDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn, Me.FormSerialIDDataGridViewTextBoxColumn})
+        Me.appUspAnnualFillProcessingMachineDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.DataGridViewTextBoxColumn88, Me.DataGridViewTextBoxColumn89, Me.DataGridViewTextBoxColumn90, Me.ProcessingMachinesIDDataGridViewTextBoxColumn, Me.MachineIDDataGridViewTextBoxColumn, Me.WorkingIndividuallyOwnedDataGridViewTextBoxColumn, Me.WorkingGroupownedDataGridViewTextBoxColumn, Me.NotWorkingIndividuallyOwnedDataGridViewTextBoxColumn, Me.NotWorkingGroupownedDataGridViewTextBoxColumn, Me.ReasonForNotWorkingDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn, Me.FormSerialIDDataGridViewTextBoxColumn})
         Me.appUspAnnualFillProcessingMachineDataGridView.DataSource = Me.AppUspAnnualFillProcessingMachinesBindingSource
         Me.appUspAnnualFillProcessingMachineDataGridView.Location = New System.Drawing.Point(22, 463)
         Me.appUspAnnualFillProcessingMachineDataGridView.Name = "appUspAnnualFillProcessingMachineDataGridView"
@@ -259,7 +269,7 @@ Partial Class ctrlWard03Page03
         '
         Me.TableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel8.ColumnCount = 1
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.Label17, 0, 0)
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(22, 409)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
@@ -272,7 +282,7 @@ Partial Class ctrlWard03Page03
         '
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(60, 20)
+        Me.Label17.Location = New System.Drawing.Point(62, 20)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(95, 13)
         Me.Label17.TabIndex = 0
@@ -286,11 +296,11 @@ Partial Class ctrlWard03Page03
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79.0!))
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79.0!))
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104.0!))
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.Label19, 0, 0)
         Me.TableLayoutPanel9.Controls.Add(Me.Label20, 1, 0)
         Me.TableLayoutPanel9.Controls.Add(Me.Label22, 2, 0)
-        Me.TableLayoutPanel9.Controls.Add(Me.Label23, 3, 0)
+        Me.TableLayoutPanel9.Controls.Add(Me.Label1, 3, 0)
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(215, 432)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
         Me.TableLayoutPanel9.RowCount = 1
@@ -331,23 +341,23 @@ Partial Class ctrlWard03Page03
         Me.Label22.Text = "Binafsi (iv)"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label23
+        'Label1
         '
-        Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(262, 8)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(57, 13)
-        Me.Label23.TabIndex = 3
-        Me.Label23.Text = "Kikundi (v)"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(251, 8)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(57, 13)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Kikundi (v)"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TableLayoutPanel10
         '
         Me.TableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel10.ColumnCount = 2
         Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157.0!))
-        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183.0!))
+        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187.0!))
         Me.TableLayoutPanel10.Controls.Add(Me.Label18, 0, 0)
         Me.TableLayoutPanel10.Controls.Add(Me.Label21, 1, 0)
         Me.TableLayoutPanel10.Location = New System.Drawing.Point(215, 409)
@@ -372,7 +382,7 @@ Partial Class ctrlWard03Page03
         '
         Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(230, 4)
+        Me.Label21.Location = New System.Drawing.Point(232, 4)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(40, 13)
         Me.Label21.TabIndex = 1
@@ -383,7 +393,7 @@ Partial Class ctrlWard03Page03
         '
         Me.TableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel11.ColumnCount = 1
-        Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 321.0!))
+        Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 325.0!))
         Me.TableLayoutPanel11.Controls.Add(Me.Label24, 0, 0)
         Me.TableLayoutPanel11.Location = New System.Drawing.Point(536, 409)
         Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
@@ -396,7 +406,7 @@ Partial Class ctrlWard03Page03
         '
         Me.Label24.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(78, 20)
+        Me.Label24.Location = New System.Drawing.Point(80, 20)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(167, 13)
         Me.Label24.TabIndex = 0
@@ -420,12 +430,70 @@ Partial Class ctrlWard03Page03
         '
         Me.DataGridView4.AutoGenerateColumns = False
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ImplementsListIDDataGridViewTextBoxColumn, Me.ImplementNameEnDataGridViewTextBoxColumn, Me.ImplementNameSwDataGridViewTextBoxColumn, Me.ImplementStatusDataGridViewTextBoxColumn, Me.HandOperatedImplementsIDDataGridViewTextBoxColumn, Me.ImplementIDDataGridViewTextBoxColumn, Me.NumberOfImplementsDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn1})
+        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.ListItemSw, Me.ListItemEn, Me.ListItemStatus, Me.HandOperatedImplementsIDDataGridViewTextBoxColumn, Me.ImplementIDDataGridViewTextBoxColumn, Me.NumberOfImplementsDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn1})
         Me.DataGridView4.DataSource = Me.AppUspAnnualFillImplementsBindingSource
         Me.DataGridView4.Location = New System.Drawing.Point(24, 105)
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.Size = New System.Drawing.Size(393, 217)
         Me.DataGridView4.TabIndex = 105
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "ListID"
+        Me.Column1.HeaderText = "ListID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Visible = False
+        '
+        'ListItemSw
+        '
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "ListItemSw"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 250
+        '
+        'ListItemEn
+        '
+        Me.ListItemEn.DataPropertyName = "ListItemEn"
+        Me.ListItemEn.HeaderText = "ListItemEn"
+        Me.ListItemEn.Name = "ListItemEn"
+        Me.ListItemEn.Visible = False
+        '
+        'ListItemStatus
+        '
+        Me.ListItemStatus.DataPropertyName = "ListItemStatus"
+        Me.ListItemStatus.HeaderText = "ListItemStatus"
+        Me.ListItemStatus.Name = "ListItemStatus"
+        Me.ListItemStatus.Visible = False
+        '
+        'HandOperatedImplementsIDDataGridViewTextBoxColumn
+        '
+        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.DataPropertyName = "HandOperatedImplementsID"
+        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.HeaderText = "HandOperatedImplementsID"
+        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.Name = "HandOperatedImplementsIDDataGridViewTextBoxColumn"
+        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'ImplementIDDataGridViewTextBoxColumn
+        '
+        Me.ImplementIDDataGridViewTextBoxColumn.DataPropertyName = "ImplementID"
+        Me.ImplementIDDataGridViewTextBoxColumn.HeaderText = "ImplementID"
+        Me.ImplementIDDataGridViewTextBoxColumn.Name = "ImplementIDDataGridViewTextBoxColumn"
+        Me.ImplementIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'NumberOfImplementsDataGridViewTextBoxColumn
+        '
+        Me.NumberOfImplementsDataGridViewTextBoxColumn.DataPropertyName = "NumberOfImplements"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfImplementsDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
+        Me.NumberOfImplementsDataGridViewTextBoxColumn.HeaderText = "Idadi"
+        Me.NumberOfImplementsDataGridViewTextBoxColumn.Name = "NumberOfImplementsDataGridViewTextBoxColumn"
+        Me.NumberOfImplementsDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'AnnualRecordIDDataGridViewTextBoxColumn1
+        '
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.DataPropertyName = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.HeaderText = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Name = "AnnualRecordIDDataGridViewTextBoxColumn1"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Visible = False
         '
         'AppUspAnnualFillImplementsBindingSource
         '
@@ -472,32 +540,44 @@ Partial Class ctrlWard03Page03
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "MachineName"
         Me.DataGridViewTextBoxColumn2.HeaderText = "MachineName"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Visible = False
         Me.DataGridViewTextBoxColumn2.Width = 150
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "MachineStatus"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewTextBoxColumn3.HeaderText = "MachineStatus"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.Visible = False
+        Me.DataGridViewTextBoxColumn3.Width = 80
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "ProcessingMachinesID"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridViewTextBoxColumn4.HeaderText = "ProcessingMachinesID"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.Visible = False
+        Me.DataGridViewTextBoxColumn4.Width = 80
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "MachineID"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridViewTextBoxColumn5.HeaderText = "MachineID"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.Visible = False
+        Me.DataGridViewTextBoxColumn5.Width = 80
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "WorkingIndividuallyOwned"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewTextBoxColumn6.HeaderText = "WorkingIndividuallyOwned"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.Width = 80
@@ -505,6 +585,8 @@ Partial Class ctrlWard03Page03
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "WorkingGroupowned"
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewTextBoxColumn7.HeaderText = "WorkingGroupowned"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.Width = 80
@@ -512,15 +594,21 @@ Partial Class ctrlWard03Page03
         'DataGridViewTextBoxColumn8
         '
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "NotWorkingIndividuallyOwned"
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewTextBoxColumn8.HeaderText = "NotWorkingIndividuallyOwned"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.Visible = False
         Me.DataGridViewTextBoxColumn8.Width = 80
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "NotWorkingGroupowned"
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn9.HeaderText = "NotWorkingGroupowned"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.Visible = False
         Me.DataGridViewTextBoxColumn9.Width = 80
         '
         'DataGridViewTextBoxColumn10
@@ -528,6 +616,7 @@ Partial Class ctrlWard03Page03
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "ReasonForNotWorking"
         Me.DataGridViewTextBoxColumn10.HeaderText = "ReasonForNotWorking"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.Visible = False
         Me.DataGridViewTextBoxColumn10.Width = 300
         '
         'DataGridViewTextBoxColumn11
@@ -536,6 +625,7 @@ Partial Class ctrlWard03Page03
         Me.DataGridViewTextBoxColumn11.HeaderText = "AnnualRecordID"
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         Me.DataGridViewTextBoxColumn11.Visible = False
+        Me.DataGridViewTextBoxColumn11.Width = 250
         '
         'DataGridViewTextBoxColumn12
         '
@@ -573,8 +663,11 @@ Partial Class ctrlWard03Page03
         'DataGridViewTextBoxColumn16
         '
         Me.DataGridViewTextBoxColumn16.DataPropertyName = "FieldID"
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn16.DefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridViewTextBoxColumn16.HeaderText = "FieldID"
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.DataGridViewTextBoxColumn16.Visible = False
         '
         'DataGridViewTextBoxColumn17
@@ -597,6 +690,8 @@ Partial Class ctrlWard03Page03
         'DataGridViewTextBoxColumn19
         '
         Me.DataGridViewTextBoxColumn19.DataPropertyName = "NumberOfFarmersStartedMale"
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn19.DefaultCellStyle = DataGridViewCellStyle14
         Me.DataGridViewTextBoxColumn19.HeaderText = ""
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         Me.DataGridViewTextBoxColumn19.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
@@ -1080,87 +1175,34 @@ Partial Class ctrlWard03Page03
         Me.DataGridViewTextBoxColumn87.Name = "DataGridViewTextBoxColumn87"
         Me.DataGridViewTextBoxColumn87.Visible = False
         '
-        'ImplementsListIDDataGridViewTextBoxColumn
+        'ListID
         '
-        Me.ImplementsListIDDataGridViewTextBoxColumn.DataPropertyName = "ImplementsListID"
-        Me.ImplementsListIDDataGridViewTextBoxColumn.HeaderText = "ImplementsListID"
-        Me.ImplementsListIDDataGridViewTextBoxColumn.Name = "ImplementsListIDDataGridViewTextBoxColumn"
-        Me.ImplementsListIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ImplementsListIDDataGridViewTextBoxColumn.Visible = False
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
         '
-        'ImplementNameEnDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn88
         '
-        Me.ImplementNameEnDataGridViewTextBoxColumn.DataPropertyName = "ImplementNameEn"
-        Me.ImplementNameEnDataGridViewTextBoxColumn.HeaderText = "ImplementNameEn"
-        Me.ImplementNameEnDataGridViewTextBoxColumn.Name = "ImplementNameEnDataGridViewTextBoxColumn"
-        Me.ImplementNameEnDataGridViewTextBoxColumn.Visible = False
+        Me.DataGridViewTextBoxColumn88.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn88.HeaderText = "ListItemSw"
+        Me.DataGridViewTextBoxColumn88.Name = "DataGridViewTextBoxColumn88"
+        Me.DataGridViewTextBoxColumn88.Width = 150
         '
-        'ImplementNameSwDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn89
         '
-        Me.ImplementNameSwDataGridViewTextBoxColumn.DataPropertyName = "ImplementNameSw"
-        Me.ImplementNameSwDataGridViewTextBoxColumn.HeaderText = "Jina la Kifaa"
-        Me.ImplementNameSwDataGridViewTextBoxColumn.Name = "ImplementNameSwDataGridViewTextBoxColumn"
-        Me.ImplementNameSwDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ImplementNameSwDataGridViewTextBoxColumn.Width = 250
+        Me.DataGridViewTextBoxColumn89.DataPropertyName = "ListItemEn"
+        Me.DataGridViewTextBoxColumn89.HeaderText = "ListItemEn"
+        Me.DataGridViewTextBoxColumn89.Name = "DataGridViewTextBoxColumn89"
+        Me.DataGridViewTextBoxColumn89.Visible = False
+        Me.DataGridViewTextBoxColumn89.Width = 150
         '
-        'ImplementStatusDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn90
         '
-        Me.ImplementStatusDataGridViewTextBoxColumn.DataPropertyName = "ImplementStatus"
-        Me.ImplementStatusDataGridViewTextBoxColumn.HeaderText = "ImplementStatus"
-        Me.ImplementStatusDataGridViewTextBoxColumn.Name = "ImplementStatusDataGridViewTextBoxColumn"
-        Me.ImplementStatusDataGridViewTextBoxColumn.Visible = False
-        '
-        'HandOperatedImplementsIDDataGridViewTextBoxColumn
-        '
-        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.DataPropertyName = "HandOperatedImplementsID"
-        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.HeaderText = "HandOperatedImplementsID"
-        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.Name = "HandOperatedImplementsIDDataGridViewTextBoxColumn"
-        Me.HandOperatedImplementsIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'ImplementIDDataGridViewTextBoxColumn
-        '
-        Me.ImplementIDDataGridViewTextBoxColumn.DataPropertyName = "ImplementID"
-        Me.ImplementIDDataGridViewTextBoxColumn.HeaderText = "ImplementID"
-        Me.ImplementIDDataGridViewTextBoxColumn.Name = "ImplementIDDataGridViewTextBoxColumn"
-        Me.ImplementIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'NumberOfImplementsDataGridViewTextBoxColumn
-        '
-        Me.NumberOfImplementsDataGridViewTextBoxColumn.DataPropertyName = "NumberOfImplements"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfImplementsDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
-        Me.NumberOfImplementsDataGridViewTextBoxColumn.HeaderText = "Idadi"
-        Me.NumberOfImplementsDataGridViewTextBoxColumn.Name = "NumberOfImplementsDataGridViewTextBoxColumn"
-        Me.NumberOfImplementsDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'AnnualRecordIDDataGridViewTextBoxColumn1
-        '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Name = "AnnualRecordIDDataGridViewTextBoxColumn1"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'ProcessingMachineListIDDataGridViewTextBoxColumn
-        '
-        Me.ProcessingMachineListIDDataGridViewTextBoxColumn.DataPropertyName = "ProcessingMachineListID"
-        Me.ProcessingMachineListIDDataGridViewTextBoxColumn.HeaderText = "ProcessingMachineListID"
-        Me.ProcessingMachineListIDDataGridViewTextBoxColumn.Name = "ProcessingMachineListIDDataGridViewTextBoxColumn"
-        Me.ProcessingMachineListIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ProcessingMachineListIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'MachineNameDataGridViewTextBoxColumn
-        '
-        Me.MachineNameDataGridViewTextBoxColumn.DataPropertyName = "MachineName"
-        Me.MachineNameDataGridViewTextBoxColumn.HeaderText = "MachineName"
-        Me.MachineNameDataGridViewTextBoxColumn.Name = "MachineNameDataGridViewTextBoxColumn"
-        Me.MachineNameDataGridViewTextBoxColumn.Width = 150
-        '
-        'MachineStatusDataGridViewTextBoxColumn
-        '
-        Me.MachineStatusDataGridViewTextBoxColumn.DataPropertyName = "MachineStatus"
-        Me.MachineStatusDataGridViewTextBoxColumn.HeaderText = "MachineStatus"
-        Me.MachineStatusDataGridViewTextBoxColumn.Name = "MachineStatusDataGridViewTextBoxColumn"
-        Me.MachineStatusDataGridViewTextBoxColumn.Visible = False
+        Me.DataGridViewTextBoxColumn90.DataPropertyName = "ListItemStatus"
+        Me.DataGridViewTextBoxColumn90.HeaderText = "ListItemStatus"
+        Me.DataGridViewTextBoxColumn90.Name = "DataGridViewTextBoxColumn90"
+        Me.DataGridViewTextBoxColumn90.Visible = False
         '
         'ProcessingMachinesIDDataGridViewTextBoxColumn
         '
@@ -1310,7 +1352,6 @@ Partial Class ctrlWard03Page03
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
-    Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
@@ -1413,6 +1454,23 @@ Partial Class ctrlWard03Page03
     Friend WithEvents ProcessingMachineListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MachineNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MachineStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ImplementsListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ImplementNameEnDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ImplementNameSwDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ImplementStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemEn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemStatus As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents HandOperatedImplementsIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ImplementIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfImplementsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn88 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn89 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn90 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ProcessingMachinesIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MachineIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents WorkingIndividuallyOwnedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1422,13 +1480,5 @@ Partial Class ctrlWard03Page03
     Friend WithEvents ReasonForNotWorkingDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FormSerialIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ImplementsListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ImplementNameEnDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ImplementNameSwDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ImplementStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents HandOperatedImplementsIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ImplementIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfImplementsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
 
 End Class

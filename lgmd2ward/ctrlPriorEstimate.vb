@@ -92,7 +92,7 @@ Public Class ctrlPriorEstimate
 
                 Me.AppUspFillPriorEstimatesTableAdapter.Fill(Me.DistrictAggregatedDataSet.appUspFillPriorEstimates, _
                                                              GetConfigArea(), _
-                                                             Me.cmbIndicatorList.SelectedIndex, _
+                                                             Me.cmbIndicatorList.SelectedValue, _
                                                              Me.cmbListItem.SelectedValue, _
                                                              Me.periodFromFrom, _
                                                              Me.periodToTo)

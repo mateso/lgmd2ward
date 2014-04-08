@@ -24,25 +24,10 @@ Partial Class ctrlWard03Page08
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlWard03Page08))
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -53,16 +38,21 @@ Partial Class ctrlWard03Page08
         Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Livestock03iBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LgmDdataDataSet4 = New LGMD.LGMDdataDataSet()
-        Me.LgmDdataDataSet3 = New LGMD.LGMDdataDataSet()
-        Me.Livestock03iBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LgmDdataDataSet2 = New LGMD.LGMDdataDataSet()
-        Me.Livestock03iBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GrazingLand03iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.GrazingLand03iTableAdapter()
-        Me.Livestock03iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.Livestock03iTableAdapter()
-        Me.Livestock03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -72,45 +62,19 @@ Partial Class ctrlWard03Page08
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.LgmDdataDataSet5 = New LGMD.LGMDdataDataSet()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Livestock03iBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.appUspAnnualFillLivestockInfrastructureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.LgmDdataDataSet1 = New LGMD.LGMDdataDataSet()
-        Me.Livestock03iBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmbGoTo = New System.Windows.Forms.ComboBox()
         Me.gotoLbl = New System.Windows.Forms.Label()
         Me.cmdSave = New System.Windows.Forms.Button()
         Me.lblPeriod = New System.Windows.Forms.Label()
         Me.lblArea = New System.Windows.Forms.Label()
-        Me.GrazingLand03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.AnimalIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LivestockIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalRegisteredDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridView7 = New System.Windows.Forms.DataGridView()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.AnimalIDDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalNameDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LivestockIDDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalRegisteredDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridView6 = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -173,54 +137,76 @@ Partial Class ctrlWard03Page08
         Me.DataGridViewTextBoxColumn48 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn49 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalNameDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LivestockIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalRegisteredDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnnualRecordIDDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalIDDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalNameDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Livestock03iBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet4 = New LGMD.LGMDdataDataSet()
+        Me.Livestock03iBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet3 = New LGMD.LGMDdataDataSet()
+        Me.Livestock03iBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet5 = New LGMD.LGMDdataDataSet()
+        Me.Livestock03iBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet1 = New LGMD.LGMDdataDataSet()
+        Me.Livestock03iBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet2 = New LGMD.LGMDdataDataSet()
+        Me.GrazingLand03iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.GrazingLand03iTableAdapter()
+        Me.Livestock03iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.Livestock03iTableAdapter()
+        Me.Livestock03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
+        Me.appUspAnnualFillLivestockInfrastructureBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GrazingLand03iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn57 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn58 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LivestockIDDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnimalIDDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfIndigenousDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfImprovedMeatDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfImprovedDairyDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalRegisteredDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AnnualRecordIDDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnimalNameDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn55 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn56 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LivestockIDDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnimalIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfIndigenousDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfImprovedMeatDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfImprovedDairyDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalRegisteredDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AnnualRecordIDDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.Livestock03iBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LgmDdataDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LgmDdataDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Livestock03iBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Livestock03iBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Livestock03iBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridViewTextBoxColumn53 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn54 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LivestockIDDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnimalIDDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalRegisteredDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnnualRecordIDDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LivestockIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnimalIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalRegisteredDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnnualRecordIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn51 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn52 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LivestockIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnimalIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalRegisteredDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnnualRecordIDDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
-        CType(Me.LgmDdataDataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Livestock03iBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.appUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Livestock03iBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GrazingLand03iBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -230,55 +216,21 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
+        CType(Me.Livestock03iBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Livestock03iBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Livestock03iBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Livestock03iBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Livestock03iBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Livestock03iBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.appUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GrazingLand03iBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Livestock03iBindingSource4
-        '
-        Me.Livestock03iBindingSource4.DataMember = "Livestock03i"
-        Me.Livestock03iBindingSource4.DataSource = Me.LgmDdataDataSet4
-        '
-        'LgmDdataDataSet4
-        '
-        Me.LgmDdataDataSet4.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'LgmDdataDataSet3
-        '
-        Me.LgmDdataDataSet3.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Livestock03iBindingSource3
-        '
-        Me.Livestock03iBindingSource3.DataMember = "Livestock03i"
-        Me.Livestock03iBindingSource3.DataSource = Me.LgmDdataDataSet3
-        '
-        'LgmDdataDataSet2
-        '
-        Me.LgmDdataDataSet2.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Livestock03iBindingSource2
-        '
-        Me.Livestock03iBindingSource2.DataMember = "Livestock03i"
-        Me.Livestock03iBindingSource2.DataSource = Me.LgmDdataDataSet2
-        '
-        'GrazingLand03iTableAdapter
-        '
-        Me.GrazingLand03iTableAdapter.ClearBeforeFill = True
-        '
-        'Livestock03iTableAdapter
-        '
-        Me.Livestock03iTableAdapter.ClearBeforeFill = True
-        '
-        'Livestock03iBindingSource
-        '
-        Me.Livestock03iBindingSource.DataMember = "Livestock03i"
-        Me.Livestock03iBindingSource.DataSource = Me.LGMDdataDataSet
-        '
-        'LGMDdataDataSet
-        '
-        Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
-        Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label8
         '
@@ -308,7 +260,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(20, 21)
+        Me.Label11.Location = New System.Drawing.Point(18, 21)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(37, 13)
         Me.Label11.TabIndex = 0
@@ -319,7 +271,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(83, 21)
+        Me.Label12.Location = New System.Drawing.Point(81, 21)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(111, 13)
         Me.Label12.TabIndex = 1
@@ -331,7 +283,7 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel3.ColumnCount = 2
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label11, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label12, 1, 0)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(666, -508)
@@ -345,7 +297,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(17, 8)
+        Me.Label9.Location = New System.Drawing.Point(16, 8)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(40, 13)
         Me.Label9.TabIndex = 0
@@ -356,7 +308,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(114, 8)
+        Me.Label10.Location = New System.Drawing.Point(112, 8)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(43, 13)
         Me.Label10.TabIndex = 1
@@ -368,7 +320,7 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel2.ColumnCount = 2
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label9, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(468, -482)
@@ -382,40 +334,30 @@ Partial Class ctrlWard03Page08
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(116, 21)
+        Me.Label7.Location = New System.Drawing.Point(115, 21)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(84, 13)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Aina ya mnyama"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'LgmDdataDataSet5
-        '
-        Me.LgmDdataDataSet5.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'Label13
         '
         Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(346, 21)
+        Me.Label13.Location = New System.Drawing.Point(344, 21)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(67, 13)
         Me.Label13.TabIndex = 1
         Me.Label13.Text = "Idadi wa asili"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Livestock03iBindingSource5
-        '
-        Me.Livestock03iBindingSource5.DataMember = "Livestock03i"
-        Me.Livestock03iBindingSource5.DataSource = Me.LgmDdataDataSet5
-        '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label7, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(24, -508)
@@ -425,36 +367,23 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(443, 55)
         Me.TableLayoutPanel1.TabIndex = 102
         '
-        'appUspAnnualFillLivestockInfrastructureBindingSource
-        '
-        Me.appUspAnnualFillLivestockInfrastructureBindingSource.DataMember = "appUspAnnualFillLivestockInfrastructure"
-        Me.appUspAnnualFillLivestockInfrastructureBindingSource.DataSource = Me.LGMDdataDataSet
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 970)
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label2.Location = New System.Drawing.Point(32, 970)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(896, 91)
+        Me.Label2.Size = New System.Drawing.Size(898, 93)
         Me.Label2.TabIndex = 97
         Me.Label2.Text = resources.GetString("Label2.Text")
-        '
-        'LgmDdataDataSet1
-        '
-        Me.LgmDdataDataSet1.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Livestock03iBindingSource1
-        '
-        Me.Livestock03iBindingSource1.DataMember = "Livestock03i"
-        Me.Livestock03iBindingSource1.DataSource = Me.LgmDdataDataSet1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(28, 119)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 13)
+        Me.Label1.Size = New System.Drawing.Size(112, 13)
         Me.Label1.TabIndex = 96
         Me.Label1.Text = "7. Idadi ya mifugo "
         '
@@ -505,18 +434,13 @@ Partial Class ctrlWard03Page08
         Me.lblArea.Text = " Area heading"
         Me.lblArea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'GrazingLand03iBindingSource
-        '
-        Me.GrazingLand03iBindingSource.DataMember = "GrazingLand03i"
-        Me.GrazingLand03iBindingSource.DataSource = Me.LGMDdataDataSet
-        '
         'DataGridView4
         '
         Me.DataGridView4.AllowUserToAddRows = False
         Me.DataGridView4.AllowUserToDeleteRows = False
         Me.DataGridView4.AutoGenerateColumns = False
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AnimalIDDataGridViewTextBoxColumn1, Me.GroupIDDataGridViewTextBoxColumn1, Me.AnimalNameDataGridViewTextBoxColumn1, Me.LivestockIDDataGridViewTextBoxColumn2, Me.NumberOfIndigenousDataGridViewTextBoxColumn1, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1, Me.Column2, Me.TotalRegisteredDataGridViewTextBoxColumn1, Me.AnnualRecordIDDataGridViewTextBoxColumn3})
+        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn51, Me.DataGridViewTextBoxColumn52, Me.LivestockIDDataGridViewTextBoxColumn2, Me.AnimalIDDataGridViewTextBoxColumn1, Me.NumberOfIndigenousDataGridViewTextBoxColumn1, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1, Me.Column2, Me.TotalRegisteredDataGridViewTextBoxColumn1, Me.AnnualRecordIDDataGridViewTextBoxColumn3})
         Me.DataGridView4.DataSource = Me.Livestock03iBindingSource2
         Me.DataGridView4.Location = New System.Drawing.Point(32, 420)
         Me.DataGridView4.Name = "DataGridView4"
@@ -529,94 +453,12 @@ Partial Class ctrlWard03Page08
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AnimalIDDataGridViewTextBoxColumn, Me.GroupIDDataGridViewTextBoxColumn, Me.AnimalNameDataGridViewTextBoxColumn, Me.LivestockIDDataGridViewTextBoxColumn1, Me.NumberOfIndigenousDataGridViewTextBoxColumn, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn, Me.Total, Me.TotalRegisteredDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn2})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.ListItemSw, Me.LivestockIDDataGridViewTextBoxColumn1, Me.AnimalIDDataGridViewTextBoxColumn, Me.NumberOfIndigenousDataGridViewTextBoxColumn, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn, Me.Total, Me.TotalRegisteredDataGridViewTextBoxColumn, Me.AnnualRecordIDDataGridViewTextBoxColumn2})
         Me.DataGridView1.DataSource = Me.Livestock03iBindingSource1
         Me.DataGridView1.Location = New System.Drawing.Point(32, 220)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(843, 199)
         Me.DataGridView1.TabIndex = 84
-        '
-        'AnimalIDDataGridViewTextBoxColumn
-        '
-        Me.AnimalIDDataGridViewTextBoxColumn.DataPropertyName = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn.HeaderText = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn.Name = "AnimalIDDataGridViewTextBoxColumn"
-        Me.AnimalIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'GroupIDDataGridViewTextBoxColumn
-        '
-        Me.GroupIDDataGridViewTextBoxColumn.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn.Name = "GroupIDDataGridViewTextBoxColumn"
-        Me.GroupIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'AnimalNameDataGridViewTextBoxColumn
-        '
-        Me.AnimalNameDataGridViewTextBoxColumn.DataPropertyName = "AnimalName"
-        Me.AnimalNameDataGridViewTextBoxColumn.HeaderText = "1. Ng’ombe "
-        Me.AnimalNameDataGridViewTextBoxColumn.Name = "AnimalNameDataGridViewTextBoxColumn"
-        Me.AnimalNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnimalNameDataGridViewTextBoxColumn.Width = 300
-        '
-        'LivestockIDDataGridViewTextBoxColumn1
-        '
-        Me.LivestockIDDataGridViewTextBoxColumn1.DataPropertyName = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn1.HeaderText = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn1.Name = "LivestockIDDataGridViewTextBoxColumn1"
-        Me.LivestockIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'NumberOfIndigenousDataGridViewTextBoxColumn
-        '
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn.DataPropertyName = "NumberOfIndigenous"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn.HeaderText = ""
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn.Name = "NumberOfIndigenousDataGridViewTextBoxColumn"
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'NumberOfImprovedMeatDataGridViewTextBoxColumn
-        '
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.DataPropertyName = "NumberOfImprovedMeat"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.HeaderText = ""
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.Name = "NumberOfImprovedMeatDataGridViewTextBoxColumn"
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'NumberOfImprovedDairyDataGridViewTextBoxColumn
-        '
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.DataPropertyName = "NumberOfImprovedDairy"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.HeaderText = ""
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.Name = "NumberOfImprovedDairyDataGridViewTextBoxColumn"
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Total
-        '
-        Me.Total.DataPropertyName = "Total"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.Total.DefaultCellStyle = DataGridViewCellStyle9
-        Me.Total.HeaderText = ""
-        Me.Total.Name = "Total"
-        Me.Total.ReadOnly = True
-        Me.Total.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'TotalRegisteredDataGridViewTextBoxColumn
-        '
-        Me.TotalRegisteredDataGridViewTextBoxColumn.DataPropertyName = "TotalRegistered"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TotalRegisteredDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle10
-        Me.TotalRegisteredDataGridViewTextBoxColumn.HeaderText = ""
-        Me.TotalRegisteredDataGridViewTextBoxColumn.Name = "TotalRegisteredDataGridViewTextBoxColumn"
-        Me.TotalRegisteredDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'AnnualRecordIDDataGridViewTextBoxColumn2
-        '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.Name = "AnnualRecordIDDataGridViewTextBoxColumn2"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn2.Visible = False
         '
         'DataGridView7
         '
@@ -624,7 +466,7 @@ Partial Class ctrlWard03Page08
         Me.DataGridView7.AllowUserToDeleteRows = False
         Me.DataGridView7.AutoGenerateColumns = False
         Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AnimalIDDataGridViewTextBoxColumn3, Me.GroupIDDataGridViewTextBoxColumn3, Me.AnimalNameDataGridViewTextBoxColumn3, Me.LivestockIDDataGridViewTextBoxColumn4, Me.NumberOfIndigenousDataGridViewTextBoxColumn3, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn3, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn3, Me.Column5, Me.TotalRegisteredDataGridViewTextBoxColumn3, Me.AnnualRecordIDDataGridViewTextBoxColumn5})
+        Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn57, Me.DataGridViewTextBoxColumn58, Me.LivestockIDDataGridViewTextBoxColumn4, Me.AnimalIDDataGridViewTextBoxColumn3, Me.NumberOfIndigenousDataGridViewTextBoxColumn3, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn3, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn3, Me.Column5, Me.TotalRegisteredDataGridViewTextBoxColumn3, Me.AnnualRecordIDDataGridViewTextBoxColumn5})
         Me.DataGridView7.DataSource = Me.Livestock03iBindingSource5
         Me.DataGridView7.Location = New System.Drawing.Point(32, 822)
         Me.DataGridView7.Name = "DataGridView7"
@@ -637,94 +479,12 @@ Partial Class ctrlWard03Page08
         Me.DataGridView5.AllowUserToDeleteRows = False
         Me.DataGridView5.AutoGenerateColumns = False
         Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AnimalIDDataGridViewTextBoxColumn4, Me.GroupIDDataGridViewTextBoxColumn4, Me.AnimalNameDataGridViewTextBoxColumn4, Me.LivestockIDDataGridViewTextBoxColumn5, Me.NumberOfIndigenousDataGridViewTextBoxColumn4, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4, Me.Column3, Me.TotalRegisteredDataGridViewTextBoxColumn4, Me.AnnualRecordIDDataGridViewTextBoxColumn6})
+        Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn53, Me.DataGridViewTextBoxColumn54, Me.LivestockIDDataGridViewTextBoxColumn5, Me.AnimalIDDataGridViewTextBoxColumn4, Me.NumberOfIndigenousDataGridViewTextBoxColumn4, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4, Me.Column3, Me.TotalRegisteredDataGridViewTextBoxColumn4, Me.AnnualRecordIDDataGridViewTextBoxColumn6})
         Me.DataGridView5.DataSource = Me.Livestock03iBindingSource3
         Me.DataGridView5.Location = New System.Drawing.Point(32, 510)
         Me.DataGridView5.Name = "DataGridView5"
         Me.DataGridView5.Size = New System.Drawing.Size(843, 89)
         Me.DataGridView5.TabIndex = 86
-        '
-        'AnimalIDDataGridViewTextBoxColumn4
-        '
-        Me.AnimalIDDataGridViewTextBoxColumn4.DataPropertyName = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn4.HeaderText = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn4.Name = "AnimalIDDataGridViewTextBoxColumn4"
-        Me.AnimalIDDataGridViewTextBoxColumn4.Visible = False
-        '
-        'GroupIDDataGridViewTextBoxColumn4
-        '
-        Me.GroupIDDataGridViewTextBoxColumn4.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn4.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn4.Name = "GroupIDDataGridViewTextBoxColumn4"
-        Me.GroupIDDataGridViewTextBoxColumn4.Visible = False
-        '
-        'AnimalNameDataGridViewTextBoxColumn4
-        '
-        Me.AnimalNameDataGridViewTextBoxColumn4.DataPropertyName = "AnimalName"
-        Me.AnimalNameDataGridViewTextBoxColumn4.HeaderText = "3. Mbuzi"
-        Me.AnimalNameDataGridViewTextBoxColumn4.Name = "AnimalNameDataGridViewTextBoxColumn4"
-        Me.AnimalNameDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnimalNameDataGridViewTextBoxColumn4.Width = 300
-        '
-        'LivestockIDDataGridViewTextBoxColumn5
-        '
-        Me.LivestockIDDataGridViewTextBoxColumn5.DataPropertyName = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn5.HeaderText = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn5.Name = "LivestockIDDataGridViewTextBoxColumn5"
-        Me.LivestockIDDataGridViewTextBoxColumn5.Visible = False
-        '
-        'NumberOfIndigenousDataGridViewTextBoxColumn4
-        '
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.DataPropertyName = "NumberOfIndigenous"
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle16
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.HeaderText = ""
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.Name = "NumberOfIndigenousDataGridViewTextBoxColumn4"
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'NumberOfImprovedMeatDataGridViewTextBoxColumn4
-        '
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.DataPropertyName = "NumberOfImprovedMeat"
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle17
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.HeaderText = ""
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.Name = "NumberOfImprovedMeatDataGridViewTextBoxColumn4"
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'NumberOfImprovedDairyDataGridViewTextBoxColumn4
-        '
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.DataPropertyName = "NumberOfImprovedDairy"
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle18
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.HeaderText = ""
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.Name = "NumberOfImprovedDairyDataGridViewTextBoxColumn4"
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "Total"
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle19
-        Me.Column3.HeaderText = ""
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'TotalRegisteredDataGridViewTextBoxColumn4
-        '
-        Me.TotalRegisteredDataGridViewTextBoxColumn4.DataPropertyName = "TotalRegistered"
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TotalRegisteredDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle20
-        Me.TotalRegisteredDataGridViewTextBoxColumn4.HeaderText = ""
-        Me.TotalRegisteredDataGridViewTextBoxColumn4.Name = "TotalRegisteredDataGridViewTextBoxColumn4"
-        Me.TotalRegisteredDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'AnnualRecordIDDataGridViewTextBoxColumn6
-        '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn6.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn6.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn6.Name = "AnnualRecordIDDataGridViewTextBoxColumn6"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn6.Visible = False
         '
         'DataGridView6
         '
@@ -732,7 +492,7 @@ Partial Class ctrlWard03Page08
         Me.DataGridView6.AllowUserToDeleteRows = False
         Me.DataGridView6.AutoGenerateColumns = False
         Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AnimalIDDataGridViewTextBoxColumn2, Me.GroupIDDataGridViewTextBoxColumn2, Me.AnimalNameDataGridViewTextBoxColumn2, Me.LivestockIDDataGridViewTextBoxColumn3, Me.NumberOfIndigenousDataGridViewTextBoxColumn2, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn2, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn2, Me.Column4, Me.TotalRegisteredDataGridViewTextBoxColumn2, Me.AnnualRecordIDDataGridViewTextBoxColumn4})
+        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn55, Me.DataGridViewTextBoxColumn56, Me.LivestockIDDataGridViewTextBoxColumn3, Me.AnimalIDDataGridViewTextBoxColumn2, Me.NumberOfIndigenousDataGridViewTextBoxColumn2, Me.NumberOfImprovedMeatDataGridViewTextBoxColumn2, Me.NumberOfImprovedDairyDataGridViewTextBoxColumn2, Me.Column4, Me.TotalRegisteredDataGridViewTextBoxColumn2, Me.AnnualRecordIDDataGridViewTextBoxColumn4})
         Me.DataGridView6.DataSource = Me.Livestock03iBindingSource4
         Me.DataGridView6.Location = New System.Drawing.Point(32, 600)
         Me.DataGridView6.Name = "DataGridView6"
@@ -748,7 +508,7 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel5.ColumnCount = 2
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 340.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label3, 0, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Label4, 1, 0)
         Me.TableLayoutPanel5.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
@@ -774,7 +534,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(364, 33)
+        Me.Label4.Location = New System.Drawing.Point(365, 33)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(67, 13)
         Me.Label4.TabIndex = 1
@@ -788,7 +548,7 @@ Partial Class ctrlWard03Page08
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel6.ColumnCount = 1
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 211.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel6.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(474, 140)
@@ -802,7 +562,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(63, 6)
+        Me.Label5.Location = New System.Drawing.Point(65, 6)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(83, 13)
         Me.Label5.TabIndex = 0
@@ -818,7 +578,7 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel7.ColumnCount = 2
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label6, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.Label14, 1, 0)
         Me.TableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
@@ -844,7 +604,7 @@ Partial Class ctrlWard03Page08
         '
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(133, 20)
+        Me.Label14.Location = New System.Drawing.Point(134, 20)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(43, 13)
         Me.Label14.TabIndex = 1
@@ -860,7 +620,7 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel8.ColumnCount = 2
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.Label15, 0, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.Label16, 1, 0)
         Me.TableLayoutPanel8.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
@@ -886,9 +646,9 @@ Partial Class ctrlWard03Page08
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(126, 26)
+        Me.Label16.Location = New System.Drawing.Point(106, 33)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(64, 26)
+        Me.Label16.Size = New System.Drawing.Size(108, 13)
         Me.Label16.TabIndex = 1
         Me.Label16.Text = "Jumla ya waliosajiliwa"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1264,111 +1024,97 @@ Partial Class ctrlWard03Page08
         Me.DataGridViewTextBoxColumn50.Name = "DataGridViewTextBoxColumn50"
         Me.DataGridViewTextBoxColumn50.Visible = False
         '
-        'AnimalIDDataGridViewTextBoxColumn1
+        'Livestock03iBindingSource4
         '
-        Me.AnimalIDDataGridViewTextBoxColumn1.DataPropertyName = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn1.HeaderText = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn1.Name = "AnimalIDDataGridViewTextBoxColumn1"
-        Me.AnimalIDDataGridViewTextBoxColumn1.Visible = False
+        Me.Livestock03iBindingSource4.DataMember = "Livestock03i"
+        Me.Livestock03iBindingSource4.DataSource = Me.LgmDdataDataSet4
         '
-        'GroupIDDataGridViewTextBoxColumn1
+        'LgmDdataDataSet4
         '
-        Me.GroupIDDataGridViewTextBoxColumn1.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn1.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn1.Name = "GroupIDDataGridViewTextBoxColumn1"
-        Me.GroupIDDataGridViewTextBoxColumn1.Visible = False
+        Me.LgmDdataDataSet4.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'AnimalNameDataGridViewTextBoxColumn1
+        'Livestock03iBindingSource3
         '
-        Me.AnimalNameDataGridViewTextBoxColumn1.DataPropertyName = "AnimalName"
-        Me.AnimalNameDataGridViewTextBoxColumn1.HeaderText = "2. Kondoo"
-        Me.AnimalNameDataGridViewTextBoxColumn1.Name = "AnimalNameDataGridViewTextBoxColumn1"
-        Me.AnimalNameDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnimalNameDataGridViewTextBoxColumn1.Width = 300
+        Me.Livestock03iBindingSource3.DataMember = "Livestock03i"
+        Me.Livestock03iBindingSource3.DataSource = Me.LgmDdataDataSet3
         '
-        'LivestockIDDataGridViewTextBoxColumn2
+        'LgmDdataDataSet3
         '
-        Me.LivestockIDDataGridViewTextBoxColumn2.DataPropertyName = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn2.HeaderText = "LivestockID"
-        Me.LivestockIDDataGridViewTextBoxColumn2.Name = "LivestockIDDataGridViewTextBoxColumn2"
-        Me.LivestockIDDataGridViewTextBoxColumn2.Visible = False
+        Me.LgmDdataDataSet3.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'NumberOfIndigenousDataGridViewTextBoxColumn1
+        'Livestock03iBindingSource5
         '
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.DataPropertyName = "NumberOfIndigenous"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle1
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.HeaderText = ""
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.Name = "NumberOfIndigenousDataGridViewTextBoxColumn1"
-        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Livestock03iBindingSource5.DataMember = "Livestock03i"
+        Me.Livestock03iBindingSource5.DataSource = Me.LgmDdataDataSet5
         '
-        'NumberOfImprovedMeatDataGridViewTextBoxColumn1
+        'LgmDdataDataSet5
         '
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.DataPropertyName = "NumberOfImprovedMeat"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.HeaderText = ""
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.Name = "NumberOfImprovedMeatDataGridViewTextBoxColumn1"
-        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.LgmDdataDataSet5.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'NumberOfImprovedDairyDataGridViewTextBoxColumn1
+        'Livestock03iBindingSource1
         '
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.DataPropertyName = "NumberOfImprovedDairy"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle3
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.HeaderText = ""
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.Name = "NumberOfImprovedDairyDataGridViewTextBoxColumn1"
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.ReadOnly = True
-        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Livestock03iBindingSource1.DataMember = "Livestock03i"
+        Me.Livestock03iBindingSource1.DataSource = Me.LgmDdataDataSet1
         '
-        'Column2
+        'LgmDdataDataSet1
         '
-        Me.Column2.DataPropertyName = "Total"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Column2.HeaderText = ""
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.LgmDdataDataSet1.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TotalRegisteredDataGridViewTextBoxColumn1
+        'Livestock03iBindingSource2
         '
-        Me.TotalRegisteredDataGridViewTextBoxColumn1.DataPropertyName = "TotalRegistered"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TotalRegisteredDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle5
-        Me.TotalRegisteredDataGridViewTextBoxColumn1.HeaderText = ""
-        Me.TotalRegisteredDataGridViewTextBoxColumn1.Name = "TotalRegisteredDataGridViewTextBoxColumn1"
-        Me.TotalRegisteredDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Livestock03iBindingSource2.DataMember = "Livestock03i"
+        Me.Livestock03iBindingSource2.DataSource = Me.LgmDdataDataSet2
         '
-        'AnnualRecordIDDataGridViewTextBoxColumn3
+        'LgmDdataDataSet2
         '
-        Me.AnnualRecordIDDataGridViewTextBoxColumn3.DataPropertyName = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn3.HeaderText = "AnnualRecordID"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn3.Name = "AnnualRecordIDDataGridViewTextBoxColumn3"
-        Me.AnnualRecordIDDataGridViewTextBoxColumn3.Visible = False
+        Me.LgmDdataDataSet2.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'AnimalIDDataGridViewTextBoxColumn3
+        'GrazingLand03iTableAdapter
         '
-        Me.AnimalIDDataGridViewTextBoxColumn3.DataPropertyName = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn3.HeaderText = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn3.Name = "AnimalIDDataGridViewTextBoxColumn3"
-        Me.AnimalIDDataGridViewTextBoxColumn3.Visible = False
+        Me.GrazingLand03iTableAdapter.ClearBeforeFill = True
         '
-        'GroupIDDataGridViewTextBoxColumn3
+        'Livestock03iTableAdapter
         '
-        Me.GroupIDDataGridViewTextBoxColumn3.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn3.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn3.Name = "GroupIDDataGridViewTextBoxColumn3"
-        Me.GroupIDDataGridViewTextBoxColumn3.Visible = False
+        Me.Livestock03iTableAdapter.ClearBeforeFill = True
         '
-        'AnimalNameDataGridViewTextBoxColumn3
+        'Livestock03iBindingSource
         '
-        Me.AnimalNameDataGridViewTextBoxColumn3.DataPropertyName = "AnimalName"
-        Me.AnimalNameDataGridViewTextBoxColumn3.HeaderText = "5. Ndege"
-        Me.AnimalNameDataGridViewTextBoxColumn3.Name = "AnimalNameDataGridViewTextBoxColumn3"
-        Me.AnimalNameDataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnimalNameDataGridViewTextBoxColumn3.Width = 300
+        Me.Livestock03iBindingSource.DataMember = "Livestock03i"
+        Me.Livestock03iBindingSource.DataSource = Me.LGMDdataDataSet
+        '
+        'LGMDdataDataSet
+        '
+        Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
+        Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'appUspAnnualFillLivestockInfrastructureBindingSource
+        '
+        Me.appUspAnnualFillLivestockInfrastructureBindingSource.DataMember = "appUspAnnualFillLivestockInfrastructure"
+        Me.appUspAnnualFillLivestockInfrastructureBindingSource.DataSource = Me.LGMDdataDataSet
+        '
+        'GrazingLand03iBindingSource
+        '
+        Me.GrazingLand03iBindingSource.DataMember = "GrazingLand03i"
+        Me.GrazingLand03iBindingSource.DataSource = Me.LGMDdataDataSet
+        '
+        'DataGridViewTextBoxColumn57
+        '
+        Me.DataGridViewTextBoxColumn57.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn57.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn57.Name = "DataGridViewTextBoxColumn57"
+        Me.DataGridViewTextBoxColumn57.Visible = False
+        '
+        'DataGridViewTextBoxColumn58
+        '
+        Me.DataGridViewTextBoxColumn58.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn58.HeaderText = "Ndege"
+        Me.DataGridViewTextBoxColumn58.Name = "DataGridViewTextBoxColumn58"
+        Me.DataGridViewTextBoxColumn58.Width = 300
         '
         'LivestockIDDataGridViewTextBoxColumn4
         '
@@ -1376,6 +1122,13 @@ Partial Class ctrlWard03Page08
         Me.LivestockIDDataGridViewTextBoxColumn4.HeaderText = "LivestockID"
         Me.LivestockIDDataGridViewTextBoxColumn4.Name = "LivestockIDDataGridViewTextBoxColumn4"
         Me.LivestockIDDataGridViewTextBoxColumn4.Visible = False
+        '
+        'AnimalIDDataGridViewTextBoxColumn3
+        '
+        Me.AnimalIDDataGridViewTextBoxColumn3.DataPropertyName = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn3.HeaderText = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn3.Name = "AnimalIDDataGridViewTextBoxColumn3"
+        Me.AnimalIDDataGridViewTextBoxColumn3.Visible = False
         '
         'NumberOfIndigenousDataGridViewTextBoxColumn3
         '
@@ -1433,27 +1186,19 @@ Partial Class ctrlWard03Page08
         Me.AnnualRecordIDDataGridViewTextBoxColumn5.Name = "AnnualRecordIDDataGridViewTextBoxColumn5"
         Me.AnnualRecordIDDataGridViewTextBoxColumn5.Visible = False
         '
-        'AnimalIDDataGridViewTextBoxColumn2
+        'DataGridViewTextBoxColumn55
         '
-        Me.AnimalIDDataGridViewTextBoxColumn2.DataPropertyName = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn2.HeaderText = "AnimalID"
-        Me.AnimalIDDataGridViewTextBoxColumn2.Name = "AnimalIDDataGridViewTextBoxColumn2"
-        Me.AnimalIDDataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn55.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn55.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn55.Name = "DataGridViewTextBoxColumn55"
+        Me.DataGridViewTextBoxColumn55.Visible = False
         '
-        'GroupIDDataGridViewTextBoxColumn2
+        'DataGridViewTextBoxColumn56
         '
-        Me.GroupIDDataGridViewTextBoxColumn2.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn2.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn2.Name = "GroupIDDataGridViewTextBoxColumn2"
-        Me.GroupIDDataGridViewTextBoxColumn2.Visible = False
-        '
-        'AnimalNameDataGridViewTextBoxColumn2
-        '
-        Me.AnimalNameDataGridViewTextBoxColumn2.DataPropertyName = "AnimalName"
-        Me.AnimalNameDataGridViewTextBoxColumn2.HeaderText = "4. Mifugo Mingine"
-        Me.AnimalNameDataGridViewTextBoxColumn2.Name = "AnimalNameDataGridViewTextBoxColumn2"
-        Me.AnimalNameDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.AnimalNameDataGridViewTextBoxColumn2.Width = 300
+        Me.DataGridViewTextBoxColumn56.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn56.HeaderText = "Mifugo Mingine"
+        Me.DataGridViewTextBoxColumn56.Name = "DataGridViewTextBoxColumn56"
+        Me.DataGridViewTextBoxColumn56.Width = 300
         '
         'LivestockIDDataGridViewTextBoxColumn3
         '
@@ -1461,6 +1206,13 @@ Partial Class ctrlWard03Page08
         Me.LivestockIDDataGridViewTextBoxColumn3.HeaderText = "LivestockID"
         Me.LivestockIDDataGridViewTextBoxColumn3.Name = "LivestockIDDataGridViewTextBoxColumn3"
         Me.LivestockIDDataGridViewTextBoxColumn3.Visible = False
+        '
+        'AnimalIDDataGridViewTextBoxColumn2
+        '
+        Me.AnimalIDDataGridViewTextBoxColumn2.DataPropertyName = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn2.HeaderText = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn2.Name = "AnimalIDDataGridViewTextBoxColumn2"
+        Me.AnimalIDDataGridViewTextBoxColumn2.Visible = False
         '
         'NumberOfIndigenousDataGridViewTextBoxColumn2
         '
@@ -1517,6 +1269,251 @@ Partial Class ctrlWard03Page08
         Me.AnnualRecordIDDataGridViewTextBoxColumn4.Name = "AnnualRecordIDDataGridViewTextBoxColumn4"
         Me.AnnualRecordIDDataGridViewTextBoxColumn4.Visible = False
         '
+        'DataGridViewTextBoxColumn53
+        '
+        Me.DataGridViewTextBoxColumn53.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn53.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn53.Name = "DataGridViewTextBoxColumn53"
+        Me.DataGridViewTextBoxColumn53.Visible = False
+        '
+        'DataGridViewTextBoxColumn54
+        '
+        Me.DataGridViewTextBoxColumn54.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn54.HeaderText = "Mbuzi"
+        Me.DataGridViewTextBoxColumn54.Name = "DataGridViewTextBoxColumn54"
+        Me.DataGridViewTextBoxColumn54.Width = 300
+        '
+        'LivestockIDDataGridViewTextBoxColumn5
+        '
+        Me.LivestockIDDataGridViewTextBoxColumn5.DataPropertyName = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn5.HeaderText = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn5.Name = "LivestockIDDataGridViewTextBoxColumn5"
+        Me.LivestockIDDataGridViewTextBoxColumn5.Visible = False
+        '
+        'AnimalIDDataGridViewTextBoxColumn4
+        '
+        Me.AnimalIDDataGridViewTextBoxColumn4.DataPropertyName = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn4.HeaderText = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn4.Name = "AnimalIDDataGridViewTextBoxColumn4"
+        Me.AnimalIDDataGridViewTextBoxColumn4.Visible = False
+        '
+        'NumberOfIndigenousDataGridViewTextBoxColumn4
+        '
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.DataPropertyName = "NumberOfIndigenous"
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle16
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.HeaderText = ""
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.Name = "NumberOfIndigenousDataGridViewTextBoxColumn4"
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'NumberOfImprovedMeatDataGridViewTextBoxColumn4
+        '
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.DataPropertyName = "NumberOfImprovedMeat"
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle17
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.HeaderText = ""
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.Name = "NumberOfImprovedMeatDataGridViewTextBoxColumn4"
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'NumberOfImprovedDairyDataGridViewTextBoxColumn4
+        '
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.DataPropertyName = "NumberOfImprovedDairy"
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle18
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.HeaderText = ""
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.Name = "NumberOfImprovedDairyDataGridViewTextBoxColumn4"
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "Total"
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle19
+        Me.Column3.HeaderText = ""
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'TotalRegisteredDataGridViewTextBoxColumn4
+        '
+        Me.TotalRegisteredDataGridViewTextBoxColumn4.DataPropertyName = "TotalRegistered"
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TotalRegisteredDataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle20
+        Me.TotalRegisteredDataGridViewTextBoxColumn4.HeaderText = ""
+        Me.TotalRegisteredDataGridViewTextBoxColumn4.Name = "TotalRegisteredDataGridViewTextBoxColumn4"
+        Me.TotalRegisteredDataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'AnnualRecordIDDataGridViewTextBoxColumn6
+        '
+        Me.AnnualRecordIDDataGridViewTextBoxColumn6.DataPropertyName = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn6.HeaderText = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn6.Name = "AnnualRecordIDDataGridViewTextBoxColumn6"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn6.Visible = False
+        '
+        'ListID
+        '
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
+        '
+        'ListItemSw
+        '
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "Ng'ombe"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 300
+        '
+        'LivestockIDDataGridViewTextBoxColumn1
+        '
+        Me.LivestockIDDataGridViewTextBoxColumn1.DataPropertyName = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn1.HeaderText = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn1.Name = "LivestockIDDataGridViewTextBoxColumn1"
+        Me.LivestockIDDataGridViewTextBoxColumn1.Visible = False
+        '
+        'AnimalIDDataGridViewTextBoxColumn
+        '
+        Me.AnimalIDDataGridViewTextBoxColumn.DataPropertyName = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn.HeaderText = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn.Name = "AnimalIDDataGridViewTextBoxColumn"
+        Me.AnimalIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'NumberOfIndigenousDataGridViewTextBoxColumn
+        '
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn.DataPropertyName = "NumberOfIndigenous"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle6
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn.HeaderText = ""
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn.Name = "NumberOfIndigenousDataGridViewTextBoxColumn"
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'NumberOfImprovedMeatDataGridViewTextBoxColumn
+        '
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.DataPropertyName = "NumberOfImprovedMeat"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.HeaderText = ""
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.Name = "NumberOfImprovedMeatDataGridViewTextBoxColumn"
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'NumberOfImprovedDairyDataGridViewTextBoxColumn
+        '
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.DataPropertyName = "NumberOfImprovedDairy"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle8
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.HeaderText = ""
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.Name = "NumberOfImprovedDairyDataGridViewTextBoxColumn"
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Total
+        '
+        Me.Total.DataPropertyName = "Total"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.Total.DefaultCellStyle = DataGridViewCellStyle9
+        Me.Total.HeaderText = ""
+        Me.Total.Name = "Total"
+        Me.Total.ReadOnly = True
+        Me.Total.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'TotalRegisteredDataGridViewTextBoxColumn
+        '
+        Me.TotalRegisteredDataGridViewTextBoxColumn.DataPropertyName = "TotalRegistered"
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TotalRegisteredDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle10
+        Me.TotalRegisteredDataGridViewTextBoxColumn.HeaderText = ""
+        Me.TotalRegisteredDataGridViewTextBoxColumn.Name = "TotalRegisteredDataGridViewTextBoxColumn"
+        Me.TotalRegisteredDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'AnnualRecordIDDataGridViewTextBoxColumn2
+        '
+        Me.AnnualRecordIDDataGridViewTextBoxColumn2.DataPropertyName = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn2.HeaderText = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn2.Name = "AnnualRecordIDDataGridViewTextBoxColumn2"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn2.Visible = False
+        '
+        'DataGridViewTextBoxColumn51
+        '
+        Me.DataGridViewTextBoxColumn51.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn51.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn51.Name = "DataGridViewTextBoxColumn51"
+        Me.DataGridViewTextBoxColumn51.Visible = False
+        '
+        'DataGridViewTextBoxColumn52
+        '
+        Me.DataGridViewTextBoxColumn52.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn52.HeaderText = "Kondoo"
+        Me.DataGridViewTextBoxColumn52.Name = "DataGridViewTextBoxColumn52"
+        Me.DataGridViewTextBoxColumn52.Width = 300
+        '
+        'LivestockIDDataGridViewTextBoxColumn2
+        '
+        Me.LivestockIDDataGridViewTextBoxColumn2.DataPropertyName = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn2.HeaderText = "LivestockID"
+        Me.LivestockIDDataGridViewTextBoxColumn2.Name = "LivestockIDDataGridViewTextBoxColumn2"
+        Me.LivestockIDDataGridViewTextBoxColumn2.Visible = False
+        '
+        'AnimalIDDataGridViewTextBoxColumn1
+        '
+        Me.AnimalIDDataGridViewTextBoxColumn1.DataPropertyName = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn1.HeaderText = "AnimalID"
+        Me.AnimalIDDataGridViewTextBoxColumn1.Name = "AnimalIDDataGridViewTextBoxColumn1"
+        Me.AnimalIDDataGridViewTextBoxColumn1.Visible = False
+        '
+        'NumberOfIndigenousDataGridViewTextBoxColumn1
+        '
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.DataPropertyName = "NumberOfIndigenous"
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle1
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.HeaderText = ""
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.Name = "NumberOfIndigenousDataGridViewTextBoxColumn1"
+        Me.NumberOfIndigenousDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'NumberOfImprovedMeatDataGridViewTextBoxColumn1
+        '
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.DataPropertyName = "NumberOfImprovedMeat"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle2
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.HeaderText = ""
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.Name = "NumberOfImprovedMeatDataGridViewTextBoxColumn1"
+        Me.NumberOfImprovedMeatDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'NumberOfImprovedDairyDataGridViewTextBoxColumn1
+        '
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.DataPropertyName = "NumberOfImprovedDairy"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.HeaderText = ""
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.Name = "NumberOfImprovedDairyDataGridViewTextBoxColumn1"
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.ReadOnly = True
+        Me.NumberOfImprovedDairyDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Total"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Column2.HeaderText = ""
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'TotalRegisteredDataGridViewTextBoxColumn1
+        '
+        Me.TotalRegisteredDataGridViewTextBoxColumn1.DataPropertyName = "TotalRegistered"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TotalRegisteredDataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle5
+        Me.TotalRegisteredDataGridViewTextBoxColumn1.HeaderText = ""
+        Me.TotalRegisteredDataGridViewTextBoxColumn1.Name = "TotalRegisteredDataGridViewTextBoxColumn1"
+        Me.TotalRegisteredDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'AnnualRecordIDDataGridViewTextBoxColumn3
+        '
+        Me.AnnualRecordIDDataGridViewTextBoxColumn3.DataPropertyName = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn3.HeaderText = "AnnualRecordID"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn3.Name = "AnnualRecordIDDataGridViewTextBoxColumn3"
+        Me.AnnualRecordIDDataGridViewTextBoxColumn3.Visible = False
+        '
         'ctrlWard03Page08
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1543,28 +1540,14 @@ Partial Class ctrlWard03Page08
         Me.Controls.Add(Me.DataGridView4)
         Me.Name = "ctrlWard03Page08"
         Me.Size = New System.Drawing.Size(945, 1157)
-        CType(Me.Livestock03iBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LgmDdataDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LgmDdataDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Livestock03iBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Livestock03iBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Livestock03iBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        CType(Me.LgmDdataDataSet5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Livestock03iBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        CType(Me.appUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Livestock03iBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GrazingLand03iBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1578,6 +1561,20 @@ Partial Class ctrlWard03Page08
         Me.TableLayoutPanel7.PerformLayout()
         Me.TableLayoutPanel8.ResumeLayout(False)
         Me.TableLayoutPanel8.PerformLayout()
+        CType(Me.Livestock03iBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Livestock03iBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Livestock03iBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Livestock03iBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Livestock03iBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Livestock03iBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.appUspAnnualFillLivestockInfrastructureBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GrazingLand03iBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1682,50 +1679,60 @@ Partial Class ctrlWard03Page08
     Friend WithEvents DataGridViewTextBoxColumn48 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn49 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn50 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnimalNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents LivestockIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Total As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TotalRegisteredDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalIDDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupIDDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnimalNameDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents LivestockIDDataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TotalRegisteredDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnimalNameDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalNameDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalNameDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn51 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn52 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LivestockIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalRegisteredDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalNameDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LivestockIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Total As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TotalRegisteredDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn57 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn58 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LivestockIDDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalRegisteredDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnimalNameDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn53 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn54 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LivestockIDDataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalIDDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TotalRegisteredDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnnualRecordIDDataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn55 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn56 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LivestockIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AnimalIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfIndigenousDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfImprovedMeatDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfImprovedDairyDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn

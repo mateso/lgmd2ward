@@ -4,7 +4,7 @@
     <DataSource Name="LGMD2iDataSource">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2i_KorogweMjiniRevision</ConnectString>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=LGMD2iData</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:DataSourceID>acc32cb6-b5ef-4811-9686-86fa281a51f9</rd:DataSourceID>
@@ -410,16 +410,16 @@
     </DataSet>
     <DataSet Name="FoodCondition01">
       <Fields>
-        <Field Name="FoodStatusListID">
-          <DataField>FoodStatusListID</DataField>
+        <Field Name="LookupID">
+          <DataField>LookupID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="StatusDescription">
-          <DataField>StatusDescription</DataField>
+        <Field Name="LookupSw">
+          <DataField>LookupSw</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FoodStatustID">
-          <DataField>FoodStatustID</DataField>
+        <Field Name="FoodStatusID">
+          <DataField>FoodStatusID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -1070,14 +1070,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="FoodStatustID">
+                        <Textbox Name="FoodStatusID">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!FoodStatustID.Value)</Value>
+                                  <Value>=Sum(Fields!FoodStatusID.Value)</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <Format>n0</Format>
@@ -1089,7 +1089,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>FoodStatustID</rd:DefaultName>
+                          <rd:DefaultName>FoodStatusID</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1125,7 +1125,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>Lookup Sw</Value>
                                 <Style>
                                   <FontSize>9pt</FontSize>
                                 </Style>
@@ -1155,27 +1155,27 @@
                   </TablixMembers>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="StatusDescription">
+                  <Group Name="LookupSw">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!StatusDescription.Value</GroupExpression>
+                      <GroupExpression>=Fields!LookupSw.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!FoodStatusListID.Value</Value>
+                      <Value>=Fields!LookupID.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
                     <Size>1.33954in</Size>
                     <CellContents>
-                      <Textbox Name="StatusDescription">
+                      <Textbox Name="LookupSw">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!StatusDescription.Value</Value>
+                                <Value>=Fields!LookupSw.Value</Value>
                                 <Style>
                                   <FontSize>9pt</FontSize>
                                 </Style>
@@ -1186,7 +1186,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>StatusDescription</rd:DefaultName>
+                        <rd:DefaultName>LookupSw</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -7566,7 +7566,7 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>002%AFRTZA001004002%Jan11%Mar11%</Value>
+          <Value>002%AFRTZA001004002%Apr11%Jun11%</Value>
         </Values>
       </DefaultValue>
       <Prompt>Form Serial Number</Prompt>

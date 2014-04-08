@@ -45,6 +45,18 @@ End Class
 
 Namespace LGMDdataDataSetTableAdapters
     
+    Partial Class ContractFarming03iTableAdapter
+
+    End Class
+
+    Partial Class ProdLand02iTableAdapter
+
+    End Class
+
+    Partial Class appUspAnnualFillTelecomTableAdapter
+
+    End Class
+
     Partial Class Fertilizer03TableAdapter
 
     End Class

@@ -1,13 +1,12 @@
 ﻿Public Class ctrlDistrict02Page01
 
-    Dim LivestockListDA As New LGMDdataDataSetTableAdapters.LivestockListTableAdapter
-    Dim LivestockMovementDA As New LGMDdataDataSetTableAdapters.LivestockMovement04TableAdapter
-    Dim TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
-    Dim ProductsMovementDA As New LGMDdataDataSetTableAdapters.ProductsMovement04TableAdapter
-    Dim LivestockSlaughListDA As New DistrictQuarterDataSetTableAdapters.LivestockSlaughListTableAdapter
-    Dim LivestockSlaughteredDA As New LGMDdataDataSetTableAdapters.LivestockSlaughtered01TableAdapter
-    Dim CarcassDA As New DistrictQuarterDataSetTableAdapters.Carcass04TableAdapter
-    Dim LivestockMarketingDA As New LGMDdataDataSetTableAdapters.LivestockMarketing04TableAdapter
+    Private LivestockMovementDA As New LGMDdataDataSetTableAdapters.LivestockMovement04TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private ProductsMovementDA As New LGMDdataDataSetTableAdapters.ProductsMovement04TableAdapter
+    Private LivestockSlaughListDA As New DistrictQuarterDataSetTableAdapters.LivestockSlaughListTableAdapter
+    Private LivestockSlaughteredDA As New LGMDdataDataSetTableAdapters.LivestockSlaughtered01TableAdapter
+    Private CarcassDA As New DistrictQuarterDataSetTableAdapters.Carcass04TableAdapter
+    Private LivestockMarketingDA As New LGMDdataDataSetTableAdapters.LivestockMarketing04TableAdapter
     Private animalsIntoNonTrade As Integer?
     Private animalsIntoTradeFromLGA As Integer?
     Private animalsIntoTradeFromCountries As Integer?
@@ -26,20 +25,19 @@
 
     Private Sub ctrlDistrict02Page01_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.LivestockListDA.Fill(Me.LGMDdataDataSet.LivestockList)
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
         Me.AppUspDistrictQuarterFillLivestockMovementTableAdapter.Fill(Me.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMovement, g_RecordID)
 
         If Me.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMovement.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.LivestockList.Select("AI < '5' ")
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType = 'LivestockMovement04' ")
                 Me.LivestockMovementDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.AppUspDistrictQuarterFillLivestockMovementTableAdapter.Fill(Me.LGMDdataDataSet.appUspDistrictQuarterFillLivestockMovement, g_RecordID)
         End If
 
-        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
         Me.AppUspDistrictQuarterFillProductsMovementTableAdapter.Fill(Me.LGMDdataDataSet.appUspDistrictQuarterFillProductsMovement, g_RecordID)
         If Me.LGMDdataDataSet.appUspDistrictQuarterFillProductsMovement.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='ProductsMovement04'")
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType = 'ProductsMovement04'")
                 Me.ProductsMovementDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.AppUspDistrictQuarterFillProductsMovementTableAdapter.Fill(Me.LGMDdataDataSet.appUspDistrictQuarterFillProductsMovement, g_RecordID)

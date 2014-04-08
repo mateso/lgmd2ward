@@ -1,18 +1,18 @@
 ﻿Public Class ctrlWard03Page05
 
-    Dim FertilizerListDA As New LGMDdataDataSetTableAdapters.FertilizerListTableAdapter
-    Dim FertilizerDA As New LGMDdataDataSetTableAdapters.Fertilizer03TableAdapter
+    Private TwoDListDA As New LGMDdataDataSetTableAdapters.TwoDListTableAdapter
+    Private FertilizerDA As New LGMDdataDataSetTableAdapters.Fertilizer03TableAdapter
     Private annualNeeds As Double?
     Private annualUsage As Double?
 
     Private Sub ctrlWard03Page05_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Me.FertilizerListDA.Fill(Me.LGMDdataDataSet.FertilizerList)
+        Me.TwoDListDA.Fill(Me.LGMDdataDataSet.TwoDList)
         Me.FertilizerDA.Fill(Me.LGMDdataDataSet.Fertilizer03)
         Me.AppUspAnnualFillFertilizerTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillFertilizer, g_RecordID)
 
         If Me.LGMDdataDataSet.appUspAnnualFillFertilizer.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.FertilizerList.Select("FertilizerStatus='0'")
+            For Each row As DataRow In Me.LGMDdataDataSet.TwoDList.Select("ListItemType='Fertilizer03' AND ListItemStatus=0")
                 Me.FertilizerDA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.AppUspAnnualFillFertilizerTableAdapter.Fill(Me.LGMDdataDataSet.appUspAnnualFillFertilizer, g_RecordID)

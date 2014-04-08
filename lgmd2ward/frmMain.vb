@@ -116,28 +116,28 @@ Public Class frmMain
 
         ' TODO: Add code to add items to the treeview
 
-        Me.treeView.Nodes.Clear()
+        Me.tvMain.Nodes.Clear()
         Dim tvRoot As TreeNode
         Dim tvNode As TreeNode
         Dim tvNodeSecondRoot As TreeNode
 
         If g_language = "English" Then
             If GetConfigLevel() = 5 Or GetConfigLevel() = 6 Then
-                tvRoot = Me.treeView.Nodes.Add("Data entry", "Data entry", 12, 12)
+                tvRoot = Me.tvMain.Nodes.Add("Data entry", "Data entry", 12, 12)
                 tvNode = tvRoot.Nodes.Add("Enter data", "Enter data", 3, 3)
                 tvNode = tvRoot.Nodes.Add("Edit unapproved data", "Edit unapproved data", 2, 2)
                 tvNode = tvRoot.Nodes.Add("View unapproved data", "View unapproved data", 2, 2)
                 tvNode = tvRoot.Nodes.Add("View approved data", "View approved data", 2, 2)
                 tvRoot.ExpandAll()
             Else
-                tvRoot = Me.treeView.Nodes.Add("Data scrutinisation", "Data scrutinisation", 12, 12)
+                tvRoot = Me.tvMain.Nodes.Add("Data scrutinisation", "Data scrutinisation", 12, 12)
                 tvNode = tvRoot.Nodes.Add("View unapproved data", "View unapproved data", 2, 2)
                 tvNode = tvRoot.Nodes.Add("View approved data", "View approved data", 2, 2)
                 tvRoot.ExpandAll()
             End If
 
             'Reports
-            tvRoot = Me.treeView.Nodes.Add("Outputs", "Outputs", 11, 11)
+            tvRoot = Me.tvMain.Nodes.Add("Outputs", "Outputs", 11, 11)
             tvNode = tvRoot.Nodes.Add("Figure analysis", "Figure analysis", 5, 5)
             'tvNode = tvRoot.Nodes.Add("Text answer printout", "Text answer printout", 5, 5)
             tvNode = tvRoot.Nodes.Add("Ward Reports", "Ward Reports", 5, 5)
@@ -146,7 +146,7 @@ Public Class frmMain
             tvNode = tvRoot.Nodes.Add("Report Submission Status", "Report Submission Status", 5, 5)
 
             tvRoot.ExpandAll()
-            tvRoot = Me.treeView.Nodes.Add("System Utilities", "System Utilities", 6, 6)
+            tvRoot = Me.tvMain.Nodes.Add("System Utilities", "System Utilities", 6, 6)
             tvNodeSecondRoot = tvRoot.Nodes.Add("Database Management", "Database Management", 18, 18)
 
             tvNode = tvNodeSecondRoot.Nodes.Add("New Database", "New Database", 19, 19)
@@ -171,22 +171,22 @@ Public Class frmMain
             'tvNode = tvRoot.Nodes.Add("Users", "Users", 8, 8)
             tvRoot.ExpandAll()
 
-            tvRoot = Me.treeView.Nodes.Add("Security", "Security", 21, 21)
+            tvRoot = Me.tvMain.Nodes.Add("Security", "Security", 21, 21)
             tvNode = tvRoot.Nodes.Add("Change Password", "Change Password", 20, 20)
             tvNode = tvRoot.Nodes.Add("Users", "Users", 8, 8)
             'tvNode = tvRoot.Nodes.Add("Groups", "Groups", 8, 8)
             tvRoot.ExpandAll()
         Else
-            tvRoot = Me.treeView.Nodes.Add("Kuingiza Data", "Kuingiza Data", 12, 12)
+            tvRoot = Me.tvMain.Nodes.Add("Kuingiza Data", "Kuingiza Data", 12, 12)
             tvNode = tvRoot.Nodes.Add("Ingiza data", "Ingiza data", 3, 3)
             tvNode = tvRoot.Nodes.Add("Edit unapproved data", "Badilisha data", 2, 2)
             tvRoot.ExpandAll()
-            tvRoot = Me.treeView.Nodes.Add("Printouts", "Ripoti", 5, 5)
+            tvRoot = Me.tvMain.Nodes.Add("Printouts", "Ripoti", 5, 5)
             tvNode = tvRoot.Nodes.Add("Annual/Quarterly Report", "Ripoti 1", 5, 5)
             tvNode = tvRoot.Nodes.Add("Printout 2", "Ripoti 2", 5, 5)
             tvNode = tvRoot.Nodes.Add("Chart 1", "Chati 1", 11, 11)
             tvRoot.ExpandAll()
-            tvRoot = Me.treeView.Nodes.Add("Database Utilities", "Vifaa vya Database", 6, 6)
+            tvRoot = Me.tvMain.Nodes.Add("Database Utilities", "Vifaa vya Database", 6, 6)
             tvNode = tvRoot.Nodes.Add("Synchronise", "Synchronise", 7, 7)
             tvNode = tvRoot.Nodes.Add("Users", "Watumiaji", 8, 8)
             tvRoot.ExpandAll()
@@ -200,11 +200,11 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub TreeView_AfterSelect(ByVal sender As Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles treeView.AfterSelect
+    Private Sub TreeView_AfterSelect(ByVal sender As Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles tvMain.AfterSelect
         ' TODO: Add code to change the listview contents based on the currently-selected node of the treeview      
         strSelectedNode = e.Node.Text
         Call SelectTreeNode()
-        Me.treeView.HideSelection = False
+        Me.tvMain.HideSelection = False
 
     End Sub
 
@@ -554,10 +554,10 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub TreeView_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles treeView.Click
+    Private Sub TreeView_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles tvMain.Click
 
         If g_bSeleted Then
-            strSelectedNode = Me.treeView.SelectedNode.Text
+            strSelectedNode = Me.tvMain.SelectedNode.Text
             Call SelectTreeNode()
         End If
 
@@ -589,7 +589,8 @@ Public Class frmMain
         Dim localConnection As String = My.Settings.DataConnectionString
         Dim remoteConnection As String = ""
 
-        remoteConnection = "Data Source=" + serverAddress + ",1833; Initial Catalog=LGMD2iServer; User ID=LGMDSynch; pwd=lgmd"
+        'remoteConnection = "Data Source=" + serverAddress + ",1833; Initial Catalog=LGMD2iServer; User ID=LGMDSynch; pwd=lgmd"
+        remoteConnection = "Data Source=.\sqlexpress; Initial Catalog=LGMD2iServer; User ID=LGMDSynch; pwd=lgmd"
 
         Dim synchronizer As New SynchronizerForm(localConnection, remoteConnection, rebuild)
         synchronizer.ShowDialog()
