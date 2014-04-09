@@ -69,3 +69,4 @@ C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer
 C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csproj.GenerateResource.Cache
 C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.dll
 C:\Users\Adolf Richard\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.pdb
+C:\Users\mateso\Documents\Visual Studio 2012\Projects\lgmd2ward\RdlViewer\obj\Debug\RdlViewer.csprojResolveAssemblyReference.cache

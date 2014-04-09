@@ -57,7 +57,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>174D7E6A0FA852B5B9DEF27C86C1BB39216D25AF</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>DA79A8345AEB8EC7755B1A96305628197D331B75</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>RdlViewer_1_TemporaryKey.pfx</ManifestKeyFile>

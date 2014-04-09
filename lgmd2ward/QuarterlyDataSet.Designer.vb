@@ -1587,7 +1587,7 @@ Namespace QuarterlyDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.LGMD.My.MySettings.Default.LGMD2iConnectionString
+            Me._connection.ConnectionString = My.Settings.DataConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -2025,7 +2025,7 @@ Namespace QuarterlyDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.LGMD.My.MySettings.Default.LGMD2iConnectionString
+            Me._connection.ConnectionString = My.Settings.DataConnectionString
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _

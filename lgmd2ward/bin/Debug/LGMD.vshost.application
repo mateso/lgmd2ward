@@ -7,14 +7,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LGMD.exe.manifest" size="51981">
+    <dependentAssembly dependencyType="install" codebase="LGMD.exe.manifest" size="44815">
       <assemblyIdentity name="LGMD.exe" version="1.7.4.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>g/kWppWlaewqXOMmec/pnMbi2OM=</dsig:DigestValue>
+        <dsig:DigestValue>5KXNe8xxmsd0P0ppZ1Ga3+RSaMM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
