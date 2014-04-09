@@ -1,8 +1,8 @@
 ﻿Public Class ctrlWard02Page02
 
-    Dim FigureIDCriteria As String = "FigureID in (201,202) and BreakdownTypeID1 in ('MAI','PDD','SGH','BMT','FMT','WHE','BLY','CSV','SWP','IPT','YAM','CYM','SCT','TBC','CFF','TEA','PYR','COC','RUB','WAT','SUG', 'JUT','SIS','CSH','SFL','SMS','GRN','PLO','CCN','SYB','COS','JTR','CWP','PGP','GBG','GNP','CPL','BBN','BEN')"
-    Dim CoopGroupListDA As New LGMDdataDataSetTableAdapters.CoopGroupListTableAdapter
-    Dim CoopGroup02DA As New LGMDdataDataSetTableAdapters.CoopGroup02TableAdapter
+    Private FigureIDCriteria As String = "FigureID in (201,202) and BreakdownTypeID1 in ('MAI','PDD','SGH','BMT','FMT','WHE','BLY','CSV','SWP','IPT','YAM','CYM','SCT','TBC','CFF','TEA','PYR','COC','RUB','WAT','SUG', 'JUT','SIS','CSH','SFL','SMS','GRN','PLO','CCN','SYB','COS','JTR','CWP','PGP','GBG','GNP','CPL','BBN','BEN')"
+    Private ThreeDListDA As New LGMDdataDataSetTableAdapters.ThreeDListTableAdapter
+    Private CoopGroup02DA As New LGMDdataDataSetTableAdapters.CoopGroup02TableAdapter
     Private firstNo As Integer?
     Private secondNo As Integer?
 
@@ -10,13 +10,13 @@
 
         Me.CoopSaccos02TableAdapter.Fill(Me.LGMDdataDataSet.CoopSaccos02, g_RecordID)
 
-        Me.CoopGroupListDA.Fill(Me.LGMDdataDataSet.CoopGroupList)
+        Me.ThreeDListDA.Fill(Me.LGMDdataDataSet.ThreeDList)
         Me.CoopGroup02iTableAdapter.Fill(Me.LGMDdataDataSet.CoopGroup02i, g_RecordID)
         Me.CoopGroup02iTableAdapter.FillCrop(Me.LgmDdataDataSet1.CoopGroup02i, g_RecordID)
         Me.CoopGroup02iTableAdapter.FillLivestock(Me.LgmDdataDataSet2.CoopGroup02i, g_RecordID)
         Me.CoopGroup02iTableAdapter.FillFisheries(Me.LgmDdataDataSet3.CoopGroup02i, g_RecordID)
         If Me.LGMDdataDataSet.CoopGroup02i.Rows.Count = 0 Then
-            For Each row As DataRow In Me.LGMDdataDataSet.CoopGroupList.Rows
+            For Each row As DataRow In Me.LGMDdataDataSet.ThreeDList.Select("ListItemType = 'CoopGroup02'")
                 CoopGroup02DA.Insert(Guid.NewGuid, row.Item(0), g_RecordID, g_FormSerialNumber)
             Next
             Me.CoopGroup02iTableAdapter.Fill(Me.LGMDdataDataSet.CoopGroup02i, g_RecordID)

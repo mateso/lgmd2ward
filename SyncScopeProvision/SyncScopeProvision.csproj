@@ -66,7 +66,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>262965454596782ED07C814438BCD6B64DDD5E06</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>C7DFDCD6C50D151AF0EF4C08770507FC12848D0C</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>SyncScopeProvision_TemporaryKey.pfx</ManifestKeyFile>

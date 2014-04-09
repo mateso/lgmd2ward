@@ -218,7 +218,7 @@ Partial Class ctrlWard02Page01
         Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.44681!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 726.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 727.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label15, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label16, 1, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(29, 481)
@@ -232,7 +232,7 @@ Partial Class ctrlWard02Page01
         '
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(18, 5)
+        Me.Label15.Location = New System.Drawing.Point(17, 5)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(46, 26)
         Me.Label15.TabIndex = 2
@@ -299,7 +299,7 @@ Partial Class ctrlWard02Page01
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label17, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label18, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label19, 2, 0)

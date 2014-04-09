@@ -1,9 +1,9 @@
 ﻿Public Class ctrlWard02Page05
 
-    Dim FigureIDCriteria As String = "FigureID in (201,202) and BreakdownTypeID1 in ('MAI','PDD','SGH','BMT','FMT','WHE','BLY','CSV','SWP','IPT','YAM','CYM','SCT','TBC','CFF','TEA','PYR','COC','RUB','WAT','SUG', 'JUT','SIS','CSH','SFL','SMS','GRN','PLO','CCN','SYB','COS','JTR','CWP','PGP','GBG','GNP','CPL','BBN','BEN')"
-    Dim QuarterlyLookupDS As New QuarterlyDataSet
-    Dim QuarterlyLookupDA As New QuarterlyDataSetTableAdapters.QuarterlyLookupTableTableAdapter
-    Dim ProdLandDA As New LGMDdataDataSetTableAdapters.ProdLand02TableAdapter
+    Private FigureIDCriteria As String = "FigureID in (201,202) and BreakdownTypeID1 in ('MAI','PDD','SGH','BMT','FMT','WHE','BLY','CSV','SWP','IPT','YAM','CYM','SCT','TBC','CFF','TEA','PYR','COC','RUB','WAT','SUG', 'JUT','SIS','CSH','SFL','SMS','GRN','PLO','CCN','SYB','COS','JTR','CWP','PGP','GBG','GNP','CPL','BBN','BEN')"
+    Private QuarterlyLookupDS As New QuarterlyDataSet
+    Private QuarterlyLookupDA As New QuarterlyDataSetTableAdapters.QuarterlyLookupTableTableAdapter
+    Private ProdLandDA As New LGMDdataDataSetTableAdapters.ProdLand02TableAdapter
     Private ThreeDListDA As New LGMDdataDataSetTableAdapters.ThreeDListTableAdapter
     Private areaDestroyed As Double?
     Private areaControlled As Double?
@@ -14,10 +14,10 @@
 
     Private Sub ctrlWard02Page05_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        'Me.QuarterlyLookupDA.Fill(Me.QuarterlyLookupDS.QuarterlyLookupTable)
+        Me.QuarterlyLookupDA.Fill(Me.QuarterlyLookupDS.QuarterlyLookupTable)
 
         Me.AppUspQuarterLookUpTypeOfErosionTableAdapter.Fill(Me.LookupTableDataDataSet.appUspQuarterLookUpTypeOfErosion)
-        'Me.AppUspQuarterLookupErosionControlMeasuresTableAdapter.Fill(Me.LookupTableDataDataSet.appUspQuarterLookupErosionControlMeasures)
+        'Me.AppUspQuarterLookupErosionControlMeasuresTableAdapter.Fill(Me.LookupTableDataDataSet.appUspQuarterLookupErosionControlMeasures,  )
         Me.SoilErosion02TableAdapter.Fill(Me.LGMDdataDataSet.SoilErosion02, g_RecordID)
 
         Me.ThreeDListDA.Fill(Me.LGMDdataDataSet.ThreeDList)

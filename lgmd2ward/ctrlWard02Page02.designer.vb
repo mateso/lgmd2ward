@@ -23,10 +23,10 @@ Partial Class ctrlWard02Page02
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -45,8 +45,6 @@ Partial Class ctrlWard02Page02
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtLoanCrops = New System.Windows.Forms.TextBox()
-        Me.CoopSaccos02BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
         Me.txtLoanLivestock = New System.Windows.Forms.TextBox()
         Me.txtLoanTotal = New System.Windows.Forms.TextBox()
         Me.txtLoanMarketing = New System.Windows.Forms.TextBox()
@@ -75,8 +73,12 @@ Partial Class ctrlWard02Page02
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.CoopOtherDataGridView = New System.Windows.Forms.DataGridView()
-        Me.CoopGroup02iBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LgmDdataDataSet1 = New LGMD.LGMDdataDataSet()
+        Me.ListID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ListItemSw = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CoopGroupID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CoopID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalNumberOfMembers = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmbGoTo = New System.Windows.Forms.ComboBox()
         Me.gotoLbl = New System.Windows.Forms.Label()
         Me.cmdSave = New System.Windows.Forms.Button()
@@ -95,14 +97,7 @@ Partial Class ctrlWard02Page02
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.CoopGroup02iBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LgmDdataDataSet2 = New LGMD.LGMDdataDataSet()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.CoopGroup02iBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LgmDdataDataSet3 = New LGMD.LGMDdataDataSet()
-        Me.CoopGroup02iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CoopSaccos02TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.CoopSaccos02TableAdapter()
-        Me.CoopGroup02iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.CoopGroup02iTableAdapter()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -139,23 +134,28 @@ Partial Class ctrlWard02Page02
         Me.DataGridViewTextBoxColumn43 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn44 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn45 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CoopGroupListIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupDetailsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CoopGroupIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CoopIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CoopSaccos02BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LGMDdataDataSet = New LGMD.LGMDdataDataSet()
+        Me.CoopGroup02iBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet3 = New LGMD.LGMDdataDataSet()
+        Me.CoopGroup02iBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet2 = New LGMD.LGMDdataDataSet()
         Me.NumberOfGroupsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfMaleMembersDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfFemaleMembersDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalNumberOfMembers = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalNumberRegisteredDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RecordIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CoopGroupListIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CoopGroup02iBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LgmDdataDataSet1 = New LGMD.LGMDdataDataSet()
+        Me.CoopGroup02iBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CoopSaccos02TableAdapter = New LGMD.LGMDdataDataSetTableAdapters.CoopSaccos02TableAdapter()
+        Me.CoopGroup02iTableAdapter = New LGMD.LGMDdataDataSetTableAdapters.CoopGroup02iTableAdapter()
+        Me.DataGridViewTextBoxColumn46 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupDetailsDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn47 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CoopGroupIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CoopIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn48 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfGroupsDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfMaleMembersDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfFemaleMembersDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -163,9 +163,9 @@ Partial Class ctrlWard02Page02
         Me.TotalNumberRegisteredDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RecordIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CoopGroupListIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn49 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupDetailsDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CoopGroupIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CoopIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NumberOfGroupsDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -175,26 +175,26 @@ Partial Class ctrlWard02Page02
         Me.TotalNumberRegisteredDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RecordIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.CoopSaccos02BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         CType(Me.CoopOtherDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CoopGroup02iBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         Me.TableLayoutPanel9.SuspendLayout()
         Me.TableLayoutPanel10.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CoopGroup02iBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CoopSaccos02BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CoopGroup02iBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LgmDdataDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CoopGroup02iBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CoopGroup02iBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CoopGroup02iBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -236,16 +236,6 @@ Partial Class ctrlWard02Page02
         Me.txtLoanCrops.Size = New System.Drawing.Size(80, 20)
         Me.txtLoanCrops.TabIndex = 5
         Me.txtLoanCrops.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'CoopSaccos02BindingSource
-        '
-        Me.CoopSaccos02BindingSource.DataMember = "CoopSaccos02"
-        Me.CoopSaccos02BindingSource.DataSource = Me.LGMDdataDataSet
-        '
-        'LGMDdataDataSet
-        '
-        Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
-        Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'txtLoanLivestock
         '
@@ -358,7 +348,7 @@ Partial Class ctrlWard02Page02
         '
         Me.TableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(31, 104)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
@@ -371,7 +361,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 30)
+        Me.Label4.Location = New System.Drawing.Point(12, 30)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(88, 13)
         Me.Label4.TabIndex = 0
@@ -382,7 +372,7 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel4.ColumnCount = 2
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79.0!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.Label8, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Label9, 1, 0)
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(132, 154)
@@ -406,7 +396,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 5)
+        Me.Label9.Location = New System.Drawing.Point(96, 5)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(62, 13)
         Me.Label9.TabIndex = 1
@@ -416,7 +406,7 @@ Partial Class ctrlWard02Page02
         '
         Me.TableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel5.ColumnCount = 1
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label7, 0, 0)
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(132, 130)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
@@ -429,7 +419,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(17, 5)
+        Me.Label7.Location = New System.Drawing.Point(19, 5)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(137, 13)
         Me.Label7.TabIndex = 0
@@ -445,7 +435,7 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.Label10, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Label11, 1, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Label12, 2, 0)
@@ -524,7 +514,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(512, 17)
+        Me.Label16.Location = New System.Drawing.Point(514, 17)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(34, 13)
         Me.Label16.TabIndex = 6
@@ -535,7 +525,7 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel7.ColumnCount = 2
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 322.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 413.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 416.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.Label6, 1, 0)
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(132, 104)
@@ -559,7 +549,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(474, 6)
+        Me.Label6.Location = New System.Drawing.Point(476, 6)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(112, 13)
         Me.Label6.TabIndex = 1
@@ -573,22 +563,56 @@ Partial Class ctrlWard02Page02
         Me.CoopOtherDataGridView.AllowUserToResizeRows = False
         Me.CoopOtherDataGridView.AutoGenerateColumns = False
         Me.CoopOtherDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CoopOtherDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CoopGroupListIDDataGridViewTextBoxColumn, Me.GroupIDDataGridViewTextBoxColumn, Me.GroupDetailsDataGridViewTextBoxColumn, Me.CoopGroupIDDataGridViewTextBoxColumn, Me.CoopIDDataGridViewTextBoxColumn, Me.NumberOfGroupsDataGridViewTextBoxColumn, Me.NumberOfMaleMembersDataGridViewTextBoxColumn, Me.NumberOfFemaleMembersDataGridViewTextBoxColumn, Me.TotalNumberOfMembers, Me.TotalNumberRegisteredDataGridViewTextBoxColumn, Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn, Me.RecordIDDataGridViewTextBoxColumn})
+        Me.CoopOtherDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ListID, Me.GroupID, Me.ListItemSw, Me.CoopGroupID, Me.CoopID, Me.NumberOfGroupsDataGridViewTextBoxColumn, Me.NumberOfMaleMembersDataGridViewTextBoxColumn, Me.NumberOfFemaleMembersDataGridViewTextBoxColumn, Me.TotalNumberOfMembers, Me.TotalNumberRegisteredDataGridViewTextBoxColumn, Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn, Me.RecordIDDataGridViewTextBoxColumn})
         Me.CoopOtherDataGridView.DataSource = Me.CoopGroup02iBindingSource1
         Me.CoopOtherDataGridView.Location = New System.Drawing.Point(31, 359)
         Me.CoopOtherDataGridView.Name = "CoopOtherDataGridView"
         Me.CoopOtherDataGridView.Size = New System.Drawing.Size(916, 89)
         Me.CoopOtherDataGridView.TabIndex = 10
         '
-        'CoopGroup02iBindingSource1
+        'ListID
         '
-        Me.CoopGroup02iBindingSource1.DataMember = "CoopGroup02i"
-        Me.CoopGroup02iBindingSource1.DataSource = Me.LgmDdataDataSet1
+        Me.ListID.DataPropertyName = "ListID"
+        Me.ListID.HeaderText = "ListID"
+        Me.ListID.Name = "ListID"
+        Me.ListID.Visible = False
         '
-        'LgmDdataDataSet1
+        'GroupID
         '
-        Me.LgmDdataDataSet1.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.GroupID.DataPropertyName = "GroupID"
+        Me.GroupID.HeaderText = "GroupID"
+        Me.GroupID.Name = "GroupID"
+        Me.GroupID.Visible = False
+        '
+        'ListItemSw
+        '
+        Me.ListItemSw.DataPropertyName = "ListItemSw"
+        Me.ListItemSw.HeaderText = "ListItemSw"
+        Me.ListItemSw.Name = "ListItemSw"
+        Me.ListItemSw.Width = 125
+        '
+        'CoopGroupID
+        '
+        Me.CoopGroupID.DataPropertyName = "CoopGroupID"
+        Me.CoopGroupID.HeaderText = "CoopGroupID"
+        Me.CoopGroupID.Name = "CoopGroupID"
+        Me.CoopGroupID.Visible = False
+        '
+        'CoopID
+        '
+        Me.CoopID.DataPropertyName = "CoopID"
+        Me.CoopID.HeaderText = "CoopID"
+        Me.CoopID.Name = "CoopID"
+        Me.CoopID.Visible = False
+        '
+        'TotalNumberOfMembers
+        '
+        Me.TotalNumberOfMembers.DataPropertyName = "NumberOfTotalMembers"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.TotalNumberOfMembers.DefaultCellStyle = DataGridViewCellStyle4
+        Me.TotalNumberOfMembers.HeaderText = ""
+        Me.TotalNumberOfMembers.Name = "TotalNumberOfMembers"
+        Me.TotalNumberOfMembers.ReadOnly = True
         '
         'cmbGoTo
         '
@@ -642,7 +666,7 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel2.ColumnCount = 2
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label17, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label18, 1, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(31, 297)
@@ -667,7 +691,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(192, 24)
+        Me.Label18.Location = New System.Drawing.Point(194, 24)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(82, 13)
         Me.Label18.TabIndex = 1
@@ -680,7 +704,7 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel8.ColumnCount = 3
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.Label20, 0, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.Label21, 1, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.Label22, 2, 0)
@@ -717,7 +741,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label22.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(237, 9)
+        Me.Label22.Location = New System.Drawing.Point(239, 9)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(34, 13)
         Me.Label22.TabIndex = 2
@@ -728,7 +752,7 @@ Partial Class ctrlWard02Page02
         '
         Me.TableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel9.ColumnCount = 1
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 308.0!))
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 311.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.Label19, 0, 0)
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(322, 297)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
@@ -741,7 +765,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(101, 7)
+        Me.Label19.Location = New System.Drawing.Point(102, 7)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(108, 13)
         Me.Label19.TabIndex = 0
@@ -753,7 +777,7 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel10.ColumnCount = 2
         Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169.0!))
-        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162.0!))
+        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165.0!))
         Me.TableLayoutPanel10.Controls.Add(Me.Label23, 0, 0)
         Me.TableLayoutPanel10.Controls.Add(Me.Label24, 1, 0)
         Me.TableLayoutPanel10.Location = New System.Drawing.Point(623, 297)
@@ -778,7 +802,7 @@ Partial Class ctrlWard02Page02
         '
         Me.Label24.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(174, 17)
+        Me.Label24.Location = New System.Drawing.Point(175, 17)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(156, 26)
         Me.Label24.TabIndex = 1
@@ -793,22 +817,12 @@ Partial Class ctrlWard02Page02
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CoopGroupListIDDataGridViewTextBoxColumn1, Me.GroupIDDataGridViewTextBoxColumn1, Me.GroupDetailsDataGridViewTextBoxColumn1, Me.CoopGroupIDDataGridViewTextBoxColumn1, Me.CoopIDDataGridViewTextBoxColumn1, Me.NumberOfGroupsDataGridViewTextBoxColumn1, Me.NumberOfMaleMembersDataGridViewTextBoxColumn1, Me.NumberOfFemaleMembersDataGridViewTextBoxColumn1, Me.Column1, Me.TotalNumberRegisteredDataGridViewTextBoxColumn1, Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn1, Me.RecordIDDataGridViewTextBoxColumn1})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn46, Me.GroupIDDataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn47, Me.CoopGroupIDDataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn48, Me.NumberOfGroupsDataGridViewTextBoxColumn1, Me.NumberOfMaleMembersDataGridViewTextBoxColumn1, Me.NumberOfFemaleMembersDataGridViewTextBoxColumn1, Me.Column1, Me.TotalNumberRegisteredDataGridViewTextBoxColumn1, Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn1, Me.RecordIDDataGridViewTextBoxColumn1})
         Me.DataGridView1.DataSource = Me.CoopGroup02iBindingSource2
         Me.DataGridView1.Location = New System.Drawing.Point(31, 449)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(916, 89)
         Me.DataGridView1.TabIndex = 11
-        '
-        'CoopGroup02iBindingSource2
-        '
-        Me.CoopGroup02iBindingSource2.DataMember = "CoopGroup02i"
-        Me.CoopGroup02iBindingSource2.DataSource = Me.LgmDdataDataSet2
-        '
-        'LgmDdataDataSet2
-        '
-        Me.LgmDdataDataSet2.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'DataGridView2
         '
@@ -818,35 +832,12 @@ Partial Class ctrlWard02Page02
         Me.DataGridView2.AllowUserToResizeRows = False
         Me.DataGridView2.AutoGenerateColumns = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CoopGroupListIDDataGridViewTextBoxColumn2, Me.GroupIDDataGridViewTextBoxColumn2, Me.GroupDetailsDataGridViewTextBoxColumn2, Me.CoopGroupIDDataGridViewTextBoxColumn2, Me.CoopIDDataGridViewTextBoxColumn2, Me.NumberOfGroupsDataGridViewTextBoxColumn2, Me.NumberOfMaleMembersDataGridViewTextBoxColumn2, Me.NumberOfFemaleMembersDataGridViewTextBoxColumn2, Me.Column2, Me.TotalNumberRegisteredDataGridViewTextBoxColumn2, Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn2, Me.RecordIDDataGridViewTextBoxColumn2})
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn49, Me.GroupIDDataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn50, Me.CoopGroupIDDataGridViewTextBoxColumn2, Me.CoopIDDataGridViewTextBoxColumn2, Me.NumberOfGroupsDataGridViewTextBoxColumn2, Me.NumberOfMaleMembersDataGridViewTextBoxColumn2, Me.NumberOfFemaleMembersDataGridViewTextBoxColumn2, Me.Column2, Me.TotalNumberRegisteredDataGridViewTextBoxColumn2, Me.TotalNumberWithBankAccountDataGridViewTextBoxColumn2, Me.RecordIDDataGridViewTextBoxColumn2})
         Me.DataGridView2.DataSource = Me.CoopGroup02iBindingSource3
         Me.DataGridView2.Location = New System.Drawing.Point(31, 539)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(916, 89)
         Me.DataGridView2.TabIndex = 12
-        '
-        'CoopGroup02iBindingSource3
-        '
-        Me.CoopGroup02iBindingSource3.DataMember = "CoopGroup02i"
-        Me.CoopGroup02iBindingSource3.DataSource = Me.LgmDdataDataSet3
-        '
-        'LgmDdataDataSet3
-        '
-        Me.LgmDdataDataSet3.DataSetName = "LGMDdataDataSet"
-        Me.LgmDdataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'CoopGroup02iBindingSource
-        '
-        Me.CoopGroup02iBindingSource.DataMember = "CoopGroup02i"
-        Me.CoopGroup02iBindingSource.DataSource = Me.LGMDdataDataSet
-        '
-        'CoopSaccos02TableAdapter
-        '
-        Me.CoopSaccos02TableAdapter.ClearBeforeFill = True
-        '
-        'CoopGroup02iTableAdapter
-        '
-        Me.CoopGroup02iTableAdapter.ClearBeforeFill = True
         '
         'DataGridViewTextBoxColumn10
         '
@@ -1097,41 +1088,35 @@ Partial Class ctrlWard02Page02
         Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
         Me.DataGridViewTextBoxColumn45.Visible = False
         '
-        'CoopGroupListIDDataGridViewTextBoxColumn
+        'CoopSaccos02BindingSource
         '
-        Me.CoopGroupListIDDataGridViewTextBoxColumn.DataPropertyName = "CoopGroupListID"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn.HeaderText = "CoopGroupListID"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn.Name = "CoopGroupListIDDataGridViewTextBoxColumn"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn.Visible = False
+        Me.CoopSaccos02BindingSource.DataMember = "CoopSaccos02"
+        Me.CoopSaccos02BindingSource.DataSource = Me.LGMDdataDataSet
         '
-        'GroupIDDataGridViewTextBoxColumn
+        'LGMDdataDataSet
         '
-        Me.GroupIDDataGridViewTextBoxColumn.DataPropertyName = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn.HeaderText = "GroupID"
-        Me.GroupIDDataGridViewTextBoxColumn.Name = "GroupIDDataGridViewTextBoxColumn"
-        Me.GroupIDDataGridViewTextBoxColumn.Visible = False
+        Me.LGMDdataDataSet.DataSetName = "LGMDdataDataSet"
+        Me.LGMDdataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'GroupDetailsDataGridViewTextBoxColumn
+        'CoopGroup02iBindingSource3
         '
-        Me.GroupDetailsDataGridViewTextBoxColumn.DataPropertyName = "GroupDetails"
-        Me.GroupDetailsDataGridViewTextBoxColumn.HeaderText = "Mazao"
-        Me.GroupDetailsDataGridViewTextBoxColumn.Name = "GroupDetailsDataGridViewTextBoxColumn"
-        Me.GroupDetailsDataGridViewTextBoxColumn.ReadOnly = True
-        Me.GroupDetailsDataGridViewTextBoxColumn.Width = 126
+        Me.CoopGroup02iBindingSource3.DataMember = "CoopGroup02i"
+        Me.CoopGroup02iBindingSource3.DataSource = Me.LgmDdataDataSet3
         '
-        'CoopGroupIDDataGridViewTextBoxColumn
+        'LgmDdataDataSet3
         '
-        Me.CoopGroupIDDataGridViewTextBoxColumn.DataPropertyName = "CoopGroupID"
-        Me.CoopGroupIDDataGridViewTextBoxColumn.HeaderText = "CoopGroupID"
-        Me.CoopGroupIDDataGridViewTextBoxColumn.Name = "CoopGroupIDDataGridViewTextBoxColumn"
-        Me.CoopGroupIDDataGridViewTextBoxColumn.Visible = False
+        Me.LgmDdataDataSet3.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'CoopIDDataGridViewTextBoxColumn
+        'CoopGroup02iBindingSource2
         '
-        Me.CoopIDDataGridViewTextBoxColumn.DataPropertyName = "CoopID"
-        Me.CoopIDDataGridViewTextBoxColumn.HeaderText = "CoopID"
-        Me.CoopIDDataGridViewTextBoxColumn.Name = "CoopIDDataGridViewTextBoxColumn"
-        Me.CoopIDDataGridViewTextBoxColumn.Visible = False
+        Me.CoopGroup02iBindingSource2.DataMember = "CoopGroup02i"
+        Me.CoopGroup02iBindingSource2.DataSource = Me.LgmDdataDataSet2
+        '
+        'LgmDdataDataSet2
+        '
+        Me.LgmDdataDataSet2.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'NumberOfGroupsDataGridViewTextBoxColumn
         '
@@ -1158,15 +1143,6 @@ Partial Class ctrlWard02Page02
         Me.NumberOfFemaleMembersDataGridViewTextBoxColumn.HeaderText = ""
         Me.NumberOfFemaleMembersDataGridViewTextBoxColumn.Name = "NumberOfFemaleMembersDataGridViewTextBoxColumn"
         '
-        'TotalNumberOfMembers
-        '
-        Me.TotalNumberOfMembers.DataPropertyName = "NumberOfTotalMembers"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TotalNumberOfMembers.DefaultCellStyle = DataGridViewCellStyle4
-        Me.TotalNumberOfMembers.HeaderText = ""
-        Me.TotalNumberOfMembers.Name = "TotalNumberOfMembers"
-        Me.TotalNumberOfMembers.ReadOnly = True
-        '
         'TotalNumberRegisteredDataGridViewTextBoxColumn
         '
         Me.TotalNumberRegisteredDataGridViewTextBoxColumn.DataPropertyName = "TotalNumberRegistered"
@@ -1192,12 +1168,35 @@ Partial Class ctrlWard02Page02
         Me.RecordIDDataGridViewTextBoxColumn.Name = "RecordIDDataGridViewTextBoxColumn"
         Me.RecordIDDataGridViewTextBoxColumn.Visible = False
         '
-        'CoopGroupListIDDataGridViewTextBoxColumn1
+        'CoopGroup02iBindingSource1
         '
-        Me.CoopGroupListIDDataGridViewTextBoxColumn1.DataPropertyName = "CoopGroupListID"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn1.HeaderText = "CoopGroupListID"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn1.Name = "CoopGroupListIDDataGridViewTextBoxColumn1"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn1.Visible = False
+        Me.CoopGroup02iBindingSource1.DataMember = "CoopGroup02i"
+        Me.CoopGroup02iBindingSource1.DataSource = Me.LgmDdataDataSet1
+        '
+        'LgmDdataDataSet1
+        '
+        Me.LgmDdataDataSet1.DataSetName = "LGMDdataDataSet"
+        Me.LgmDdataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CoopGroup02iBindingSource
+        '
+        Me.CoopGroup02iBindingSource.DataMember = "CoopGroup02i"
+        Me.CoopGroup02iBindingSource.DataSource = Me.LGMDdataDataSet
+        '
+        'CoopSaccos02TableAdapter
+        '
+        Me.CoopSaccos02TableAdapter.ClearBeforeFill = True
+        '
+        'CoopGroup02iTableAdapter
+        '
+        Me.CoopGroup02iTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridViewTextBoxColumn46
+        '
+        Me.DataGridViewTextBoxColumn46.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn46.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
+        Me.DataGridViewTextBoxColumn46.Visible = False
         '
         'GroupIDDataGridViewTextBoxColumn1
         '
@@ -1206,13 +1205,12 @@ Partial Class ctrlWard02Page02
         Me.GroupIDDataGridViewTextBoxColumn1.Name = "GroupIDDataGridViewTextBoxColumn1"
         Me.GroupIDDataGridViewTextBoxColumn1.Visible = False
         '
-        'GroupDetailsDataGridViewTextBoxColumn1
+        'DataGridViewTextBoxColumn47
         '
-        Me.GroupDetailsDataGridViewTextBoxColumn1.DataPropertyName = "GroupDetails"
-        Me.GroupDetailsDataGridViewTextBoxColumn1.HeaderText = "Ufugaji"
-        Me.GroupDetailsDataGridViewTextBoxColumn1.Name = "GroupDetailsDataGridViewTextBoxColumn1"
-        Me.GroupDetailsDataGridViewTextBoxColumn1.ReadOnly = True
-        Me.GroupDetailsDataGridViewTextBoxColumn1.Width = 126
+        Me.DataGridViewTextBoxColumn47.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn47.HeaderText = "ListItemSw"
+        Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
+        Me.DataGridViewTextBoxColumn47.Width = 125
         '
         'CoopGroupIDDataGridViewTextBoxColumn1
         '
@@ -1221,12 +1219,12 @@ Partial Class ctrlWard02Page02
         Me.CoopGroupIDDataGridViewTextBoxColumn1.Name = "CoopGroupIDDataGridViewTextBoxColumn1"
         Me.CoopGroupIDDataGridViewTextBoxColumn1.Visible = False
         '
-        'CoopIDDataGridViewTextBoxColumn1
+        'DataGridViewTextBoxColumn48
         '
-        Me.CoopIDDataGridViewTextBoxColumn1.DataPropertyName = "CoopID"
-        Me.CoopIDDataGridViewTextBoxColumn1.HeaderText = "CoopID"
-        Me.CoopIDDataGridViewTextBoxColumn1.Name = "CoopIDDataGridViewTextBoxColumn1"
-        Me.CoopIDDataGridViewTextBoxColumn1.Visible = False
+        Me.DataGridViewTextBoxColumn48.DataPropertyName = "CoopID"
+        Me.DataGridViewTextBoxColumn48.HeaderText = "CoopID"
+        Me.DataGridViewTextBoxColumn48.Name = "DataGridViewTextBoxColumn48"
+        Me.DataGridViewTextBoxColumn48.Visible = False
         '
         'NumberOfGroupsDataGridViewTextBoxColumn1
         '
@@ -1287,12 +1285,12 @@ Partial Class ctrlWard02Page02
         Me.RecordIDDataGridViewTextBoxColumn1.Name = "RecordIDDataGridViewTextBoxColumn1"
         Me.RecordIDDataGridViewTextBoxColumn1.Visible = False
         '
-        'CoopGroupListIDDataGridViewTextBoxColumn2
+        'DataGridViewTextBoxColumn49
         '
-        Me.CoopGroupListIDDataGridViewTextBoxColumn2.DataPropertyName = "CoopGroupListID"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn2.HeaderText = "CoopGroupListID"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn2.Name = "CoopGroupListIDDataGridViewTextBoxColumn2"
-        Me.CoopGroupListIDDataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn49.DataPropertyName = "ListID"
+        Me.DataGridViewTextBoxColumn49.HeaderText = "ListID"
+        Me.DataGridViewTextBoxColumn49.Name = "DataGridViewTextBoxColumn49"
+        Me.DataGridViewTextBoxColumn49.Visible = False
         '
         'GroupIDDataGridViewTextBoxColumn2
         '
@@ -1301,13 +1299,12 @@ Partial Class ctrlWard02Page02
         Me.GroupIDDataGridViewTextBoxColumn2.Name = "GroupIDDataGridViewTextBoxColumn2"
         Me.GroupIDDataGridViewTextBoxColumn2.Visible = False
         '
-        'GroupDetailsDataGridViewTextBoxColumn2
+        'DataGridViewTextBoxColumn50
         '
-        Me.GroupDetailsDataGridViewTextBoxColumn2.DataPropertyName = "GroupDetails"
-        Me.GroupDetailsDataGridViewTextBoxColumn2.HeaderText = "Uvuvi"
-        Me.GroupDetailsDataGridViewTextBoxColumn2.Name = "GroupDetailsDataGridViewTextBoxColumn2"
-        Me.GroupDetailsDataGridViewTextBoxColumn2.ReadOnly = True
-        Me.GroupDetailsDataGridViewTextBoxColumn2.Width = 126
+        Me.DataGridViewTextBoxColumn50.DataPropertyName = "ListItemSw"
+        Me.DataGridViewTextBoxColumn50.HeaderText = "ListItemSw"
+        Me.DataGridViewTextBoxColumn50.Name = "DataGridViewTextBoxColumn50"
+        Me.DataGridViewTextBoxColumn50.Width = 125
         '
         'CoopGroupIDDataGridViewTextBoxColumn2
         '
@@ -1418,8 +1415,6 @@ Partial Class ctrlWard02Page02
         Me.Controls.Add(Me.Label1)
         Me.Name = "ctrlWard02Page02"
         Me.Size = New System.Drawing.Size(1050, 700)
-        CType(Me.CoopSaccos02BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
@@ -1431,8 +1426,6 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
         CType(Me.CoopOtherDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CoopGroup02iBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
         Me.TableLayoutPanel8.ResumeLayout(False)
@@ -1442,11 +1435,15 @@ Partial Class ctrlWard02Page02
         Me.TableLayoutPanel10.ResumeLayout(False)
         Me.TableLayoutPanel10.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CoopGroup02iBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CoopSaccos02BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LGMDdataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CoopGroup02iBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LgmDdataDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CoopGroup02iBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CoopGroup02iBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LgmDdataDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CoopGroup02iBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1560,10 +1557,16 @@ Partial Class ctrlWard02Page02
     Friend WithEvents DataGridViewTextBoxColumn44 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn45 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CoopGroupListIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupDetailsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CoopGroupIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CoopIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CoopGroupListIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupDetailsDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CoopGroupListIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupDetailsDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ListItemSw As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CoopGroupID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CoopID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfGroupsDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfMaleMembersDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfFemaleMembersDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1571,11 +1574,11 @@ Partial Class ctrlWard02Page02
     Friend WithEvents TotalNumberRegisteredDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalNumberWithBankAccountDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RecordIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CoopGroupListIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn46 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupDetailsDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn47 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CoopGroupIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CoopIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn48 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfGroupsDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfMaleMembersDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfFemaleMembersDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1583,9 +1586,9 @@ Partial Class ctrlWard02Page02
     Friend WithEvents TotalNumberRegisteredDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalNumberWithBankAccountDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RecordIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CoopGroupListIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn49 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GroupDetailsDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn50 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CoopGroupIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CoopIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NumberOfGroupsDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
